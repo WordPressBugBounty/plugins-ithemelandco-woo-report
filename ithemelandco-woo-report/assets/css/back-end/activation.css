@@ -1,0 +1,356 @@
+.itwr-button:focus {
+    color: #fff !important;
+}
+
+.itwr-button-white:focus {
+    color: #444 !important;
+}
+
+.itwr-button,
+.sa-confirm-button-container .btn-primary {
+    height: 34px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-color: #603ecd;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    line-height: 32px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px transparent solid;
+}
+
+.itwr-button[disabled="disabled"] {
+    background: #e3e3e3 !important;
+    color: #3e3e3e;
+}
+
+.sa-button-container .itwr-button,
+.sa-confirm-button-container .btn-primary {
+    font-size: 11pt;
+}
+
+.itwr-button-lg,
+.sa-confirm-button-container .btn-primary {
+    height: 45px;
+    line-height: 45px;
+}
+
+.itwr-button-md {
+    height: 43px;
+    line-height: 43px;
+}
+
+.itwr-button span {
+    float: right;
+}
+
+.itwr-button img {
+    height: 24px;
+    margin: 5px 10px 5px 0;
+    float: left;
+}
+
+.itwr-button i {
+    margin: 6px 5px 6px 0;
+    float: left;
+    font-size: 17px;
+}
+
+.itwr-button-lg img {
+    margin: 10px 10px 10px 0;
+    float: left;
+}
+
+.itwr-button-lg i {
+    font-size: 18pt;
+    margin: 10px 10px 10px 0;
+    float: left;
+}
+
+.itwr-button-md i {
+    font-size: 13pt;
+    margin: 12px 10px 12px 0;
+    float: left;
+}
+
+.itwr-button-flat i {
+    color: #444;
+    margin: 0;
+    font-size: 17pt;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.itwr-button-flat {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.itwr-button-blue,
+.sa-confirm-button-container .btn-primary {
+    background-color: #603ecd !important;
+    color: #fff;
+}
+
+.itwr-button-green {
+    background-color: #4ebc4c !important;
+    color: #fff;
+}
+
+.itwr-button-red {
+    background-color: #ff8080 !important;
+    color: #fff;
+}
+
+.itwr-button-white {
+    background-color: #fff;
+    color: #949494;
+    border-color: #949494;
+}
+
+.itwr-button-gray {
+    background-color: #c7c7c7;
+    color: #000;
+    border-color: #c7c7c7;
+}
+
+.itwr-button-blue:hover {
+    background-color: #593bb1;
+    color: #fff;
+}
+
+.itwr-button-white:hover {
+    color: #444;
+    border-color: #444;
+}
+
+.itwr-button-gray:hover {
+    background: #bababa;
+    color: #000;
+}
+
+.itwr-text-green {
+    color: #14c24e;
+}
+
+.itwr-text-red {
+    color: #c21414;
+}
+
+.itwr-button-red:hover {
+    background: #ed6666;
+}
+
+.itwr-button-square-lg {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.itwr-button-square-lg i {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 13px !important;
+}
+
+.itwr-button-square {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    padding: 0;
+    line-height: 34px;
+}
+
+.itwr-button-square i {
+    width: 100%;
+    height: 18px;
+    text-align: center;
+    padding: 0;
+    margin: 8px 0;
+    vertical-align: middle;
+}
+
+#itwr-activation-info {
+    width: 100%;
+    display: block;
+    position: relative;
+    background: #ffffff;
+    font-size: 11pt;
+    padding: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    overflow: hidden;
+}
+
+#itwr-activation-info h1 {
+    line-height: 30px;
+    font-size: 14pt;
+    margin-bottom: 40px;
+}
+
+#itwr-activation-info .itwr-license-status {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block !important;
+}
+
+#itwr-activation-info .itwr-license-status-active {
+    border-top: 50px solid #00a651;
+    border-right: 50px solid #00a651;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+#itwr-activation-info .itwr-license-status-deactivated {
+    border-top: 50px solid #e7a30f;
+    border-right: 50px solid #e7a30f;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+#itwr-activation-info .itwr-license-status-active span,
+#itwr-activation-info .itwr-license-status-deactivated span {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    color: #fff;
+}
+
+#itwr-activation-info .itwr-license-renew {
+    width: 100%;
+    float: right;
+    margin: 0;
+}
+
+#itwr-activation-info .itwr-license-renew button {
+    float: right;
+    margin: 0 0 0 5px !important;
+}
+
+#itwr-activation-info h1 form {
+    float: right;
+}
+
+#itwr-activation-info div {
+    width: 100%;
+    display: inline-table;
+    margin: 0 0 10px 0;
+}
+
+#itwr-activation-info .itwr-activation-info-half {
+    display: inline-table;
+    width: 100%;
+}
+
+#itwr-activation-info .itwr-activation-info-half div {
+    float: left;
+    width: 50%;
+}
+
+#itwr-activation-info div span {
+    width: 150px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+#itwr-activation-form {
+    display: inline-table;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 0;
+    font-size: 11pt !important;
+    margin: 20px 0 0 0;
+    background-color: #fff;
+}
+
+#itwr-activation-form h3 {
+    font-size: 11pt !important;
+}
+
+.itwr-license-form .itwr-tab-middle-content {
+    margin-bottom: 10px !important;
+}
+
+#itwr-activation-form label {
+    min-width: 17%;
+    height: 45px;
+    font-weight: bold;
+    float: left;
+    line-height: 45px;
+}
+
+#itwr-activation-form input[type=text],
+#itwr-activation-form input[type=number],
+#itwr-activation-form select,
+#itwr-activation-form input[type=email] {
+    width: 50%;
+    max-width: 50%;
+    height: 45px !important;
+    font-weight: bold;
+    float: left;
+}
+
+#itwr-activation-form input[type=checkbox] {
+    margin-top: 15px;
+    float: left;
+}
+
+#itwr-activation-form span {
+    float: left;
+    margin-left: 10px;
+    font: italic 16px Calibri, Tahoma;
+    line-height: 45px;
+}
+
+#itwr-activation-form button {
+    float: right;
+    padding: 0 23px;
+}
+
+.itwr-activation-field {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.itwr-hide {
+    display: none;
+}
+
+.itwr-activation-form-top-alert {
+    font-size: 11pt;
+    font-family: "Open Sans", serif;
+    font-style: normal;
+    width: 100%;
+    display: inline-table;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #f6f6f6;
+}

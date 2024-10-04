@@ -1,0 +1,119 @@
+/*Loading CSS*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    z-index: 1001;
+	text-align: center;
+    border: 5px solid #564ec1;
+    border-radius: 14px;
+}
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);  /* IE 9 */
+    transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+.loader-7 .line {
+        width: 8px;
+        position: absolute;
+        border-radius: 5px ;
+        bottom: 10px;
+        background: #564ec1;
+    }
+    
+    .loader-7 .line1 {
+        left: 14px;
+        -webkit-animation: line-grow 0.5s ease alternate infinite;
+        animation: line-grow 0.5s ease alternate infinite;
+    }
+    
+    .loader-7 .line2 {
+        left: 36px;
+        -webkit-animation: line-grow 0.5s 0.2s ease alternate infinite;
+        animation: line-grow 0.5s 0.2s ease alternate infinite;
+    }
+    
+    .loader-7 .line3 {
+        left: 58px;
+        -webkit-animation: line-grow 0.5s 0.4s ease alternate infinite;
+        animation: line-grow 0.5s 0.4s ease alternate infinite;
+    }
+
+@-webkit-keyframes line-grow {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 60%;
+        }
+    }
+    
+    @keyframes line-grow {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 60%;
+        }
+    }
+    
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    opacity:0;
+	
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    opacity:0;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+    /* visibility: hidden; */
+    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);  /* IE 9 */
+    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+.loaded .loader-image{
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+/*END LOADING*/
+/*********************/
+
+
+
+

@@ -1,0 +1,1379 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PW Advanced Woo Reporting v4.0\n"
+"POT-Creation-Date: 2022-07-21 14:20+0430\n"
+"PO-Revision-Date: 2022-07-21 14:20+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: .\n"
+
+#: ../add-ons/brand/main.php:40
+msgid "All Orders per Brands"
+msgstr ""
+
+#: ../add-ons/brand/main.php:41
+msgid "Brand Report"
+msgstr ""
+
+#: ../add-ons/brand/main.php:42 ../includes/fetch_data_custom_taxonomy.php:324
+msgid "Custom Taxonomy"
+msgstr ""
+
+#: ../add-ons/brand/main.php:52
+msgid "All Orders (Custom Taxonomy, Field)"
+msgstr ""
+
+#: ../add-ons/brand/main.php:54
+msgid "Brands Report"
+msgstr ""
+
+#: ../add-ons/brand/main.php:54
+msgid "Brands Reoprt"
+msgstr ""
+
+#: ../add-ons/brand/main.php:73
+msgid "Brands Reports(Pro)"
+msgstr ""
+
+#: ../add-ons/brand/main.php:79
+msgid "All Orders Per Brands(Pro)"
+msgstr ""
+
+#: ../add-ons/brand/main.php:85
+msgid "Brands Report(Pro)"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:34
+msgid "Product per Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:35
+msgid "Variation per Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:36
+msgid "Product per Country"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:37
+msgid "Product per State"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:38
+msgid "Country per Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:39
+msgid "Payment per Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:40
+msgid "Order Status per Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:41
+msgid "Summary per Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:51
+msgid "Prod./Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:52
+msgid "Variation/Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:53
+msgid "Prod./Country"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:54
+msgid "Prod./State"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:55
+msgid "Country/Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:56
+msgid "Payment G/Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:57
+msgid "Ord. Status/Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:110
+msgid "CrossTab"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:116
+msgid "Product/Month"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:122
+msgid "Variation/Month(Pro)"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:128
+msgid "Product/Country"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:134
+msgid "Product/State(Pro)"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:140
+msgid "Country/Month(Pro)"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:146
+msgid "Payment Gateway/Month(Pro)"
+msgstr ""
+
+#: ../add-ons/cross-tab/main.php:152
+msgid "Order Status/Month(Pro)"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:28 ../add-ons/customer-role/main.php:40
+#: ../add-ons/customer-role/main.php:84
+msgid "Total Sales"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:29 ../add-ons/customer-role/main.php:42
+msgid "New User Sign-Up"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:30 ../add-ons/customer-role/main.php:44
+#: ../add-ons/customer-role/main.php:46 ../add-ons/customer-role/main.php:96
+msgid "Top 20 Products"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:31
+msgid "Lowly 20 Products"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:46
+msgid "Bottom 20 Products"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:78
+msgid "Customer Role/Group"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:90
+msgid "New User Sign-Up(Pro)"
+msgstr ""
+
+#: ../add-ons/customer-role/main.php:102
+msgid "Lowly 20 Products(Pro)"
+msgstr ""
+
+#: ../add-ons/variation/main.php:35
+msgid "Purchased Variation"
+msgstr ""
+
+#: ../add-ons/variation/main.php:36 ../add-ons/variation/main.php:48
+msgid "Variation Stock"
+msgstr ""
+
+#: ../add-ons/variation/main.php:46
+msgid "Variation"
+msgstr ""
+
+#: ../add-ons/variation/main.php:66
+msgid "Purchased Variation(Pro)"
+msgstr ""
+
+#: ../add-ons/variation/main.php:73
+msgid "Variation Stock(Pro)"
+msgstr ""
+
+#: ../class/ajax_dashboard.php:20 ../includes/datatable_generator.php:3108
+msgid "Search"
+msgstr ""
+
+#: ../class/dashboard_report.php:221
+msgid "Map"
+msgstr ""
+
+#: ../class/dashboard_report.php:716
+msgid "Country Orders Amount"
+msgstr ""
+
+#: ../class/dashboard_report.php:724 ../class/dashboard_report.php:763
+msgid "Less than"
+msgstr ""
+
+#: ../class/dashboard_report.php:732 ../class/dashboard_report.php:778
+msgid "and"
+msgstr ""
+
+#: ../class/dashboard_report.php:739 ../class/dashboard_report.php:792
+msgid "More than"
+msgstr ""
+
+#: ../class/dashboard_report.php:749
+msgid "State Orders Amount"
+msgstr ""
+
+#: ../class/pages_fetch_dashboards.php:54
+msgid "Change Theme"
+msgstr ""
+
+#: ../class/pages_fetch_dashboards.php:59
+msgid "Switch to wordpress dashboard"
+msgstr ""
+
+#: ../class/pages_fetch_dashboards.php:64
+msgid "Expand Window"
+msgstr ""
+
+#: ../class/setting_report.php:657
+msgid ""
+"Set the taxonomy slug plugin. <br /><strong>E.g: </strong>WooCommerce Brands "
+"by Woothemes : product_brand "
+msgstr ""
+
+#: ../class/setting_report.php:909
+msgid ""
+"Set the custom field of plugin. <br /><strong>e.g: </strong>WooCommerce Cost "
+"of Goods by Woothemes : _wc_cog_cost <br />WooCommerce Profit of Sales "
+"Report by IndoWebKreasi : _posr_cost_of_good"
+msgstr ""
+
+#: ../class/setting_report.php:922
+msgid ""
+"Set the total custom field of plugin. <br /><strong>e.g: </"
+"strong>WooCommerce Cost of Goods by Woothemes : _wc_cog_item_total_cost  "
+"<br />WooCommerce Profit of Sales Report by IndoWebKreasi : "
+"_posr_line_cog_total"
+msgstr ""
+
+#: ../class/setting_report.php:1481
+msgid "'CrossTab Add-on' is needed! Please Purchase/Active it. <br />click "
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:150
+msgid "<a href=\""
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:155
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:167
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:169
+msgid "<p>"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:173
+msgid "<span style=\"color:gray\";>Name Not Available</span>"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:206
+msgid ""
+"A cart becomes <i>Converted</i> when the customer purchases the cart "
+"contents. Congrats :) "
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:210
+msgid "<div id=\"edit_status\"><mark class=\"color-wrapper "
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:235
+msgid ""
+"<i>Cart Last Updated</i> indicates the last time the customer performed a "
+"cart-related action on your site. These actions include viewing the cart, "
+"adding new items to the cart, updating quantities, or removing products from "
+"the cart."
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:238
+msgid ""
+"<i>Cart Age</i> indicates the total time elapsed since this non-converted "
+"cart has been created."
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:412
+msgid "SKU"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:415
+msgid "Name"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:418
+msgid "Price"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_edit_interface.php:421
+msgid "Qty"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_index_interface.php:312
+msgid "</a>"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_index_interface.php:319
+msgid "<div class=\"index_status\">ERR<mark class=\""
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_index_interface.php:426
+msgid "From:"
+msgstr ""
+
+#: ../includes/Abandoned/admin/pw_cart_index_interface.php:431
+msgid "To:"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:455
+#: ../includes/fetch_data_abandoned_cart.php:722
+msgid "<div class=\"awr_index_status\"><mark class=\"awr_"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:772
+#: ../includes/fetch_data_abandoned_product.php:444
+#: ../includes/fetch_data_details.php:3035
+#: ../includes/fetch_data_details_brands.php:2303
+#: ../includes/fetch_data_details_combined.php:1675
+#: ../includes/fetch_data_details_full.php:1891
+#: ../includes/fetch_data_details_full_shipping.php:1339
+#: ../includes/fetch_data_details_full_shipping_tax.php:1350
+#: ../includes/fetch_data_details_per_country.php:1482
+#: ../includes/fetch_data_details_product_options.php:2180
+#: ../includes/fetch_data_details_tax_field.php:3594
+#: ../includes/fetch_data_details_tickera.php:2582
+#: ../includes/fetch_data_order_per_custom_shipping.php:609
+#: ../includes/fetch_data_order_product_analysis.php:252
+#: ../includes/fetch_data_order_status_change.php:902
+#: ../includes/fetch_data_order_variation_analysis.php:274
+#: ../includes/fetch_data_product.php:651
+#: ../includes/fetch_data_product_per_users.php:636
+#: ../includes/fetch_data_profit.php:642
+msgid "Date From"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:780
+#: ../includes/fetch_data_abandoned_product.php:452
+#: ../includes/fetch_data_details.php:3043
+#: ../includes/fetch_data_details_brands.php:2311
+#: ../includes/fetch_data_details_combined.php:1683
+#: ../includes/fetch_data_details_full.php:1899
+#: ../includes/fetch_data_details_full_shipping.php:1347
+#: ../includes/fetch_data_details_full_shipping_tax.php:1358
+#: ../includes/fetch_data_details_per_country.php:1490
+#: ../includes/fetch_data_details_product_options.php:2188
+#: ../includes/fetch_data_details_tax_field.php:3602
+#: ../includes/fetch_data_details_tickera.php:2590
+#: ../includes/fetch_data_order_per_custom_shipping.php:617
+#: ../includes/fetch_data_order_product_analysis.php:260
+#: ../includes/fetch_data_order_status_change.php:910
+#: ../includes/fetch_data_order_variation_analysis.php:282
+#: ../includes/fetch_data_product.php:659
+#: ../includes/fetch_data_product_per_users.php:644
+#: ../includes/fetch_data_profit.php:650
+msgid "Date To"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:797
+#: ../includes/fetch_data_abandoned_product.php:469
+#: ../includes/fetch_data_details.php:3252
+#: ../includes/fetch_data_details_brands.php:2494
+#: ../includes/fetch_data_details_combined.php:1788
+#: ../includes/fetch_data_details_full.php:2069
+#: ../includes/fetch_data_details_full_shipping.php:1519
+#: ../includes/fetch_data_details_full_shipping_tax.php:1527
+#: ../includes/fetch_data_details_per_country.php:1587
+#: ../includes/fetch_data_details_product_options.php:2354
+#: ../includes/fetch_data_details_tax_field.php:3720
+#: ../includes/fetch_data_details_tickera.php:2773
+#: ../includes/fetch_data_order_product_analysis.php:277
+#: ../includes/fetch_data_order_variation_analysis.php:299
+#: ../includes/fetch_data_prod_per_country.php:726
+#: ../includes/fetch_data_prod_per_month.php:716
+#: ../includes/fetch_data_prod_per_state.php:767
+#: ../includes/fetch_data_product.php:898
+#: ../includes/fetch_data_product_per_users.php:842
+#: ../includes/fetch_data_stock_list.php:828
+#: ../includes/fetch_data_variation.php:1033
+#: ../includes/fetch_data_variation_per_month.php:614
+#: ../includes/fetch_data_variation_stock.php:1041
+msgid "Product"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:827
+#: ../includes/fetch_data_abandoned_cart.php:857
+#: ../includes/fetch_data_abandoned_product.php:499
+#: ../includes/fetch_data_abandoned_product.php:529
+#: ../includes/fetch_data_all_products.php:807
+#: ../includes/fetch_data_brand.php:289 ../includes/fetch_data_category.php:348
+#: ../includes/fetch_data_country_per_month.php:328
+#: ../includes/fetch_data_country_per_month.php:381
+#: ../includes/fetch_data_coupon.php:244
+#: ../includes/fetch_data_coupon_discount.php:240
+#: ../includes/fetch_data_details.php:3150
+#: ../includes/fetch_data_details.php:3227
+#: ../includes/fetch_data_details.php:3284
+#: ../includes/fetch_data_details.php:3311
+#: ../includes/fetch_data_details.php:3371
+#: ../includes/fetch_data_details.php:3423
+#: ../includes/fetch_data_details.php:3533
+#: ../includes/fetch_data_details.php:3576
+#: ../includes/fetch_data_details.php:3693
+#: ../includes/fetch_data_details_brands.php:2401
+#: ../includes/fetch_data_details_brands.php:2472
+#: ../includes/fetch_data_details_brands.php:2520
+#: ../includes/fetch_data_details_brands.php:2548
+#: ../includes/fetch_data_details_brands.php:2600
+#: ../includes/fetch_data_details_brands.php:2651
+#: ../includes/fetch_data_details_brands.php:2736
+#: ../includes/fetch_data_details_combined.php:1758
+#: ../includes/fetch_data_details_combined.php:1816
+#: ../includes/fetch_data_details_combined.php:1843
+#: ../includes/fetch_data_details_combined.php:1897
+#: ../includes/fetch_data_details_combined.php:1944
+#: ../includes/fetch_data_details_combined.php:2029
+#: ../includes/fetch_data_details_combined.php:2072
+#: ../includes/fetch_data_details_combined.php:2148
+#: ../includes/fetch_data_details_full.php:1974
+#: ../includes/fetch_data_details_full.php:2044
+#: ../includes/fetch_data_details_full.php:2099
+#: ../includes/fetch_data_details_full.php:2126
+#: ../includes/fetch_data_details_full.php:2183
+#: ../includes/fetch_data_details_full.php:2232
+#: ../includes/fetch_data_details_full.php:2319
+#: ../includes/fetch_data_details_full.php:2362
+#: ../includes/fetch_data_details_full.php:2478
+#: ../includes/fetch_data_details_full_shipping.php:1423
+#: ../includes/fetch_data_details_full_shipping.php:1494
+#: ../includes/fetch_data_details_full_shipping.php:1548
+#: ../includes/fetch_data_details_full_shipping.php:1575
+#: ../includes/fetch_data_details_full_shipping.php:1633
+#: ../includes/fetch_data_details_full_shipping.php:1683
+#: ../includes/fetch_data_details_full_shipping.php:1770
+#: ../includes/fetch_data_details_full_shipping.php:1813
+#: ../includes/fetch_data_details_full_shipping.php:1929
+#: ../includes/fetch_data_details_full_shipping_tax.php:1432
+#: ../includes/fetch_data_details_full_shipping_tax.php:1502
+#: ../includes/fetch_data_details_full_shipping_tax.php:1556
+#: ../includes/fetch_data_details_full_shipping_tax.php:1583
+#: ../includes/fetch_data_details_full_shipping_tax.php:1640
+#: ../includes/fetch_data_details_full_shipping_tax.php:1690
+#: ../includes/fetch_data_details_full_shipping_tax.php:1776
+#: ../includes/fetch_data_details_full_shipping_tax.php:1819
+#: ../includes/fetch_data_details_full_shipping_tax.php:1935
+#: ../includes/fetch_data_details_per_country.php:1564
+#: ../includes/fetch_data_details_per_country.php:1612
+#: ../includes/fetch_data_details_per_country.php:1639
+#: ../includes/fetch_data_details_per_country.php:1692
+#: ../includes/fetch_data_details_per_country.php:1739
+#: ../includes/fetch_data_details_per_country.php:1824
+#: ../includes/fetch_data_details_product_options.php:2260
+#: ../includes/fetch_data_details_product_options.php:2330
+#: ../includes/fetch_data_details_product_options.php:2380
+#: ../includes/fetch_data_details_product_options.php:2407
+#: ../includes/fetch_data_details_product_options.php:2459
+#: ../includes/fetch_data_details_product_options.php:2506
+#: ../includes/fetch_data_details_product_options.php:2591
+#: ../includes/fetch_data_details_product_options.php:2634
+#: ../includes/fetch_data_details_tax_field.php:3696
+#: ../includes/fetch_data_details_tax_field.php:3753
+#: ../includes/fetch_data_details_tax_field.php:3781
+#: ../includes/fetch_data_details_tax_field.php:3840
+#: ../includes/fetch_data_details_tax_field.php:3895
+#: ../includes/fetch_data_details_tax_field.php:3984
+#: ../includes/fetch_data_details_tickera.php:2680
+#: ../includes/fetch_data_details_tickera.php:2749
+#: ../includes/fetch_data_details_tickera.php:2801
+#: ../includes/fetch_data_details_tickera.php:2828
+#: ../includes/fetch_data_details_tickera.php:2880
+#: ../includes/fetch_data_details_tickera.php:2927
+#: ../includes/fetch_data_details_tickera.php:3012
+#: ../includes/fetch_data_details_tickera.php:3055
+#: ../includes/fetch_data_details_tickera.php:3187
+#: ../includes/fetch_data_ord_status_per_month.php:328
+#: ../includes/fetch_data_order_product_analysis.php:306
+#: ../includes/fetch_data_order_status_change.php:966
+#: ../includes/fetch_data_order_variation_analysis.php:328
+#: ../includes/fetch_data_payment_per_month.php:322
+#: ../includes/fetch_data_payment_per_month.php:375
+#: ../includes/fetch_data_prod_per_country.php:574
+#: ../includes/fetch_data_prod_per_country.php:643
+#: ../includes/fetch_data_prod_per_country.php:703
+#: ../includes/fetch_data_prod_per_country.php:755
+#: ../includes/fetch_data_prod_per_country.php:806
+#: ../includes/fetch_data_prod_per_month.php:572
+#: ../includes/fetch_data_prod_per_month.php:637
+#: ../includes/fetch_data_prod_per_month.php:693
+#: ../includes/fetch_data_prod_per_month.php:739
+#: ../includes/fetch_data_prod_per_state.php:616
+#: ../includes/fetch_data_prod_per_state.php:685
+#: ../includes/fetch_data_prod_per_state.php:744
+#: ../includes/fetch_data_prod_per_state.php:796
+#: ../includes/fetch_data_prod_per_state.php:848
+#: ../includes/fetch_data_prod_per_state.php:901
+#: ../includes/fetch_data_product.php:764
+#: ../includes/fetch_data_product.php:810
+#: ../includes/fetch_data_product.php:874
+#: ../includes/fetch_data_product.php:928
+#: ../includes/fetch_data_product.php:982
+#: ../includes/fetch_data_product_per_users.php:708
+#: ../includes/fetch_data_product_per_users.php:754
+#: ../includes/fetch_data_product_per_users.php:818
+#: ../includes/fetch_data_product_per_users.php:868
+#: ../includes/fetch_data_product_per_users.php:922
+#: ../includes/fetch_data_product_variation_qty.php:712
+#: ../includes/fetch_data_profit.php:721 ../includes/fetch_data_profit.php:789
+#: ../includes/fetch_data_profit.php:856 ../includes/fetch_data_profit.php:906
+#: ../includes/fetch_data_profit.php:993
+#: ../includes/fetch_data_stock_list.php:853
+#: ../includes/fetch_data_stock_list.php:922
+#: ../includes/fetch_data_stock_list.php:986
+#: ../includes/fetch_data_stock_list.php:1032
+#: ../includes/fetch_data_summary_per_month.php:274
+#: ../includes/fetch_data_summary_per_month.php:310
+#: ../includes/fetch_data_tags.php:321
+#: ../includes/fetch_data_tax_reports.php:1330
+#: ../includes/fetch_data_tax_reports.php:1362
+#: ../includes/fetch_data_tax_reports.php:1452
+#: ../includes/fetch_data_tax_reports1.php:510
+#: ../includes/fetch_data_tax_reports1.php:542
+#: ../includes/fetch_data_tax_reports1.php:617
+#: ../includes/fetch_data_variation.php:889
+#: ../includes/fetch_data_variation.php:951
+#: ../includes/fetch_data_variation.php:1014
+#: ../includes/fetch_data_variation.php:1107
+#: ../includes/fetch_data_variation.php:1140
+#: ../includes/fetch_data_variation.php:1285
+#: ../includes/fetch_data_variation.php:1311
+#: ../includes/fetch_data_variation_per_month.php:526
+#: ../includes/fetch_data_variation_per_month.php:591
+#: ../includes/fetch_data_variation_per_month.php:635
+#: ../includes/fetch_data_variation_per_month.php:691
+#: ../includes/fetch_data_variation_per_month.php:720
+#: ../includes/fetch_data_variation_stock.php:1059
+#: ../includes/fetch_data_variation_stock.php:1113
+#: ../includes/fetch_data_variation_stock.php:1182
+#: ../includes/fetch_data_variation_stock.php:1211
+#: ../includes/fetch_data_variation_stock.php:1241
+#: ../includes/fetch_data_variation_stock.php:1300
+msgid "Select All"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:843
+#: ../includes/fetch_data_abandoned_product.php:515
+#: ../includes/fetch_data_details.php:3086
+#: ../includes/fetch_data_details.php:3300
+#: ../includes/fetch_data_details_brands.php:2327
+#: ../includes/fetch_data_details_brands.php:2537
+#: ../includes/fetch_data_details_combined.php:1700
+#: ../includes/fetch_data_details_combined.php:1832
+#: ../includes/fetch_data_details_full.php:1915
+#: ../includes/fetch_data_details_full.php:2115
+#: ../includes/fetch_data_details_full_shipping.php:1363
+#: ../includes/fetch_data_details_full_shipping.php:1564
+#: ../includes/fetch_data_details_full_shipping_tax.php:1374
+#: ../includes/fetch_data_details_full_shipping_tax.php:1572
+#: ../includes/fetch_data_details_per_country.php:1506
+#: ../includes/fetch_data_details_per_country.php:1628
+#: ../includes/fetch_data_details_product_options.php:2204
+#: ../includes/fetch_data_details_product_options.php:2396
+#: ../includes/fetch_data_details_tax_field.php:3618
+#: ../includes/fetch_data_details_tax_field.php:3770
+#: ../includes/fetch_data_details_tickera.php:2623
+#: ../includes/fetch_data_details_tickera.php:2817
+#: ../includes/fetch_data_variation.php:1045
+msgid "Customer"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:868
+#: ../includes/fetch_data_abandoned_product.php:540
+msgid "Cart Status"
+msgstr ""
+
+#: ../includes/fetch_data_abandoned_cart.php:883
+#: ../includes/fetch_data_details.php:3743
+#: ../includes/fetch_data_details_brands.php:2862
+#: ../includes/fetch_data_details_full.php:2502
+#: ../includes/fetch_data_details_full_shipping_tax.php:1959
+#: ../includes/fetch_data_details_per_country.php:1922
+#: ../includes/fetch_data_details_product_options.php:2742
+#: ../includes/fetch_data_details_tax_field.php:4464
+#: ../includes/fetch_data_details_tickera.php:3209
+msgid "Show Order Item Details"
+msgstr ""
+
+#: ../includes/fetch_data_all_products.php:755
+#: ../includes/fetch_data_billingcity.php:181
+#: ../includes/fetch_data_billingcountry.php:159
+#: ../includes/fetch_data_billingstate.php:177
+#: ../includes/fetch_data_brand.php:233 ../includes/fetch_data_category.php:294
+#: ../includes/fetch_data_clinic.php:303
+#: ../includes/fetch_data_country_per_month.php:279
+#: ../includes/fetch_data_coupon.php:214
+#: ../includes/fetch_data_coupon_discount.php:210
+#: ../includes/fetch_data_custom_order_per_country.php:293
+#: ../includes/fetch_data_custom_taxonomy.php:230
+#: ../includes/fetch_data_customer.php:177
+#: ../includes/fetch_data_customer_analysis.php:283
+#: ../includes/fetch_data_customer_category.php:281
+#: ../includes/fetch_data_customer_min_max.php:196
+#: ../includes/fetch_data_customer_order_frequently.php:144
+#: ../includes/fetch_data_customer_role_bottom_products.php:268
+#: ../includes/fetch_data_customer_role_registered.php:151
+#: ../includes/fetch_data_customer_role_top_products.php:267
+#: ../includes/fetch_data_customer_role_total_sale.php:315
+#: ../includes/fetch_data_customerbuyproducts.php:284
+#: ../includes/fetch_data_ord_status_per_month.php:272
+#: ../includes/fetch_data_orderstatus.php:164
+#: ../includes/fetch_data_payment_per_month.php:290
+#: ../includes/fetch_data_paymentgateway.php:150
+#: ../includes/fetch_data_prod_per_country.php:499
+#: ../includes/fetch_data_prod_per_month.php:500
+#: ../includes/fetch_data_prod_per_state.php:540
+#: ../includes/fetch_data_product_variation_qty.php:643
+#: ../includes/fetch_data_recentorder.php:395
+#: ../includes/fetch_data_refunddetails.php:868
+#: ../includes/fetch_data_stock_summary_avg.php:301
+#: ../includes/fetch_data_summary_per_month.php:239
+#: ../includes/fetch_data_tags.php:265
+#: ../includes/fetch_data_tax_reports.php:1294
+#: ../includes/fetch_data_tax_reports1.php:475
+#: ../includes/fetch_data_taxreport.php:315
+#: ../includes/fetch_data_variation.php:825
+#: ../includes/fetch_data_variation_per_month.php:480
+msgid "From Date"
+msgstr ""
+
+#: ../includes/fetch_data_all_products.php:763
+#: ../includes/fetch_data_billingcity.php:188
+#: ../includes/fetch_data_billingcountry.php:168
+#: ../includes/fetch_data_billingstate.php:184
+#: ../includes/fetch_data_brand.php:241 ../includes/fetch_data_category.php:302
+#: ../includes/fetch_data_clinic.php:311
+#: ../includes/fetch_data_country_per_month.php:286
+#: ../includes/fetch_data_coupon.php:221
+#: ../includes/fetch_data_coupon_discount.php:217
+#: ../includes/fetch_data_custom_order_per_country.php:302
+#: ../includes/fetch_data_custom_taxonomy.php:238
+#: ../includes/fetch_data_customer.php:185
+#: ../includes/fetch_data_customer_analysis.php:291
+#: ../includes/fetch_data_customer_category.php:289
+#: ../includes/fetch_data_customer_min_max.php:204
+#: ../includes/fetch_data_customer_order_frequently.php:152
+#: ../includes/fetch_data_customer_role_bottom_products.php:276
+#: ../includes/fetch_data_customer_role_registered.php:159
+#: ../includes/fetch_data_customer_role_top_products.php:275
+#: ../includes/fetch_data_customer_role_total_sale.php:323
+#: ../includes/fetch_data_customerbuyproducts.php:292
+#: ../includes/fetch_data_ord_status_per_month.php:279
+#: ../includes/fetch_data_orderstatus.php:172
+#: ../includes/fetch_data_payment_per_month.php:297
+#: ../includes/fetch_data_paymentgateway.php:158
+#: ../includes/fetch_data_prod_per_country.php:506
+#: ../includes/fetch_data_prod_per_month.php:507
+#: ../includes/fetch_data_prod_per_state.php:547
+#: ../includes/fetch_data_product_variation_qty.php:651
+#: ../includes/fetch_data_recentorder.php:403
+#: ../includes/fetch_data_refunddetails.php:876
+#: ../includes/fetch_data_stock_summary_avg.php:309
+#: ../includes/fetch_data_summary_per_month.php:246
+#: ../includes/fetch_data_tags.php:273
+#: ../includes/fetch_data_tax_reports.php:1302
+#: ../includes/fetch_data_tax_reports1.php:483
+#: ../includes/fetch_data_taxreport.php:323
+#: ../includes/fetch_data_variation.php:833
+#: ../includes/fetch_data_variation_per_month.php:487
+msgid "To Date"
+msgstr ""
+
+#: ../includes/fetch_data_all_products.php:771
+#: ../includes/fetch_data_details.php:3103
+#: ../includes/fetch_data_details_brands.php:2353
+#: ../includes/fetch_data_details_combined.php:1716
+#: ../includes/fetch_data_details_full.php:1932
+#: ../includes/fetch_data_details_full_shipping.php:1380
+#: ../includes/fetch_data_details_full_shipping_tax.php:1391
+#: ../includes/fetch_data_details_per_country.php:1522
+#: ../includes/fetch_data_details_product_options.php:2220
+#: ../includes/fetch_data_details_tax_field.php:3645
+#: ../includes/fetch_data_details_tickera.php:2639
+#: ../includes/fetch_data_prod_per_country.php:530
+#: ../includes/fetch_data_prod_per_month.php:532
+#: ../includes/fetch_data_prod_per_state.php:572
+#: ../includes/fetch_data_product.php:724
+#: ../includes/fetch_data_product_per_users.php:668
+#: ../includes/fetch_data_profit.php:675
+#: ../includes/fetch_data_stock_list.php:882
+#: ../includes/fetch_data_variation.php:850
+#: ../includes/fetch_data_variation_per_month.php:504
+#: ../includes/fetch_data_variation_stock.php:1069
+msgid "Category"
+msgstr ""
+
+#: ../includes/fetch_data_brand.php:262
+msgid "Parent Brand"
+msgstr ""
+
+#: ../includes/fetch_data_category.php:324
+msgid "Parent Category"
+msgstr ""
+
+#: ../includes/fetch_data_category.php:369
+#: ../includes/fetch_data_details.php:3766
+#: ../includes/fetch_data_details_full.php:2525
+#: ../includes/fetch_data_details_full_shipping.php:1969
+#: ../includes/fetch_data_details_full_shipping_tax.php:1982
+#: ../includes/fetch_data_details_product_options.php:2765
+#: ../includes/fetch_data_details_tickera.php:3232
+#: ../includes/fetch_data_product.php:1002
+#: ../includes/fetch_data_product_per_users.php:942
+#: ../includes/fetch_data_tags.php:339
+#: ../includes/fetch_data_variation.php:1389
+#: ../includes/fetch_data_variation_stock.php:1331
+msgid "SHOW JUST INCLUDE C.O.G & PROFIT"
+msgstr ""
+
+#: ../includes/fetch_data_category.php:371
+#: ../includes/fetch_data_details.php:3768
+#: ../includes/fetch_data_details_full.php:2527
+#: ../includes/fetch_data_details_full_shipping.php:1971
+#: ../includes/fetch_data_details_full_shipping_tax.php:1984
+#: ../includes/fetch_data_details_product_options.php:2767
+#: ../includes/fetch_data_details_tickera.php:3234
+#: ../includes/fetch_data_product.php:1004
+#: ../includes/fetch_data_product_per_users.php:944
+#: ../includes/fetch_data_tags.php:341
+#: ../includes/fetch_data_variation.php:1391
+#: ../includes/fetch_data_variation_stock.php:1333
+msgid ""
+"Include just products with current Profit(Cost of good) plugin(Selected in "
+"Setting -> Add-on Settings -> Cost of Good)."
+msgstr ""
+
+#: ../includes/fetch_data_clinic.php:331
+#: ../includes/fetch_data_details.php:3729
+msgid "Clinic Type"
+msgstr ""
+
+#: ../includes/fetch_data_clinic.php:335 ../includes/fetch_data_coupon.php:257
+#: ../includes/fetch_data_coupon_discount.php:253
+#: ../includes/fetch_data_details.php:3706
+#: ../includes/fetch_data_details.php:3733
+#: ../includes/fetch_data_details_full.php:2491
+#: ../includes/fetch_data_details_full_shipping.php:1942
+#: ../includes/fetch_data_details_full_shipping_tax.php:1948
+#: ../includes/fetch_data_details_tickera.php:3200
+#: ../includes/fetch_data_order_per_custom_shipping.php:629
+msgid "Select One"
+msgstr ""
+
+#: ../includes/fetch_data_country_per_month.php:303
+#: ../includes/fetch_data_details.php:3392
+#: ../includes/fetch_data_details_brands.php:2621
+#: ../includes/fetch_data_details_combined.php:1918
+#: ../includes/fetch_data_details_full.php:2204
+#: ../includes/fetch_data_details_full_shipping.php:1654
+#: ../includes/fetch_data_details_full_shipping_tax.php:1661
+#: ../includes/fetch_data_details_per_country.php:1713
+#: ../includes/fetch_data_details_product_options.php:2480
+#: ../includes/fetch_data_details_tax_field.php:3862
+#: ../includes/fetch_data_details_tickera.php:2901
+#: ../includes/fetch_data_prod_per_country.php:777
+#: ../includes/fetch_data_prod_per_state.php:819
+#: ../includes/fetch_data_profit.php:877
+#: ../includes/fetch_data_tax_reports.php:1310
+#: ../includes/fetch_data_tax_reports.php:1381
+#: ../includes/fetch_data_tax_reports1.php:491
+msgid "Country"
+msgstr ""
+
+#: ../includes/fetch_data_country_per_month.php:351
+#: ../includes/fetch_data_details.php:3331
+#: ../includes/fetch_data_details_brands.php:2566
+#: ../includes/fetch_data_details_combined.php:1862
+#: ../includes/fetch_data_details_full.php:2146
+#: ../includes/fetch_data_details_full_shipping.php:1595
+#: ../includes/fetch_data_details_full_shipping_tax.php:1603
+#: ../includes/fetch_data_details_per_country.php:1658
+#: ../includes/fetch_data_details_product_options.php:2426
+#: ../includes/fetch_data_details_tax_field.php:3800
+#: ../includes/fetch_data_details_tickera.php:2847
+#: ../includes/fetch_data_ord_status_per_month.php:294
+#: ../includes/fetch_data_order_status_change.php:929
+#: ../includes/fetch_data_payment_per_month.php:340
+#: ../includes/fetch_data_prod_per_country.php:666
+#: ../includes/fetch_data_prod_per_month.php:660
+#: ../includes/fetch_data_prod_per_state.php:708
+#: ../includes/fetch_data_product.php:949
+#: ../includes/fetch_data_product_per_users.php:889
+#: ../includes/fetch_data_product_variation_qty.php:677
+#: ../includes/fetch_data_profit.php:820
+#: ../includes/fetch_data_summary_per_month.php:284
+#: ../includes/fetch_data_tax_reports.php:1413
+#: ../includes/fetch_data_tax_reports1.php:581
+#: ../includes/fetch_data_variation.php:1073
+#: ../includes/fetch_data_variation_per_month.php:658
+msgid "Status"
+msgstr ""
+
+#: ../includes/fetch_data_coupon.php:240
+#: ../includes/fetch_data_coupon_discount.php:236
+#: ../includes/fetch_data_details.php:3689
+#: ../includes/fetch_data_details_combined.php:2144
+#: ../includes/fetch_data_details_full.php:2474
+#: ../includes/fetch_data_details_full_shipping.php:1925
+#: ../includes/fetch_data_details_full_shipping_tax.php:1931
+#: ../includes/fetch_data_details_tickera.php:3183
+msgid "Coupon Codes"
+msgstr ""
+
+#: ../includes/fetch_data_coupon.php:253
+#: ../includes/fetch_data_coupon_discount.php:249
+#: ../includes/fetch_data_details.php:3702
+#: ../includes/fetch_data_details_full.php:2487
+#: ../includes/fetch_data_details_full_shipping.php:1938
+#: ../includes/fetch_data_details_full_shipping_tax.php:1944
+#: ../includes/fetch_data_details_tickera.php:3196
+msgid "Discount Type"
+msgstr ""
+
+#: ../includes/fetch_data_coupon.php:258
+#: ../includes/fetch_data_coupon_discount.php:254
+#: ../includes/fetch_data_details.php:3707
+#: ../includes/fetch_data_details_full.php:2492
+#: ../includes/fetch_data_details_full_shipping.php:1943
+#: ../includes/fetch_data_details_full_shipping_tax.php:1949
+#: ../includes/fetch_data_details_tickera.php:3201
+#: ../includes/fetch_data_order_per_custom_shipping.php:630
+msgid "Percentage Discount"
+msgstr ""
+
+#: ../includes/fetch_data_coupon.php:259
+#: ../includes/fetch_data_coupon_discount.php:255
+#: ../includes/fetch_data_details.php:3708
+#: ../includes/fetch_data_details_full.php:2493
+#: ../includes/fetch_data_details_full_shipping.php:1944
+#: ../includes/fetch_data_details_full_shipping_tax.php:1950
+#: ../includes/fetch_data_details_tickera.php:3202
+#: ../includes/fetch_data_order_per_custom_shipping.php:631
+msgid "Fixed Cart Discount"
+msgstr ""
+
+#: ../includes/fetch_data_coupon.php:260
+#: ../includes/fetch_data_coupon_discount.php:256
+#: ../includes/fetch_data_details.php:3710
+#: ../includes/fetch_data_details_full.php:2495
+#: ../includes/fetch_data_details_full_shipping.php:1946
+#: ../includes/fetch_data_details_full_shipping_tax.php:1952
+#: ../includes/fetch_data_details_tickera.php:3203
+#: ../includes/fetch_data_order_per_custom_shipping.php:632
+msgid "Fixed Product Discount"
+msgstr ""
+
+#: ../includes/fetch_data_custom_taxonomy.php:366
+msgid "Items"
+msgstr ""
+
+#: ../includes/fetch_data_customer_min_max.php:215
+msgid "Min Price"
+msgstr ""
+
+#: ../includes/fetch_data_customer_min_max.php:223
+msgid "Max Price"
+msgstr ""
+
+#: ../includes/fetch_data_customer_no_purchased.php:232
+msgid "Avg. Calc From Date"
+msgstr ""
+
+#: ../includes/fetch_data_customer_no_purchased.php:240
+msgid "Avg. Calc To Date"
+msgstr ""
+
+#: ../includes/fetch_data_customer_no_purchased.php:251
+msgid "Billing Name"
+msgstr ""
+
+#: ../includes/fetch_data_customer_no_purchased.php:259
+msgid "Billing Email"
+msgstr ""
+
+#: ../includes/fetch_data_customer_order_frequently.php:163
+msgid "Min Order Count"
+msgstr ""
+
+#: ../includes/fetch_data_customer_role_bottom_products.php:289
+#: ../includes/fetch_data_customer_role_top_products.php:288
+msgid "Role/Group"
+msgstr ""
+
+#: ../includes/fetch_data_customer_role_bottom_products.php:292
+#: ../includes/fetch_data_customer_role_top_products.php:291
+msgid "Choose Role/Group"
+msgstr ""
+
+#: ../includes/fetch_data_dashboard_monthly_summary.php:341
+#: ../includes/fetch_data_projected_actual_sale.php:283
+msgid "Select Year"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3056
+#: ../includes/fetch_data_details_tickera.php:2599
+#: ../includes/fetch_data_product.php:673
+msgid "Delivery Date From"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3065
+#: ../includes/fetch_data_details_tickera.php:2607
+#: ../includes/fetch_data_product.php:682
+msgid "Delivery Date To"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3077
+#: ../includes/fetch_data_details_brands.php:2319
+#: ../includes/fetch_data_details_combined.php:1692
+#: ../includes/fetch_data_details_full.php:1907
+#: ../includes/fetch_data_details_full_shipping.php:1355
+#: ../includes/fetch_data_details_full_shipping_tax.php:1366
+#: ../includes/fetch_data_details_per_country.php:1498
+#: ../includes/fetch_data_details_product_options.php:2196
+#: ../includes/fetch_data_details_tax_field.php:3610
+#: ../includes/fetch_data_details_tickera.php:2615
+#: ../includes/fetch_data_profit.php:658
+msgid "Order ID"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3080
+#: ../includes/fetch_data_details_combined.php:1695
+#: ../includes/fetch_data_details_tickera.php:2618
+msgid "Separate IDs with (,) Example : 1,2"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3482
+#: ../includes/fetch_data_details_brands.php:2710
+#: ../includes/fetch_data_details_combined.php:2003
+#: ../includes/fetch_data_details_full.php:2291
+#: ../includes/fetch_data_details_full_shipping.php:1742
+#: ../includes/fetch_data_details_full_shipping_tax.php:1749
+#: ../includes/fetch_data_details_per_country.php:1798
+#: ../includes/fetch_data_details_product_options.php:2565
+#: ../includes/fetch_data_details_tax_field.php:3954
+#: ../includes/fetch_data_details_tickera.php:2986
+#: ../includes/fetch_data_prod_per_state.php:871
+#: ../includes/fetch_data_profit.php:965
+#: ../includes/fetch_data_tax_reports.php:1342
+#: ../includes/fetch_data_tax_reports.php:1379
+#: ../includes/fetch_data_tax_reports1.php:522
+msgid "State"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3552
+#: ../includes/fetch_data_details_combined.php:2048
+#: ../includes/fetch_data_details_full.php:2338
+#: ../includes/fetch_data_details_full_shipping.php:1789
+#: ../includes/fetch_data_details_full_shipping_tax.php:1795
+#: ../includes/fetch_data_details_product_options.php:2610
+#: ../includes/fetch_data_details_tickera.php:3031
+#: ../includes/fetch_data_variation.php:1124
+#: ../includes/fetch_data_variation_per_month.php:708
+#: ../includes/fetch_data_variation_stock.php:1285
+msgid "Variations"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3586
+#: ../includes/fetch_data_details_combined.php:2081
+#: ../includes/fetch_data_details_full.php:2372
+#: ../includes/fetch_data_details_full_shipping.php:1823
+#: ../includes/fetch_data_details_full_shipping_tax.php:1829
+#: ../includes/fetch_data_details_product_options.php:2643
+#: ../includes/fetch_data_details_tickera.php:3064
+msgid "Variation Only"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3595
+#: ../includes/fetch_data_details_brands.php:2752
+#: ../includes/fetch_data_details_combined.php:2090
+#: ../includes/fetch_data_details_full.php:2381
+#: ../includes/fetch_data_details_full_shipping.php:1832
+#: ../includes/fetch_data_details_full_shipping_tax.php:1838
+#: ../includes/fetch_data_details_per_country.php:1841
+#: ../includes/fetch_data_details_product_options.php:2652
+#: ../includes/fetch_data_details_tax_field.php:4000
+#: ../includes/fetch_data_details_tickera.php:3073
+msgid "Postcode(Zip)"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3604
+#: ../includes/fetch_data_details_brands.php:2761
+#: ../includes/fetch_data_details_full.php:2390
+#: ../includes/fetch_data_details_full_shipping.php:1841
+#: ../includes/fetch_data_details_full_shipping_tax.php:1847
+#: ../includes/fetch_data_details_per_country.php:1850
+#: ../includes/fetch_data_details_product_options.php:2661
+#: ../includes/fetch_data_details_tax_field.php:4009
+#: ../includes/fetch_data_details_tickera.php:3082
+msgid "Min & Max By"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3615
+#: ../includes/fetch_data_details.php:3626
+#: ../includes/fetch_data_details.php:3637
+#: ../includes/fetch_data_details_brands.php:2772
+#: ../includes/fetch_data_details_brands.php:2783
+#: ../includes/fetch_data_details_brands.php:2794
+#: ../includes/fetch_data_details_full.php:2401
+#: ../includes/fetch_data_details_full.php:2412
+#: ../includes/fetch_data_details_full.php:2423
+#: ../includes/fetch_data_details_full_shipping.php:1852
+#: ../includes/fetch_data_details_full_shipping.php:1863
+#: ../includes/fetch_data_details_full_shipping.php:1874
+#: ../includes/fetch_data_details_full_shipping_tax.php:1858
+#: ../includes/fetch_data_details_full_shipping_tax.php:1869
+#: ../includes/fetch_data_details_full_shipping_tax.php:1880
+#: ../includes/fetch_data_details_per_country.php:1861
+#: ../includes/fetch_data_details_per_country.php:1872
+#: ../includes/fetch_data_details_per_country.php:1883
+#: ../includes/fetch_data_details_product_options.php:2672
+#: ../includes/fetch_data_details_product_options.php:2683
+#: ../includes/fetch_data_details_product_options.php:2694
+#: ../includes/fetch_data_details_tax_field.php:4020
+#: ../includes/fetch_data_details_tax_field.php:4031
+#: ../includes/fetch_data_details_tax_field.php:4042
+#: ../includes/fetch_data_details_tickera.php:3093
+#: ../includes/fetch_data_details_tickera.php:3104
+#: ../includes/fetch_data_details_tickera.php:3115
+msgid "Enable this selection by uncheck 'Show Order Item Details'\n"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3621
+#: ../includes/fetch_data_details_brands.php:2778
+#: ../includes/fetch_data_details_full.php:2407
+#: ../includes/fetch_data_details_full_shipping.php:1858
+#: ../includes/fetch_data_details_full_shipping_tax.php:1864
+#: ../includes/fetch_data_details_per_country.php:1867
+#: ../includes/fetch_data_details_product_options.php:2678
+#: ../includes/fetch_data_details_tax_field.php:4026
+#: ../includes/fetch_data_details_tickera.php:3099
+msgid "Min Amount"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3632
+#: ../includes/fetch_data_details_brands.php:2789
+#: ../includes/fetch_data_details_full.php:2418
+#: ../includes/fetch_data_details_full_shipping.php:1869
+#: ../includes/fetch_data_details_full_shipping_tax.php:1875
+#: ../includes/fetch_data_details_per_country.php:1878
+#: ../includes/fetch_data_details_product_options.php:2689
+#: ../includes/fetch_data_details_tax_field.php:4037
+#: ../includes/fetch_data_details_tickera.php:3110
+msgid "Max Amount"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3643
+#: ../includes/fetch_data_details_brands.php:2800
+#: ../includes/fetch_data_details_combined.php:2099
+#: ../includes/fetch_data_details_full.php:2429
+#: ../includes/fetch_data_details_full_shipping.php:1880
+#: ../includes/fetch_data_details_full_shipping_tax.php:1886
+#: ../includes/fetch_data_details_per_country.php:1889
+#: ../includes/fetch_data_details_product_options.php:2700
+#: ../includes/fetch_data_details_tax_field.php:4048
+#: ../includes/fetch_data_details_tickera.php:3121
+msgid "Email"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3652
+#: ../includes/fetch_data_details_brands.php:2837
+#: ../includes/fetch_data_details_combined.php:2108
+#: ../includes/fetch_data_details_full.php:2438
+#: ../includes/fetch_data_details_full_shipping.php:1889
+#: ../includes/fetch_data_details_full_shipping_tax.php:1895
+#: ../includes/fetch_data_details_per_country.php:1897
+#: ../includes/fetch_data_details_product_options.php:2717
+#: ../includes/fetch_data_details_tax_field.php:4439
+#: ../includes/fetch_data_details_tickera.php:3147
+#: ../includes/fetch_data_order_product_analysis.php:322
+#: ../includes/fetch_data_order_variation_analysis.php:344
+#: ../includes/fetch_data_stock_summary_avg.php:321
+#: ../includes/fetch_data_variation.php:1356
+msgid "Order By"
+msgstr ""
+
+#: ../includes/fetch_data_details.php:3752
+#: ../includes/fetch_data_details_brands.php:2871
+#: ../includes/fetch_data_details_combined.php:2157
+#: ../includes/fetch_data_details_full.php:2511
+#: ../includes/fetch_data_details_full_shipping.php:1955
+#: ../includes/fetch_data_details_full_shipping_tax.php:1968
+#: ../includes/fetch_data_details_per_country.php:1931
+#: ../includes/fetch_data_details_product_options.php:2751
+#: ../includes/fetch_data_details_tax_field.php:4473
+#: ../includes/fetch_data_details_tickera.php:3218
+msgid "Coupon Used Only"
+msgstr ""
+
+#: ../includes/fetch_data_details_brands.php:2814
+#: ../includes/fetch_data_details_tax_field.php:4063
+msgid "Custom Fields"
+msgstr ""
+
+#: ../includes/fetch_data_details_tickera.php:3134
+msgid "Tickera Custom Fields"
+msgstr ""
+
+#: ../includes/fetch_data_order_per_custom_shipping.php:625
+msgid "Shipping Address"
+msgstr ""
+
+#: ../includes/fetch_data_order_product_analysis.php:329
+#: ../includes/fetch_data_order_variation_analysis.php:351
+msgid "Quantity"
+msgstr ""
+
+#: ../includes/fetch_data_order_product_analysis.php:330
+#: ../includes/fetch_data_order_variation_analysis.php:352
+#: ../includes/fetch_data_stock_list.php:752
+#: ../includes/fetch_data_stock_summary_avg.php:328
+#: ../includes/fetch_data_variation_stock.php:972
+msgid "Product Name"
+msgstr ""
+
+#: ../includes/fetch_data_order_product_analysis.php:335
+#: ../includes/fetch_data_order_variation_analysis.php:357
+#: ../includes/fetch_data_stock_summary_avg.php:336
+#: ../includes/fetch_data_variation.php:1365
+msgid "Ascending"
+msgstr ""
+
+#: ../includes/fetch_data_order_product_analysis.php:336
+#: ../includes/fetch_data_order_variation_analysis.php:358
+#: ../includes/fetch_data_stock_summary_avg.php:337
+#: ../includes/fetch_data_variation.php:1366
+msgid "Descending"
+msgstr ""
+
+#: ../includes/fetch_data_payment_per_month.php:305
+msgid "Payment Gatway"
+msgstr ""
+
+#: ../includes/fetch_data_product.php:697
+#: ../includes/fetch_data_stock_list.php:741
+msgid "Custom SKU"
+msgstr ""
+
+#: ../includes/fetch_data_product.php:789
+#: ../includes/fetch_data_product_per_users.php:733
+#: ../includes/fetch_data_tags.php:296
+msgid "Tags"
+msgstr ""
+
+#: ../includes/fetch_data_product_variation_qty.php:660
+msgid "Order ID(s)"
+msgstr ""
+
+#: ../includes/fetch_data_product_variation_qty.php:663
+msgid "Separate ids with coma(,)"
+msgstr ""
+
+#: ../includes/fetch_data_refunddetails.php:888
+msgid "Refund Type"
+msgstr ""
+
+#: ../includes/fetch_data_refunddetails.php:900
+msgid "Show Refund Note"
+msgstr ""
+
+#: ../includes/fetch_data_refunddetails.php:909
+#: ../includes/fetch_data_variation.php:1374
+msgid "Group By"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:729
+#: ../includes/fetch_data_variation_stock.php:964
+msgid "SKU No"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:760
+#: ../includes/fetch_data_variation_stock.php:980
+msgid "Min Stock"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:768
+#: ../includes/fetch_data_variation_stock.php:988
+msgid "Max Stock"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:776
+#: ../includes/fetch_data_variation_stock.php:996
+msgid "Product Stock"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:784
+#: ../includes/fetch_data_variation_stock.php:1004
+msgid "Show all sub-types"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:796
+#: ../includes/fetch_data_variation_stock.php:1016
+msgid "Stock Status"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:808
+#: ../includes/fetch_data_variation_stock.php:1028
+msgid "Manage Stock"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:1003
+#: ../includes/fetch_data_stock_summary_avg.php:345
+msgid "Product Type"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:1021
+#: ../includes/fetch_data_variation.php:1274
+#: ../includes/fetch_data_variation_stock.php:1230
+msgid "Product SKU"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:1050
+#: ../includes/fetch_data_variation.php:1329
+#: ../includes/fetch_data_variation_stock.php:1259
+msgid "Product Custom SKU"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:1061
+#: ../includes/fetch_data_variation_stock.php:1310
+msgid "Basic Column"
+msgstr ""
+
+#: ../includes/fetch_data_stock_list.php:1070
+#: ../includes/fetch_data_variation_stock.php:1318
+msgid "Zero Stock"
+msgstr ""
+
+#: ../includes/fetch_data_stock_max_level.php:203
+msgid "Stock Greater Than"
+msgstr ""
+
+#: ../includes/fetch_data_stock_min_level.php:187
+#: ../includes/fetch_data_stock_zero_level.php:207
+msgid "Stock Less Than"
+msgstr ""
+
+#: ../includes/fetch_data_stock_summary_avg.php:329
+msgid "Avg. Quantity Sold"
+msgstr ""
+
+#: ../includes/fetch_data_stock_summary_avg.php:330
+msgid "Current Stock Qty"
+msgstr ""
+
+#: ../includes/fetch_data_stock_summary_avg.php:331
+msgid "Stock Valid Days"
+msgstr ""
+
+#: ../includes/fetch_data_stock_summary_avg.php:349
+msgid "Simple Products"
+msgstr ""
+
+#: ../includes/fetch_data_stock_summary_avg.php:350
+msgid "Variation Products"
+msgstr ""
+
+#: ../includes/fetch_data_summary_per_month.php:254
+msgid "Reports"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1374
+#: ../includes/fetch_data_tax_reports1.php:554
+msgid "Tax Group By"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1378
+msgid "City"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1383
+msgid "Zip Code"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1385
+msgid "Tax Name"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1387
+msgid "Tax Sumary"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1391
+msgid "City Summary"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1393
+msgid "State Summary"
+msgstr ""
+
+#: ../includes/fetch_data_tax_reports.php:1395
+msgid "Country Summary"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:911
+msgid "Tag"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1056
+msgid "Postcode(zip)"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1153
+msgid "Show "
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1168
+msgid "Variation Products "
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1169
+msgid "Simple Products "
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1170
+msgid "All Products "
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1258
+msgid "Style"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1262
+msgid "Columner"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1263
+msgid "Comma Separated"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1301
+#: ../includes/fetch_data_variation_stock.php:1201
+msgid "Variation SKU"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1344
+#: ../includes/fetch_data_variation_stock.php:1274
+msgid "Variation Custom SKU"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1378
+msgid "Variation ID"
+msgstr ""
+
+#: ../includes/fetch_data_variation.php:1379
+msgid "Order Item ID"
+msgstr ""
