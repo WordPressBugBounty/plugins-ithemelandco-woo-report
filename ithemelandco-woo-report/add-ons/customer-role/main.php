@@ -37,13 +37,13 @@ if(!class_exists('it_report_wcreport_customer_role_addon_class')){
 			global $it_rpt_main_class;
 			$role_capability=$it_rpt_main_class->get_capability();
 			//CUSTOM TAX & FIELDS
-			add_submenu_page(null, __('Total Sales','it_report_wcreport_textdomain'), __('Total Sales','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_total_sale',   array($this,'wcx_plugin_menu_customer_role_total_sale' ) );
+			add_submenu_page('itwrl_submenu', __('Total Sales','it_report_wcreport_textdomain'), __('Total Sales','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_total_sale',   array($this,'wcx_plugin_menu_customer_role_total_sale' ) );
 
-			add_submenu_page(null, __('New User Sign-Up','it_report_wcreport_textdomain'), __('New User Sign-Up','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_registered',   array($this,'wcx_plugin_menu_customer_role_registered' ) );
+			add_submenu_page('itwrl_submenu', __('New User Sign-Up','it_report_wcreport_textdomain'), __('New User Sign-Up','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_registered',   array($this,'wcx_plugin_menu_customer_role_registered' ) );
 
-			add_submenu_page(null, __('Top 20 Products','it_report_wcreport_textdomain'), __('Top 20 Products','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_top_products',   array($this,'wcx_plugin_menu_customer_role_top_products' ) );
+			add_submenu_page('itwrl_submenu', __('Top 20 Products','it_report_wcreport_textdomain'), __('Top 20 Products','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_top_products',   array($this,'wcx_plugin_menu_customer_role_top_products' ) );
 
-			add_submenu_page(null, __('Bottom 20 Products','it_report_wcreport_textdomain'), __('Top 20 Products','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_bottom_products',   array($this,'wcx_plugin_menu_customer_role_bottom_products' ) );
+			add_submenu_page('itwrl_submenu', __('Bottom 20 Products','it_report_wcreport_textdomain'), __('Top 20 Products','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_bottom_products',   array($this,'wcx_plugin_menu_customer_role_bottom_products' ) );
 
 		}
 

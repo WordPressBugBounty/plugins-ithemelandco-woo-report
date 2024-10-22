@@ -48,14 +48,14 @@ if(!class_exists('it_report_wcreport_crosstab_addon_class')){
 			$role_capability=$it_rpt_main_class->get_capability();
 
 			//CROSS TABS
-			add_submenu_page(null, __('Prod./Month','it_report_wcreport_textdomain'), __('Prod./Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_month',   array($this,'wcx_plugin_menu_prod_per_month' ) );
-			add_submenu_page(null, __('Variation/Month','it_report_wcreport_textdomain'), __('Variation/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation_per_month',   array($this,'wcx_plugin_menu_variation_per_month' ) );
-			add_submenu_page(null, __('Prod./Country','it_report_wcreport_textdomain'), __('Prod./Country','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_country',   array($this,'wcx_plugin_menu_prod_per_country' ) );
-			add_submenu_page(null, __('Prod./State','it_report_wcreport_textdomain'), __('Prod./State','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_state',   array($this,'wcx_plugin_menu_prod_per_state' ) );
-			add_submenu_page(null, __('Country/Month','it_report_wcreport_textdomain'), __('Country/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_country_per_month',   array($this,'wcx_plugin_menu_country_per_month' ) );
-			add_submenu_page(null, __('Payment G/Month','it_report_wcreport_textdomain'), __('Payment G/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_payment_per_month',   array($this,'wcx_plugin_menu_payment_per_month' ) );
-			add_submenu_page(null, __('Ord. Status/Month','it_report_wcreport_textdomain'), __('Ord. Status/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_ord_status_per_month',   array($this,'wcx_plugin_menu_ord_status_per_month' ) );
-			/*add_submenu_page(null, __('Summary/Month','it_report_wcreport_textdomain'), __('Summary/Month','it_report_wcreport_textdomain'), 'manage_options', 'wcx_wcreport_plugin_summary_per_month',   array($this,'wcx_plugin_menu_summary_per_month' ) );*/
+			add_submenu_page('itwrl_submenu', __('Prod./Month','it_report_wcreport_textdomain'), __('Prod./Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_month',   array($this,'wcx_plugin_menu_prod_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Variation/Month','it_report_wcreport_textdomain'), __('Variation/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation_per_month',   array($this,'wcx_plugin_menu_variation_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Prod./Country','it_report_wcreport_textdomain'), __('Prod./Country','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_country',   array($this,'wcx_plugin_menu_prod_per_country' ) );
+			add_submenu_page('itwrl_submenu', __('Prod./State','it_report_wcreport_textdomain'), __('Prod./State','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_state',   array($this,'wcx_plugin_menu_prod_per_state' ) );
+			add_submenu_page('itwrl_submenu', __('Country/Month','it_report_wcreport_textdomain'), __('Country/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_country_per_month',   array($this,'wcx_plugin_menu_country_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Payment G/Month','it_report_wcreport_textdomain'), __('Payment G/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_payment_per_month',   array($this,'wcx_plugin_menu_payment_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Ord. Status/Month','it_report_wcreport_textdomain'), __('Ord. Status/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_ord_status_per_month',   array($this,'wcx_plugin_menu_ord_status_per_month' ) );
+			/*add_submenu_page('itwrl_submenu', __('Summary/Month','it_report_wcreport_textdomain'), __('Summary/Month','it_report_wcreport_textdomain'), 'manage_options', 'wcx_wcreport_plugin_summary_per_month',   array($this,'wcx_plugin_menu_summary_per_month' ) );*/
 
 		}
 

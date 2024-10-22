@@ -4,7 +4,7 @@ Donate link: http://ithemelandco.com/
 Tags: 	woocommerce report, woocommerce sale reporting, sale report, stock report, tax report
 Requires at least: 5.3
 Tested up to: 6.6.0
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -97,7 +97,8 @@ Usually, for a better understanding and faster analysis of sales based on differ
 </ul>
 </p>
 
-Check demo version: <a href="https://ithemelandco.com/plugins/woocommerce-report?utm_source=wp.org&utm_medium=web_links&utm_campaign=user-lite-buy'">Pro Version</a>
+Check pro version: <a href="https://ithemelandco.com/plugins/woocommerce-report?utm_source=wp.org&utm_medium=web_links&utm_campaign=user-lite-buy'">Pro Version</a>
+<a href="https://ithemelandco.com/halloween2024/?utm_source=Wp.org&utm_medium=banner&utm_campaign=hal2024"><img src="http://ithemelandco.com/Plugins/Documentations/ticks1.png" /></a>
 
 <h3>Other Plugins</h3>
 We are known as "Featured Author" on Codecanyon. You can check the <a href="https://codecanyon.net/user/ithemelandco/portfolio">ithemelandco porfolio</a> on Codecanyon.
@@ -191,6 +192,11 @@ Please leave your message in our <a href="https://ithemelandco.com/support-cente
 3. WooCommerce ProductSales Reprot
 
 == Changelog ==
+
+= 1.5.1 =
+* Tested up to: WP 6.6.x
+* Tested up to: WC 9.3.x
+* Fixed Some Issues
 
 = 1.5.0 =
 * Fixed All of Security & General Issues

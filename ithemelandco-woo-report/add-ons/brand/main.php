@@ -49,9 +49,9 @@ if(!class_exists('it_report_wcreport_brands_addon_class')){
 			global $it_rpt_main_class;
 			$role_capability=$it_rpt_main_class->get_capability();
 			//CUSTOM TAX & FIELDS
-			add_submenu_page(null, __('All Orders (Custom Taxonomy, Field)','it_report_wcreport_textdomain'), __('All Orders (Custom Taxonomy, Field)','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_all_order_brands',   array($this,'wcx_plugin_menu_all_order_brands' ) );
+			add_submenu_page('itwrl_submenu', __('All Orders (Custom Taxonomy, Field)','it_report_wcreport_textdomain'), __('All Orders (Custom Taxonomy, Field)','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_all_order_brands',   array($this,'wcx_plugin_menu_all_order_brands' ) );
 
-			add_submenu_page(null, __('Brands Report','it_report_wcreport_textdomain'), __('Brands Reoprt','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_brand_brands',   array($this,'wcx_plugin_menu_brand_brands' ) );
+			add_submenu_page('itwrl_submenu', __('Brands Report','it_report_wcreport_textdomain'), __('Brands Reoprt','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_brand_brands',   array($this,'wcx_plugin_menu_brand_brands' ) );
 		}
 
 		//////////////////////CUSTOM TAX & FIELDS//////////////////////

@@ -43,9 +43,9 @@ if(!class_exists('it_report_wcreport_variation_addon_class')){
 			global $it_rpt_main_class;
 			$role_capability=$it_rpt_main_class->get_capability();
 			
-			add_submenu_page(null, __('Variation','it_report_wcreport_textdomain'), __('Variation','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation',  array($this, 'wcx_plugin_menu_variation' ) );
+			add_submenu_page('itwrl_submenu', __('Variation','it_report_wcreport_textdomain'), __('Variation','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation',  array($this, 'wcx_plugin_menu_variation' ) );
 			
-			add_submenu_page(null, __('Variation Stock','it_report_wcreport_textdomain'), __('Variation Stock','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation_stock', array($this, 'wcx_plugin_menu_variation_stock' ));
+			add_submenu_page('itwrl_submenu', __('Variation Stock','it_report_wcreport_textdomain'), __('Variation Stock','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation_stock', array($this, 'wcx_plugin_menu_variation_stock' ));
 					
 		}
 		
