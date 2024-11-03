@@ -64,7 +64,7 @@
 					}
 
 					if($show_column=="on")
-						$custom_tax_cols[]=array('lable'=>esc_htmlesc_html(sanitize_text_field($label),'it_report_wcreport_textdomain'),'status'=>'show');
+						$custom_tax_cols[]=array('lable'=>esc_htmlesc_html(sanitize_text_field($label),'ithemelandco-woo-report'),'status'=>'show');
 
 
 					$visible_custom_taxonomy[]=$tax;
@@ -398,10 +398,10 @@
 
 
 			$columns=array(
-				array('lable'=>esc_html__('SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Stock','it_report_wcreport_textdomain'),'status'=>'show'),
+				array('lable'=>esc_html__('SKU','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Stock','ithemelandco-woo-report'),'status'=>'show'),
 			);
 
 			$array_index=3;
@@ -426,22 +426,22 @@
 		}else if($it_basic_column!='yes'){
 
 			$columns=array(
-				array('lable'=>esc_html__('SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Product Type','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
+				array('lable'=>esc_html__('SKU','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Product Type','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
 
-				array('lable'=>esc_html__('Created Date','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Modified Date','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Stock','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Regular Price','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Sale Price','it_report_wcreport_textdomain'),'status'=>'currency'),
+				array('lable'=>esc_html__('Created Date','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Modified Date','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Stock','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Regular Price','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Sale Price','ithemelandco-woo-report'),'status'=>'currency'),
 
-				array('lable'=>esc_html__('Downloadable','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Virtual','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Manage Stock','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Backorders','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Stock Status','it_report_wcreport_textdomain'),'status'=>'show')
+				array('lable'=>esc_html__('Downloadable','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Virtual','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Manage Stock','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Backorders','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Stock Status','ithemelandco-woo-report'),'status'=>'show')
 			);
 
 
@@ -704,7 +704,7 @@
 				$datatable_value.=("</td>");
 
 				//Stock Status
-				$it_stock_status = array("instock" => esc_html__("In stock",'it_report_wcreport_textdomain'), "outofstock" => esc_html__("Out of stock",'it_report_wcreport_textdomain'));
+				$it_stock_status = array("instock" => esc_html__("In stock",'ithemelandco-woo-report'), "outofstock" => esc_html__("Out of stock",'ithemelandco-woo-report'));
 
 				$display_class='';
 				if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
@@ -726,7 +726,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('SKU No','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('SKU No','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-check"></i></span>
                     <input name="it_sku_no" type="text" class="sku_no"/>
@@ -738,7 +738,7 @@
 		            ?>
                     <div class="col-md-6">
                         <div class="awr-form-title">
-				            <?php esc_html_e('Custom SKU','it_report_wcreport_textdomain');?>
+				            <?php esc_html_e('Custom SKU','ithemelandco-woo-report');?>
                         </div>
                         <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                         <input name="it_custom_sku" type="text" />
@@ -749,7 +749,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Product Name','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Product Name','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-cog"></i></span>
                     <input name="it_name_of_product" type="text" class="it_name_of_product"/>
@@ -757,7 +757,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Min Stock','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Min Stock','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-battery-0"></i></span>
                     <input name="it_stock_min" type="text" class="it_stock_min"/>
@@ -765,7 +765,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Max Stock','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Max Stock','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-battery-4"></i></span>
                     <input name="it_stock_max" type="text" class="it_stock_max"/>
@@ -773,7 +773,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Product Stock','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Product Stock','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-cog"></i></span>
                     <input name="it_stock_product" type="text" class="it_stock_product"/>
@@ -781,7 +781,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Show all sub-types','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Show all sub-types','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-check"></i></span>
                     <select name="it_sub_product_type" id="it_sub_product_type">
@@ -793,7 +793,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Stock Status','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Stock Status','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-check"></i></span>
                     <select name="it_status_of_stock" id="it_status_of_stock" class="it_status_of_stock">
@@ -805,7 +805,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Manage Stock','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Manage Stock','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-crop"></i></span>
                     <select name="it_stock_manage" id="it_stock_manage" class="it_stock_manage">
@@ -825,7 +825,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Product','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Product','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-cog"></i></span>
 					<?php
@@ -850,7 +850,7 @@
                         	if($this->get_form_element_permission('it_product_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -896,7 +896,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Category','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Category','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-tags"></i></span>
 					<?php
@@ -937,7 +937,7 @@
                         	if($this->get_form_element_permission('it_category_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1015,7 +1015,7 @@
                                 if($this->get_form_element_permission('it_brand_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
                                 {
                                     ?>
-                                    <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                                    <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                                     <?php
                                 }
                                 ?>
@@ -1045,7 +1045,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Product Type','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Product Type','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-check"></i></span>
                     <select name="it_products_type" id="it_products_type">
@@ -1063,7 +1063,7 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Product SKU','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Product SKU','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-cog"></i></span>
 					<?php
@@ -1074,7 +1074,7 @@
                     ?>
 
                     <select name="it_sku_products[]" multiple="multiple" size="5"  data-size="5" class="chosen-select-search">
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             echo wp_kses(
     $option,
@@ -1105,7 +1105,7 @@
 		            ?>
                     <div class="col-md-6">
                         <div class="awr-form-title">
-				            <?php esc_html_e('Product Custom SKU','it_report_wcreport_textdomain');?>
+				            <?php esc_html_e('Product Custom SKU','ithemelandco-woo-report');?>
                         </div>
                         <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                         <input name="it_custom_sku" type="text" />
@@ -1116,7 +1116,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Basic Column','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Basic Column','ithemelandco-woo-report');?>
                     </div>
 
                     <input type="checkbox" name="it_general_cols" class="it_general_cols" value="yes">
@@ -1125,7 +1125,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Zero Stock','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Zero Stock','ithemelandco-woo-report');?>
                     </div>
 
                     <input type="checkbox" name="it_stock_zero" class="it_stock_zero" value="yes" >
@@ -1152,8 +1152,8 @@
 
                 	<input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                     <div class="fetch_form_loading search-form-loading"></div>
-                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
             </div>
 
         </form>

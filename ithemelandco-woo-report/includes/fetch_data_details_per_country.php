@@ -531,55 +531,55 @@
 		if($it_detail_view=="yes"){
 
 			$columns=array(
-				array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Name','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Email','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Date','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Status','it_report_wcreport_textdomain'),'status'=>'show'),
-                array('lable'=>esc_html__('Country','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Coupon Code','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Products','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Variation','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+				array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Name','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Email','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Date','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Status','ithemelandco-woo-report'),'status'=>'show'),
+                array('lable'=>esc_html__('Country','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Coupon Code','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Products','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('SKU','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Variation','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Rate','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 				////ADDE IN VER4.0
 				/// INVOICE ACTION
-				array('lable'=>esc_html__('Invoice Action','it_report_wcreport_textdomain'),'status'=>'show'),
+				array('lable'=>esc_html__('Invoice Action','ithemelandco-woo-report'),'status'=>'show'),
 			);
 
 		}else{
 
 			$columns=array(
-				array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Name','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Email','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Date','it_report_wcreport_textdomain'),'status'=>'show'),
-                array('lable'=>esc_html__('Country','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Status','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Tax Name','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Shipping Method','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Payment Method','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Order Currency','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Coupon Code','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Items','it_report_wcreport_textdomain'),'status'=>'show'),
-				array('lable'=>esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Order Discount Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Cart Discount Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Total Discount Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-				array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+				array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Name','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Email','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Date','ithemelandco-woo-report'),'status'=>'show'),
+                array('lable'=>esc_html__('Country','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Status','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Tax Name','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Shipping Method','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Payment Method','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Order Currency','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Coupon Code','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Items','ithemelandco-woo-report'),'status'=>'show'),
+				array('lable'=>esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Order Discount Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Cart Discount Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Total Discount Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+				array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 				////ADDE IN VER4.0
 				/// INVOICE ACTION
-				array('lable'=>esc_html__('Invoice Action','it_report_wcreport_textdomain'),'status'=>'show'),
+				array('lable'=>esc_html__('Invoice Action','ithemelandco-woo-report'),'status'=>'show'),
 			);
 
 		}
@@ -723,11 +723,11 @@
 						$it_table_value = isset($items->order_status) ? $items->order_status : '';
 
 						if($it_table_value=='wc-completed')
-							$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+							$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 						else if($it_table_value=='wc-refunded')
-							$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+							$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 						else
-							$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+							$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 
 						$display_class='';
 						if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
@@ -830,7 +830,7 @@
                        	if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
                         $datatable_value.=("<td style='".$display_class."'>");
 
-                        $datatable_value.= '<a href="javascript:void(0);" title="'.esc_html__("Generate Invoice",'it_report_wcreport_textdomain').'" class="it_pdf_invoice button" data-order-id="' .$items->order_id.'"><i class="fa fa-file-text-o  "></i></a>';
+                        $datatable_value.= '<a href="javascript:void(0);" title="'.esc_html__("Generate Invoice",'ithemelandco-woo-report').'" class="it_pdf_invoice button" data-order-id="' .$items->order_id.'"><i class="fa fa-file-text-o  "></i></a>';
 
                         //COMPATIBLE WITH WOO INVOICE
                         if(class_exists("WC_pdf_admin")){
@@ -1231,11 +1231,11 @@
 					$it_table_value = isset($items->order_status) ? $items->order_status : '';
 
 					if($it_table_value=='wc-completed')
-						$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+						$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 					else if($it_table_value=='wc-refunded')
-						$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+						$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 					else
-						$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+						$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 
 					$display_class='';
 					if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
@@ -1422,7 +1422,7 @@
                    	if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
                     $datatable_value.=("<td style='".$display_class."'>");
 
-                    $datatable_value.= '<a href="javascript:void(0);" title="'.esc_html__("Generate Invoice",'it_report_wcreport_textdomain').'" class="it_pdf_invoice button" data-order-id="' .$items->order_id.'"><i class="fa fa-file-text-o  "></i></a>';
+                    $datatable_value.= '<a href="javascript:void(0);" title="'.esc_html__("Generate Invoice",'ithemelandco-woo-report').'" class="it_pdf_invoice button" data-order-id="' .$items->order_id.'"><i class="fa fa-file-text-o  "></i></a>';
 
                     //COMPATIBLE WITH WOO INVOICE
                     if(class_exists("WC_pdf_admin")){
@@ -1479,7 +1479,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Date From','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Date From','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -1487,7 +1487,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Date To','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Date To','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -1495,7 +1495,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Order ID','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Order ID','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_id_order" type="text"  class=""/>
@@ -1503,7 +1503,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Customer','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Customer','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-user"></i></span>
                     <input name="it_first_name_text" type="text"  class=""/>
@@ -1519,7 +1519,7 @@
 				?>
                 <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Category','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Category','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-tags"></i></span>
                     <?php
@@ -1562,7 +1562,7 @@
                         	if($this->get_form_element_permission('it_category_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1598,7 +1598,7 @@
 
                 <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Product','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Product','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-gear"></i></span>
 					<?php
@@ -1623,7 +1623,7 @@
                         	if($this->get_form_element_permission('it_product_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1652,7 +1652,7 @@
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Customer','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Customer','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-user"></i></span>
 					<?php
@@ -1663,7 +1663,7 @@
                         }
                     ?>
                     <select name="it_customers_paid[]" multiple="multiple" size="5"  data-size="5" class="chosen-select-search">
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             echo wp_kses(
     $option,
@@ -1695,7 +1695,7 @@
 
                  <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Status','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Status','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-check"></i></span>
                     <?php
@@ -1729,7 +1729,7 @@
                         	if($this->get_form_element_permission('it_orders_status') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1763,7 +1763,7 @@
 				?>
                  <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Country','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Country','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-globe"></i></span>
 					<?php
@@ -1789,7 +1789,7 @@
                         	if($this->get_form_element_permission('it_countries_code') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1861,7 +1861,7 @@
 
                  <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('State','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('State','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-map"></i></span>
 					<?php
@@ -1887,7 +1887,7 @@
                         	if($this->get_form_element_permission('it_states_code') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1917,7 +1917,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Postcode(Zip)','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Postcode(Zip)','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-map-marker"></i></span>
                     <input name="it_bill_post_code" type="text"/>
@@ -1926,7 +1926,7 @@
 
                  <!--<div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Min & Max By','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Min & Max By','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-arrows-h"></i></span>
                     <select name="order_meta_key[]" id="order_meta_key2" class="order_meta_key normal_view_only">
@@ -1938,34 +1938,34 @@
                     </select>
                     <br />
                     <span class="description"><?php esc_html_e("Enable this selection by uncheck 'Show Order Item Details'
-",'it_report_wcreport_textdomain');?></span>
+",'ithemelandco-woo-report');?></span>
                 </div>
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Min Amount','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Min Amount','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-battery-0"></i></span>
                     <input name="min_amount" type="text"/>
                     <br />
                     <span class="description"><?php esc_html_e("Enable this selection by uncheck 'Show Order Item Details'
-",'it_report_wcreport_textdomain');?></span>
+",'ithemelandco-woo-report');?></span>
                 </div>
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Max Amount','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Max Amount','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-battery-4"></i></span>
                     <input name="max_amount" type="text"/>
                     <br />
                     <span class="description"><?php esc_html_e("Enable this selection by uncheck 'Show Order Item Details'
-",'it_report_wcreport_textdomain');?></span>
+",'ithemelandco-woo-report');?></span>
                 </div>-->
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Email','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Email','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-envelope-o"></i></span>
                     <input name="it_email_text" type="text"/>
@@ -1973,7 +1973,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Order By','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Order By','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-sort-alpha-asc"></i></span>
                     <div class="row">
@@ -1998,7 +1998,7 @@
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Show Order Item Details','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Show Order Item Details','ithemelandco-woo-report');?>
                     </div>
 
                     <input name="it_view_details" type="checkbox" value="yes" checked/>
@@ -2007,7 +2007,7 @@
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Coupon Used Only','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Coupon Used Only','ithemelandco-woo-report');?>
                     </div>
 
                     <input name="it_use_coupon" type="checkbox" value="yes"/>
@@ -2048,8 +2048,8 @@
 
                 <input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                 <div class="fetch_form_loading search-form-loading"></div>
-                <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-                <button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+                <button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
             </div>
 
         </form>

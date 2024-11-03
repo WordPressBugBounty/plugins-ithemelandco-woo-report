@@ -152,11 +152,11 @@ if($file_used=="sql_table")
 			//Status
 			$it_table_value=$items->order_status;
 			if($it_table_value=='wc-completed')
-				$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+				$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 			else if($it_table_value=='wc-refunded')
-				$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+				$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 			else
-				$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'it_report_wcreport_textdomain')).'</span>';
+				$it_table_value = '<span class="awr-order-status awr-order-status-'.sanitize_title($it_table_value).'" >'.ucwords(esc_html(sanitize_text_field($it_table_value), 'ithemelandco-woo-report')).'</span>';
 
 			$display_class='';
 			if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';

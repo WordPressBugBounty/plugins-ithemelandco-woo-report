@@ -33,7 +33,7 @@ class ITWR_WP_Register_Update
             if (!empty($update_data) && is_array($update_data)) {
                 $remote_version = $this->get_plugin_update_data('version', $update_data);
                 if ($remote_version) {
-                    $plugin_basename = 'it_report_wcreport_textdomain' . '/' . 'it_report_wcreport_textdomain' . '.php';
+                    $plugin_basename = 'ithemelandco-woo-report' . '/' . 'ithemelandco-woo-report' . '.php';
                     if (version_compare(ITWR_VERSION, $remote_version->new_version, '<')) {
                         $obj = new \stdClass();
                         $obj->id = $remote_version->slug;
@@ -65,7 +65,7 @@ class ITWR_WP_Register_Update
     {
         $update_data = (!empty($this->update_data)) ? $this->update_data : $this->get_update_data();
         if (!empty($update_data) && is_array($update_data)) {
-            if (($action == 'query_plugins' || $action == 'plugin_information') && isset($arg->slug) && $arg->slug === 'it_report_wcreport_textdomain') {
+            if (($action == 'query_plugins' || $action == 'plugin_information') && isset($arg->slug) && $arg->slug === 'ithemelandco-woo-report') {
                 $remote_data = $this->get_plugin_update_data('info', $update_data);
                 if ($remote_data) {
                     return $remote_data;

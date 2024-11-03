@@ -229,7 +229,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Avg. Calc From Date','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Avg. Calc From Date','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -237,7 +237,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-			            <?php esc_html_e('Avg. Calc To Date','it_report_wcreport_textdomain');?>
+			            <?php esc_html_e('Avg. Calc To Date','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -248,7 +248,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-			            <?php esc_html_e('Billing Name','it_report_wcreport_textdomain');?>
+			            <?php esc_html_e('Billing Name','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-tag"></i></span>
                     <input name="it_billing_name" id="it_billing_name" type="text"/>
@@ -256,7 +256,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-			            <?php esc_html_e('Billing Email','it_report_wcreport_textdomain');?>
+			            <?php esc_html_e('Billing Email','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-envelope-o"></i></span>
                     <input name="it_billing_email" id="it_billing_email" type="text"/>
@@ -281,8 +281,8 @@
 
                 	<input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                     <div class="fetch_form_loading search-form-loading"></div>
-                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
 
             </div>
 

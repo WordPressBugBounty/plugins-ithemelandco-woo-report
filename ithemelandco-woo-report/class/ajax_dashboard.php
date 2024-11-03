@@ -17,7 +17,7 @@
                     <div class="awr-box">
                         <div class="awr-title">
                             <h3>
-                                <i class="fa fa-filter"></i><?php esc_html_e( 'Search', 'it_report_wcreport_textdomain' ); ?>
+                                <i class="fa fa-filter"></i><?php esc_html_e( 'Search', 'ithemelandco-woo-report' ); ?>
                             </h3>
                             <div class="awr-title-icons">
                                 <div class="awr-title-icon awr-add-fav-icon" title="Add to Favorites Menus" data-smenu="<?php echo esc_attr($smenu);?>"><i class="fa <?php echo esc_attr($fav_icon);?>"></i></div>

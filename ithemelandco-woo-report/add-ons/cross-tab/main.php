@@ -31,14 +31,14 @@ if(!class_exists('it_report_wcreport_crosstab_addon_class')){
 
 		function add_page_titles($page_titles){
 
-			$page_titles['prod_per_month']= __( "Product per Month",'it_report_wcreport_textdomain');
-			$page_titles['variation_per_month']= __( "Variation per Month",'it_report_wcreport_textdomain');
-			$page_titles['prod_per_country']= __( "Product per Country",'it_report_wcreport_textdomain');
-			$page_titles['prod_per_state']= __( "Product per State",'it_report_wcreport_textdomain');
-			$page_titles['country_per_month']= __( "Country per Month",'it_report_wcreport_textdomain');
-			$page_titles['payment_per_month']= __( "Payment per Month",'it_report_wcreport_textdomain');
-			$page_titles['ord_status_per_month']= __( "Order Status per Month",'it_report_wcreport_textdomain');
-			$page_titles['summary_per_month']= __( "Summary per Month",'it_report_wcreport_textdomain');
+			$page_titles['prod_per_month']= __( "Product per Month",'ithemelandco-woo-report');
+			$page_titles['variation_per_month']= __( "Variation per Month",'ithemelandco-woo-report');
+			$page_titles['prod_per_country']= __( "Product per Country",'ithemelandco-woo-report');
+			$page_titles['prod_per_state']= __( "Product per State",'ithemelandco-woo-report');
+			$page_titles['country_per_month']= __( "Country per Month",'ithemelandco-woo-report');
+			$page_titles['payment_per_month']= __( "Payment per Month",'ithemelandco-woo-report');
+			$page_titles['ord_status_per_month']= __( "Order Status per Month",'ithemelandco-woo-report');
+			$page_titles['summary_per_month']= __( "Summary per Month",'ithemelandco-woo-report');
 
 			return $page_titles;
 		}
@@ -48,14 +48,14 @@ if(!class_exists('it_report_wcreport_crosstab_addon_class')){
 			$role_capability=$it_rpt_main_class->get_capability();
 
 			//CROSS TABS
-			add_submenu_page('itwrl_submenu', __('Prod./Month','it_report_wcreport_textdomain'), __('Prod./Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_month',   array($this,'wcx_plugin_menu_prod_per_month' ) );
-			add_submenu_page('itwrl_submenu', __('Variation/Month','it_report_wcreport_textdomain'), __('Variation/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation_per_month',   array($this,'wcx_plugin_menu_variation_per_month' ) );
-			add_submenu_page('itwrl_submenu', __('Prod./Country','it_report_wcreport_textdomain'), __('Prod./Country','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_country',   array($this,'wcx_plugin_menu_prod_per_country' ) );
-			add_submenu_page('itwrl_submenu', __('Prod./State','it_report_wcreport_textdomain'), __('Prod./State','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_prod_per_state',   array($this,'wcx_plugin_menu_prod_per_state' ) );
-			add_submenu_page('itwrl_submenu', __('Country/Month','it_report_wcreport_textdomain'), __('Country/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_country_per_month',   array($this,'wcx_plugin_menu_country_per_month' ) );
-			add_submenu_page('itwrl_submenu', __('Payment G/Month','it_report_wcreport_textdomain'), __('Payment G/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_payment_per_month',   array($this,'wcx_plugin_menu_payment_per_month' ) );
-			add_submenu_page('itwrl_submenu', __('Ord. Status/Month','it_report_wcreport_textdomain'), __('Ord. Status/Month','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_ord_status_per_month',   array($this,'wcx_plugin_menu_ord_status_per_month' ) );
-			/*add_submenu_page('itwrl_submenu', __('Summary/Month','it_report_wcreport_textdomain'), __('Summary/Month','it_report_wcreport_textdomain'), 'manage_options', 'wcx_wcreport_plugin_summary_per_month',   array($this,'wcx_plugin_menu_summary_per_month' ) );*/
+			add_submenu_page('itwrl_submenu', __('Prod./Month','ithemelandco-woo-report'), __('Prod./Month','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_prod_per_month',   array($this,'wcx_plugin_menu_prod_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Variation/Month','ithemelandco-woo-report'), __('Variation/Month','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_variation_per_month',   array($this,'wcx_plugin_menu_variation_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Prod./Country','ithemelandco-woo-report'), __('Prod./Country','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_prod_per_country',   array($this,'wcx_plugin_menu_prod_per_country' ) );
+			add_submenu_page('itwrl_submenu', __('Prod./State','ithemelandco-woo-report'), __('Prod./State','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_prod_per_state',   array($this,'wcx_plugin_menu_prod_per_state' ) );
+			add_submenu_page('itwrl_submenu', __('Country/Month','ithemelandco-woo-report'), __('Country/Month','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_country_per_month',   array($this,'wcx_plugin_menu_country_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Payment G/Month','ithemelandco-woo-report'), __('Payment G/Month','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_payment_per_month',   array($this,'wcx_plugin_menu_payment_per_month' ) );
+			add_submenu_page('itwrl_submenu', __('Ord. Status/Month','ithemelandco-woo-report'), __('Ord. Status/Month','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_ord_status_per_month',   array($this,'wcx_plugin_menu_ord_status_per_month' ) );
+			/*add_submenu_page('itwrl_submenu', __('Summary/Month','ithemelandco-woo-report'), __('Summary/Month','ithemelandco-woo-report'), 'manage_options', 'wcx_wcreport_plugin_summary_per_month',   array($this,'wcx_plugin_menu_summary_per_month' ) );*/
 
 		}
 
@@ -107,49 +107,49 @@ if(!class_exists('it_report_wcreport_crosstab_addon_class')){
 		//CHANGE FETCH MENU VISIBLE MENUS
 		function add_fetch_page_cross_menu( $visible_menu ) {
 			$crosstab_menu=array(
-					"label" => __('CrossTab','it_report_wcreport_textdomain'),
+					"label" => __('CrossTab','ithemelandco-woo-report'),
 					"id" => "cross_tab",
 					"link" => "#",
 					"icon" => "fa-random",
 					"childs" => array(
 						"prod_per_month" => array(
-							"label" => __("Product/Month" ,'it_report_wcreport_textdomain'),
+							"label" => __("Product/Month" ,'ithemelandco-woo-report'),
 							"id" => "prod_per_month",
 							"link" => "admin.php?page=wcx_wcreport_plugin_prod_per_month&parent=cross_tab&smenu=prod_per_month",
 							"icon" => "fa-cog",
 						),
 						"variation_per_month" => array(
-							"label" => '<span style="color:#d97c7c">'.__("Variation/Month(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+							"label" => '<span style="color:#d97c7c">'.__("Variation/Month(Pro)" ,'ithemelandco-woo-report').'</span>',
 							"id" => "variation_per_month",
 							"link" => "#",
 							"icon" => "fa-line-chart",
 						),
 						"prod_per_country" => array(
-							"label" => __("Product/Country" ,'it_report_wcreport_textdomain'),
+							"label" => __("Product/Country" ,'ithemelandco-woo-report'),
 							"id" => "prod_per_country",
 							"link" => "admin.php?page=wcx_wcreport_plugin_prod_per_country&parent=cross_tab&smenu=prod_per_country",
 							"icon" => "fa-globe",
 						),
 						"prod_per_state" => array(
-							"label" => '<span style="color:#d97c7c">'.__("Product/State(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+							"label" => '<span style="color:#d97c7c">'.__("Product/State(Pro)" ,'ithemelandco-woo-report').'</span>',
 							"id" => "prod_per_state",
 							"link" => "#",
 							"icon" => "fa-map",
 						),
 						"country_per_month" => array(
-							"label" => '<span style="color:#d97c7c">'.__("Country/Month(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+							"label" => '<span style="color:#d97c7c">'.__("Country/Month(Pro)" ,'ithemelandco-woo-report').'</span>',
 							"id" => "country_per_month",
 							"link" => "#",
 							"icon" => "fa-globe",
 						),
 						"payment_per_month" => array(
-							"label" => '<span style="color:#d97c7c">'.__("Payment Gateway/Month(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+							"label" => '<span style="color:#d97c7c">'.__("Payment Gateway/Month(Pro)" ,'ithemelandco-woo-report').'</span>',
 							"id" => "payment_per_month",
 							"link" => "#",
 							"icon" => "fa-cog",
 						),
 						"order_status_per_month" => array(
-							"label" => '<span style="color:#d97c7c">'.__("Order Status/Month(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+							"label" => '<span style="color:#d97c7c">'.__("Order Status/Month(Pro)" ,'ithemelandco-woo-report').'</span>',
 							"id" => "order_status_per_month",
 							"link" => "#",
 							"icon" => "fa-check",

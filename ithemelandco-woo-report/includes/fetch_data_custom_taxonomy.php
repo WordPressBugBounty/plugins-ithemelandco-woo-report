@@ -227,7 +227,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('From Date','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('From Date','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -235,7 +235,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('To Date','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('To Date','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -322,7 +322,7 @@
 
                 <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Custom Taxonomy','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Custom Taxonomy','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
 
@@ -377,7 +377,7 @@
 
                 <!--<div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Items','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Items','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-tags"></i></span>
 
@@ -408,8 +408,8 @@
 
                 	<input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                     <div class="fetch_form_loading search-form-loading"></div>
-                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
 
 
 

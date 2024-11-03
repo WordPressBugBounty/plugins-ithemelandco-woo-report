@@ -606,7 +606,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Date From','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Date From','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -614,7 +614,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Date To','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Date To','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -622,14 +622,14 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Shipping Address','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Shipping Address','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-money"></i></span>
                     <select name="it_shipping_address" >
-                        <option value="-1"><?php esc_html_e('Select One','it_report_wcreport_textdomain');?></option>
-                        <option value="percent"><?php esc_html_e('Percentage Discount','it_report_wcreport_textdomain');?></option>
-                        <option value="fixed_cart"><?php esc_html_e('Fixed Cart Discount','it_report_wcreport_textdomain');?></option>
-                        <option value="fixed_product"><?php esc_html_e('Fixed Product Discount','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select One','ithemelandco-woo-report');?></option>
+                        <option value="percent"><?php esc_html_e('Percentage Discount','ithemelandco-woo-report');?></option>
+                        <option value="fixed_cart"><?php esc_html_e('Fixed Cart Discount','ithemelandco-woo-report');?></option>
+                        <option value="fixed_product"><?php esc_html_e('Fixed Product Discount','ithemelandco-woo-report');?></option>
                     </select>
                 </div>
 
@@ -665,8 +665,8 @@
 
                 <input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                 <div class="fetch_form_loading search-form-loading"></div>
-                <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-                <button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+                <button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
             </div>
 
         </form>

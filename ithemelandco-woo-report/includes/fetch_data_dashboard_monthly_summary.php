@@ -338,7 +338,7 @@ if($file_used=="sql_table")
 
 			<div class="col-md-6">
 				<div class="awr-form-title">
-					<?php esc_html_e('Select Year','it_report_wcreport_textdomain');?>
+					<?php esc_html_e('Select Year','ithemelandco-woo-report');?>
 				</div>
 				<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
 				<select name="it_proj_sale_year" id="it_proj_sale_year" class="it_proj_sale_year">
@@ -380,8 +380,8 @@ if($file_used=="sql_table")
 
 			<input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
 			<div class="fetch_form_loading search-form-loading"></div>
-			<button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-			<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+			<button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+			<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
 		</div>
 
 	</form>

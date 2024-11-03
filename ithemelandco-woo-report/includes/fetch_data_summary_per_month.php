@@ -97,13 +97,13 @@
 
 		$reports		= $this->it_get_woo_requests('reports','-1',true);
 		$array = array(
-			"0"  => array("item_name"=>esc_html__("Order Total",			'it_report_wcreport_textdomain'),"id"=>"_order_total")
-			,"1" => array("item_name"=>esc_html__("Order Tax",				'it_report_wcreport_textdomain'),"id"=>"_order_tax")
-			,"2" => array("item_name"=>esc_html__("Order Discount",			'it_report_wcreport_textdomain'),"id"=>"_order_discount")
-			,"3" => array("item_name"=>esc_html__("Cart Discount",			'it_report_wcreport_textdomain'),"id"=>"_cart_discount")
-			,"4" => array("item_name"=>esc_html__("Order Shipping",			'it_report_wcreport_textdomain'),"id"=>"_order_shipping")
-			,"5" => array("item_name"=>esc_html__("Order Shipping Tax",		'it_report_wcreport_textdomain'),"id"=>"_order_shipping_tax")
-			,"6" => array("item_name"=>esc_html__("Product Sales",			'it_report_wcreport_textdomain'),"id"=>"_by_product")
+			"0"  => array("item_name"=>esc_html__("Order Total",			'ithemelandco-woo-report'),"id"=>"_order_total")
+			,"1" => array("item_name"=>esc_html__("Order Tax",				'ithemelandco-woo-report'),"id"=>"_order_tax")
+			,"2" => array("item_name"=>esc_html__("Order Discount",			'ithemelandco-woo-report'),"id"=>"_order_discount")
+			,"3" => array("item_name"=>esc_html__("Cart Discount",			'ithemelandco-woo-report'),"id"=>"_cart_discount")
+			,"4" => array("item_name"=>esc_html__("Order Shipping",			'ithemelandco-woo-report'),"id"=>"_order_shipping")
+			,"5" => array("item_name"=>esc_html__("Order Shipping Tax",		'ithemelandco-woo-report'),"id"=>"_order_shipping_tax")
+			,"6" => array("item_name"=>esc_html__("Product Sales",			'ithemelandco-woo-report'),"id"=>"_by_product")
 		);
 
 		if($reports != '-1'){
@@ -236,14 +236,14 @@
 
 				<div class="col-md-6">
 					<div>
-						<?php esc_html_e('From Date','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('From Date','ithemelandco-woo-report');?>
 					</div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
 					<input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick" value="<?php echo esc_html($it_from_date);?>"/>
 				</div>
 				<div class="col-md-6">
 					<div class="awr-form-title">
-						<?php esc_html_e('To Date','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('To Date','ithemelandco-woo-report');?>
 					</div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
 					<input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"  value="<?php echo esc_html($it_to_date);?>"/>
@@ -251,18 +251,18 @@
 
              	<div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Reports','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Reports','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-flag"></i></span>
 					<?php
                         $reports = array(
-                            "0"=>esc_html__("Order Total",				'it_report_wcreport_textdomain'),
-                            "1"=>esc_html__("Order Tax",				'it_report_wcreport_textdomain'),
-                            "2"=>esc_html__("Order Discount",			'it_report_wcreport_textdomain'),
-                            "3"=>esc_html__("Cart Discount",			'it_report_wcreport_textdomain'),
-                            "4"=>esc_html__("Order Shipping",			'it_report_wcreport_textdomain'),
-                            "5"=>esc_html__("Order Shipping Tax",		'it_report_wcreport_textdomain'),
-                            "6"=>esc_html__("Product Sales",			'it_report_wcreport_textdomain')
+                            "0"=>esc_html__("Order Total",				'ithemelandco-woo-report'),
+                            "1"=>esc_html__("Order Tax",				'ithemelandco-woo-report'),
+                            "2"=>esc_html__("Order Discount",			'ithemelandco-woo-report'),
+                            "3"=>esc_html__("Cart Discount",			'ithemelandco-woo-report'),
+                            "4"=>esc_html__("Order Shipping",			'ithemelandco-woo-report'),
+                            "5"=>esc_html__("Order Shipping Tax",		'ithemelandco-woo-report'),
+                            "6"=>esc_html__("Product Sales",			'ithemelandco-woo-report')
                         );
 
                         $option='';
@@ -271,7 +271,7 @@
                         }
                     ?>
                     <select name="reports[]" multiple="multiple" size="5"  data-size="5" class="chosen-select-search">
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             echo wp_kses(
     $option,
@@ -294,7 +294,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Status','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Status','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-check"></i></span>
 					<?php
@@ -320,7 +320,7 @@
                     ?>
 
                     <select name="it_orders_status[]" multiple="multiple" size="5"  data-size="5" class="chosen-select-search">
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             echo wp_kses(
     $option,
@@ -360,8 +360,8 @@
 
                 	<input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                     <div class="fetch_form_loading search-form-loading"></div>
-                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
             </div>
 
         </form>

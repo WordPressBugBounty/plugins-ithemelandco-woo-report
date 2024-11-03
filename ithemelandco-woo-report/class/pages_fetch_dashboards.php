@@ -59,17 +59,17 @@
 
         <div class="pw-rightbar-wrapper">
 
-			<div class="pw-righbar-icon pw-dark-icon" title="<?php esc_html_e("Change Theme",'it_report_wcreport_textdomain');?>">
+			<div class="pw-righbar-icon pw-dark-icon" title="<?php esc_html_e("Change Theme",'ithemelandco-woo-report');?>">
                 <i class="fa fa-moon-o"></i>
             </div>
 
             <div class="pw-righbar-icon pw-switch-wordpress">
-                <a class="pw-switch-wordpress-a" href="<?php echo esc_attr(get_admin_url());?>" title="<?php esc_html_e("Switch to wordpress dashboard",'it_report_wcreport_textdomain');?>">
+                <a class="pw-switch-wordpress-a" href="<?php echo esc_attr(get_admin_url());?>" title="<?php esc_html_e("Switch to wordpress dashboard",'ithemelandco-woo-report');?>">
                     <i class="fa fa-wordpress"></i>
                 </a>
             </div>
 
-            <div class="pw-righbar-icon pw-expand-icon" title="<?php esc_html_e("Expand Window",'it_report_wcreport_textdomain');?>">
+            <div class="pw-righbar-icon pw-expand-icon" title="<?php esc_html_e("Expand Window",'ithemelandco-woo-report');?>">
                 <i class="fa fa-expand"></i>
 
             </div></div>
@@ -99,7 +99,7 @@
 
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="awr-allmenu-box">
-                    <div class="awr-menu-title"><i class="fa fa-check"></i><?php echo esc_html__('Basics','it_report_wcreport_textdomain'); ?></a></div>
+                    <div class="awr-menu-title"><i class="fa fa-check"></i><?php echo esc_html__('Basics','ithemelandco-woo-report'); ?></a></div>
 					<?php 
 						echo wp_kses(
 							$basic_menu,
@@ -115,7 +115,7 @@
 				?>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="awr-allmenu-box">
-                        <div class="awr-menu-title"><i class="fa fa-random"></i><?php echo esc_html__('All Order with Taxonomies & Fields','it_report_wcreport_textdomain'); ?></a></div>
+                        <div class="awr-menu-title"><i class="fa fa-random"></i><?php echo esc_html__('All Order with Taxonomies & Fields','ithemelandco-woo-report'); ?></a></div>
 						<?php 
 						//echo $tax_field_reports; 
 
@@ -132,7 +132,7 @@
 
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="awr-allmenu-box">
-                    <div class="awr-menu-title"><i class="fa fa-files-o"></i><?php echo esc_html__('More Reports','it_report_wcreport_textdomain'); ?></a></div>
+                    <div class="awr-menu-title"><i class="fa fa-files-o"></i><?php echo esc_html__('More Reports','ithemelandco-woo-report'); ?></a></div>
 					<?php 
 					//echo $more_reports; 
 					echo wp_kses(
@@ -150,7 +150,7 @@
 				?>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="awr-allmenu-box">
-                        <div class="awr-menu-title"><i class="fa fa-random"></i><?php echo esc_html__('CrossTab','it_report_wcreport_textdomain'); ?></a></div>
+                        <div class="awr-menu-title"><i class="fa fa-random"></i><?php echo esc_html__('CrossTab','ithemelandco-woo-report'); ?></a></div>
 						<?php //echo $cross_menu; 
 						echo wp_kses(
 							$cross_menu,
@@ -165,7 +165,7 @@
 
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="awr-allmenu-box">
-                    <div class="awr-menu-title"><i class="fa fa-check"></i><?php echo esc_html__('Other','it_report_wcreport_textdomain'); ?></a></div>
+                    <div class="awr-menu-title"><i class="fa fa-check"></i><?php echo esc_html__('Other','ithemelandco-woo-report'); ?></a></div>
 					<?php //echo $other_menu; 
 					echo wp_kses(
 						$other_menu,
@@ -175,7 +175,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 awr-allmenu-footer">
-                <h3><?php echo esc_html__('WOOCommerce Advance Reporting System','it_report_wcreport_textdomain'); ?></h3>
+                <h3><?php echo esc_html__('WOOCommerce Advance Reporting System','ithemelandco-woo-report'); ?></h3>
                 <span>Powered By <a href="https://ithemelandco.com">iThemelandCo</a></span>
             </div>
         </div><!--row -->
@@ -200,13 +200,13 @@
 			),
 
 			"dashboard" => array(
-				"label" => esc_html__('Dashboard', 'it_report_wcreport_textdomain'),
+				"label" => esc_html__('Dashboard', 'ithemelandco-woo-report'),
 				"id" => "dashboard",
 				"link" => $it_plugin_main_url,
 				"icon" => "fa-bookmark",
 			),
 			"active_plugin" => array(
-				"label" => esc_html__('Activate Plugin','it_report_wcreport_textdomain'),
+				"label" => esc_html__('Activate Plugin','ithemelandco-woo-report'),
 				"id" => "active_plugin",
 				"link" => "admin.php?page=wcx_wcreport_plugin_active_report&parent=active_plugin",
 				"icon" => "fa-check",
@@ -292,7 +292,7 @@
 
 			/////////In EDIT Page////////
 			if(isset($_GET['action']) || isset($_GET['id']))
-				$page_title=str_replace("Add",esc_html__('Edit', 'ddd'),$page_title);
+				$page_title=str_replace("Add",esc_html__('Edit', 'ithemelandco-woo-report'),$page_title);
 
 			?>
 			<div class="pw-bread-title"><?php echo esc_html($page_title); ?></div>
@@ -339,8 +339,8 @@
 												<div class="awr-acc-icon">
 												    <i class="fa fa-meh-o"></i>
 												</div>
-												<h3 class="awr-acc-title">'. esc_html__("Access Denied !",'it_report_wcreport_textdomain').'</h3>
-												<div class="awr-acc-desc">'. esc_html__("You have no permisson !! Please Contact site Administrator",'it_report_wcreport_textdomain').'</div>
+												<h3 class="awr-acc-title">'. esc_html__("Access Denied !",'ithemelandco-woo-report').'</h3>
+												<div class="awr-acc-desc">'. esc_html__("You have no permisson !! Please Contact site Administrator",'ithemelandco-woo-report').'</div>
 											</div>
 										</div><!--col-xs-12 -->
 									</div><!--row -->
@@ -366,8 +366,8 @@
 												<div class="awr-acc-icon">
 												    <i class="fa fa-meh-o"></i>
 												</div>
-												<h3 class="awr-acc-title">'. esc_html__("Access Denied !",'it_report_wcreport_textdomain').'</h3>
-												<div class="awr-acc-desc">'. esc_html__("You have no permisson !! Please Contact site Administrator",'it_report_wcreport_textdomain').'</div>
+												<h3 class="awr-acc-title">'. esc_html__("Access Denied !",'ithemelandco-woo-report').'</h3>
+												<div class="awr-acc-desc">'. esc_html__("You have no permisson !! Please Contact site Administrator",'ithemelandco-woo-report').'</div>
 											</div>
 										</div><!--col-xs-12 -->
 									</div><!--row -->

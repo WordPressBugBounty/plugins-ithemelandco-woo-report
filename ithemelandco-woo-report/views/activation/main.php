@@ -7,7 +7,7 @@
                 <div class="itwr-wrap">
                     <div class="itwr-tab-middle-content">
                         <div id="itwr-activation-info">
-                            <strong><?php esc_html_e("Congratulations, Your plugin is activated successfully. Let's Go!", 'iThemelandCo-Woo-Report-Lite') ?></strong>
+                            <strong><?php esc_html_e("Congratulations, Your plugin is activated successfully. Let's Go!",'ithemelandco-woo-report') ?></strong>
                         </div>
                     </div>
                 </div>
@@ -24,13 +24,13 @@
                             <h3 class="itwr-activation-top-alert">Fill the below form to get the latest updates' news and <strong style="text-decoration: underline;">Special Offers(Discount)</strong>, Otherwise, Skip it!</h3>
                             <input type="hidden" name="action" value="itwr_activation_plugin">
                             <div class="itwr-activation-field">
-                                <label for="itwr-activation-email"><?php esc_html_e('Email', 'iThemelandCo-Woo-Report-Lite'); ?> </label>
+                                <label for="itwr-activation-email"><?php esc_html_e('Email','ithemelandco-woo-report'); ?> </label>
                                 <input type="email" name="email" placeholder="Email ..." id="itwr-activation-email">
                             </div>
                             <div class="itwr-activation-field">
-                                <label for="itwr-activation-industry"><?php esc_html_e('What is your industry?', 'iThemelandCo-Woo-Report-Lite'); ?> </label>
+                                <label for="itwr-activation-industry"><?php esc_html_e('What is your industry?','ithemelandco-woo-report'); ?> </label>
                                 <select name="industry" id="itwr-activation-industry">
-                                    <option value=""><?php esc_html_e('Select', 'iThemelandCo-Woo-Report-Lite'); ?></option>
+                                    <option value=""><?php esc_html_e('Select','ithemelandco-woo-report'); ?></option>
                                     <?php
                                     if (!empty($industries)) :
                                         foreach ($industries as $industry_key => $industry_label) :
@@ -43,8 +43,8 @@
                                 </select>
                             </div>
                             <input type="hidden" name="activation_type" id="itwr-activation-type" value="">
-                            <button type="button" id="itwr-activation-activate" class="itwr-button itwr-button-lg itwr-button-blue" value="1"><?php esc_html_e('Activate', 'iThemelandCo-Woo-Report-Lite'); ?></button>
-                            <button type="button" id="itwr-activation-skip" class="itwr-button itwr-button-lg itwr-button-gray" style="float: left;" value="skip"><?php esc_html_e('Skip', 'iThemelandCo-Woo-Report-Lite'); ?></button>
+                            <button type="button" id="itwr-activation-activate" class="itwr-button itwr-button-lg itwr-button-blue" value="1"><?php esc_html_e('Activate','ithemelandco-woo-report'); ?></button>
+                            <button type="button" id="itwr-activation-skip" class="itwr-button itwr-button-lg itwr-button-gray" style="float: left;" value="skip"><?php esc_html_e('Skip','ithemelandco-woo-report'); ?></button>
                         </form>
                     </div>
                 </div>

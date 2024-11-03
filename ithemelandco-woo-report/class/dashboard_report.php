@@ -114,26 +114,26 @@ if($it_to_date==''){
 								if($this->get_dashboard_capability('sale_by_months_chart')){
 									?>
 
-                                    <li><a href="#section-bar-1" class="" data-target="pwr_chartdiv_month"> <span><?php echo esc_html__('Sales By Months','it_report_wcreport_textdomain') ?></span></a></li>
+                                    <li><a href="#section-bar-1" class="" data-target="pwr_chartdiv_month"> <span><?php echo esc_html__('Sales By Months','ithemelandco-woo-report') ?></span></a></li>
 
 
 									<?php
 								}
 								if($this->get_dashboard_capability('sale_by_days_chart')){
 									?>
-                                    <li><a href="#section-bar-2" class="" data-target="pwr_chartdiv_day"> <span><?php echo esc_html__('Sales By Days','it_report_wcreport_textdomain') ?></span></a></li>
+                                    <li><a href="#section-bar-2" class="" data-target="pwr_chartdiv_day"> <span><?php echo esc_html__('Sales By Days','ithemelandco-woo-report') ?></span></a></li>
 
 									<?php
 								}
 								if($this->get_dashboard_capability('3d_month_chart_chart')){
 									?>
-                                    <li><a href="#section-bar-3" class="" data-target="pwr_chartdiv_multiple"> <span><?php echo esc_html__('3D Month Chart','it_report_wcreport_textdomain') ?></span></a></li>
+                                    <li><a href="#section-bar-3" class="" data-target="pwr_chartdiv_multiple"> <span><?php echo esc_html__('3D Month Chart','ithemelandco-woo-report') ?></span></a></li>
 
 									<?php
 								}
 								if($this->get_dashboard_capability('top_products_chart')){
 									?>
-                                    <li><a href="#section-bar-4" class="" data-target="pwr_chartdiv_pie"> <span><?php echo esc_html__('Top Products','it_report_wcreport_textdomain') ?></span></a></li>
+                                    <li><a href="#section-bar-4" class="" data-target="pwr_chartdiv_pie"> <span><?php echo esc_html__('Top Products','ithemelandco-woo-report') ?></span></a></li>
 									<?php
 								}
 								?>
@@ -143,7 +143,7 @@ if($it_to_date==''){
                         <div class="awr-theme-chart">
                             <ul>
                                 <li  class="awr-theme-chart-title">
-                                    <span class=""><?php echo  esc_html__('Click to change theme','it_report_wcreport_textdomain'); ?>:&nbsp;&nbsp;</span>
+                                    <span class=""><?php echo  esc_html__('Click to change theme','ithemelandco-woo-report'); ?>:&nbsp;&nbsp;</span>
                                 </li>
 
                                 <li class="it_switch_chart_theme it_switch_chart_theme_light" data-theme="light">
@@ -218,7 +218,7 @@ if($it_to_date==''){
                 <div class="col-xs-12 col-md-12">
                     <div class="awr-box">
                         <div class="awr-title">
-                            <h3><i class="fa fa-desktop"></i><?php esc_html_e('Map','it_report_wcreport_textdomain');?></h3>
+                            <h3><i class="fa fa-desktop"></i><?php esc_html_e('Map','ithemelandco-woo-report');?></h3>
                             <div class="awr-title-icons">
                                 <div class="awr-title-icon awr-toggle-icon"><i class="fa fa-arrow-up"></i></div>
                                 <div class="awr-title-icon awr-setting-icon"><i class="fa fa-cog"></i></div>
@@ -233,7 +233,7 @@ if($it_to_date==''){
 
 
                             <div class="rightPanel">
-                                <h2><?php echo  esc_html__('Select a year','it_report_wcreport_textdomain'); ?></h2>
+                                <h2><?php echo  esc_html__('Select a year','ithemelandco-woo-report'); ?></h2>
                                 <div class="knobContainer">
                                     <input class="knob" data-width="80" data-height="80" data-min="<?php echo esc_attr($first_date);?>" data-max="<?php echo esc_html($it_to_date); ?>" data-cursor=true data-fgColor="#454545" data-thickness=.45 value="<?php echo esc_attr($first_date);?>" data-bgColor="#c7e8ff" />
                                 </div>
@@ -711,7 +711,7 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
 						?>
                         area : {
                             display : true,
-                            title :"<?php esc_html_e('Country Orders Amount','it_report_wcreport_textdomain');?>",
+                            title :"<?php esc_html_e('Country Orders Amount','ithemelandco-woo-report');?>",
                             marginBottom : 7,
                             slices : [
                                 {
@@ -719,7 +719,7 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
                                     attrs : {
                                         fill : "#6ECBD4"
                                     },
-                                    label :'<?php esc_html_e('Less than','it_report_wcreport_textdomain');?> <?php echo  esc_html($first_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
+                                    label :'<?php esc_html_e('Less than','ithemelandco-woo-report');?> <?php echo  esc_html($first_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
                                 },
                                 {
                                     min :<?php echo esc_html($first_limit_country); ?>,
@@ -727,14 +727,14 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
                                     attrs : {
                                         fill : "#3EC7D4"
                                     },
-                                    label :'> <?php echo esc_html($first_limit_country).' '.esc_attr(get_woocommerce_currency()); ?> <?php esc_html_e('and','it_report_wcreport_textdomain');?> < <?php echo esc_html($two_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
+                                    label :'> <?php echo esc_html($first_limit_country).' '.esc_attr(get_woocommerce_currency()); ?> <?php esc_html_e('and','ithemelandco-woo-report');?> < <?php echo esc_html($two_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
                                 },
                                 {
                                     min :<?php echo esc_html($two_limit_country); ?>,
                                     attrs : {
                                         fill : "#01565E"
                                     },
-                                    label :'<?php esc_html_e('More than','it_report_wcreport_textdomain');?> <?php echo esc_html($two_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
+                                    label :'<?php esc_html_e('More than','ithemelandco-woo-report');?> <?php echo esc_html($two_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
                                 }
                             ]
                         },
@@ -744,7 +744,7 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
 						?>
                         plot :{
                             display : true,
-                            title: "<?php esc_html_e('State Orders Amount','it_report_wcreport_textdomain');?>",
+                            title: "<?php esc_html_e('State Orders Amount','ithemelandco-woo-report');?>",
                             marginBottom : 6,
                             slices : [
                                 {
@@ -758,7 +758,7 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
                                         transform : "s1.5",
                                         "stroke-width" : 1
                                     },
-                                    label :"<?php esc_html_e('Less than','it_report_wcreport_textdomain');?> <?php echo esc_html($first_limit_state).' '.esc_attr(get_woocommerce_currency());?>",
+                                    label :"<?php esc_html_e('Less than','ithemelandco-woo-report');?> <?php echo esc_html($first_limit_state).' '.esc_attr(get_woocommerce_currency());?>",
                                     size : 10
                                 },
                                 {
@@ -773,7 +773,7 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
                                         transform : "s1.5",
                                         "stroke-width" : 1
                                     },
-                                    label :"> <?php echo esc_html($first_limit_state).' '.esc_attr(get_woocommerce_currency()).' '; ?> <?php esc_html_e('and','it_report_wcreport_textdomain');?> < <?php echo esc_html($two_limit_state).' '.esc_attr(get_woocommerce_currency()); ?>",
+                                    label :"> <?php echo esc_html($first_limit_state).' '.esc_attr(get_woocommerce_currency()).' '; ?> <?php esc_html_e('and','ithemelandco-woo-report');?> < <?php echo esc_html($two_limit_state).' '.esc_attr(get_woocommerce_currency()); ?>",
                                     size : 20
                                 },
                                 {
@@ -787,7 +787,7 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
                                         transform : "s1.5",
                                         "stroke-width" : 1
                                     },
-                                    label :"<?php esc_html_e('More than','it_report_wcreport_textdomain');?> <?php echo ' '.esc_html($two_limit_state).' '.esc_attr(get_woocommerce_currency()); ?>",
+                                    label :"<?php esc_html_e('More than','ithemelandco-woo-report');?> <?php echo ' '.esc_html($two_limit_state).' '.esc_attr(get_woocommerce_currency()); ?>",
                                     size : 30
                                 }
                             ]
@@ -816,10 +816,10 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
         var toggle=true;
         $(".awr-news-read-oldest").on("click",function(){
             if(toggle){
-                $(".awr-news-read-oldest").html("<?php echo esc_html__('Hide Oldest News !','it_report_wcreport_textdomain')?>");
+                $(".awr-news-read-oldest").html("<?php echo esc_html__('Hide Oldest News !','ithemelandco-woo-report')?>");
             }else
             {
-                $(".awr-news-read-oldest").html("<?php echo esc_html__('Show Oldest News !','it_report_wcreport_textdomain')?>");
+                $(".awr-news-read-oldest").html("<?php echo esc_html__('Show Oldest News !','ithemelandco-woo-report')?>");
             }
 
             $(".awr-news-oldest").toggle("slideUp");

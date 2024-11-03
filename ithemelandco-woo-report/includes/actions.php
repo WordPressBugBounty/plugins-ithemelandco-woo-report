@@ -158,7 +158,7 @@
 			update_post_meta($id,"_purchase_note",$note_text);
 		}
 
-		echo esc_html__('New note has been saved.','it_report_wcreport_textdomain');
+		echo esc_html__('New note has been saved.','ithemelandco-woo-report');
 
 		die(0);
 	}
@@ -323,16 +323,16 @@
 	function get_operation($fields){
 		$operators=array(
 			"Numeric" 	=> array(
-							"eq"=>esc_html__('EQUALS','it_report_wcreport_textdomain'),
-							"neq"=>esc_html__('NOT EQUALS','it_report_wcreport_textdomain'),
-							"lt"=>esc_html__('LESS THEN','it_report_wcreport_textdomain'),
-							"gt"=>esc_html__('MORE THEN','it_report_wcreport_textdomain'),
-							"meq"=>esc_html__('EQUAL AND MORE','it_report_wcreport_textdomain'),
-							"leq"=>esc_html__('LESS AND EQUAL','it_report_wcreport_textdomain'),
+							"eq"=>esc_html__('EQUALS','ithemelandco-woo-report'),
+							"neq"=>esc_html__('NOT EQUALS','ithemelandco-woo-report'),
+							"lt"=>esc_html__('LESS THEN','ithemelandco-woo-report'),
+							"gt"=>esc_html__('MORE THEN','ithemelandco-woo-report'),
+							"meq"=>esc_html__('EQUAL AND MORE','ithemelandco-woo-report'),
+							"leq"=>esc_html__('LESS AND EQUAL','ithemelandco-woo-report'),
 						),
 			"String"	=>  array(
-							"elike"=>esc_html__('EXACTLY LIKE','it_report_wcreport_textdomain'),
-							"like"=>esc_html__('LIKE','it_report_wcreport_textdomain'),
+							"elike"=>esc_html__('EXACTLY LIKE','ithemelandco-woo-report'),
+							"like"=>esc_html__('LIKE','ithemelandco-woo-report'),
 						),
 		);
 		$operators_options='';
@@ -374,7 +374,7 @@
 				$html.='
 				<div class="col-xs-12 pw-translate">
 					<input type="hidden" name="'.$fields.'_column" placeholder="Label for '.$fields.'" value="off">
-					<input type="checkbox" name="'.$fields.'_column" placeholder="Label for '.$fields.'" "'.checked("on",$meta_column,0).'"> '.esc_html__("Display in Grid",'it_report_wcreport_textdomain').'
+					<input type="checkbox" name="'.$fields.'_column" placeholder="Label for '.$fields.'" "'.checked("on",$meta_column,0).'"> '.esc_html__("Display in Grid",'ithemelandco-woo-report').'
 					<br />
 					<input type="text" name="'.$fields.'_translate" placeholder="Label for '.$label.'" value="'.$meta_translate.'">
 					<select name="'.$fields.'_operator">
@@ -384,7 +384,7 @@
 				<br />';
 			}
 		}else{
-			$html=esc_html__('Please add custom field to left site','it_report_wcreport_textdomain');
+			$html=esc_html__('Please add custom field to left site','ithemelandco-woo-report');
 		}
 		//echo $html;
 
@@ -437,10 +437,10 @@
 					$html.='
 					<div class="col-xs-12 pw-translate">
 						<input type="hidden" name="'.$input_name.'_column" placeholder="Label for '.$label.'" value="off">
-						<input type="checkbox" name="'.$input_name.'_column" placeholder="Label for '.$label.'" "'.checked("on",$meta_column,0).'">'.esc_html__("Display in Grid",'it_report_wcreport_textdomain');
+						<input type="checkbox" name="'.$input_name.'_column" placeholder="Label for '.$label.'" "'.checked("on",$meta_column,0).'">'.esc_html__("Display in Grid",'ithemelandco-woo-report');
 						$html.='
 						<input type="hidden" name="'.$input_name.'_filter" placeholder="Label for '.$label.'" value="off">
-						<input type="checkbox" name="'.$input_name.'_filter" placeholder="Label for '.$label.'" "'.checked("on",$meta_filter,0).'">'.esc_html__("Display in Filter",'it_report_wcreport_textdomain');
+						<input type="checkbox" name="'.$input_name.'_filter" placeholder="Label for '.$label.'" "'.checked("on",$meta_filter,0).'">'.esc_html__("Display in Filter",'ithemelandco-woo-report');
 					$html.='
 						<br />
 						<input type="text" name="'.$input_name.'_translate" placeholder="Label for '.$label.'" value="'.$meta_translate.'">
@@ -450,7 +450,7 @@
 				//}
 			}
 		}else{
-			$html=esc_html__('Please add custom field to left site','it_report_wcreport_textdomain');
+			$html=esc_html__('Please add custom field to left site','ithemelandco-woo-report');
 		}
 		// echo $html;
 		echo wp_kses(
@@ -501,11 +501,11 @@
 					$html.='
 					<div class="col-xs-12 pw-translate">
 						<input type="hidden" name="'.$input_name.'_column" placeholder="Label for '.$fields.'" value="off">
-						<input type="checkbox" name="'.$input_name.'_column" placeholder="Label for '.$fields.'" "'.checked("on",$meta_column,0).'">'.esc_html__("Display in Grid",'it_report_wcreport_textdomain');
+						<input type="checkbox" name="'.$input_name.'_column" placeholder="Label for '.$fields.'" "'.checked("on",$meta_column,0).'">'.esc_html__("Display in Grid",'ithemelandco-woo-report');
 					if($id=='po_global_fields_select' || $id=='po_checkout_global_fields_select'){
 						$html.='
 						<input type="hidden" name="'.$input_name.'_filter" placeholder="Label for '.$fields.'" value="off">
-						<input type="checkbox" name="'.$input_name.'_filter" placeholder="Label for '.$fields.'" "'.checked("on",$meta_filter,0).'">'.esc_html__("Display in Filter",'it_report_wcreport_textdomain');
+						<input type="checkbox" name="'.$input_name.'_filter" placeholder="Label for '.$fields.'" "'.checked("on",$meta_filter,0).'">'.esc_html__("Display in Filter",'ithemelandco-woo-report');
 					}
 					$html.='
 						<br />
@@ -516,7 +516,7 @@
 				}
 			}
 		}else{
-			$html=esc_html__('Please add custom field to left site','it_report_wcreport_textdomain');
+			$html=esc_html__('Please add custom field to left site','ithemelandco-woo-report');
 		}
 		// echo $html;
 		echo wp_kses(
@@ -685,7 +685,7 @@
 
 			$value            =  (is_numeric($order_item->TotalAmount) ?  number_format($order_item->TotalAmount,2):0) ;
 
-							$month=esc_html(sanitize_text_field($order_item->Month),'it_report_wcreport_textdomain');
+							$month=esc_html(sanitize_text_field($order_item->Month),'ithemelandco-woo-report');
 
 			$it_fetchs_data[$i]["date"]=$month.' '.$order_item->Year;
 
@@ -775,7 +775,7 @@
 
 			$value            =  (is_numeric($order_item->TotalAmount) ?  number_format($order_item->TotalAmount,2):0) ;
 
-							$month=esc_html(sanitize_text_field($order_item->Month),'it_report_wcreport_textdomain');
+							$month=esc_html(sanitize_text_field($order_item->Month),'ithemelandco-woo-report');
 
 			$it_fetchs_data[$i]["date"]=$month;
 
@@ -1249,13 +1249,13 @@ it_posts.ID=meta.post_id $it_order_status_join where meta.meta_key='it_cartitems
 		if($result){
 			echo '<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="awr-sum-item" style="background-color: #0DBF44;color: #fff">
-							<h2>'.esc_html__('Your Test mail sent successfully','it_report_wcreport_textdomain').'</h2>
+							<h2>'.esc_html__('Your Test mail sent successfully','ithemelandco-woo-report').'</h2>
 						</div><!--awr-sum-item -->
 					</div>';
 		}else{
 			echo '<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="awr-sum-item">
-							<h2>'.esc_html__('Error in sending mail!','it_report_wcreport_textdomain').'</h2>
+							<h2>'.esc_html__('Error in sending mail!','ithemelandco-woo-report').'</h2>
 						</div><!--awr-sum-item -->
 					</div>';
 		}
@@ -1340,11 +1340,11 @@ it_posts.ID=meta.post_id $it_order_status_join where meta.meta_key='it_cartitems
 
 		global $it_rpt_main_class;
 
-		$subject_arr=array("request"=>esc_html__("Send a Request",'it_report_wcreport_textdomain'),"issue"=>esc_html__("Report an issue",'it_report_wcreport_textdomain'));
+		$subject_arr=array("request"=>esc_html__("Send a Request",'ithemelandco-woo-report'),"issue"=>esc_html__("Report an issue",'ithemelandco-woo-report'));
 		$fullname=$my_array_of_vars['awr_fullname'];
 		$email=$my_array_of_vars['awr_email'];
 		$subject=$my_array_of_vars['awr_subject'];
-		$subject=$subject!='' ? $subject_arr[$subject] : esc_html__("Email From Woo Reporting",'it_report_wcreport_textdomain') ;
+		$subject=$subject!='' ? $subject_arr[$subject] : esc_html__("Email From Woo Reporting",'ithemelandco-woo-report') ;
 		$title=$my_array_of_vars['awr_title'];
 		$content=$my_array_of_vars['awr_content'];
 		$email_optimize 		= $it_rpt_main_class->get_options(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'optimize_email','');
@@ -1367,7 +1367,7 @@ it_posts.ID=meta.post_id $it_order_status_join where meta.meta_key='it_cartitems
 			$headers .= 'Content-Transfer-Encoding: 8bit';
 		}
 
-		$email_data =  $content. "<div style=\" padding-bottom:3px; width:520px; margin:auto; text-align:left;\"><strong>".esc_html__("Created Date/Time:",'it_report_wcreport_textdomain')." "."</strong> {$reporte_created}</div>";
+		$email_data =  $content. "<div style=\" padding-bottom:3px; width:520px; margin:auto; text-align:left;\"><strong>".esc_html__("Created Date/Time:",'ithemelandco-woo-report')." "."</strong> {$reporte_created}</div>";
 
 		$message = $email_data;
 		$to		 = $email_send_to;
@@ -1375,9 +1375,9 @@ it_posts.ID=meta.post_id $it_order_status_join where meta.meta_key='it_cartitems
 		$result = wp_mail( $to, "=?UTF-8?B?".base64_encode($subject).' - '.base64_encode($title)."?=", $message, $headers);
 
 		if($result){
-			echo '<span class="awr-req-result" style="background-color: #0DBF44">'. esc_html__("Your Email has been received. Thanks for contact.",'it_report_wcreport_textdomain') .' </span>';
+			echo '<span class="awr-req-result" style="background-color: #0DBF44">'. esc_html__("Your Email has been received. Thanks for contact.",'ithemelandco-woo-report') .' </span>';
 		}else{
-			echo '<span class="awr-req-result">'. esc_html__("Error in sending Email!",'it_report_wcreport_textdomain') .' </span>';
+			echo '<span class="awr-req-result">'. esc_html__("Error in sending Email!",'ithemelandco-woo-report') .' </span>';
 		}
 
 		die(0);

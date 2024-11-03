@@ -339,13 +339,13 @@ if ($file_used == "sql_table") {
 
                     if ($it_table_value == 'wc-completed') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } elseif ($it_table_value == 'wc-refunded') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } else {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     }
 
                     $display_class = '';
@@ -539,13 +539,13 @@ if ($file_used == "sql_table") {
 
                     if ($it_table_value == 'wc-completed') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } elseif ($it_table_value == 'wc-refunded') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } else {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     }
 
                     $display_class = '';
@@ -599,13 +599,13 @@ if ($file_used == "sql_table") {
 
                     if ($it_table_value == 'wc-completed') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } elseif ($it_table_value == 'wc-refunded') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } else {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     }
 
                     $display_class = '';
@@ -672,13 +672,13 @@ if ($file_used == "sql_table") {
 
                     if ($it_table_value == 'wc-completed') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } elseif ($it_table_value == 'wc-refunded') {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     } else {
                         $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                                'it_report_wcreport_textdomain')) . '</span>';
+                                'ithemelandco-woo-report')) . '</span>';
                     }
 
                     $display_class = '';
@@ -865,7 +865,7 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6">
                 <div class="awr-form-title">
-                    <?php esc_html_e('From Date', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('From Date', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                 <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -873,7 +873,7 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6">
                 <div class="awr-form-title">
-                    <?php esc_html_e('To Date', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('To Date', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                 <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -885,7 +885,7 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Refund Type', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Refund Type', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-check"></i></span>
                 <select name="it_refund_status_type" id="refund_type" class="refund_type">
@@ -897,7 +897,7 @@ if ($file_used == "sql_table") {
 
             <!--<div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Show Refund Note', 'it_report_wcreport_textdomain'); ?>
+                        <?php esc_html_e('Show Refund Note', 'ithemelandco-woo-report'); ?>
                     </div>
 
                     <div class="col-md-9 sor">
@@ -906,7 +906,7 @@ if ($file_used == "sql_table") {
                 </div>-->
             <div class="col-md-6">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Group By', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Group By', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-suitcase"></i></span>
                 <select name="it_groupby" id="it_groupby">
@@ -941,10 +941,10 @@ if ($file_used == "sql_table") {
             <input type="hidden" name="table_names" value="<?php echo esc_html($table_name); ?>"/>
             <div class="fetch_form_loading search-form-loading"></div>
             <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i>
-                <span><?php echo esc_html__('Search', 'it_report_wcreport_textdomain'); ?></span></button>
+                <span><?php echo esc_html__('Search', 'ithemelandco-woo-report'); ?></span></button>
             <button type="button" value="Reset" class="button-secondary form_reset_btn"><i
                         class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form',
-                        'it_report_wcreport_textdomain'); ?></span></button>
+                        'ithemelandco-woo-report'); ?></span></button>
         </div>
 
     </form>

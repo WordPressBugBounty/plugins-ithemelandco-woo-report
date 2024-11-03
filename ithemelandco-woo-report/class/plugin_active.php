@@ -3,8 +3,8 @@
 	$it_active_plugin = array(
 
 		array(
-			'label'	=> esc_html__('Purchase Code','it_report_wcreport_textdomain'),
-			'desc'	=> esc_html__('Enter Your Purchase Code','it_report_wcreport_textdomain'),
+			'label'	=> esc_html__('Purchase Code','ithemelandco-woo-report'),
+			'desc'	=> esc_html__('Enter Your Purchase Code','ithemelandco-woo-report'),
 			'name'  => __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_purchase_code',
 			'id'	=> __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_purchase_code',
 			'type'	=> 'text',
@@ -12,8 +12,8 @@
 		),
 
 		array(
-			'label'	=> esc_html__('Email','it_report_wcreport_textdomain'),
-			'desc'	=> esc_html__('Enter Your Valid Email.','it_report_wcreport_textdomain'),
+			'label'	=> esc_html__('Email','ithemelandco-woo-report'),
+			'desc'	=> esc_html__('Enter Your Valid Email.','ithemelandco-woo-report'),
 			'name'  => __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_email',
 			'id'	=> __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_email',
 			'type'	=> 'text',
@@ -25,6 +25,12 @@
     $text_return='';
 	if (isset($_POST["update_settings"])) {
 		// Do the saving
+
+		// Check nonce before processing any data
+		if (!isset($_POST['it_report_nonce_field']) || !wp_verify_nonce($_POST['it_report_nonce_field'], 'it_report_nonce_action')) {
+			// Exit if nonce is invalid or missing
+			wp_die(__('Nonce verification failed', 'ithemelandco-woo-report'));
+		}
 
         $email=isset($_POST[__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_email']) ? $_POST[__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_email']:"";
 
@@ -82,7 +88,7 @@
 		$check_db = $it_rpt_main_class->dashboard($it_rpt_main_class->it_plugin_status);
 
 		if ($it_rpt_main_class->dashboard($it_rpt_main_class->it_plugin_status) && isset($check_db["verify-purchase"]["status"]) && $check_db["verify-purchase"]["status"]=='valid' && filter_var($it_rpt_main_class->email, FILTER_VALIDATE_EMAIL)){
-			$text=esc_html__('Congratulation, The Plugin has been Activated Successfully !','it_report_wcreport_textdomain');
+			$text=esc_html__('Congratulation, The Plugin has been Activated Successfully !','ithemelandco-woo-report');
 			?>
                 <script>
                     jQuery(document).ready(function ($) {
@@ -95,7 +101,7 @@
 
             <?php
 		}else if ((isset($check_db["verify-purchase"]["status"]) && $check_db["verify-purchase"]["status"]!='valid') || !filter_var($it_rpt_main_class->email, FILTER_VALIDATE_EMAIL)){
-			$text=esc_html__('Unfortunately, The Purchase code is Wrong, Please try Again !','it_report_wcreport_textdomain');
+			$text=esc_html__('Unfortunately, The Purchase code is Wrong, Please try Again !','ithemelandco-woo-report');
 			$text_return=$check_db["verify-purchase"]["status"];
 			?>
                 <script>
@@ -117,8 +123,8 @@
 	$meta_1 = get_option($field_1['id']);
 	$meta_2 = get_option($field_2['id']);
 
-    $text_ok=esc_html__('Congratulation, The Plugin has been Activated Successfully ! Move to ','it_report_wcreport_textdomain').'<a href="admin.php?page='.$it_rpt_main_class->it_plugin_main_url.'">'.esc_html__("Dashboard",'it_report_wcreport_textdomain').'</a>';
-    $text_error=esc_html__('Unfortunately, The Purchase code is Wrong or Email is not Valid, Please try Again !','it_report_wcreport_textdomain');
+    $text_ok=esc_html__('Congratulation, The Plugin has been Activated Successfully ! Move to ','ithemelandco-woo-report').'<a href="admin.php?page='.$it_rpt_main_class->it_plugin_main_url.'">'.esc_html__("Dashboard",'ithemelandco-woo-report').'</a>';
+    $text_error=esc_html__('Unfortunately, The Purchase code is Wrong or Email is not Valid, Please try Again !','ithemelandco-woo-report');
 
 	$html= '
     <div class="wrap">
@@ -126,7 +132,7 @@
                 <div class="col-xs-12">
                     <div class="awr-box">
                             <div class="awr-title">
-                                <h3><i class="fa fa-shield"></i>'.esc_html__('Plugin Activate','it_report_wcreport_textdomain').'  </h3>
+                                <h3><i class="fa fa-shield"></i>'.esc_html__('Plugin Activate','ithemelandco-woo-report').'  </h3>
                             </div><!--awr-title -->
                             <div class="awr-box-content" >
                                 <div class="col-md-12">
@@ -144,13 +150,15 @@
                                     if(!filter_var($it_rpt_main_class->email, FILTER_VALIDATE_EMAIL)) {
 	                                    $html .= '
                                         <div id="setting-error-settings_updated" class="updated email-notice it_active_email">
-                                            <p><strong>' . esc_html__( 'Please set email for complete activation in Ver4.0', 'it_report_wcreport_textdomain' ) . '</strong></p>
+                                            <p><strong>' . esc_html__( 'Please set email for complete activation in Ver4.0', 'ithemelandco-woo-report' ) . '</strong></p>
                                         </div>';
                                     }
                                     $html.= '
                                 </div>
 
                                 <form method="POST" action="" class="awr-setting-form">
+										'.wp_nonce_field('it_report_nonce_action', 'it_report_nonce_field')
+.'
                                         <input type="hidden" name="update_settings" value="Y" />
                                         <div class="col-md-6">
                                             <div class="awr-form-title"><label>'.$field_1['label'].'</label></div>
@@ -170,7 +178,7 @@
 
                                         <div class="col-md-12">
                                             <div class="awr-setting-submit" style="margin-top:20px">
-                                                <button type="submit" value="Save settings" class="button-primary"><i class="fa fa-floppy-o"></i> <span>'.esc_html__('Save Settings','it_report_wcreport_textdomain').'</span></button>
+                                                <button type="submit" value="Save settings" class="button-primary"><i class="fa fa-floppy-o"></i> <span>'.esc_html__('Save Settings','ithemelandco-woo-report').'</span></button>
 
                                             </div>
                                         </div>

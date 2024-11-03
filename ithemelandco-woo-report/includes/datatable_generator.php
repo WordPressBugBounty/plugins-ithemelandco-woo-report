@@ -441,115 +441,115 @@
 
 					case 'monthly_summary':
 						$table_column=array(
-							array('lable'=>esc_html__('Month','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Target Sales','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Actual Sales','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Difference','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('%','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('% of Total YR PROJ','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Part Refund Amount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-//							array('lable'=>esc_html__('Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-//							array('lable'=>esc_html__('Shipping Order Tax','it_report_wcreport_textdomain'),'status'=>'show'),
-//							array('lable'=>esc_html__('Total Shipping Tax','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Month','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Target Sales','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Actual Sales','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Difference','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('%','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('% of Total YR PROJ','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Part Refund Amount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+//							array('lable'=>esc_html__('Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+//							array('lable'=>esc_html__('Shipping Order Tax','ithemelandco-woo-report'),'status'=>'show'),
+//							array('lable'=>esc_html__('Total Shipping Tax','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'order_summary':
 						$table_column=array(
-							array('lable'=>esc_html__('Sales Order','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Order','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'sale_order_status':
 						$table_column=array(
-							array('lable'=>esc_html__('Order Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'top_5_products':
 						$table_column=array(
-							array('lable'=>esc_html__('Item Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Qty','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Item Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Qty','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'top_5_category':
 						$table_column=array(
-							array('lable'=>esc_html__('Category Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Qty','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Category Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Qty','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'top_5_country':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing Country','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Country','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'top_5_state':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing State','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing State','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'top_5_customer':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'top_5_coupon':
 						$table_column=array(
-							array('lable'=>esc_html__('Coupon Code','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Coupon Used Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Coupon Code','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Coupon Used Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'top_5_gateway':
 						$table_column=array(
-							array('lable'=>esc_html__('Payment Method','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Payment Method','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'recent_5_order':
 						$table_column=array(
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Items','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Payment Method','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Shipping Method','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Currency','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Cart Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Shipping Amt..','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Items','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Payment Method','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Shipping Method','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Currency','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Cart Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Shipping Amt..','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					break;
 
@@ -568,9 +568,9 @@
 					//CUSTOM WORK - 12679
 					case 'clinic':
 					    $table_column=array(
-                            array('lable'=>esc_html__('Clinic Abbreviation','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=>esc_html__('Number of Sales','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+                            array('lable'=>esc_html__('Clinic Abbreviation','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=>esc_html__('Number of Sales','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
                         );
 						break;
 
@@ -580,11 +580,11 @@
 						);
 						break;
 						$table_column=array(
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Change Status Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Status.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Change Status Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Status.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					//CUSTOM WORK - 4186
 					case 'details_full' :
@@ -619,11 +619,11 @@
 					//CUSTOM WORK - 4179
 					case 'order_status_change':
 						$table_column=array(
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Change Status Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Status.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Change Status Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Status.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					break;
 
@@ -649,17 +649,17 @@
 
 					case 'brand':
 						$table_column=array(
-							array('lable'=>esc_html__('Brand Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Quantity','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Brand Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Quantity','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					case 'custom_taxonomy':
 						$table_column=array(
-							array('lable'=>esc_html__('Category Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Quantity','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Category Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Quantity','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 					///////////////////////
@@ -673,22 +673,22 @@
 
 					case 'order_per_country' :
 						$table_column=array(
-							array('lable'=>esc_html__('Country','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Number of Items sold','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Sale','it_report_wcreport_textdomain'),'status'=>'currency'),
-                            array('lable'=>esc_html__('Coupon','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Shipping','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Refunds','it_report_wcreport_textdomain'),'status'=>'currency'),
-                            array('lable'=>esc_html__('Finaly Sale Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Country','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Number of Items sold','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Sale','ithemelandco-woo-report'),'status'=>'currency'),
+                            array('lable'=>esc_html__('Coupon','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Shipping','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refunds','ithemelandco-woo-report'),'status'=>'currency'),
+                            array('lable'=>esc_html__('Finaly Sale Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					//CUSTOM WORK 15092
 					case 'order_per_custom_shipping' :
 						$table_column=array(
-							array('lable'=>esc_html__('Shipping Address','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Number of Items sold','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Sale','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Shipping Address','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Number of Items sold','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Sale','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
@@ -700,15 +700,15 @@
 
 					case 'product':
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Categories','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Tags','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Current Stock','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Categories','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Tags','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Current Stock','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
@@ -716,18 +716,18 @@
 					//CUSTOM WORK 966
 					case 'all_products':
 					$table_column=array(
-						array('lable'=>esc_html__('Product ID','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Price','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Tag','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Current Stock','it_report_wcreport_textdomain'),'status'=>'show'),
-						array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-						array('lable'=>esc_html__('C.O.G','it_report_wcreport_textdomain'),'status'=>'currency'),
-						array('lable'=>esc_html__('Profit','it_report_wcreport_textdomain'),'status'=>'currency'),
-						//array('lable'=>esc_html__('Edit','it_report_wcreport_textdomain'),'status'=>'show'),
+						array('lable'=>esc_html__('Product ID','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Price','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Tag','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Current Stock','ithemelandco-woo-report'),'status'=>'show'),
+						array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+						array('lable'=>esc_html__('C.O.G','ithemelandco-woo-report'),'status'=>'currency'),
+						array('lable'=>esc_html__('Profit','ithemelandco-woo-report'),'status'=>'currency'),
+						//array('lable'=>esc_html__('Edit','ithemelandco-woo-report'),'status'=>'show'),
 				);
 				break;
 
@@ -736,58 +736,58 @@
 					//CUSTOM WORK
 					case 'product_per_users':
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Categories','it_report_wcreport_textdomain'),'status'=>'show'),
-							///array('lable'=>esc_html__('Tags','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							//array('lable'=>esc_html__('Current Stock','it_report_wcreport_textdomain'),'status'=>'show'),
-							//array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Categories','ithemelandco-woo-report'),'status'=>'show'),
+							///array('lable'=>esc_html__('Tags','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							//array('lable'=>esc_html__('Current Stock','ithemelandco-woo-report'),'status'=>'show'),
+							//array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'profit':
 						$table_column=array(
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit','it_report_wcreport_textdomain'),'status'=>'currency'),
-							//array('lable'=>esc_html__('Avg Profit/Order','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit','ithemelandco-woo-report'),'status'=>'currency'),
+							//array('lable'=>esc_html__('Avg Profit/Order','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 
 					case 'category':
 						$table_column=array(
-							array('lable'=>esc_html__('Category Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Quantity','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Category Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Quantity','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					////ADDED IN VER4.0
 					case 'tags':
 						$table_column=array(
-							array('lable'=>esc_html__('Tag Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Quantity','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Tag Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Quantity','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					case 'customer':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing First Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Last Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency')
+							array('lable'=>esc_html__('Billing First Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Last Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency')
 						);
 					break;
 
@@ -795,247 +795,247 @@
 					/// ROLE/GROUP ADDON
 					case 'customer_role_total_sale':
 						$table_column=array(
-							array('lable'=>esc_html__('Role Name','it_report_wcreport_textdomain'),'status'=>'show'),
-//							array('lable'=>esc_html__('User Name','it_report_wcreport_textdomain'),'status'=>'show'),
-//							array('lable'=>esc_html__('Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency')
+							array('lable'=>esc_html__('Role Name','ithemelandco-woo-report'),'status'=>'show'),
+//							array('lable'=>esc_html__('User Name','ithemelandco-woo-report'),'status'=>'show'),
+//							array('lable'=>esc_html__('Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency')
 						);
 						break;
 					case 'customer_role_registered':
 						$table_column=array(
-							array('lable'=>esc_html__('User Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('User Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Role Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('First Order','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('First Order Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('First Order Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('User Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('User Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Role Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('First Order','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('First Order Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('First Order Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 					case 'customer_role_top_products':
 						$table_column=array(
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Sales Qty','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Sales Qty','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 					case 'customer_role_bottom_products':
 						$table_column=array(
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Sales Qty','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Sales Qty','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'billingcountry':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing Country','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Billing Country','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 					case 'billingstate':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing State','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Country','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Billing State','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Country','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
                     ////ADDED IN VER4.0
 					case 'billingcity':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing City','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing State','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Country','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Billing City','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing State','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Country','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					case 'paymentgateway':
 						$table_column=array(
-							array('lable'=>esc_html__('Payment Method','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Payment Method','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 					case 'orderstatus':
 						$table_column=array(
-							array('lable'=>esc_html__('Order Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					case 'recentorder':
 						$table_column=array(
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Items','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Payment Method','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Shipping Method','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Currency','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Order Discount Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Cart Discount Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total Discount Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Shipping Amt..','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Items','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Payment Method','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Shipping Method','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Currency','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Discount Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Cart Discount Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total Discount Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Shipping Amt..','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 
 						);
 					break;
 					case 'taxreport':
 						$table_column=array(
-							array('lable'=>esc_html__('Tax Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Tax Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							//array('lable'=>esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Shipping Tax','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Order Tax','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total Tax','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Tax Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Tax Rate','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							//array('lable'=>esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Shipping Tax','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Tax','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total Tax','ithemelandco-woo-report'),'status'=>'currency'),
 
 					);
 					break;
 
 					case 'customerbuyproducts':
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Customer Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Customer Email','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Customer Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Customer Email','ithemelandco-woo-report'),'status'=>'show'),
 							//4103
-							array('lable'=>esc_html__('Customer Phone','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Current Stock','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Customer Phone','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Current Stock','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					//CUSTOM WORK 17427
 					case 'customer_category':
 						$table_column=array(
-							array('lable'=>esc_html__('Customer Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Customer Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Category','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Customer Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Customer Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Category','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_status_refunded_main':
 						$table_column=array(
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_status_refunded':
 						$table_column=array(
-							array('lable'=>esc_html__('Refunded By','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refunded By','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_status_daily':
 						$table_column=array(
-							array('lable'=>esc_html__('Refund Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refund Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_status_monthly':
 						$table_column=array(
-							array('lable'=>esc_html__('Month','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Month','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_status_yearly':
 						$table_column=array(
-							array('lable'=>esc_html__('Year','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Year','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_part_refunded_main':
 						$table_column=array(
-							array('lable'=>esc_html__('Refund ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund By','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Note','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refund ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund By','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Note','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_part_refunded_order_id':
 						$table_column=array(
-							array('lable'=>esc_html__('Order ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Status','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Status','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_part_refunded':
 						$table_column=array(
-							array('lable'=>esc_html__('Refunded By','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refunded By','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_part_refunded_daily':
 						$table_column=array(
-							array('lable'=>esc_html__('Refund Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refund Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_part_refunded_monthly':
 						$table_column=array(
-							array('lable'=>esc_html__('Month','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Month','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'refunddetails_part_refunded_yearly':
 						$table_column=array(
-							array('lable'=>esc_html__('Year','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Year','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
 					case 'coupon':
 						$table_column=array(
-							array('lable'=>esc_html__('Coupon Code','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Coupon Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Coupon Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Coupon Code','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Coupon Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Coupon Amount','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
@@ -1043,48 +1043,48 @@
 					/// OTHER SUMMARY
 					case 'coupon_discount':
 						$table_column=array(
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Coupon Code','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Discount Type','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Qty','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Discount Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Coupon Code','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Discount Type','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Qty','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Discount Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 					case 'customer_analysis':
 						$table_column=array(
-							array('lable'=>esc_html__('Months','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Sales Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('New Customer Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Repeat Customer Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('New Customer Sales Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Repeat Customer Sales Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Months','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Sales Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('New Customer Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Repeat Customer Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('New Customer Sales Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Repeat Customer Sales Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 					case 'customer_order_frequently':
 						$table_column=array(
-							array('lable'=>esc_html__('Report Item','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Report Item','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					break;
 					case 'customer_min_max':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing First Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Last Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Min Price','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Max Price','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing First Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Last Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Min Price','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Max Price','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					break;
 					case 'customer_no_purchased':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing First Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Last Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Billing Email','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Last Order Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							//array('lable'=>esc_html__('Wake Up','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing First Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Last Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Billing Email','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Last Order Date','ithemelandco-woo-report'),'status'=>'show'),
+							//array('lable'=>esc_html__('Wake Up','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					break;
 
@@ -1092,31 +1092,31 @@
 					//STOCK REPORTS
 					case 'stock_zero_level' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Last Sales Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Stock Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Actions','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Last Sales Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Stock Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Actions','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					case 'stock_min_level' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Last Sales Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Stock Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Actions','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Last Sales Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Stock Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Actions','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
 					case 'stock_max_level' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Last Sales Date','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Stock Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Actions','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Last Sales Date','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Stock Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Actions','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 
@@ -1129,25 +1129,25 @@
 					//ORDER ANALYSIS
 					case 'order_product_analysis' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Number of Order.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Price','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Number of Order.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Price','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 					case 'order_variation_analysis' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Variation','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Number of Order.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Price','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Variation','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Number of Order.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Price','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 					break;
 					//////END ORDER ANALYSIS/////
@@ -1155,75 +1155,75 @@
 					/////////////////CROSTABS///////////////
 					case 'prod_per_month':
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Payment Method','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Payment Method','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
 					case 'variation_per_month':
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Payment Method','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Payment Method','ithemelandco-woo-report'),'status'=>'show'),
 
 					);
 					break;
 					case 'prod_per_country':
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						//Make columns with QUERY
 					break;
 					case 'prod_per_state':
 						$table_column=array(
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						//Make columns with QUERY
 					break;
 
 					case 'country_per_month':
 						$table_column=array(
-							array('lable'=>esc_html__('Country Name','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Country Name','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 					case 'payment_per_month':
 						$table_column=array(
-							array('lable'=>esc_html__('Payment Gateway','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Payment Gateway','ithemelandco-woo-report'),'status'=>'show'),
 
 					);
 					break;
 					case 'ord_status_per_month':
 						$table_column=array(
-							array('lable'=>esc_html__('Status Name','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Status Name','ithemelandco-woo-report'),'status'=>'show'),
 
 					);
 					break;
 					case 'summary_per_month':
 						$table_column=array(
-							array('lable'=>esc_html__('Reports','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Reports','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					break;
 					//end of cross tabs
 
 					case 'variation':
 						$table_column=array(
-							array('lable'=>esc_html__('Product ID','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product SKU','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Name','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Category','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Tag','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Current Stock','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit','it_report_wcreport_textdomain'),'status'=>'currency'),
-							//array('lable'=>esc_html__('Edit','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Product ID','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product SKU','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Name','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Category','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Tag','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Current Stock','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit','ithemelandco-woo-report'),'status'=>'currency'),
+							//array('lable'=>esc_html__('Edit','ithemelandco-woo-report'),'status'=>'show'),
 					);
 					break;
 
@@ -1236,14 +1236,14 @@
 
 					case 'projected_actual_sale':
 						$table_column=array(
-							array('lable'=>esc_html__('Month','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Target Sales','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Actual Sales','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Difference','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('%','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Refund Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Part Refund Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total Discount Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Month','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Target Sales','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Actual Sales','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Difference','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('%','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refund Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Part Refund Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total Discount Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 					);
 					break;
 
@@ -1255,12 +1255,12 @@
 					//CUSTOM WORK - 12412
 					case 'product_variation_qty':
 						$table_column=array(
-							array('lable'=>esc_html__('Simple Product','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Qty','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('*','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Variation','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Variation','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Qty','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Simple Product','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Qty','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('*','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Variation','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Variation','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Qty','ithemelandco-woo-report'),'status'=>'show'),
 						);
 					break;
 
@@ -1280,31 +1280,31 @@
 
 					case 'details_no_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'details_with_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Rate','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
@@ -1314,13 +1314,13 @@
 					//CUSTOM WORK - 522
                     case 'details_combined':
                         $table_column=array(
-                            array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=> esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=> esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=> esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=> esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=> esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'show'),
-                            array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+                            array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=> esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=> esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=> esc_html__('Rate','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=> esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=> esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'show'),
+                            array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
                         );
                         break;
 
@@ -1329,110 +1329,110 @@
 					//CUSTOM WORK - 12300
                     case 'details_tickera_no_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					//CUSTOM WORK - 12679
 					case 'clinic':
 						$table_column=array(
-							array('lable'=>esc_html__('Number of Sales','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Number of Sales','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
                     //CUSTOM WORK - 12300
 					case 'details_tickera_with_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Rate','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					/////////////BRANDS////////////////
 					case 'details_brands_no_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'details_brands_with_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show')
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Rate','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show')
 						);
 						break;
 
 					/////////////CUSTOM TAX & FIELDS////////////////
 					case 'details_tax_field_no_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'details_tax_field_with_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show')
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Rate','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show')
 						);
 						break;
 
 					case 'brand':
 						$table_column=array(
-							array('lable'=>esc_html__('Brand Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Brand Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'custom_taxonomy':
 						$table_column=array(
-							array('lable'=>esc_html__('Category Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Category Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 					///////////////////////
@@ -1440,47 +1440,47 @@
 					///////// ORDER PER COUNTRY ////////////
 					case 'details_order_country_no_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'details_order_country_with_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show')
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Rate','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show')
 						);
 						break;
 
 					case 'order_per_country' :
 						$table_column=array(
-							array('lable'=>esc_html__('Country Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Number of Items sold','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Sale','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Coupon Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Refunds Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Finaly Sale Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Country Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Number of Items sold','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Sale','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Coupon Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Refunds Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Finaly Sale Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					    //CUSTOM WORK 15092
 						case 'order_per_custom_shipping' :
 						$table_column=array(
-							array('lable'=>esc_html__('Number of Items sold','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Sale','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Number of Items sold','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Sale','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
@@ -1490,31 +1490,31 @@
 					///////// PRODUCT OPTIONS ALL ORDER ////////////
 					case 'details_product_options_no_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'details_product_options_with_items':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Rate','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Prod. Discount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Rate','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Prod. Discount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
@@ -1524,22 +1524,22 @@
 
 					case 'product':
 						$table_column=array(
-							array('lable'=>esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 						//CUSTOM WORK 966
 						case 'all_products':
 						$table_column=array(
-							array('lable'=>esc_html__('Variation Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Variation Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
@@ -1547,123 +1547,123 @@
 					//CUSTOM WORK
 					case 'product_per_users':
 						$table_column=array(
-							array('lable'=>esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							//array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							//array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'profit':
 						$table_column=array(
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Profit Amt','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Profit Amt','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'category':
 						$table_column=array(
-							array('lable'=>esc_html__('Category Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Category Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					////ADDED IN VER4.0
 					case 'tags':
 						$table_column=array(
-							array('lable'=>esc_html__('Category Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Category Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'customer':
 						$table_column=array(
-							array('lable'=>esc_html__('Customer Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency')
+							array('lable'=>esc_html__('Customer Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency')
 						);
 						break;
 
 					case 'billingcountry':
 						$table_column=array(
-							array('lable'=>esc_html__('Country Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Country Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 					case 'billingstate':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing State Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Billing State Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					////ADDED IN VER4.0
 					case 'billingcity':
 						$table_column=array(
-							array('lable'=>esc_html__('Billing City Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Billing City Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'paymentgateway':
 						$table_column=array(
-							array('lable'=>esc_html__('Payment Method Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Payment Method Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'orderstatus':
 						$table_column=array(
-							array('lable'=>esc_html__('Order Status Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Status Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'recentorder':
 						$table_column=array(
-							array('lable'=> esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Discount Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Shipping Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>	esc_html__('Order Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Total Tax Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Part Refund Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=> esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=> esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Discount Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Shipping Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>	esc_html__('Order Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Total Tax Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Part Refund Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=> esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'taxreport':
 						$table_column=array(
-							array('lable'=>esc_html__('Tax Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Shipping Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							//array('lable'=>esc_html__('Gross Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Net Amt.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Shipping Tax','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Tax','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Tax','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Tax Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Shipping Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							//array('lable'=>esc_html__('Gross Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Net Amt.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Shipping Tax','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Tax','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Tax','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'customerbuyproducts':
 						$table_column=array(
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
@@ -1671,24 +1671,24 @@
 					//CUSTOM WORK 17427
 					case 'customer_category':
 						$table_column=array(
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'refunddetails':
 						$table_column=array(
-							array('lable'=>esc_html__('Result Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Order Counts','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Refund Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Result Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Order Counts','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Refund Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
 					case 'coupon':
 						$table_column=array(
-							array('lable'=>esc_html__('Result Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Coupon Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Coupon Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Result Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Coupon Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Coupon Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
@@ -1696,39 +1696,39 @@
 					/// OTHER SUMMARY
 					case 'coupon_discount':
 						$table_column=array(
-							array('lable'=>esc_html__('Result Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Product Qty','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Discount Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Result Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Product Qty','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Discount Amount','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 					case 'customer_analysis':
 						$table_column=array(
-							array('lable'=>esc_html__('Months Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Sales Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Total Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('New Customer Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Repeat Customer Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('New Customer Sales Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Repeat Customer Sales Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Months Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Sales Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Total Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('New Customer Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Repeat Customer Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('New Customer Sales Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Repeat Customer Sales Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 					case 'customer_order_frequently':
 						$table_column=array(
-							array('lable'=>esc_html__('Report Item','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Report Item','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 					case 'customer_min_max':
 						$table_column=array(
-							array('lable'=>esc_html__('Customer Count','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Customer Count','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 					case 'customer_no_purchased':
 						$table_column=array(
-							array('lable'=>esc_html__('Customer Count','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Order Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Amount','it_report_wcreport_textdomain'),'status'=>'show'),
+							array('lable'=>esc_html__('Customer Count','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Order Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Amount','ithemelandco-woo-report'),'status'=>'show'),
 						);
 						break;
 
@@ -1736,29 +1736,29 @@
 					//STOCK REPORTS
 					case 'stock_zero_level' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Stock','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Stock','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'stock_min_level' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Stock','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Stock','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'stock_max_level' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Total Stock','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Total Stock','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
 					case 'stock_summary_avg' :
 						$table_column=array(
-							array('lable'=>esc_html__('Product Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Current Stock Qty','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Product Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Current Stock Qty','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 					//////END STOCK REPORTS/////
@@ -1766,11 +1766,11 @@
 
 					case 'variation':
 						$table_column=array(
-							array('lable'=>esc_html__('Variation Count','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Sales Qty.','it_report_wcreport_textdomain'),'status'=>'show'),
-							array('lable'=>esc_html__('Amount','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('C.O.G Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
-							array('lable'=>esc_html__('Profit Amt.','it_report_wcreport_textdomain'),'status'=>'currency'),
+							array('lable'=>esc_html__('Variation Count','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Sales Qty.','ithemelandco-woo-report'),'status'=>'show'),
+							array('lable'=>esc_html__('Amount','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('C.O.G Amt.','ithemelandco-woo-report'),'status'=>'currency'),
+							array('lable'=>esc_html__('Profit Amt.','ithemelandco-woo-report'),'status'=>'currency'),
 						);
 						break;
 
@@ -1795,108 +1795,108 @@
 
 
 				$page_titles=array(
-					'dashboard_report'		=> esc_html__( "Summary",'it_report_wcreport_textdomain'),
-					'monthly_summary'		=> esc_html__( "Monthly Summary",'it_report_wcreport_textdomain'),
-					'order_summary'			=> esc_html__( "Order Summary",'it_report_wcreport_textdomain'),
-					'sale_order_status'		=> esc_html__( "Sales Order Status",'it_report_wcreport_textdomain'),
-					'top_5_products'		=> esc_html__( "Top 5 Products",'it_report_wcreport_textdomain'),
-					'top_5_country'			=> esc_html__( "Top 5 Billing Country",'it_report_wcreport_textdomain'),
-					'top_5_category'		=> esc_html__( "Top 5 Categroy",'it_report_wcreport_textdomain'),
-					'top_5_state'			=> esc_html__( "Top 5 Billing State",'it_report_wcreport_textdomain'),
-					'top_5_customer'		=> esc_html__( "Top 5 Customers",'it_report_wcreport_textdomain'),
-					'top_5_coupon'			=> esc_html__( "Top 5 Coupon",'it_report_wcreport_textdomain'),
-					'top_5_gateway'			=> esc_html__( "Top 5 Payment Gateway",'it_report_wcreport_textdomain'),
-					"recent_5_order"		=> esc_html__( "Recent 5 Orders",'it_report_wcreport_textdomain'),
-					'details'				=> esc_html__( "All Orders",'it_report_wcreport_textdomain'),
+					'dashboard_report'		=> esc_html__( "Summary",'ithemelandco-woo-report'),
+					'monthly_summary'		=> esc_html__( "Monthly Summary",'ithemelandco-woo-report'),
+					'order_summary'			=> esc_html__( "Order Summary",'ithemelandco-woo-report'),
+					'sale_order_status'		=> esc_html__( "Sales Order Status",'ithemelandco-woo-report'),
+					'top_5_products'		=> esc_html__( "Top 5 Products",'ithemelandco-woo-report'),
+					'top_5_country'			=> esc_html__( "Top 5 Billing Country",'ithemelandco-woo-report'),
+					'top_5_category'		=> esc_html__( "Top 5 Categroy",'ithemelandco-woo-report'),
+					'top_5_state'			=> esc_html__( "Top 5 Billing State",'ithemelandco-woo-report'),
+					'top_5_customer'		=> esc_html__( "Top 5 Customers",'ithemelandco-woo-report'),
+					'top_5_coupon'			=> esc_html__( "Top 5 Coupon",'ithemelandco-woo-report'),
+					'top_5_gateway'			=> esc_html__( "Top 5 Payment Gateway",'ithemelandco-woo-report'),
+					"recent_5_order"		=> esc_html__( "Recent 5 Orders",'ithemelandco-woo-report'),
+					'details'				=> esc_html__( "All Orders",'ithemelandco-woo-report'),
 
                     //CUSTOM WORK - 522
-                    'details_combined'				=> esc_html__( "Combined Orders",'it_report_wcreport_textdomain'),
+                    'details_combined'				=> esc_html__( "Combined Orders",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK - 12679
-					'clinic'				=> esc_html__( "Total Sales per Clinic",'it_report_wcreport_textdomain'),
+					'clinic'				=> esc_html__( "Total Sales per Clinic",'ithemelandco-woo-report'),
 
                     //CUSTOM WORK - 12300
-					'details_tickera'				=> esc_html__( "All Orders Tickera",'it_report_wcreport_textdomain'),
+					'details_tickera'				=> esc_html__( "All Orders Tickera",'ithemelandco-woo-report'),
 
                     //CUSTOM WORK - 4186
-					'details_full'				=> esc_html__( "All Orders Billing",'it_report_wcreport_textdomain'),
+					'details_full'				=> esc_html__( "All Orders Billing",'ithemelandco-woo-report'),
 
 
                     //CUSTOM WORK - 53
-					'details_full_shipping'				=> esc_html__( "All Orders Billing/Shipping",'it_report_wcreport_textdomain'),
+					'details_full_shipping'				=> esc_html__( "All Orders Billing/Shipping",'ithemelandco-woo-report'),
 
                     //CUSTOM WORK - 16
-					'details_full_shipping_tax'				=> esc_html__( "All Orders Billing|Shipping Tax",'it_report_wcreport_textdomain'),
+					'details_full_shipping_tax'				=> esc_html__( "All Orders Billing|Shipping Tax",'ithemelandco-woo-report'),
 
 					//ADDED IN VER 4.9
-					'abandoned_cart'				=> esc_html__( "Abandoned Carts",'it_report_wcreport_textdomain'),
-					'abandoned_product'				=> esc_html__( "Abandoned Products",'it_report_wcreport_textdomain'),
+					'abandoned_cart'				=> esc_html__( "Abandoned Carts",'ithemelandco-woo-report'),
+					'abandoned_product'				=> esc_html__( "Abandoned Products",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK - 4179
-					'order_status_change'				=> esc_html__( "Status Change",'it_report_wcreport_textdomain'),
+					'order_status_change'				=> esc_html__( "Status Change",'ithemelandco-woo-report'),
 
 					////ADDED IN VER4.0
                     /// ORDER PER COUNTRY
-                    'details_order_country'	=> esc_html__( "All Orders per Country",'it_report_wcreport_textdomain'),
-					'order_per_country'		=> esc_html__( "Order / Country",'it_report_wcreport_textdomain'),
+                    'details_order_country'	=> esc_html__( "All Orders per Country",'ithemelandco-woo-report'),
+					'order_per_country'		=> esc_html__( "Order / Country",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK 15092
-					'order_per_custom_shipping'		=> esc_html__( "Order / Shipping",'it_report_wcreport_textdomain'),
+					'order_per_custom_shipping'		=> esc_html__( "Order / Shipping",'ithemelandco-woo-report'),
 					////ADDED IN VER4.0
                     /// PRODUCT OPTIONS CUSTOM FIELDS
 
-					'product'				 => esc_html__( "Product",'it_report_wcreport_textdomain'),
+					'product'				 => esc_html__( "Product",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK 966
-					'all_products'				 => esc_html__( "All Products",'it_report_wcreport_textdomain'),
+					'all_products'				 => esc_html__( "All Products",'ithemelandco-woo-report'),
 
-        	'profit'				 => esc_html__( "Profit",'it_report_wcreport_textdomain'),
-					'category'				=> esc_html__( "Category",'it_report_wcreport_textdomain'),
+        	'profit'				 => esc_html__( "Profit",'ithemelandco-woo-report'),
+					'category'				=> esc_html__( "Category",'ithemelandco-woo-report'),
 					////ADDED IN VER4.0
-					'tags'				=> esc_html__( "Tags",'it_report_wcreport_textdomain'),
-					'stock_zero_level'				=> esc_html__( "Zero Level Stock",'it_report_wcreport_textdomain'),
-					'stock_min_level'				=> esc_html__( "Minimum Level Stock",'it_report_wcreport_textdomain'),
-					'stock_max_level'				=> esc_html__( "Most Stocked",'it_report_wcreport_textdomain'),
-					'stock_summary_avg'				=> esc_html__( "Summary Stock Planner Based On Average Sales",'it_report_wcreport_textdomain'),
+					'tags'				=> esc_html__( "Tags",'ithemelandco-woo-report'),
+					'stock_zero_level'				=> esc_html__( "Zero Level Stock",'ithemelandco-woo-report'),
+					'stock_min_level'				=> esc_html__( "Minimum Level Stock",'ithemelandco-woo-report'),
+					'stock_max_level'				=> esc_html__( "Most Stocked",'ithemelandco-woo-report'),
+					'stock_summary_avg'				=> esc_html__( "Summary Stock Planner Based On Average Sales",'ithemelandco-woo-report'),
 
-					'customer'				=> esc_html__( "Customer",'it_report_wcreport_textdomain'),
-					'billingcountry'		  => esc_html__( "Billing Country",'it_report_wcreport_textdomain'),
-					'billingstate'			=> esc_html__( "Billing State",'it_report_wcreport_textdomain'),
-					'billingcity'			=> esc_html__( "Billing City",'it_report_wcreport_textdomain'),
-					'paymentgateway'		  => esc_html__( "Payment Gateway",'it_report_wcreport_textdomain'),
-					'orderstatus'			 => esc_html__( "Order Status",'it_report_wcreport_textdomain'),
-					'recentorder'			 => esc_html__( "Recent Order",'it_report_wcreport_textdomain'),
-					'taxreport' 			   => esc_html__( "Tax Report",'it_report_wcreport_textdomain'),
-					'customerbuyproducts'	 => esc_html__( "Custom Member Buy Products",'it_report_wcreport_textdomain'),
+					'customer'				=> esc_html__( "Customer",'ithemelandco-woo-report'),
+					'billingcountry'		  => esc_html__( "Billing Country",'ithemelandco-woo-report'),
+					'billingstate'			=> esc_html__( "Billing State",'ithemelandco-woo-report'),
+					'billingcity'			=> esc_html__( "Billing City",'ithemelandco-woo-report'),
+					'paymentgateway'		  => esc_html__( "Payment Gateway",'ithemelandco-woo-report'),
+					'orderstatus'			 => esc_html__( "Order Status",'ithemelandco-woo-report'),
+					'recentorder'			 => esc_html__( "Recent Order",'ithemelandco-woo-report'),
+					'taxreport' 			   => esc_html__( "Tax Report",'ithemelandco-woo-report'),
+					'customerbuyproducts'	 => esc_html__( "Custom Member Buy Products",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK
-					'customer_category'	 => esc_html__( "Customer Buy Category",'it_report_wcreport_textdomain'),
+					'customer_category'	 => esc_html__( "Customer Buy Category",'ithemelandco-woo-report'),
 
 
-					'refunddetails' 		   => esc_html__( "Refund Orders",'it_report_wcreport_textdomain'),
-					'coupon' 				  => esc_html__( "Coupon",'it_report_wcreport_textdomain'),
+					'refunddetails' 		   => esc_html__( "Refund Orders",'ithemelandco-woo-report'),
+					'coupon' 				  => esc_html__( "Coupon",'ithemelandco-woo-report'),
 					////ADDED IN VER4.0
                     /// OTHER SUMMARY
-                    'coupon_discount' 				  => esc_html__( "Coupon Discount Type Reporting",'it_report_wcreport_textdomain'),
-					'customer_analysis' 				  => esc_html__( "New Customer/Repeat Customer Analysis",'it_report_wcreport_textdomain'),
-					'customer_order_frequently' 	=> esc_html__( "Top n Customer Report Who Orders Frequently",'it_report_wcreport_textdomain'),
-					'customer_min_max' 	=> esc_html__( "Customer Min-Max",'it_report_wcreport_textdomain'),
-					'customer_no_purchased' 	=> esc_html__( "Customer Who Has Not Purchased",'it_report_wcreport_textdomain'),
+                    'coupon_discount' 				  => esc_html__( "Coupon Discount Type Reporting",'ithemelandco-woo-report'),
+					'customer_analysis' 				  => esc_html__( "New Customer/Repeat Customer Analysis",'ithemelandco-woo-report'),
+					'customer_order_frequently' 	=> esc_html__( "Top n Customer Report Who Orders Frequently",'ithemelandco-woo-report'),
+					'customer_min_max' 	=> esc_html__( "Customer Min-Max",'ithemelandco-woo-report'),
+					'customer_no_purchased' 	=> esc_html__( "Customer Who Has Not Purchased",'ithemelandco-woo-report'),
 
 					////ADDED IN VER4.0
 					/// ORDER ANALYSIS
-					'order_product_analysis' 				  => esc_html__( "Order Qty. Analysis Simple",'it_report_wcreport_textdomain'),
-					'order_variation_analysis' 				  => esc_html__( "Order Qty. Analysis Variable",'it_report_wcreport_textdomain'),
+					'order_product_analysis' 				  => esc_html__( "Order Qty. Analysis Simple",'ithemelandco-woo-report'),
+					'order_variation_analysis' 				  => esc_html__( "Order Qty. Analysis Variable",'ithemelandco-woo-report'),
 
-					'stock_list'			  => esc_html__( "Stock List",'it_report_wcreport_textdomain'),
-					'projected_actual_sale'   => esc_html__( "Target Sale vs Actual Sale",'it_report_wcreport_textdomain'),
-					'tax_reports'			 => esc_html__( "Tax Reports",'it_report_wcreport_textdomain'),
+					'stock_list'			  => esc_html__( "Stock List",'ithemelandco-woo-report'),
+					'projected_actual_sale'   => esc_html__( "Target Sale vs Actual Sale",'ithemelandco-woo-report'),
+					'tax_reports'			 => esc_html__( "Tax Reports",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK - 12412
-					'product_variation_qty'			 => esc_html__( "Product Qty",'it_report_wcreport_textdomain'),
+					'product_variation_qty'			 => esc_html__( "Product Qty",'ithemelandco-woo-report'),
 
 
-					'monthly_summary'	     => esc_html__( "Monthly Summary",'it_report_wcreport_textdomain'),
+					'monthly_summary'	     => esc_html__( "Monthly Summary",'ithemelandco-woo-report'),
 				);
 				$page_titles=apply_filters( 'it_report_wcreport_page_titles', $page_titles);
 
@@ -2313,7 +2313,7 @@
                         <h3>
 
                             <?php
-                                //esc_html_e('Result','it_report_wcreport_textdomain');
+                                //esc_html_e('Result','ithemelandco-woo-report');
                                 echo esc_attr($page_titles[$table_name]);
                             ?>
                         </h3>
@@ -2482,105 +2482,105 @@
 				$table_name_total='';
 
 				$page_titles=array(
-					'dashboard_report'		=> esc_html__( "Summary",'it_report_wcreport_textdomain'),
-					'monthly_summary'		=> esc_html__( "Monthly Summary",'it_report_wcreport_textdomain'),
-					'order_summary'			=> esc_html__( "Order Summary",'it_report_wcreport_textdomain'),
-					'sale_order_status'		=> esc_html__( "Sales Order Status",'it_report_wcreport_textdomain'),
-					'top_5_products'		=> esc_html__( "Top 5 Products",'it_report_wcreport_textdomain'),
-					'top_5_country'			=> esc_html__( "Top 5 Billing Country",'it_report_wcreport_textdomain'),
-					'top_5_category'		=> esc_html__( "Top 5 Categroy",'it_report_wcreport_textdomain'),
-					'top_5_state'			=> esc_html__( "Top 5 Billing State",'it_report_wcreport_textdomain'),
-					'top_5_customer'		=> esc_html__( "Top 5 Customers",'it_report_wcreport_textdomain'),
-					'top_5_coupon'			=> esc_html__( "Top 5 Coupon",'it_report_wcreport_textdomain'),
-					'top_5_gateway'			=> esc_html__( "Top 5 Payment Gateway",'it_report_wcreport_textdomain'),
-					"recent_5_order"		=> esc_html__( "Recent 5 Orders",'it_report_wcreport_textdomain'),
-					'details'				=> esc_html__( "All Orders",'it_report_wcreport_textdomain'),
+					'dashboard_report'		=> esc_html__( "Summary",'ithemelandco-woo-report'),
+					'monthly_summary'		=> esc_html__( "Monthly Summary",'ithemelandco-woo-report'),
+					'order_summary'			=> esc_html__( "Order Summary",'ithemelandco-woo-report'),
+					'sale_order_status'		=> esc_html__( "Sales Order Status",'ithemelandco-woo-report'),
+					'top_5_products'		=> esc_html__( "Top 5 Products",'ithemelandco-woo-report'),
+					'top_5_country'			=> esc_html__( "Top 5 Billing Country",'ithemelandco-woo-report'),
+					'top_5_category'		=> esc_html__( "Top 5 Categroy",'ithemelandco-woo-report'),
+					'top_5_state'			=> esc_html__( "Top 5 Billing State",'ithemelandco-woo-report'),
+					'top_5_customer'		=> esc_html__( "Top 5 Customers",'ithemelandco-woo-report'),
+					'top_5_coupon'			=> esc_html__( "Top 5 Coupon",'ithemelandco-woo-report'),
+					'top_5_gateway'			=> esc_html__( "Top 5 Payment Gateway",'ithemelandco-woo-report'),
+					"recent_5_order"		=> esc_html__( "Recent 5 Orders",'ithemelandco-woo-report'),
+					'details'				=> esc_html__( "All Orders",'ithemelandco-woo-report'),
 
                     //CUSTOM WORK - 12679
-					'clinic'				=> esc_html__( "Total Sales per Clinic",'it_report_wcreport_textdomain'),
+					'clinic'				=> esc_html__( "Total Sales per Clinic",'ithemelandco-woo-report'),
 
                     //CUSTOM WORK - 12300
-					'details_tickera'				=> esc_html__( "All Orders Tickera",'it_report_wcreport_textdomain'),
+					'details_tickera'				=> esc_html__( "All Orders Tickera",'ithemelandco-woo-report'),
 
 
 
 					//CUSTOM WORK - 4186
-					'details'				=> esc_html__( "All Orders Billing",'it_report_wcreport_textdomain'),
+					'details'				=> esc_html__( "All Orders Billing",'ithemelandco-woo-report'),
 
 					//ADDED IN VER 4.9
-					'abandoned_cart'				=> esc_html__( "Abandoned Carts",'it_report_wcreport_textdomain'),
-					'abandoned_product'				=> esc_html__( "Abandoned Products",'it_report_wcreport_textdomain'),
+					'abandoned_cart'				=> esc_html__( "Abandoned Carts",'ithemelandco-woo-report'),
+					'abandoned_product'				=> esc_html__( "Abandoned Products",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK - 4179
-					'order_status_change'				=> esc_html__( "Status Change",'it_report_wcreport_textdomain'),
+					'order_status_change'				=> esc_html__( "Status Change",'ithemelandco-woo-report'),
 
 					////ADDED IN VER4.0
 					/// ORDER PER COUNTRY
-					'details_order_country'	=> esc_html__( "All Orders per Country",'it_report_wcreport_textdomain'),
-					'order_per_country'		=> esc_html__( "Order / Country",'it_report_wcreport_textdomain'),
+					'details_order_country'	=> esc_html__( "All Orders per Country",'ithemelandco-woo-report'),
+					'order_per_country'		=> esc_html__( "Order / Country",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK 15092
-					'order_per_custom_shipping'		=> esc_html__( "Order / Shipping",'it_report_wcreport_textdomain'),
+					'order_per_custom_shipping'		=> esc_html__( "Order / Shipping",'ithemelandco-woo-report'),
 					////ADDED IN VER4.0
 					/// PRODUCT OPTIONS CUSTOM FIELDS
 
-					'product'				 => esc_html__( "Product",'it_report_wcreport_textdomain'),
+					'product'				 => esc_html__( "Product",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK 966
-					'all_products'				 => esc_html__( "All Products",'it_report_wcreport_textdomain'),
+					'all_products'				 => esc_html__( "All Products",'ithemelandco-woo-report'),
 
 					////ADDED IN VER4.5
 					//CUSTOM WORK
-					'product_per_users'				 => esc_html__( "Product/Users",'it_report_wcreport_textdomain'),
+					'product_per_users'				 => esc_html__( "Product/Users",'ithemelandco-woo-report'),
 
-					'profit'				 => esc_html__( "Profit",'it_report_wcreport_textdomain'),
-					'category'				=> esc_html__( "Category",'it_report_wcreport_textdomain'),
+					'profit'				 => esc_html__( "Profit",'ithemelandco-woo-report'),
+					'category'				=> esc_html__( "Category",'ithemelandco-woo-report'),
 					////ADDED IN VER4.0
-					'tags'				=> esc_html__( "Tags",'it_report_wcreport_textdomain'),
-					'stock_zero_level'				=> esc_html__( "Zero Level Stock",'it_report_wcreport_textdomain'),
-					'stock_min_level'				=> esc_html__( "Minimum Level Stock",'it_report_wcreport_textdomain'),
-					'stock_max_level'				=> esc_html__( "Most Stocked",'it_report_wcreport_textdomain'),
-					'stock_summary_avg'				=> esc_html__( "Summary Stock Planner Based On Average Sales",'it_report_wcreport_textdomain'),
+					'tags'				=> esc_html__( "Tags",'ithemelandco-woo-report'),
+					'stock_zero_level'				=> esc_html__( "Zero Level Stock",'ithemelandco-woo-report'),
+					'stock_min_level'				=> esc_html__( "Minimum Level Stock",'ithemelandco-woo-report'),
+					'stock_max_level'				=> esc_html__( "Most Stocked",'ithemelandco-woo-report'),
+					'stock_summary_avg'				=> esc_html__( "Summary Stock Planner Based On Average Sales",'ithemelandco-woo-report'),
 
-					'customer'				=> esc_html__( "Customer",'it_report_wcreport_textdomain'),
-					'billingcountry'		  => esc_html__( "Billing Country",'it_report_wcreport_textdomain'),
-					'billingstate'			=> esc_html__( "Billing State",'it_report_wcreport_textdomain'),
-					'billingcity'			=> esc_html__( "Billing City",'it_report_wcreport_textdomain'),
-					'paymentgateway'		  => esc_html__( "Payment Gateway",'it_report_wcreport_textdomain'),
-					'orderstatus'			 => esc_html__( "Order Status",'it_report_wcreport_textdomain'),
-					'recentorder'			 => esc_html__( "Recent Order",'it_report_wcreport_textdomain'),
-					'taxreport' 			   => esc_html__( "Tax Report",'it_report_wcreport_textdomain'),
-					'customerbuyproducts'	 => esc_html__( "Custom Member Buy Products",'it_report_wcreport_textdomain'),
+					'customer'				=> esc_html__( "Customer",'ithemelandco-woo-report'),
+					'billingcountry'		  => esc_html__( "Billing Country",'ithemelandco-woo-report'),
+					'billingstate'			=> esc_html__( "Billing State",'ithemelandco-woo-report'),
+					'billingcity'			=> esc_html__( "Billing City",'ithemelandco-woo-report'),
+					'paymentgateway'		  => esc_html__( "Payment Gateway",'ithemelandco-woo-report'),
+					'orderstatus'			 => esc_html__( "Order Status",'ithemelandco-woo-report'),
+					'recentorder'			 => esc_html__( "Recent Order",'ithemelandco-woo-report'),
+					'taxreport' 			   => esc_html__( "Tax Report",'ithemelandco-woo-report'),
+					'customerbuyproducts'	 => esc_html__( "Custom Member Buy Products",'ithemelandco-woo-report'),
 
 					//CUSTOM WORK
-					'customer_category'	 => esc_html__( "Customer Buy Category",'it_report_wcreport_textdomain'),
+					'customer_category'	 => esc_html__( "Customer Buy Category",'ithemelandco-woo-report'),
 
-					'refunddetails' 		   => esc_html__( "Refund Orders",'it_report_wcreport_textdomain'),
-					'coupon' 				  => esc_html__( "Coupon",'it_report_wcreport_textdomain'),
+					'refunddetails' 		   => esc_html__( "Refund Orders",'ithemelandco-woo-report'),
+					'coupon' 				  => esc_html__( "Coupon",'ithemelandco-woo-report'),
 					////ADDED IN VER4.0
 					/// OTHER SUMMARY
-					'coupon_discount' 				  => esc_html__( "Coupon Discount Type Wise Reporting",'it_report_wcreport_textdomain'),
-					'customer_analysis' 				  => esc_html__( "New Customer/Repeat Customer Analysis",'it_report_wcreport_textdomain'),
-					'customer_order_frequently' 	=> esc_html__( "Top n Customer Report Who Orders Frequently",'it_report_wcreport_textdomain'),
-					'customer_min_max' 	=> esc_html__( "Customer Min-Max",'it_report_wcreport_textdomain'),
-					'customer_no_purchased' 	=> esc_html__( "Customer Who Has Not Purchased",'it_report_wcreport_textdomain'),
+					'coupon_discount' 				  => esc_html__( "Coupon Discount Type Wise Reporting",'ithemelandco-woo-report'),
+					'customer_analysis' 				  => esc_html__( "New Customer/Repeat Customer Analysis",'ithemelandco-woo-report'),
+					'customer_order_frequently' 	=> esc_html__( "Top n Customer Report Who Orders Frequently",'ithemelandco-woo-report'),
+					'customer_min_max' 	=> esc_html__( "Customer Min-Max",'ithemelandco-woo-report'),
+					'customer_no_purchased' 	=> esc_html__( "Customer Who Has Not Purchased",'ithemelandco-woo-report'),
 
 					////ADDED IN VER4.0
 					/// ORDER ANALYSIS
-					'order_product_analysis' 				  => esc_html__( "Order Qty. Analysis Simple",'it_report_wcreport_textdomain'),
-					'order_variation_analysis' 				  => esc_html__( "Order Qty. Analysis Variable",'it_report_wcreport_textdomain'),
+					'order_product_analysis' 				  => esc_html__( "Order Qty. Analysis Simple",'ithemelandco-woo-report'),
+					'order_variation_analysis' 				  => esc_html__( "Order Qty. Analysis Variable",'ithemelandco-woo-report'),
 
-					'stock_list'			  => esc_html__( "Stock List",'it_report_wcreport_textdomain'),
-					'projected_actual_sale'   => esc_html__( "Target Sale vs Actual Sale",'it_report_wcreport_textdomain'),
-					'tax_reports'			 => esc_html__( "Tax Reports",'it_report_wcreport_textdomain'),
+					'stock_list'			  => esc_html__( "Stock List",'ithemelandco-woo-report'),
+					'projected_actual_sale'   => esc_html__( "Target Sale vs Actual Sale",'ithemelandco-woo-report'),
+					'tax_reports'			 => esc_html__( "Tax Reports",'ithemelandco-woo-report'),
 
 
                     //CUSTOM WORK - 12412
-                    'product_variation_qty'			 => esc_html__( "Product Qty",'it_report_wcreport_textdomain'),
+                    'product_variation_qty'			 => esc_html__( "Product Qty",'ithemelandco-woo-report'),
 
 
 
-					'monthly_summary'	     => esc_html__( "Monthly Summary",'it_report_wcreport_textdomain'),
+					'monthly_summary'	     => esc_html__( "Monthly Summary",'ithemelandco-woo-report'),
 				);
 				$page_titles=apply_filters( 'it_report_wcreport_page_titles', $page_titles);
 
@@ -3000,7 +3000,7 @@
                             <h3>
                                 <i class="fa fa-filter"></i>
 								<?php
-								//esc_html_e('Result','it_report_wcreport_textdomain');
+								//esc_html_e('Result','ithemelandco-woo-report');
 								// echo $page_titles[$table_name];
 								echo esc_attr($page_titles[$table_name]);
 								?>
@@ -3114,11 +3114,11 @@
 			    global  $wpdb;
 
 				$page_titles=array(
-					'int_reports_Home'		=> esc_html__( "Home",'it_report_wcreport_textdomain'),
-					'int_reports_sales'		=> esc_html__( "Intelligence Sales Report",'it_report_wcreport_textdomain'),
-					'int_reports_products'		=> esc_html__( "Intelligence Products Report",'it_report_wcreport_textdomain'),
-					'int_reports_customers'			=> esc_html__( "Intelligence Customers Report",'it_report_wcreport_textdomain'),
-					'int_reports_transactions'			=> esc_html__( "Intelligence Transactions Report",'it_report_wcreport_textdomain'),
+					'int_reports_Home'		=> esc_html__( "Home",'ithemelandco-woo-report'),
+					'int_reports_sales'		=> esc_html__( "Intelligence Sales Report",'ithemelandco-woo-report'),
+					'int_reports_products'		=> esc_html__( "Intelligence Products Report",'ithemelandco-woo-report'),
+					'int_reports_customers'			=> esc_html__( "Intelligence Customers Report",'ithemelandco-woo-report'),
+					'int_reports_transactions'			=> esc_html__( "Intelligence Transactions Report",'ithemelandco-woo-report'),
                 );
 
 
@@ -3194,7 +3194,7 @@
 					<div class="awr-box awr-search-from">
 						<div class="awr-title">
 							<h3>
-								<i class="fa fa-filter"></i><?php esc_html_e( 'Search', 'it_report_wcreport_textdomain' ); ?>
+								<i class="fa fa-filter"></i><?php esc_html_e( 'Search', 'ithemelandco-woo-report' ); ?>
 							</h3>
 							<div class="awr-title-icon awr-toggle-icon"><i class="fa fa-search"></i></div>
 							<div class="awr-title-icons">
@@ -4516,160 +4516,160 @@
 
 				if($tax_type == 'tax_group_by_city'){
 					$columns = array(
-						"billing_country"			=>esc_html__("Tax Country",			'it_report_wcreport_textdomain')
-					,"billing_state"			=>esc_html__("Tax State",			'it_report_wcreport_textdomain')
-					,"tax_city"					=>esc_html__("Tax City",			'it_report_wcreport_textdomain')
-					,"tax_rate_name"			=>esc_html__("Tax Name",			'it_report_wcreport_textdomain')
-					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'it_report_wcreport_textdomain')
-					,"order_tax_rate"			=>esc_html__("Tax Rate",			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"billing_country"			=>esc_html__("Tax Country",			'ithemelandco-woo-report')
+					,"billing_state"			=>esc_html__("Tax State",			'ithemelandco-woo-report')
+					,"tax_city"					=>esc_html__("Tax City",			'ithemelandco-woo-report')
+					,"tax_rate_name"			=>esc_html__("Tax Name",			'ithemelandco-woo-report')
+					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'ithemelandco-woo-report')
+					,"order_tax_rate"			=>esc_html__("Tax Rate",			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}elseif($tax_type == 'tax_group_by_state'){
 					$columns = array(
-						"billing_country"			=>esc_html__("Tax Country",			'it_report_wcreport_textdomain')
-					,"billing_state"			=>esc_html__("Tax State",			'it_report_wcreport_textdomain')
-					,"tax_rate_name"			=>esc_html__("Tax Name",			'it_report_wcreport_textdomain')
-					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'it_report_wcreport_textdomain')
-					,"order_tax_rate"			=>esc_html__("Tax Rate",			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"billing_country"			=>esc_html__("Tax Country",			'ithemelandco-woo-report')
+					,"billing_state"			=>esc_html__("Tax State",			'ithemelandco-woo-report')
+					,"tax_rate_name"			=>esc_html__("Tax Name",			'ithemelandco-woo-report')
+					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'ithemelandco-woo-report')
+					,"order_tax_rate"			=>esc_html__("Tax Rate",			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 
 
 					);
 				}elseif($tax_type == 'tax_group_by_country'){
 					$columns = array(
-						"billing_country"			=>esc_html__("Tax Country",			'it_report_wcreport_textdomain')
-					,"tax_rate_name"			=>esc_html__("Tax Name",			'it_report_wcreport_textdomain')
-					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'it_report_wcreport_textdomain')
-					,"order_tax_rate"			=>esc_html__("Tax Rate",			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"billing_country"			=>esc_html__("Tax Country",			'ithemelandco-woo-report')
+					,"tax_rate_name"			=>esc_html__("Tax Name",			'ithemelandco-woo-report')
+					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'ithemelandco-woo-report')
+					,"order_tax_rate"			=>esc_html__("Tax Rate",			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}elseif($tax_type == 'tax_group_by_zip'){
 					$columns = array(
-						"billing_country"			=>esc_html__("Tax Country",			'it_report_wcreport_textdomain')
-					,"billing_postcode"			=>esc_html__("Tax Zip",				'it_report_wcreport_textdomain')
-					,"tax_rate_name"			=>esc_html__("Tax Name",			'it_report_wcreport_textdomain')
-					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'it_report_wcreport_textdomain')
-					,"order_tax_rate"			=>esc_html__("Tax Rate",			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"billing_country"			=>esc_html__("Tax Country",			'ithemelandco-woo-report')
+					,"billing_postcode"			=>esc_html__("Tax Zip",				'ithemelandco-woo-report')
+					,"tax_rate_name"			=>esc_html__("Tax Name",			'ithemelandco-woo-report')
+					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'ithemelandco-woo-report')
+					,"order_tax_rate"			=>esc_html__("Tax Rate",			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}elseif($tax_type == 'tax_group_by_tax_name'){
 					$columns = array(
-						"tax_rate_name"				=>esc_html__("Tax Name",			'it_report_wcreport_textdomain')
-					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'it_report_wcreport_textdomain')
-					,"order_tax_rate"			=>esc_html__("Tax Rate",			'it_report_wcreport_textdomain')
-						//,"billing_state"			=>esc_html__("Billing State",		'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"tax_rate_name"				=>esc_html__("Tax Name",			'ithemelandco-woo-report')
+					,"tax_rate_code"			=>esc_html__("Tax Rate Code",		'ithemelandco-woo-report')
+					,"order_tax_rate"			=>esc_html__("Tax Rate",			'ithemelandco-woo-report')
+						//,"billing_state"			=>esc_html__("Billing State",		'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}elseif($tax_type == 'tax_group_by_tax_summary'){
 					$columns = array(
-						"tax_rate_name"				=>esc_html__("Tax Name",			'it_report_wcreport_textdomain')
-					,"order_tax_rate"			=>esc_html__("Tax Rate"	,			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"tax_rate_name"				=>esc_html__("Tax Name",			'ithemelandco-woo-report')
+					,"order_tax_rate"			=>esc_html__("Tax Rate"	,			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}elseif($tax_type == 'tax_group_by_city_summary'){
 					$columns = array(
-						"billing_country"			=>esc_html__("Tax Country",			'it_report_wcreport_textdomain')
-					,"billing_state"			=>esc_html__("Tax State",			'it_report_wcreport_textdomain')
-					,"tax_city"					=>esc_html__("Tax City",			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"billing_country"			=>esc_html__("Tax Country",			'ithemelandco-woo-report')
+					,"billing_state"			=>esc_html__("Tax State",			'ithemelandco-woo-report')
+					,"tax_city"					=>esc_html__("Tax City",			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}elseif($tax_type == 'tax_group_by_state_summary'){
 					$columns = array(
-						"billing_country"			=>esc_html__("Tax Country",			'it_report_wcreport_textdomain')
-					,"billing_state"			=>esc_html__("Tax State",			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"billing_country"			=>esc_html__("Tax Country",			'ithemelandco-woo-report')
+					,"billing_state"			=>esc_html__("Tax State",			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}elseif($tax_type == 'tax_group_by_country_summary'){
 					$columns = array(
-						"billing_country"			=>esc_html__("Tax Country",			'it_report_wcreport_textdomain')
-					,"order_count"				=>esc_html__("Order Count",			'it_report_wcreport_textdomain')
-					,"order_shipping"			=>esc_html__("Shipping Amt.",		'it_report_wcreport_textdomain')
-					,"gross_amount"				=>esc_html__("Gross Amt.",			'it_report_wcreport_textdomain')
-					,"order_total"				=>esc_html__("Net Amt.",			'it_report_wcreport_textdomain')
-					,"refund_order_total"		=>esc_html__("Part Refund.",		'it_report_wcreport_textdomain')
-					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"billing_country"			=>esc_html__("Tax Country",			'ithemelandco-woo-report')
+					,"order_count"				=>esc_html__("Order Count",			'ithemelandco-woo-report')
+					,"order_shipping"			=>esc_html__("Shipping Amt.",		'ithemelandco-woo-report')
+					,"gross_amount"				=>esc_html__("Gross Amt.",			'ithemelandco-woo-report')
+					,"order_total"				=>esc_html__("Net Amt.",			'ithemelandco-woo-report')
+					,"refund_order_total"		=>esc_html__("Part Refund.",		'ithemelandco-woo-report')
+					,"net_order_total"			=>esc_html__("(Net- Refund) Amt.",	'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}else{
 					$columns = array(
-						"order_tax_rate"			=>esc_html__("Tax Rate",			'it_report_wcreport_textdomain')
-					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'it_report_wcreport_textdomain')
-					,"tax_amount"				=>esc_html__("Order Tax",			'it_report_wcreport_textdomain')
-					,"total_tax"				=>esc_html__("Total Tax",			'it_report_wcreport_textdomain')
+						"order_tax_rate"			=>esc_html__("Tax Rate",			'ithemelandco-woo-report')
+					,"shipping_tax_amount"		=>esc_html__("Shipping Tax",		'ithemelandco-woo-report')
+					,"tax_amount"				=>esc_html__("Order Tax",			'ithemelandco-woo-report')
+					,"total_tax"				=>esc_html__("Total Tax",			'ithemelandco-woo-report')
 					);
 				}
 
-				$columns['refund_tax_amount'] 			= esc_html__("Refund Tax",				'it_report_wcreport_textdomain');
-				$columns['refund_shipping_tax_amount'] 	= esc_html__("Refund Shipping Tax",		'it_report_wcreport_textdomain');
-				$columns['total_tax_refund'] 			= esc_html__("Total Tax Refund",		'it_report_wcreport_textdomain');
+				$columns['refund_tax_amount'] 			= esc_html__("Refund Tax",				'ithemelandco-woo-report');
+				$columns['refund_shipping_tax_amount'] 	= esc_html__("Refund Shipping Tax",		'ithemelandco-woo-report');
+				$columns['total_tax_refund'] 			= esc_html__("Total Tax Refund",		'ithemelandco-woo-report');
 
-				$columns['net_total_tax'] 			= esc_html__("Net Total Tax",		'it_report_wcreport_textdomain');
+				$columns['net_total_tax'] 			= esc_html__("Net Total Tax",		'ithemelandco-woo-report');
 
 				//tax_group_by_state_summary
 				return $columns;
@@ -6869,13 +6869,13 @@
 				if($items_only){
 					$reports		= $this->it_get_woo_requests('reports','-1',true);
 					$array = array(
-						"0"  => array("item_name"=>esc_html__("Order Total",			'it_report_wcreport_textdomain'),"id"=>"_order_total")
-						,"1" => array("item_name"=>esc_html__("Order Tax",				'it_report_wcreport_textdomain'),"id"=>"_order_tax")
-						,"2" => array("item_name"=>esc_html__("Order Discount",			'it_report_wcreport_textdomain'),"id"=>"_order_discount")
-						,"3" => array("item_name"=>esc_html__("Cart Discount",			'it_report_wcreport_textdomain'),"id"=>"_cart_discount")
-						,"4" => array("item_name"=>esc_html__("Order Shipping",			'it_report_wcreport_textdomain'),"id"=>"_order_shipping")
-						,"5" => array("item_name"=>esc_html__("Order Shipping Tax",		'it_report_wcreport_textdomain'),"id"=>"_order_shipping_tax")
-						,"6" => array("item_name"=>esc_html__("Product Sales",			'it_report_wcreport_textdomain'),"id"=>"_by_product")
+						"0"  => array("item_name"=>esc_html__("Order Total",			'ithemelandco-woo-report'),"id"=>"_order_total")
+						,"1" => array("item_name"=>esc_html__("Order Tax",				'ithemelandco-woo-report'),"id"=>"_order_tax")
+						,"2" => array("item_name"=>esc_html__("Order Discount",			'ithemelandco-woo-report'),"id"=>"_order_discount")
+						,"3" => array("item_name"=>esc_html__("Cart Discount",			'ithemelandco-woo-report'),"id"=>"_cart_discount")
+						,"4" => array("item_name"=>esc_html__("Order Shipping",			'ithemelandco-woo-report'),"id"=>"_order_shipping")
+						,"5" => array("item_name"=>esc_html__("Order Shipping Tax",		'ithemelandco-woo-report'),"id"=>"_order_shipping_tax")
+						,"6" => array("item_name"=>esc_html__("Product Sales",			'ithemelandco-woo-report'),"id"=>"_by_product")
 					);
 
 					if($reports != '-1'){

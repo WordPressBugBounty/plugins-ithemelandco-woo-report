@@ -32,8 +32,8 @@ if(!class_exists('it_report_wcreport_variation_addon_class')){
 		}
 		
 		function add_page_titles($page_titles){
-			$page_titles['variation'] = __( "Purchased Variation",'it_report_wcreport_textdomain');
-			$page_titles['variation_stock']=__( "Variation Stock",'it_report_wcreport_textdomain');
+			$page_titles['variation'] = __( "Purchased Variation",'ithemelandco-woo-report');
+			$page_titles['variation_stock']=__( "Variation Stock",'ithemelandco-woo-report');
 
 			return $page_titles;
 		}
@@ -43,9 +43,9 @@ if(!class_exists('it_report_wcreport_variation_addon_class')){
 			global $it_rpt_main_class;
 			$role_capability=$it_rpt_main_class->get_capability();
 			
-			add_submenu_page('itwrl_submenu', __('Variation','it_report_wcreport_textdomain'), __('Variation','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation',  array($this, 'wcx_plugin_menu_variation' ) );
+			add_submenu_page('itwrl_submenu', __('Variation','ithemelandco-woo-report'), __('Variation','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_variation',  array($this, 'wcx_plugin_menu_variation' ) );
 			
-			add_submenu_page('itwrl_submenu', __('Variation Stock','it_report_wcreport_textdomain'), __('Variation Stock','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_variation_stock', array($this, 'wcx_plugin_menu_variation_stock' ));
+			add_submenu_page('itwrl_submenu', __('Variation Stock','ithemelandco-woo-report'), __('Variation Stock','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_variation_stock', array($this, 'wcx_plugin_menu_variation_stock' ));
 					
 		}
 		
@@ -63,14 +63,14 @@ if(!class_exists('it_report_wcreport_variation_addon_class')){
 		function add_fetch_page_variation_menu( $visible_menu ) {
 			
 			$var_menu=array(
-							"label" => '<span style="color:#d97c7c">'.__("Purchased Variation(Pro)",'it_report_wcreport_textdomain').'</span>',
+							"label" => '<span style="color:#d97c7c">'.__("Purchased Variation(Pro)",'ithemelandco-woo-report').'</span>',
 							"id" => "variation",
 							"link" => "#",
 							"icon" => "fa-server",
 						);
 						
 			$var_stock_menu=array(
-							"label" => '<span style="color:#d97c7c">'.__("Variation Stock(Pro)",'it_report_wcreport_textdomain').'</span>',
+							"label" => '<span style="color:#d97c7c">'.__("Variation Stock(Pro)",'ithemelandco-woo-report').'</span>',
 							"id" => "variation_stock",
 							"link" => "#",
 							"icon" => "fa-rocket",

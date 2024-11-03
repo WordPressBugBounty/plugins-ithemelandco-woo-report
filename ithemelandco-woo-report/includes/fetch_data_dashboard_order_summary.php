@@ -218,7 +218,7 @@
 
 				//Month
 				$display_class='';
-				$month=esc_html(sanitize_text_field($items->SalesOrder),'it_report_wcreport_textdomain');
+				$month=esc_html(sanitize_text_field($items->SalesOrder),'ithemelandco-woo-report');
 				if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
 				$datatable_value.=("<td style='".$display_class."'>");
 					$datatable_value.= $month;

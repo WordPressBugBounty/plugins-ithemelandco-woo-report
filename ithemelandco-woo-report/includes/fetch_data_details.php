@@ -757,48 +757,48 @@ if ($file_used == "sql_table") {
     if ($it_detail_view == "yes") {
 
         $columns = array(
-            array('lable' => esc_html__('Order ID', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Name', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Customer', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Email', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Phone No.', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Date', 'it_report_wcreport_textdomain'), 'status' => 'show'),
+            array('lable' => esc_html__('Order ID', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Name', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Customer', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Email', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Phone No.', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Date', 'ithemelandco-woo-report'), 'status' => 'show'),
 
-            array('lable' => esc_html__('Country', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('state', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Status', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Payment Method', 'it_report_wcreport_textdomain'), 'status' => 'show'),
+            array('lable' => esc_html__('Country', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('state', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Status', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Payment Method', 'ithemelandco-woo-report'), 'status' => 'show'),
             //CUSTOM WORK - 4187
-            //array('lable'=>esc_html__('Transaction ID','it_report_wcreport_textdomain'),'status'=>'show'),
+            //array('lable'=>esc_html__('Transaction ID','ithemelandco-woo-report'),'status'=>'show'),
 
-            array('lable' => esc_html__('Coupon Code', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Products', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('SKU', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Category', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Variation', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Qty.', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Rate', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Prod. Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Prod. Discount', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Shipping Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Net Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('C.O.G', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Profit', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
+            array('lable' => esc_html__('Coupon Code', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Products', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('SKU', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Category', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Variation', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Qty.', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Rate', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Prod. Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Prod. Discount', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Shipping Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Net Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('C.O.G', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Profit', 'ithemelandco-woo-report'), 'status' => 'currency'),
             ////ADDE IN VER4.0
             /// INVOICE ACTION
-            array('lable' => esc_html__('Invoice Action', 'it_report_wcreport_textdomain'), 'status' => 'show'),
+            array('lable' => esc_html__('Invoice Action', 'ithemelandco-woo-report'), 'status' => 'show'),
 
-            /*array('lable'=>esc_html__('Order Detail','it_report_wcreport_textdomain'),'status'=>'show'),*/
+            /*array('lable'=>esc_html__('Order Detail','ithemelandco-woo-report'),'status'=>'show'),*/
         );
 
         //CUSTOM WORK - 11899
         if (is_array(__CUSTOMWORK_ID__) && in_array('11899', __CUSTOMWORK_ID__)) {
             $extra_cols = array();
 
-            $extra_cols[] = array('lable'  => esc_html__('Delivery Date', 'it_report_wcreport_textdomain'),
+            $extra_cols[] = array('lable'  => esc_html__('Delivery Date', 'ithemelandco-woo-report'),
                                   'status' => 'show'
             );
-            $extra_cols[] = array('lable'  => esc_html__('Shipping Date', 'it_report_wcreport_textdomain'),
+            $extra_cols[] = array('lable'  => esc_html__('Shipping Date', 'ithemelandco-woo-report'),
                                   'status' => 'show'
             );
 
@@ -808,14 +808,14 @@ if ($file_used == "sql_table") {
         //CUSTOM WORK - 12679
         if (is_array(__CUSTOMWORK_ID__) && in_array('12679', __CUSTOMWORK_ID__)) {
             $extra_cols   = array();
-            $extra_cols[] = array('lable' => esc_html__('Clinic Type', 'it_report_wcreport_textdomain'), 'status' => 'show');
+            $extra_cols[] = array('lable' => esc_html__('Clinic Type', 'ithemelandco-woo-report'), 'status' => 'show');
             array_splice($columns, 4, 0, $extra_cols);
         }
 
         //CUSTOM WORK - 4227
         if ($ff_columns_in) {
             $array_index = 11;
-            //$brands_cols[]=array('lable'=>esc_html__(__IT_BRAND_LABEL__,'it_report_wcreport_textdomain'),'status'=>'show');
+            //$brands_cols[]=array('lable'=>esc_html__(__IT_BRAND_LABEL__,'ithemelandco-woo-report'),'status'=>'show');
             array_splice($columns, $array_index, 0, $ff_columns);
             $array_index += $ff_columns_in;
         } else {
@@ -831,7 +831,7 @@ if ($file_used == "sql_table") {
         //CUSTOM WORK - 14957
         if (is_array(__CUSTOMWORK_ID__) && in_array('14957', __CUSTOMWORK_ID__)) {
             $extra_cols   = array();
-            $extra_cols[] = array('lable'  => esc_html__('Transaction ID', 'it_report_wcreport_textdomain'),
+            $extra_cols[] = array('lable'  => esc_html__('Transaction ID', 'ithemelandco-woo-report'),
                                   'status' => 'show'
             );
             array_splice($columns, 9, 0, $extra_cols);
@@ -841,7 +841,7 @@ if ($file_used == "sql_table") {
         //CUSTOM WORK - 14957
         if (is_array(__CUSTOMWORK_ID__) && in_array('14957', __CUSTOMWORK_ID__)) {
             $extra_cols   = array();
-            $extra_cols[] = array('lable'  => esc_html__('Childs Farm Order No', 'it_report_wcreport_textdomain'),
+            $extra_cols[] = array('lable'  => esc_html__('Childs Farm Order No', 'ithemelandco-woo-report'),
                                   'status' => 'show'
             );
             array_splice($columns, 1, 0, $extra_cols);
@@ -859,7 +859,7 @@ if ($file_used == "sql_table") {
                     $extra_cols   = array();
                     $tlabel       = $field['label'];
                     $extra_cols[] = array(
-                        'lable'  => esc_html(sanitize_text_field($label), 'it_report_wcreport_textdomain'),
+                        'lable'  => esc_html(sanitize_text_field($label), 'ithemelandco-woo-report'),
                         'status' => 'show'
                     );
                     array_splice($columns, $array_index, 0, $extra_cols);
@@ -871,52 +871,52 @@ if ($file_used == "sql_table") {
     } else {
 
         $columns = array(
-            array('lable' => esc_html__('Order ID', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Name', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Customer', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Email', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Phone No.', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Date', 'it_report_wcreport_textdomain'), 'status' => 'show'),
+            array('lable' => esc_html__('Order ID', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Name', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Customer', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Email', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Phone No.', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Date', 'ithemelandco-woo-report'), 'status' => 'show'),
 
 
-            array('lable' => esc_html__('Country', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('state', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Status', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Tax Name', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Shipping Method', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Payment Method', 'it_report_wcreport_textdomain'), 'status' => 'show'),
+            array('lable' => esc_html__('Country', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('state', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Status', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Tax Name', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Shipping Method', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Payment Method', 'ithemelandco-woo-report'), 'status' => 'show'),
             //CUSTOM WORK - 4187
-            //array('lable'=>esc_html__('Transaction ID','it_report_wcreport_textdomain'),'status'=>'show'),
+            //array('lable'=>esc_html__('Transaction ID','ithemelandco-woo-report'),'status'=>'show'),
 
 
-            array('lable' => esc_html__('Order Currency', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Coupon Code', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Items', 'it_report_wcreport_textdomain'), 'status' => 'show'),
-            array('lable' => esc_html__('Gross Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Order Discount Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Cart Discount Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Total Discount Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Shipping Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Shipping Tax Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Order Tax Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Total Tax Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Part Refund Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Net Amt.', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('C.O.G', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
-            array('lable' => esc_html__('Profit', 'it_report_wcreport_textdomain'), 'status' => 'currency'),
+            array('lable' => esc_html__('Order Currency', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Coupon Code', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Items', 'ithemelandco-woo-report'), 'status' => 'show'),
+            array('lable' => esc_html__('Gross Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Order Discount Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Cart Discount Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Total Discount Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Shipping Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Shipping Tax Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Order Tax Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Total Tax Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Part Refund Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Net Amt.', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('C.O.G', 'ithemelandco-woo-report'), 'status' => 'currency'),
+            array('lable' => esc_html__('Profit', 'ithemelandco-woo-report'), 'status' => 'currency'),
             ////ADDE IN VER4.0
             /// INVOICE ACTION
-            array('lable' => esc_html__('Invoice Action', 'it_report_wcreport_textdomain'), 'status' => 'show'),
+            array('lable' => esc_html__('Invoice Action', 'ithemelandco-woo-report'), 'status' => 'show'),
         );
 
         //CUSTOM WORK - 11899
         if (is_array(__CUSTOMWORK_ID__) && in_array('11899', __CUSTOMWORK_ID__)) {
             $extra_cols = array();
 
-            $extra_cols[] = array('lable'  => esc_html__('Delivery Date', 'it_report_wcreport_textdomain'),
+            $extra_cols[] = array('lable'  => esc_html__('Delivery Date', 'ithemelandco-woo-report'),
                                   'status' => 'show'
             );
-            $extra_cols[] = array('lable'  => esc_html__('Shipping Date', 'it_report_wcreport_textdomain'),
+            $extra_cols[] = array('lable'  => esc_html__('Shipping Date', 'ithemelandco-woo-report'),
                                   'status' => 'show'
             );
 
@@ -926,14 +926,14 @@ if ($file_used == "sql_table") {
         //CUSTOM WORK - 12679
         if (is_array(__CUSTOMWORK_ID__) && in_array('12679', __CUSTOMWORK_ID__)) {
             $extra_cols   = array();
-            $extra_cols[] = array('lable' => esc_html__('Clinic Type', 'it_report_wcreport_textdomain'), 'status' => 'show');
+            $extra_cols[] = array('lable' => esc_html__('Clinic Type', 'ithemelandco-woo-report'), 'status' => 'show');
             array_splice($columns, 4, 0, $extra_cols);
         }
 
         //CUSTOM WORK - 14957
         if (is_array(__CUSTOMWORK_ID__) && in_array('14957', __CUSTOMWORK_ID__)) {
             $extra_cols   = array();
-            $extra_cols[] = array('lable'  => esc_html__('Transaction ID', 'it_report_wcreport_textdomain'),
+            $extra_cols[] = array('lable'  => esc_html__('Transaction ID', 'ithemelandco-woo-report'),
                                   'status' => 'show'
             );
             array_splice($columns, 11, 0, $extra_cols);
@@ -943,7 +943,7 @@ if ($file_used == "sql_table") {
         if (is_array(__CUSTOMWORK_ID__) && in_array('14957', __CUSTOMWORK_ID__)) {
             $extra_cols   = array();
             $extra_cols[] = array(
-                'lable'  => esc_html__('Childs Farm Order No', 'it_report_wcreport_textdomain'),
+                'lable'  => esc_html__('Childs Farm Order No', 'ithemelandco-woo-report'),
                 'status' => 'show'
             );
             array_splice($columns, 1, 0, $extra_cols);
@@ -1266,13 +1266,13 @@ if ($file_used == "sql_table") {
 
                 if ($it_table_value == 'wc-completed') {
                     $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                            'it_report_wcreport_textdomain')) . '</span>';
+                            'ithemelandco-woo-report')) . '</span>';
                 } elseif ($it_table_value == 'wc-refunded') {
                     $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                            'it_report_wcreport_textdomain')) . '</span>';
+                            'ithemelandco-woo-report')) . '</span>';
                 } else {
                     $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                            'it_report_wcreport_textdomain')) . '</span>';
+                            'ithemelandco-woo-report')) . '</span>';
                 }
 
                 $display_class = '';
@@ -1514,7 +1514,7 @@ if ($file_used == "sql_table") {
                 $datatable_value .= ("<td style='" . $display_class . "'>");
 
                 $datatable_value .= '<a href="javascript:void(0);" title="' . esc_html__("Generate Invoice",
-                        'it_report_wcreport_textdomain') . '" class="it_pdf_invoice button" data-order-id="' . $items->order_id . '"><i class="fa fa-file-text-o  "></i></a>';
+                        'ithemelandco-woo-report') . '" class="it_pdf_invoice button" data-order-id="' . $items->order_id . '"><i class="fa fa-file-text-o  "></i></a>';
 
                 //COMPATIBLE WITH WOO INVOICE
                 if (class_exists("WC_pdf_admin")) {
@@ -2584,13 +2584,13 @@ if ($file_used == "sql_table") {
 
             if ($it_table_value == 'wc-completed') {
                 $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                        'it_report_wcreport_textdomain')) . '</span>';
+                        'ithemelandco-woo-report')) . '</span>';
             } elseif ($it_table_value == 'wc-refunded') {
                 $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                        'it_report_wcreport_textdomain')) . '</span>';
+                        'ithemelandco-woo-report')) . '</span>';
             } else {
                 $it_table_value = '<span class="awr-order-status awr-order-status-' . sanitize_title($it_table_value) . '" >' . ucwords(esc_html(sanitize_text_field($it_table_value),
-                        'it_report_wcreport_textdomain')) . '</span>';
+                        'ithemelandco-woo-report')) . '</span>';
             }
 
             $display_class = '';
@@ -2939,7 +2939,7 @@ if ($file_used == "sql_table") {
             $datatable_value .= ("<td style='" . $display_class . "'>");
 
             $datatable_value .= '<a href="javascript:void(0);" title="' . esc_html__("Generate Invoice",
-                    'it_report_wcreport_textdomain') . '" class="it_pdf_invoice button" data-order-id="' . $items->order_id . '"><i class="fa fa-file-text-o"></i></a>';
+                    'ithemelandco-woo-report') . '" class="it_pdf_invoice button" data-order-id="' . $items->order_id . '"><i class="fa fa-file-text-o"></i></a>';
 
             //COMPATIBLE WITH WOO INVOICE
             if (class_exists("WC_pdf_admin")) {
@@ -3026,7 +3026,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Date From', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Date From', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
             <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -3034,7 +3034,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Date To', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Date To', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
             <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -3047,7 +3047,7 @@ if ($file_used == "sql_table") {
             ?>
             <div class="col-md-6">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Delivery Date From', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Delivery Date From', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                 <input name="it_from_date_delivery" id="pwr_from_date_delivery" type="text" readonly='true'
@@ -3056,7 +3056,7 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Delivery Date To', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Delivery Date To', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                 <input name="it_to_date_delivery" id="pwr_to_date_delivery" type="text" readonly='true'
@@ -3068,16 +3068,16 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Order ID', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Order ID', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
             <input name="it_id_order" type="text" class="" placeholder="<?php esc_html_e('Separate IDs with (,) Example : 1,2',
-                'it_report_wcreport_textdomain'); ?>"/>
+                'ithemelandco-woo-report'); ?>"/>
         </div>
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Customer', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Customer', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-user"></i></span>
             <input name="it_first_name_text" type="text" class=""/>
@@ -3094,7 +3094,7 @@ if ($file_used == "sql_table") {
             ?>
             <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Category', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Category', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-tags"></i></span>
                 <?php
@@ -3142,7 +3142,7 @@ if ($file_used == "sql_table") {
                     if ($this->get_form_element_permission('it_category_id') && (( ! is_array($permission_value)) || (is_array($permission_value) && in_array('all',
                                     $permission_value)))) {
                         ?>
-                        <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                        <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                         <?php
                     }
                     ?>
@@ -3233,7 +3233,7 @@ if ($file_used == "sql_table") {
                     if ($this->get_form_element_permission('it_brand_id') && (( ! is_array($permission_value)) || (is_array($permission_value) && in_array('all',
                                     $permission_value)))) {
                         ?>
-                        <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                        <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                         <?php
                     }
                     ?>
@@ -3271,7 +3271,7 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Product', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Product', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-gear"></i></span>
                 <?php
@@ -3303,7 +3303,7 @@ if ($file_used == "sql_table") {
                     if ($this->get_form_element_permission('it_product_id') && (( ! is_array($permission_value)) || (is_array($permission_value) && in_array('all',
                                     $permission_value)))) {
                         ?>
-                        <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                        <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                         <?php
                     }
                     ?>
@@ -3332,7 +3332,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Customer', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Customer', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-user"></i></span>
             <?php
@@ -3343,7 +3343,7 @@ if ($file_used == "sql_table") {
             }
             ?>
             <select name="it_customers_paid[]" multiple="multiple" size="5" data-size="5" class="chosen-select-search">
-                <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                 <?php
                 echo wp_kses(
     $option,
@@ -3376,7 +3376,7 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Status', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Status', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-check"></i></span>
                 <?php
@@ -3416,7 +3416,7 @@ if ($file_used == "sql_table") {
                     if ($this->get_form_element_permission('it_orders_status') && (( ! is_array($permission_value)) || (is_array($permission_value) && in_array('all',
                                     $permission_value)))) {
                         ?>
-                        <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                        <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                         <?php
                     }
                     ?>
@@ -3450,7 +3450,7 @@ if ($file_used == "sql_table") {
             ?>
             <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                 <div class="awr-form-title">
-                    <?php esc_html_e('Country', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('Country', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-globe"></i></span>
                 <?php
@@ -3481,7 +3481,7 @@ if ($file_used == "sql_table") {
                     if ($this->get_form_element_permission('it_countries_code') && (( ! is_array($permission_value)) || (is_array($permission_value) && in_array('all',
                                     $permission_value)))) {
                         ?>
-                        <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                        <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                         <?php
                     }
                     ?>
@@ -3553,7 +3553,7 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                 <div class="awr-form-title">
-                    <?php esc_html_e('State', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('State', 'ithemelandco-woo-report'); ?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-map"></i></span>
                 <?php
@@ -3604,7 +3604,7 @@ if ($file_used == "sql_table") {
                     if ($this->get_form_element_permission('it_states_code') && (( ! is_array($permission_value)) || (is_array($permission_value) && in_array('all',
                                     $permission_value)))) {
                         ?>
-                        <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                        <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                         <?php
                     }
                     ?>
@@ -3636,7 +3636,7 @@ if ($file_used == "sql_table") {
         ?>
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Variations', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Variations', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-bolt"></i></span>
             <?php
@@ -3661,7 +3661,7 @@ if ($file_used == "sql_table") {
             <select name="it_variation_id[]" multiple="multiple" size="5" data-size="5"
                     class="chosen-select-search variation_elements">
                 <option value="<?php echo esc_attr($all_value); ?>"><?php esc_html_e('Select All',
-                        'it_report_wcreport_textdomain'); ?></option>
+                        'ithemelandco-woo-report'); ?></option>
                 <?php
                 echo wp_kses(
     $option,
@@ -3683,7 +3683,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Variation Only', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Variation Only', 'ithemelandco-woo-report'); ?>
             </div>
 
             <input name="it_variation_only" type="checkbox" value="yes"/>
@@ -3692,7 +3692,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Postcode(Zip)', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Postcode(Zip)', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-map-marker"></i></span>
             <input name="it_bill_post_code" type="text"/>
@@ -3701,7 +3701,7 @@ if ($file_used == "sql_table") {
 
         <!--<div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Min & Max By', 'it_report_wcreport_textdomain'); ?>
+                        <?php esc_html_e('Min & Max By', 'ithemelandco-woo-report'); ?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-arrows-h"></i></span>
                     <select name="order_meta_key[]" id="order_meta_key2" class="order_meta_key normal_view_only">
@@ -3713,34 +3713,34 @@ if ($file_used == "sql_table") {
                     </select>
                     <br />
                     <span class="description"><?php esc_html_e("Enable this selection by uncheck 'Show Order Item Details'
-", 'it_report_wcreport_textdomain'); ?></span>
+", 'ithemelandco-woo-report'); ?></span>
                 </div>
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Min Amount', 'it_report_wcreport_textdomain'); ?>
+                        <?php esc_html_e('Min Amount', 'ithemelandco-woo-report'); ?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-battery-0"></i></span>
                     <input name="min_amount" type="text"/>
                     <br />
                     <span class="description"><?php esc_html_e("Enable this selection by uncheck 'Show Order Item Details'
-", 'it_report_wcreport_textdomain'); ?></span>
+", 'ithemelandco-woo-report'); ?></span>
                 </div>
 
                  <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Max Amount', 'it_report_wcreport_textdomain'); ?>
+                        <?php esc_html_e('Max Amount', 'ithemelandco-woo-report'); ?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-battery-4"></i></span>
                     <input name="max_amount" type="text"/>
                     <br />
                     <span class="description"><?php esc_html_e("Enable this selection by uncheck 'Show Order Item Details'
-", 'it_report_wcreport_textdomain'); ?></span>
+", 'ithemelandco-woo-report'); ?></span>
                 </div>-->
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Email', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Email', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-envelope-o"></i></span>
             <input name="it_email_text" type="text"/>
@@ -3749,7 +3749,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Order By', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Order By', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-sort-alpha-asc"></i></span>
             <div class="row">
@@ -3786,11 +3786,11 @@ if ($file_used == "sql_table") {
                     $option .= "<option $selected value='" . $coupon->id . "' >" . $coupon->label . " </option>";
                 }
                 ?>
-                <?php esc_html_e('Coupon Codes', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Coupon Codes', 'ithemelandco-woo-report'); ?>
             </div>
             <span class="awr-form-icon"><i class="fa fa-key"></i></span>
             <select name="it_codes_of_coupon[]" multiple="multiple" size="5" data-size="5" class="chosen-select-search">
-                <option value="-1"><?php esc_html_e('Select All', 'it_report_wcreport_textdomain'); ?></option>
+                <option value="-1"><?php esc_html_e('Select All', 'ithemelandco-woo-report'); ?></option>
                 <?php
                 echo wp_kses(
     $option,
@@ -3812,16 +3812,16 @@ if ($file_used == "sql_table") {
 
         <!--<div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Discount Type', 'it_report_wcreport_textdomain'); ?>
+                        <?php esc_html_e('Discount Type', 'ithemelandco-woo-report'); ?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-money"></i></span>
                     <select name="it_coupon_discount_types" >
-                        <option value="-1"><?php esc_html_e('Select One', 'it_report_wcreport_textdomain'); ?></option>
-                        <option value="percent"><?php esc_html_e('Percentage Discount', 'it_report_wcreport_textdomain'); ?></option>
+                        <option value="-1"><?php esc_html_e('Select One', 'ithemelandco-woo-report'); ?></option>
+                        <option value="percent"><?php esc_html_e('Percentage Discount', 'ithemelandco-woo-report'); ?></option>
                         <option value="fixed_cart"><?php esc_html_e('Fixed Cart Discount',
-            'it_report_wcreport_textdomain'); ?></option>
+            'ithemelandco-woo-report'); ?></option>
                         <option value="fixed_product"><?php esc_html_e('Fixed Product Discount',
-            'it_report_wcreport_textdomain'); ?></option>
+            'ithemelandco-woo-report'); ?></option>
                     </select>
                 </div>
 -->
@@ -3836,7 +3836,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Show Order Item Details', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Show Order Item Details', 'ithemelandco-woo-report'); ?>
             </div>
 
             <input name="it_view_details" type="checkbox" value="yes" checked/>
@@ -3845,7 +3845,7 @@ if ($file_used == "sql_table") {
 
         <div class="col-md-6">
             <div class="awr-form-title">
-                <?php esc_html_e('Coupon Used Only', 'it_report_wcreport_textdomain'); ?>
+                <?php esc_html_e('Coupon Used Only', 'ithemelandco-woo-report'); ?>
             </div>
 
             <input name="it_use_coupon" type="checkbox" value="yes"/>
@@ -3859,10 +3859,10 @@ if ($file_used == "sql_table") {
 
             <div class="col-md-6">
                 <div class="awr-form-title">
-                    <?php esc_html_e('SHOW JUST INCLUDE C.O.G & PROFIT', 'it_report_wcreport_textdomain'); ?>
+                    <?php esc_html_e('SHOW JUST INCLUDE C.O.G & PROFIT', 'ithemelandco-woo-report'); ?>
                     <br/>
                     <span class="description"><?php esc_html_e('Include just products with current Profit(Cost of good) plugin(Selected in Setting -> Add-on Settings -> Cost of Good).',
-                            'it_report_wcreport_textdomain'); ?></span>
+                            'ithemelandco-woo-report'); ?></span>
                 </div>
 
                 <input name="it_show_cog" type="checkbox" value="yes"/>
@@ -3904,10 +3904,10 @@ if ($file_used == "sql_table") {
             <input type="hidden" name="table_names" value="<?php echo esc_html($table_name); ?>"/>
             <div class="fetch_form_loading search-form-loading"></div>
             <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i>
-                <span><?php echo esc_html__('Search', 'it_report_wcreport_textdomain'); ?></span></button>
+                <span><?php echo esc_html__('Search', 'ithemelandco-woo-report'); ?></span></button>
             <button type="button" value="Reset" class="button-secondary form_reset_btn"><i
                         class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form',
-                        'it_report_wcreport_textdomain'); ?></span></button>
+                        'ithemelandco-woo-report'); ?></span></button>
         </div>
 
     </form>

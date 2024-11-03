@@ -74,7 +74,7 @@ if($file_used=="sql_table")
 				}
 
 				if($show_column=="on")
-					$custom_tax_cols[]=array('lable'=>esc_html(sanitize_text_field($label),'it_report_wcreport_textdomain'),'status'=>'show');
+					$custom_tax_cols[]=array('lable'=>esc_html(sanitize_text_field($label),'ithemelandco-woo-report'),'status'=>'show');
 
 
 				$visible_custom_taxonomy[]=$tax;
@@ -648,7 +648,7 @@ if($file_used=="sql_table")
 
             <div class="col-md-6">
                 <div class="awr-form-title">
-					<?php esc_html_e('Date From','it_report_wcreport_textdomain');?>
+					<?php esc_html_e('Date From','ithemelandco-woo-report');?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                 <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -656,7 +656,7 @@ if($file_used=="sql_table")
 
             <div class="col-md-6">
                 <div class="awr-form-title">
-					<?php esc_html_e('Date To','it_report_wcreport_textdomain');?>
+					<?php esc_html_e('Date To','ithemelandco-woo-report');?>
                 </div>
                 <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                 <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -670,7 +670,7 @@ if($file_used=="sql_table")
                 ?>
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Delivery Date From', 'it_report_wcreport_textdomain'); ?>
+                        <?php esc_html_e('Delivery Date From', 'ithemelandco-woo-report'); ?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_from_date_delivery" id="pwr_from_date_delivery" type="text" readonly='true'
@@ -679,7 +679,7 @@ if($file_used=="sql_table")
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Delivery Date To', 'it_report_wcreport_textdomain'); ?>
+                        <?php esc_html_e('Delivery Date To', 'ithemelandco-woo-report'); ?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_to_date_delivery" id="pwr_to_date_delivery" type="text" readonly='true' class="datepick"/>
@@ -694,7 +694,7 @@ if($file_used=="sql_table")
 		        ?>
                 <div class="col-md-6">
                     <div class="awr-form-title">
-				        <?php esc_html_e('Custom SKU','it_report_wcreport_textdomain');?>
+				        <?php esc_html_e('Custom SKU','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_custom_sku" type="text" />
@@ -725,7 +725,7 @@ if($file_used=="sql_table")
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-						<?php esc_html_e('Category','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Category','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-tags"></i></span>
 					<?php
@@ -766,7 +766,7 @@ if($file_used=="sql_table")
 						if($this->get_form_element_permission('it_category_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 						{
 							?>
-                            <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                            <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
 							<?php
 						}
 						?>
@@ -804,7 +804,7 @@ if($file_used=="sql_table")
 
                 <div class="col-md-6" style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-						<?php esc_html_e( 'Tags', 'it_report_wcreport_textdomain' ); ?>
+						<?php esc_html_e( 'Tags', 'ithemelandco-woo-report' ); ?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-tags"></i></span>
 					<?php
@@ -825,7 +825,7 @@ if($file_used=="sql_table")
 						<?php
 						if ( $this->get_form_element_permission( 'it_tags_id' ) && ( ( ! is_array( $permission_value ) ) || ( is_array( $permission_value ) && in_array( 'all', $permission_value ) ) ) ) {
 							?>
-                            <option value="-1"><?php esc_html_e( 'Select All', 'it_report_wcreport_textdomain' ); ?></option>
+                            <option value="-1"><?php esc_html_e( 'Select All', 'ithemelandco-woo-report' ); ?></option>
 							<?php
 						}
 						?>
@@ -903,7 +903,7 @@ if($file_used=="sql_table")
 						if($this->get_form_element_permission('it_brand_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 						{
 							?>
-                            <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                            <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
 							<?php
 						}
 						?>
@@ -940,7 +940,7 @@ if($file_used=="sql_table")
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-						<?php esc_html_e('Product','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Product','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-cog"></i></span>
 					<?php
@@ -970,7 +970,7 @@ if($file_used=="sql_table")
 						if($this->get_form_element_permission('it_product_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 						{
 							?>
-                            <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                            <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
 							<?php
 						}
 						?>
@@ -1004,7 +1004,7 @@ if($file_used=="sql_table")
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-						<?php esc_html_e('Status','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Status','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-check"></i></span>
 					<?php
@@ -1037,7 +1037,7 @@ if($file_used=="sql_table")
 						if($this->get_form_element_permission('it_orders_status') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 						{
 							?>
-                            <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                            <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
 							<?php
 						}
 						?>
@@ -1070,9 +1070,9 @@ if($file_used=="sql_table")
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-						<?php esc_html_e('SHOW JUST INCLUDE C.O.G & PROFIT','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('SHOW JUST INCLUDE C.O.G & PROFIT','ithemelandco-woo-report');?>
                         <br />
-                        <span class="description"><?php esc_html_e('Include just products with current Profit(Cost of good) plugin(Selected in Setting -> Add-on Settings -> Cost of Good).','it_report_wcreport_textdomain');?></span>
+                        <span class="description"><?php esc_html_e('Include just products with current Profit(Cost of good) plugin(Selected in Setting -> Add-on Settings -> Cost of Good).','ithemelandco-woo-report');?></span>
                     </div>
 
                     <input name="it_show_cog" type="checkbox" value="yes"/>
@@ -1099,8 +1099,8 @@ if($file_used=="sql_table")
             <input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
 
             <div class="fetch_form_loading search-form-loading"></div>
-            <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-            <button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+            <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+            <button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
         </div>
 
     </form>

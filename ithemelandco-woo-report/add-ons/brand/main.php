@@ -37,9 +37,9 @@ if(!class_exists('it_report_wcreport_brands_addon_class')){
 		}
 
 		function add_page_titles($page_titles){
-			$page_titles['details_brands']=__( "All Orders per Brands",'it_report_wcreport_textdomain');
-			$page_titles['brand']=__( "Brand Report",'it_report_wcreport_textdomain');
-			$page_titles['custom_taxonomy']=__( "Custom Taxonomy",'it_report_wcreport_textdomain');
+			$page_titles['details_brands']=__( "All Orders per Brands",'ithemelandco-woo-report');
+			$page_titles['brand']=__( "Brand Report",'ithemelandco-woo-report');
+			$page_titles['custom_taxonomy']=__( "Custom Taxonomy",'ithemelandco-woo-report');
 
 			return $page_titles;
 		}
@@ -49,9 +49,9 @@ if(!class_exists('it_report_wcreport_brands_addon_class')){
 			global $it_rpt_main_class;
 			$role_capability=$it_rpt_main_class->get_capability();
 			//CUSTOM TAX & FIELDS
-			add_submenu_page('itwrl_submenu', __('All Orders (Custom Taxonomy, Field)','it_report_wcreport_textdomain'), __('All Orders (Custom Taxonomy, Field)','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_all_order_brands',   array($this,'wcx_plugin_menu_all_order_brands' ) );
+			add_submenu_page('itwrl_submenu', __('All Orders (Custom Taxonomy, Field)','ithemelandco-woo-report'), __('All Orders (Custom Taxonomy, Field)','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_all_order_brands',   array($this,'wcx_plugin_menu_all_order_brands' ) );
 
-			add_submenu_page('itwrl_submenu', __('Brands Report','it_report_wcreport_textdomain'), __('Brands Reoprt','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_brand_brands',   array($this,'wcx_plugin_menu_brand_brands' ) );
+			add_submenu_page('itwrl_submenu', __('Brands Report','ithemelandco-woo-report'), __('Brands Reoprt','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_brand_brands',   array($this,'wcx_plugin_menu_brand_brands' ) );
 		}
 
 		//////////////////////CUSTOM TAX & FIELDS//////////////////////
@@ -70,19 +70,19 @@ if(!class_exists('it_report_wcreport_brands_addon_class')){
 		//CHANGE FETCH MENU VISIBLE MENUS
 		function add_fetch_page_brands( $visible_menu ) {
 			$brands_menu=array(
-						"label" => '<span style="color:#d97c7c">'.__("Brands Reports(Pro)",'it_report_wcreport_textdomain').'</span>',
+						"label" => '<span style="color:#d97c7c">'.__("Brands Reports(Pro)",'ithemelandco-woo-report').'</span>',
 						"id" => "brands_reports",
 						"link" => "#",
 						"icon" => "fa-tag",
 						"childs" => array(
 							"details_brands" => array(
-								"label" => '<span style="color:#d97c7c">'.__("All Orders Per Brands(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+								"label" => '<span style="color:#d97c7c">'.__("All Orders Per Brands(Pro)" ,'ithemelandco-woo-report').'</span>',
 								"id" => "details_brands",
 								"link" => "#",
 								"icon" => "fa-cog",
 							),
 							"brand_brands" => array(
-								"label" => '<span style="color:#d97c7c">'.__("Brands Report(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+								"label" => '<span style="color:#d97c7c">'.__("Brands Report(Pro)" ,'ithemelandco-woo-report').'</span>',
 								"id" => "brand_brands",
 								"link" => "admin.php?page=wcx_wcreport_plugin_brand_brands&parent=brands_reports&smenu=brand_brands",
 								"icon" => "fa-tags",

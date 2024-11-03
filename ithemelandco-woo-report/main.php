@@ -3,7 +3,7 @@
 Plugin Name: iThemelandCo Woo Report Lite
 Plugin URI: http://ithemelandco.com/plugins/woocommerce-report/
 Description: WooCommerce Advance Reporting plugin is a comprehensive and the most complete reporting system.
-Version: 1.5.1
+Version: 1.5.2
 Author: iThemelandCo
 Author URI: http://ithemelandco.com/
 Text Domain: it_report_wcreport_textdomain
@@ -21,8 +21,8 @@ if (!empty($a)) {
 
 
 if (!class_exists('it_report_wcreport_class')) {
-    define('ITWR_VERSION', '1.5.1');
-    define('ITWR_NAME', 'iThemelandCo-Woo-Report-Lite');
+    define('ITWR_VERSION', '1.5.2');
+    define('ITWR_NAME','ithemelandco-woo-report');
     define('ITWR_LABEL', 'iThemelandCo Woo Report Lite');
     define('ITWRL_IMAGES_URL', trailingslashit(trailingslashit(plugin_dir_url(__FILE__)) . 'assets/images'));
 
@@ -41,14 +41,14 @@ if (!class_exists('it_report_wcreport_class')) {
     define('__IT_REPORT_WCREPORT_FIELDS_PERFIX__', 'custom_report_');
 
     //TEXT DOMAIN FOR MULTI LANGUAGE
-    define('__IT_REPORT_WCREPORT_TEXTDOMAIN__', 'it_report_wcreport_textdomain');
+    define('__IT_REPORT_WCREPORT_TEXTDOMAIN__', 'ithemelandco-woo-report');
 
     //COST OF GOOF PRICE
     //define ('__IT_COG__','_IT_COST_GOOD_FIELD');
 
     include 'includes/datatable_generator.php';
     load_plugin_textdomain(
-        'it_report_wcreport_textdomain',
+        'ithemelandco-woo-report',
         false,
         dirname(plugin_basename(__FILE__)) . '/languages/'
     );
@@ -229,7 +229,7 @@ if (!class_exists('it_report_wcreport_class')) {
                     $brand_plugin = get_option(__IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'brands_plugin', "product_brand");
                     $brand_label = get_option(
                         __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'brand_label',
-                        esc_html__('Brand', 'it_report_wcreport_textdomain')
+                        esc_html__('Brand', 'ithemelandco-woo-report')
                     );
 
                     $brand_slug = $brand_plugin;
@@ -246,7 +246,7 @@ if (!class_exists('it_report_wcreport_class')) {
                     $brand_slug = 'as-brand';
                     $brand_label = get_option(
                         __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'brand_label',
-                        esc_html__('Brand', 'it_report_wcreport_textdomain')
+                        esc_html__('Brand', 'ithemelandco-woo-report')
                     );
                 }
             }
@@ -284,14 +284,14 @@ if (!class_exists('it_report_wcreport_class')) {
                         if (!empty($info) && is_array($info)) {
                             if (!empty($info['result']) && $info['result'] == true) {
                                 update_option('itwrl_is_active', 'yes');
-                                $message = esc_html__('Success !', 'iThemelandCo-Woo-Report-Lite');
+                                $message = esc_html__('Success !','ithemelandco-woo-report');
                             } else {
                                 update_option('itwrl_is_active', 'no');
-                                $message = (!empty($info['message'])) ? esc_html($info['message']) : esc_html__('System Error !', 'iThemelandCo-Woo-Report-Lite');
+                                $message = (!empty($info['message'])) ? esc_html($info['message']) : esc_html__('System Error !','ithemelandco-woo-report');
                             }
                         } else {
                             update_option('itwrl_is_active', 'no');
-                            $message = esc_html__('Connection Timeout! Please Try Again', 'iThemelandCo-Woo-Report-Lite');
+                            $message = esc_html__('Connection Timeout! Please Try Again','ithemelandco-woo-report');
                         }
                     }
                 }
@@ -323,9 +323,9 @@ if (!class_exists('it_report_wcreport_class')) {
             woocommerce_wp_text_input(
                 array(
                     'id' => 'it_cost_of_good[' . $variation->ID . ']',
-                    'label' => esc_html__('Cost og Good($)', 'it_report_wcreport_textdomain'),
+                    'label' => esc_html__('Cost og Good($)', 'ithemelandco-woo-report'),
                     'desc_tip' => 'true',
-                    'description' => esc_html__('Enter Cost of Good for this product', 'it_report_wcreport_textdomain'),
+                    'description' => esc_html__('Enter Cost of Good for this product', 'ithemelandco-woo-report'),
                     'value' => get_post_meta($variation->ID, 'it_cost_of_good', true),
                     'custom_attributes' => array(
                         'step' => 'any',
@@ -389,7 +389,7 @@ if (!class_exists('it_report_wcreport_class')) {
             woocommerce_wp_text_input(array(
                 'id' => 'it_cost_of_good',
                 'class' => 'wc_input_price short',
-                'label' => esc_html__('Cost of Good($)', 'woocommerce'),
+                'label' => esc_html__('Cost of Good($)', 'ithemelandco-woo-report'),
             ));
         }
 
@@ -514,12 +514,12 @@ if (!class_exists('it_report_wcreport_class')) {
             $menu_fields = array(
                 'all_orders' => array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_states_code" => esc_html__('State', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_states_code" => esc_html__('State', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
@@ -528,65 +528,65 @@ if (!class_exists('it_report_wcreport_class')) {
                 /// ORDER PER COUNTRY
                 "details_order_country" => array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_states_code" => esc_html__('State', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_states_code" => esc_html__('State', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
 
                 'product' => array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
-                        "it_tags_id" => esc_html__('Tags', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
+                        "it_tags_id" => esc_html__('Tags', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
                 'category' => array(
                     'fields' => array(
-                        "it_parent_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_parent_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
 
                 'tags' => array(
                     'fields' => array(
-                        "it_tags_id" => esc_html__('Tags', 'it_report_wcreport_textdomain'),
+                        "it_tags_id" => esc_html__('Tags', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
 
                 'stock_list' => array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
 
                 'tax_reports' => array(
                     'fields' => array(
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
 
                 'order_product_analysis' => array(
                     'fields' => array(
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
 
                 'order_variation_analysis' => array(
                     'fields' => array(
-                        "it_products" => esc_html__('Product', 'it_report_wcreport_textdomain'),
+                        "it_products" => esc_html__('Product', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 ),
@@ -596,9 +596,9 @@ if (!class_exists('it_report_wcreport_class')) {
             if (defined("__IT_VARIATION_ADD_ON__")) {
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
 
@@ -609,11 +609,11 @@ if (!class_exists('it_report_wcreport_class')) {
             if (__IT_COG__ != '') {
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_states_code" => esc_html__('State', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_states_code" => esc_html__('State', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -623,10 +623,10 @@ if (!class_exists('it_report_wcreport_class')) {
             if (defined("__IT_CROSSTABB_ADD_ON__")) {
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -634,10 +634,10 @@ if (!class_exists('it_report_wcreport_class')) {
 
                 $new_menu = array(
                     'fields' => array(
-                        "it_categories" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_categories" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
-                        "it_products" => esc_html__('Product', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
+                        "it_products" => esc_html__('Product', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -645,23 +645,23 @@ if (!class_exists('it_report_wcreport_class')) {
 
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
                 $menu_fields = $this->array_insert_after("all_orders", $menu_fields, "prod_per_country", $new_menu);
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_states_code" => esc_html__('State', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_states_code" => esc_html__('State', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -669,8 +669,8 @@ if (!class_exists('it_report_wcreport_class')) {
 
                 $new_menu = array(
                     'fields' => array(
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -678,7 +678,7 @@ if (!class_exists('it_report_wcreport_class')) {
 
                 $new_menu = array(
                     'fields' => array(
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -686,7 +686,7 @@ if (!class_exists('it_report_wcreport_class')) {
 
                 $new_menu = array(
                     'fields' => array(
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -701,11 +701,11 @@ if (!class_exists('it_report_wcreport_class')) {
             if (defined("__IT_TAX_FIELD_ADD_ON__")) {
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_states_code" => esc_html__('State', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_states_code" => esc_html__('State', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -713,7 +713,7 @@ if (!class_exists('it_report_wcreport_class')) {
 
                 $new_menu = array(
                     'fields' => array(
-                        "it_parent_brand_id" => esc_html__('Brand', 'it_report_wcreport_textdomain'),
+                        "it_parent_brand_id" => esc_html__('Brand', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -721,7 +721,7 @@ if (!class_exists('it_report_wcreport_class')) {
 
                 $new_menu = array(
                     'fields' => array(
-                        "it_customy_taxonomies" => esc_html__('Product Taxonimies', 'it_report_wcreport_textdomain'),
+                        "it_customy_taxonomies" => esc_html__('Product Taxonimies', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -731,12 +731,12 @@ if (!class_exists('it_report_wcreport_class')) {
             if (defined("__IT_BRANDS_ADD_ON__")) {
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_states_code" => esc_html__('State', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_states_code" => esc_html__('State', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -746,12 +746,12 @@ if (!class_exists('it_report_wcreport_class')) {
             if (defined("__IT_PO_ADD_ON__")) {
                 $new_menu = array(
                     'fields' => array(
-                        "it_category_id" => esc_html__('Category', 'it_report_wcreport_textdomain'),
+                        "it_category_id" => esc_html__('Category', 'ithemelandco-woo-report'),
                         "it_brand_id" => __IT_BRAND_SLUG__ ? __IT_BRAND_LABEL__ : false,
-                        "it_product_id" => esc_html__('Product', 'it_report_wcreport_textdomain'),
-                        "it_countries_code" => esc_html__('Country', 'it_report_wcreport_textdomain'),
-                        "it_states_code" => esc_html__('State', 'it_report_wcreport_textdomain'),
-                        "it_orders_status" => esc_html__('Status', 'it_report_wcreport_textdomain'),
+                        "it_product_id" => esc_html__('Product', 'ithemelandco-woo-report'),
+                        "it_countries_code" => esc_html__('Country', 'ithemelandco-woo-report'),
+                        "it_states_code" => esc_html__('State', 'ithemelandco-woo-report'),
+                        "it_orders_status" => esc_html__('Status', 'ithemelandco-woo-report'),
                     ),
                     'cols' => array(),
                 );
@@ -831,7 +831,7 @@ if (!class_exists('it_report_wcreport_class')) {
         public function loadTextDomain()
         {
             load_plugin_textdomain(
-                'it_report_wcreport_textdomain',
+                'ithemelandco-woo-report',
                 false,
                 dirname(plugin_basename(__FILE__)) . '/languages/'
             );
@@ -921,7 +921,7 @@ if (!class_exists('it_report_wcreport_class')) {
 
                     $param_line_exclude = $param_line_include = '<select name="it_custom_taxonomy_in_' . $tax . '[]" class="chosen-select-search" multiple="multiple" style="width: 531px;" data-placeholder="' . esc_html__(
                         'Choose Inclulde ',
-                        'it_report_wcreport_textdomain'
+                        'ithemelandco-woo-report'
                     ) . ' ' . $label . ' ..." id="it_' . $tax . '">';
 
                     if ($this->get_form_element_permission($tax) && ((!is_array($permission_value)) || (is_array($permission_value) && in_array(
@@ -930,13 +930,13 @@ if (!class_exists('it_report_wcreport_class')) {
                     )))) {
                         $param_line_include .= '<option value="-1">' . esc_html__(
                             'Select All',
-                            'it_report_wcreport_textdomain'
+                            'ithemelandco-woo-report'
                         ) . '</option>';
                     }
 
                     $param_line_exclude = '<select name="it_custom_taxonomy_ex_' . $tax . '[]" class="chosen-select-search" multiple="multiple" style="width: 531px;" data-placeholder="' . esc_html__(
                         'Choose Exclude',
-                        'it_report_wcreport_textdomain'
+                        'ithemelandco-woo-report'
                     ) . ' ' . $label . ' ..." id="it_' . $tax . '">';
                     $args = array(
                         'taxonomy' => $tax,
@@ -992,7 +992,7 @@ if (!class_exists('it_report_wcreport_class')) {
                 $param_line = '
 					<div class="col-md-6" style="border:#f2c811 2px solid;width:100%">
 						<div class="awr-form-title" style="padding: 7px 5px 10px;text-align: center;background: #f2c811;color: #fff;">
-							' . esc_html__('Custom Taxonomy', 'it_report_wcreport_textdomain') . '
+							' . esc_html__('Custom Taxonomy', 'ithemelandco-woo-report') . '
 						</div>' . $param_line . '</div>';
             }
 
@@ -1521,7 +1521,7 @@ if (!class_exists('it_report_wcreport_class')) {
                 $html_main = '<div class="col-md-12">
                         <div class="awr-option-title">' . esc_html__(
                     'Product Options Checkout Fields',
-                    'it_report_wcreport_textdomain'
+                    'ithemelandco-woo-report'
                 ) . '</div>
                             <div class="awr-option-fields">';
                 $html_main .= $html;
@@ -1802,7 +1802,7 @@ if (!class_exists('it_report_wcreport_class')) {
                 $html_main = '<div class="col-md-12">
                         <div class="awr-option-title">' . esc_html__(
                     'Product Options Fields',
-                    'it_report_wcreport_textdomain'
+                    'ithemelandco-woo-report'
                 ) . '</div>
                             <div class="awr-option-fields">';
                 $html_main .= $html;
@@ -1902,11 +1902,11 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 												</div>
 												<h3 class="awr-acc-title">' . esc_html__(
                             "Access Denied !",
-                            'it_report_wcreport_textdomain'
+                            'ithemelandco-woo-report'
                         ) . '</h3>
 												<div class="awr-acc-desc">' . esc_html__(
                             "You have no permisson !! Please Contact site Administrator",
-                            'it_report_wcreport_textdomain'
+                            'ithemelandco-woo-report'
                         ) . '</div>
 											</div>
 										</div><!--col-xs-12 -->
@@ -2196,8 +2196,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //echo $role_capability;
 
             add_menu_page(
-                '<span style="color: #627ddd;font-weight: 900;">iT </span>' . esc_html__('Woo Report', 'it_report_wcreport_textdomain'),
-                '<span style="color: #627ddd;font-weight: 900;">iT </span>' . esc_html__('Woo Report', 'it_report_wcreport_textdomain'),
+                '<span style="color: #627ddd;font-weight: 900;">iT </span>' . esc_html__('Woo Report', 'ithemelandco-woo-report'),
+                '<span style="color: #627ddd;font-weight: 900;">iT </span>' . esc_html__('Woo Report', 'ithemelandco-woo-report'),
                 $role_capability,
                 $this->it_plugin_main_url,
                 array($this, 'wcx_plugin_dashboard'),
@@ -2208,8 +2208,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 $this->it_plugin_main_url,
-                esc_html__('Settings', 'it_report_wcreport_textdomain'),
-                esc_html__('Settings', 'it_report_wcreport_textdomain'),
+                esc_html__('Settings', 'ithemelandco-woo-report'),
+                esc_html__('Settings', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_setting_report&parent=setting&smenu=setting',
                 array($this, 'wcx_plugin_mani_settings')
@@ -2217,8 +2217,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 $this->it_plugin_main_url,
-                esc_html__('Activation', 'it_report_wcreport_textdomain'),
-                esc_html__('Activation', 'it_report_wcreport_textdomain'),
+                esc_html__('Activation', 'ithemelandco-woo-report'),
+                esc_html__('Activation', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_activation',
                 array($this, 'wcx_plugin_menu_activation'),
@@ -2232,8 +2232,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Dashboard', 'it_report_wcreport_textdomain'),
-                esc_html__('Dashboard', 'it_report_wcreport_textdomain'),
+                esc_html__('Dashboard', 'ithemelandco-woo-report'),
+                esc_html__('Dashboard', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_dashboard',
                 array($this, 'wcx_plugin_dashboard')
@@ -2241,8 +2241,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('My Dashboard', 'it_report_wcreport_textdomain'),
-                esc_html__('My Dashboard', 'it_report_wcreport_textdomain'),
+                esc_html__('My Dashboard', 'ithemelandco-woo-report'),
+                esc_html__('My Dashboard', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_plugin_menu_my_dashboard',
                 array($this, 'wcx_plugin_menu_my_dashboard')
@@ -2250,21 +2250,21 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Details', 'it_report_wcreport_textdomain'),
-                esc_html__('Details', 'it_report_wcreport_textdomain'),
+                esc_html__('Details', 'ithemelandco-woo-report'),
+                esc_html__('Details', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_details',
                 array($this, 'wcx_plugin_menu_details')
             );
 
             //CUSTOM WORK - 12300
-            //add_submenu_page(null, esc_html__('Details Tickera','it_report_wcreport_textdomain'), esc_html__('Details Tickera','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_details_tickera',   array($this,'wcx_plugin_menu_details_tickera' ) );
+            //add_submenu_page(null, esc_html__('Details Tickera','ithemelandco-woo-report'), esc_html__('Details Tickera','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_details_tickera',   array($this,'wcx_plugin_menu_details_tickera' ) );
 
             //CUSTOM WORK - 4186
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Details Full', 'it_report_wcreport_textdomain'),
-                esc_html__('Details Full', 'it_report_wcreport_textdomain'),
+                esc_html__('Details Full', 'ithemelandco-woo-report'),
+                esc_html__('Details Full', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_details_full',
                 array($this, 'wcx_plugin_menu_details_full')
@@ -2273,8 +2273,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM WORK - 53
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Details Full Billing/Shipping', 'it_report_wcreport_textdomain'),
-                esc_html__('Details Full Billing/Shipping', 'it_report_wcreport_textdomain'),
+                esc_html__('Details Full Billing/Shipping', 'ithemelandco-woo-report'),
+                esc_html__('Details Full Billing/Shipping', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_details_full_shipping',
                 array($this, 'wcx_plugin_menu_details_full_shipping')
@@ -2283,8 +2283,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM WORK - 522
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Combined Orders', 'it_report_wcreport_textdomain'),
-                esc_html__('Combined Orders', 'it_report_wcreport_textdomain'),
+                esc_html__('Combined Orders', 'ithemelandco-woo-report'),
+                esc_html__('Combined Orders', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_details_combined',
                 array($this, 'wcx_plugin_menu_details_combined')
@@ -2293,8 +2293,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM WORK - 16
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Details Full Billing|Shipping', 'it_report_wcreport_textdomain'),
-                esc_html__('Details Full Billing|Shipping', 'it_report_wcreport_textdomain'),
+                esc_html__('Details Full Billing|Shipping', 'ithemelandco-woo-report'),
+                esc_html__('Details Full Billing|Shipping', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_details_full_shipping_tax',
                 array($this, 'wcx_plugin_menu_details_full_shipping_tax')
@@ -2303,8 +2303,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM WORK - 4179
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Status Change', 'it_report_wcreport_textdomain'),
-                esc_html__('Status Change', 'it_report_wcreport_textdomain'),
+                esc_html__('Status Change', 'ithemelandco-woo-report'),
+                esc_html__('Status Change', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_order_status_change',
                 array($this, 'wcx_plugin_menu_order_status_change')
@@ -2314,8 +2314,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             /// ORDER PER COUNTRY
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('All Orders (Custom Taxonomy, Field)', 'it_report_wcreport_textdomain'),
-                esc_html__('All Orders (Custom Taxonomy, Field)', 'it_report_wcreport_textdomain'),
+                esc_html__('All Orders (Custom Taxonomy, Field)', 'ithemelandco-woo-report'),
+                esc_html__('All Orders (Custom Taxonomy, Field)', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_details_order_country',
                 array($this, 'wcx_plugin_menu_details_order_country')
@@ -2323,8 +2323,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Order/Country', 'it_report_wcreport_textdomain'),
-                esc_html__('Order Per Country', 'it_report_wcreport_textdomain'),
+                esc_html__('Order/Country', 'ithemelandco-woo-report'),
+                esc_html__('Order Per Country', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_order_per_country',
                 array($this, 'wcx_plugin_menu_order_per_country')
@@ -2338,8 +2338,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //ALL DETAILS
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Product', 'it_report_wcreport_textdomain'),
-                esc_html__('Product', 'it_report_wcreport_textdomain'),
+                esc_html__('Product', 'ithemelandco-woo-report'),
+                esc_html__('Product', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_product',
                 array($this, 'wcx_plugin_menu_product')
@@ -2348,8 +2348,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM WORK 966
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('All Products', 'it_report_wcreport_textdomain'),
-                esc_html__('All Products', 'it_report_wcreport_textdomain'),
+                esc_html__('All Products', 'ithemelandco-woo-report'),
+                esc_html__('All Products', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_all_products',
                 array($this, 'wcx_plugin_menu_all_products')
@@ -2357,8 +2357,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Stock List', 'it_report_wcreport_textdomain'),
-                esc_html__('Stock List', 'it_report_wcreport_textdomain'),
+                esc_html__('Stock List', 'ithemelandco-woo-report'),
+                esc_html__('Stock List', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_stock_list',
                 array($this, 'wcx_plugin_menu_stock_list')
@@ -2368,8 +2368,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM WORK
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Product/Users', 'it_report_wcreport_textdomain'),
-                esc_html__('Product/Users', 'it_report_wcreport_textdomain'),
+                esc_html__('Product/Users', 'ithemelandco-woo-report'),
+                esc_html__('Product/Users', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_product_per_users',
                 array($this, 'wcx_plugin_menu_product_per_users')
@@ -2377,16 +2377,16 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Profit', 'it_report_wcreport_textdomain'),
-                esc_html__('Profit', 'it_report_wcreport_textdomain'),
+                esc_html__('Profit', 'ithemelandco-woo-report'),
+                esc_html__('Profit', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_profit',
                 array($this, 'wcx_plugin_menu_profit')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Category', 'it_report_wcreport_textdomain'),
-                esc_html__('Category', 'it_report_wcreport_textdomain'),
+                esc_html__('Category', 'ithemelandco-woo-report'),
+                esc_html__('Category', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_category',
                 array($this, 'wcx_plugin_menu_category')
@@ -2394,32 +2394,32 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             ////ADDED IN VER4.0
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Tag', 'it_report_wcreport_textdomain'),
-                esc_html__('Tag', 'it_report_wcreport_textdomain'),
+                esc_html__('Tag', 'ithemelandco-woo-report'),
+                esc_html__('Tag', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_tags',
                 array($this, 'wcx_plugin_menu_tags')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Customer', 'it_report_wcreport_textdomain'),
-                esc_html__('Customer', 'it_report_wcreport_textdomain'),
+                esc_html__('Customer', 'ithemelandco-woo-report'),
+                esc_html__('Customer', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_customer',
                 array($this, 'wcx_plugin_menu_customer')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Billing Country', 'it_report_wcreport_textdomain'),
-                esc_html__('Billing Country', 'it_report_wcreport_textdomain'),
+                esc_html__('Billing Country', 'ithemelandco-woo-report'),
+                esc_html__('Billing Country', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_billingcountry',
                 array($this, 'wcx_plugin_menu_billingcountry')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Billing State', 'it_report_wcreport_textdomain'),
-                esc_html__('Billing State', 'it_report_wcreport_textdomain'),
+                esc_html__('Billing State', 'ithemelandco-woo-report'),
+                esc_html__('Billing State', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_billingstate',
                 array($this, 'wcx_plugin_menu_billingstate')
@@ -2427,48 +2427,48 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             ////ADDED IN VER4.0
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Billing City', 'it_report_wcreport_textdomain'),
-                esc_html__('Billing City', 'it_report_wcreport_textdomain'),
+                esc_html__('Billing City', 'ithemelandco-woo-report'),
+                esc_html__('Billing City', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_billingcity',
                 array($this, 'wcx_plugin_menu_billingcity')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Payment Gateway', 'it_report_wcreport_textdomain'),
-                esc_html__('Payment Gateway', 'it_report_wcreport_textdomain'),
+                esc_html__('Payment Gateway', 'ithemelandco-woo-report'),
+                esc_html__('Payment Gateway', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_paymentgateway',
                 array($this, 'wcx_plugin_menu_paymentgateway')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Order Status', 'it_report_wcreport_textdomain'),
-                esc_html__('Order Status', 'it_report_wcreport_textdomain'),
+                esc_html__('Order Status', 'ithemelandco-woo-report'),
+                esc_html__('Order Status', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_orderstatus',
                 array($this, 'wcx_plugin_menu_orderstatus')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Recent Order', 'it_report_wcreport_textdomain'),
-                esc_html__('Recent Order', 'it_report_wcreport_textdomain'),
+                esc_html__('Recent Order', 'ithemelandco-woo-report'),
+                esc_html__('Recent Order', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_recentorder',
                 array($this, 'wcx_plugin_menu_recentorder')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Tax Report', 'it_report_wcreport_textdomain'),
-                esc_html__('Tax Report', 'it_report_wcreport_textdomain'),
+                esc_html__('Tax Report', 'ithemelandco-woo-report'),
+                esc_html__('Tax Report', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_taxreport',
                 array($this, 'wcx_plugin_menu_taxreport')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Purchased Product by Customer', 'it_report_wcreport_textdomain'),
-                esc_html__('Purchased Product by Customer', 'it_report_wcreport_textdomain'),
+                esc_html__('Purchased Product by Customer', 'ithemelandco-woo-report'),
+                esc_html__('Purchased Product by Customer', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_customrebuyproducts',
                 array($this, 'wcx_plugin_menu_customrebuyproducts')
@@ -2478,8 +2478,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('17427', __CUSTOMWORK_ID__)) {
                 add_submenu_page(
                     'itwrl_submenu',
-                    esc_html__('Purchased Category by Customer', 'it_report_wcreport_textdomain'),
-                    esc_html__('Purchased Category by Customer', 'it_report_wcreport_textdomain'),
+                    esc_html__('Purchased Category by Customer', 'ithemelandco-woo-report'),
+                    esc_html__('Purchased Category by Customer', 'ithemelandco-woo-report'),
                     $role_capability,
                     'wcx_wcreport_plugin_customer_category',
                     array(
@@ -2493,8 +2493,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('15092', __CUSTOMWORK_ID__)) {
                 add_submenu_page(
                     'itwrl_submenu',
-                    esc_html__('Order Per Shipping', 'it_report_wcreport_textdomain'),
-                    esc_html__('Order Per Shipping', 'it_report_wcreport_textdomain'),
+                    esc_html__('Order Per Shipping', 'ithemelandco-woo-report'),
+                    esc_html__('Order Per Shipping', 'ithemelandco-woo-report'),
                     $role_capability,
                     'wcx_wcreport_plugin_order_per_custom_shipping',
                     array(
@@ -2506,16 +2506,16 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Refund Orders', 'it_report_wcreport_textdomain'),
-                esc_html__('Refund Orders', 'it_report_wcreport_textdomain'),
+                esc_html__('Refund Orders', 'ithemelandco-woo-report'),
+                esc_html__('Refund Orders', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_refunddetails',
                 array($this, 'wcx_plugin_menu_refunddetails')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Coupon', 'it_report_wcreport_textdomain'),
-                esc_html__('Coupon', 'it_report_wcreport_textdomain'),
+                esc_html__('Coupon', 'ithemelandco-woo-report'),
+                esc_html__('Coupon', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_coupon',
                 array($this, 'wcx_plugin_menu_coupon')
@@ -2525,8 +2525,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('12679', __CUSTOMWORK_ID__)) {
                 add_submenu_page(
                     'itwrl_submenu',
-                    esc_html__('Total Sales per Clinic', 'it_report_wcreport_textdomain'),
-                    esc_html__('Total Sales per Clinic', 'it_report_wcreport_textdomain'),
+                    esc_html__('Total Sales per Clinic', 'ithemelandco-woo-report'),
+                    esc_html__('Total Sales per Clinic', 'ithemelandco-woo-report'),
                     $role_capability,
                     'wcx_wcreport_plugin_clinic',
                     array($this, 'wcx_plugin_menu_clinic')
@@ -2540,33 +2540,33 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             /// OTHER SUMMARY
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Coupon Discount', 'it_report_wcreport_textdomain'),
-                esc_html__('Coupon Discount', 'it_report_wcreport_textdomain'),
+                esc_html__('Coupon Discount', 'ithemelandco-woo-report'),
+                esc_html__('Coupon Discount', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_coupon_discount',
                 array($this, 'wcx_plugin_menu_coupon_discount')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Customer Analysis', 'it_report_wcreport_textdomain'),
-                esc_html__('Customer Analysis', 'it_report_wcreport_textdomain'),
+                esc_html__('Customer Analysis', 'ithemelandco-woo-report'),
+                esc_html__('Customer Analysis', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_customer_analysis',
                 array($this, 'wcx_plugin_menu_customer_analysis')
             );
-            //add_submenu_page(null, esc_html__('Frequently Order Customer','it_report_wcreport_textdomain'), esc_html__('Frequently Order Customer','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_order_frequently',   array($this,'wcx_plugin_menu_customer_order_frequently' ) );
+            //add_submenu_page(null, esc_html__('Frequently Order Customer','ithemelandco-woo-report'), esc_html__('Frequently Order Customer','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_customer_order_frequently',   array($this,'wcx_plugin_menu_customer_order_frequently' ) );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Customer in Price Point', 'it_report_wcreport_textdomain'),
-                esc_html__('Customer in Price Point', 'it_report_wcreport_textdomain'),
+                esc_html__('Customer in Price Point', 'ithemelandco-woo-report'),
+                esc_html__('Customer in Price Point', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_customer_min_max',
                 array($this, 'wcx_plugin_menu_customer_min_max')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Customer/Non Purchase', 'it_report_wcreport_textdomain'),
-                esc_html__('Customer/Non Purchase', 'it_report_wcreport_textdomain'),
+                esc_html__('Customer/Non Purchase', 'ithemelandco-woo-report'),
+                esc_html__('Customer/Non Purchase', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_customer_no_purchased',
                 array($this, 'wcx_plugin_menu_customer_no_purchased')
@@ -2579,8 +2579,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             /////ADDED IN VER4.0
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Zero Level Stock', 'it_report_wcreport_textdomain'),
-                esc_html__('Zero Level Stock', 'it_report_wcreport_textdomain'),
+                esc_html__('Zero Level Stock', 'ithemelandco-woo-report'),
+                esc_html__('Zero Level Stock', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_stock_zero_level',
                 array($this, 'wcx_plugin_menu_stock_zero_level')
@@ -2588,8 +2588,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Minimum Level Stock', 'it_report_wcreport_textdomain'),
-                esc_html__('Minimum Level Stock', 'it_report_wcreport_textdomain'),
+                esc_html__('Minimum Level Stock', 'ithemelandco-woo-report'),
+                esc_html__('Minimum Level Stock', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_stock_min_level',
                 array($this, 'wcx_plugin_menu_stock_min_level')
@@ -2597,8 +2597,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Most Stocked', 'it_report_wcreport_textdomain'),
-                esc_html__('Most Stocked', 'it_report_wcreport_textdomain'),
+                esc_html__('Most Stocked', 'ithemelandco-woo-report'),
+                esc_html__('Most Stocked', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_stock_max_level',
                 array($this, 'wcx_plugin_menu_stock_max_level')
@@ -2606,8 +2606,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Summary Stock Planner', 'it_report_wcreport_textdomain'),
-                esc_html__('Summary Stock Planner', 'it_report_wcreport_textdomain'),
+                esc_html__('Summary Stock Planner', 'ithemelandco-woo-report'),
+                esc_html__('Summary Stock Planner', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_stock_summary_avg',
                 array($this, 'wcx_plugin_menu_stock_summary_avg')
@@ -2620,16 +2620,16 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             /////ADDED IN VER4.0
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Analysis Simple products', 'it_report_wcreport_textdomain'),
-                esc_html__('Analysis Simple products', 'it_report_wcreport_textdomain'),
+                esc_html__('Analysis Simple products', 'ithemelandco-woo-report'),
+                esc_html__('Analysis Simple products', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_order_product_analysis',
                 array($this, 'wcx_plugin_menu_order_product_analysis')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Analysis Variation products', 'it_report_wcreport_textdomain'),
-                esc_html__('Analysis Simple products', 'it_report_wcreport_textdomain'),
+                esc_html__('Analysis Variation products', 'ithemelandco-woo-report'),
+                esc_html__('Analysis Simple products', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_order_variation_analysis',
                 array($this, 'wcx_plugin_menu_order_variation_analysis')
@@ -2655,16 +2655,16 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //STOCK VARIATION
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Project VS Actual Sale', 'it_report_wcreport_textdomain'),
-                esc_html__('Project VS Actual Sale', 'it_report_wcreport_textdomain'),
+                esc_html__('Project VS Actual Sale', 'ithemelandco-woo-report'),
+                esc_html__('Project VS Actual Sale', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_projected_actual_sale',
                 array($this, 'wcx_plugin_menu_projected_actual_sale')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Tax Reports', 'it_report_wcreport_textdomain'),
-                esc_html__('Tax Reports', 'it_report_wcreport_textdomain'),
+                esc_html__('Tax Reports', 'ithemelandco-woo-report'),
+                esc_html__('Tax Reports', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_tax_reports',
                 array($this, 'wcx_plugin_menu_tax_reports')
@@ -2673,8 +2673,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM WORK - 12412
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Product Qty.', 'it_report_wcreport_textdomain'),
-                esc_html__('Product Qty.', 'it_report_wcreport_textdomain'),
+                esc_html__('Product Qty.', 'ithemelandco-woo-report'),
+                esc_html__('Product Qty.', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_product_variation_qty',
                 array($this, 'wcx_plugin_menu_product_variation_qty')
@@ -2687,16 +2687,16 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             /////ADDED IN VER4.9
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Abandoned Products', 'it_report_wcreport_textdomain'),
-                esc_html__('Products', 'it_report_wcreport_textdomain'),
+                esc_html__('Abandoned Products', 'ithemelandco-woo-report'),
+                esc_html__('Products', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_abandoned_products',
                 array($this, 'wcx_plugin_menu_abandoned_products')
             );
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Abandoned Carts', 'it_report_wcreport_textdomain'),
-                esc_html__('Abandoned Carts Data', 'it_report_wcreport_textdomain'),
+                esc_html__('Abandoned Carts', 'ithemelandco-woo-report'),
+                esc_html__('Abandoned Carts Data', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_abandoned_cart',
                 array($this, 'wcx_plugin_menu_abandoned_cart')
@@ -2707,8 +2707,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             /////////////////////////////////
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Settings', 'it_report_wcreport_textdomain'),
-                esc_html__('Report Settings', 'it_report_wcreport_textdomain'),
+                esc_html__('Settings', 'ithemelandco-woo-report'),
+                esc_html__('Report Settings', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_setting_report',
                 array($this, 'wcx_plugin_menu_setting_report')
@@ -2716,8 +2716,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Add-ons', 'it_report_wcreport_textdomain'),
-                esc_html__('Report Add-ons', 'it_report_wcreport_textdomain'),
+                esc_html__('Add-ons', 'ithemelandco-woo-report'),
+                esc_html__('Report Add-ons', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_addons_report',
                 array($this, 'wcx_plugin_menu_addons_report')
@@ -2725,8 +2725,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             add_submenu_page(
                 'itwrl_submenu',
-                esc_html__('Activate Plugin', 'it_report_wcreport_textdomain'),
-                esc_html__('Active Plugin', 'it_report_wcreport_textdomain'),
+                esc_html__('Activate Plugin', 'ithemelandco-woo-report'),
+                esc_html__('Active Plugin', 'ithemelandco-woo-report'),
                 $role_capability,
                 'wcx_wcreport_plugin_active_report',
                 array($this, 'wcx_plugin_menu_active_report')
@@ -2878,45 +2878,45 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 ),
 
                 "dashboard" => array(
-                    "label" => esc_html__('Dashboard', 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__('Dashboard', 'ithemelandco-woo-report'),
                     "id" => "dashboard",
                     "link" => $it_plugin_main_url,
                     "icon" => "fa-bookmark",
                 ),
 
                 "all_order_reports" => array(
-                    "label" => esc_html__('Order', 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__('Order', 'ithemelandco-woo-report'),
                     "id" => "all_order_reports",
                     "link" => "#",
                     "icon" => "fa-shopping-cart",
                     "childs" => array(
                         "all_orders" => array(
-                            "label" => esc_html__('All Orders', 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__('All Orders', 'ithemelandco-woo-report'),
                             "id" => "all_orders",
                             "link" => "admin.php?page=wcx_wcreport_plugin_details&parent=all_order_reports&smenu=all_orders",
                             "icon" => "fa-file-text",
                         ),
                         //CUSTOM WORK - 12300
                         //                        "all_orders_tickera" => array(
-                        //                            "label" => esc_html__('All Orders Tickera', 'it_report_wcreport_textdomain'),
+                        //                            "label" => esc_html__('All Orders Tickera', 'ithemelandco-woo-report'),
                         //                            "id" => "all_orders_tickera",
                         //                            "link" => "admin.php?page=wcx_wcreport_plugin_details_tickera&parent=all_orders_tickera&smenu=all_orders_tickera",
                         //                            "icon" => "fa-file-text",
                         //                        ),
                         "all_orders_full" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("All Orders Billing(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("All Orders Billing(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "all_orders_full",
                             "link" => "#",
                             "icon" => "fa-file-text",
                         ),
                         "order_per_country" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Order/Country(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Order/Country(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "order_per_country",
                             "link" => "#",
                             "icon" => "fa-eye-slash",
                         ),
                         "order_status" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Order Status(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Order Status(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "order_status",
                             "link" => "#",
                             "icon" => "fa-check",
@@ -2924,19 +2924,19 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                         //CUSTOM WORK - 4179
                         "order_status_change" => array(
-                            "label" => esc_html__("Status Change", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Status Change", 'ithemelandco-woo-report'),
                             "id" => "order_status_change",
                             "link" => "#",
                             "icon" => "fa-check",
                         ),
                         "recent_order" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Recent Order(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Recent Order(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "recent_order",
                             "link" => "#",
                             "icon" => "fa-shopping-cart",
                         ),
                         "refund_detail" => array(
-                            "label" => esc_html__("Refund Orders", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Refund Orders", 'ithemelandco-woo-report'),
                             "id" => "refund_detail",
                             "link" => "admin.php?page=wcx_wcreport_plugin_refunddetails&parent=all_order_reports&smenu=refund_detail",
                             "icon" => "fa-eye-slash",
@@ -2944,13 +2944,13 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                         ////ADDED IN VER4.0
                         //ORDER ANALYSIS
                         "order_product_analysis" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Analysis Simple Products(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Analysis Simple Products(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "order_product_analysis",
                             "link" => "#",
                             "icon" => "fa-line-chart",
                         ),
                         "order_variation_analysis" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Analysis Variation Products(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Analysis Variation Products(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "order_variation_analysis",
                             "link" => "#",
                             "icon" => "fa-area-chart",
@@ -2961,19 +2961,19 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                 //ADDED IN VER 4.9
                 //                "abandoned_carts" => array(
-                //                    "label" => esc_html__('Abandoned Cart','it_report_wcreport_textdomain'),
+                //                    "label" => esc_html__('Abandoned Cart','ithemelandco-woo-report'),
                 //                    "id" => "abandoned_carts",
                 //                    "link" => "#",
                 //                    "icon" => "fa-shopping-cart",
                 //                    "childs" => array(
                 //                        "abandoned_products" => array(
-                //                            "label" => esc_html__("Products" ,'it_report_wcreport_textdomain'),
+                //                            "label" => esc_html__("Products" ,'ithemelandco-woo-report'),
                 //                            "id" => "abandoned_products",
                 //                            "link" => "admin.php?page=wcx_wcreport_plugin_abandoned_products&parent=abandoned_carts&smenu=abandoned_products",
                 //                            "icon" => "fa-pie-chart",
                 //                        ),
                 //                        "abandoned_cart" => array(
-                //                            "label" => esc_html__('Cart Data','it_report_wcreport_textdomain'),
+                //                            "label" => esc_html__('Cart Data','ithemelandco-woo-report'),
                 //                            "id" => "abandoned_cart",
                 //                            "link" => "admin.php?page=wcx_wcreport_plugin_abandoned_cart&parent=abandoned_carts&smenu=abandoned_cart",
                 //                            "icon" => "fa-pie-chart",
@@ -2982,14 +2982,14 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 //                ),
 
                 "product_reports" => array(
-                    "label" => esc_html__('Product', 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__('Product', 'ithemelandco-woo-report'),
                     "id" => "product_reports",
                     "link" => "#",
                     "icon" => "fa-shopping-bag",
                     "childs" => array(
 
                         "product" => array(
-                            "label" => esc_html__("Purchased Product", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Purchased Product", 'ithemelandco-woo-report'),
                             "id" => "product",
                             "link" => "admin.php?page=wcx_wcreport_plugin_product&parent=product_reports&smenu=product",
                             "icon" => "fa-cog",
@@ -2997,7 +2997,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                         //CUSTOM WORK - 12412
                         "product_variation_qty" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Purchased Product Qty(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Purchased Product Qty(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "product_variation_qty",
                             "link" => "#",
                             "icon" => "fa-cog",
@@ -3006,14 +3006,14 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                         ////ADDED IN VER4.5
                         //CUSTOM WORK
                         "product_per_users" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Product/Users(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Product/Users(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "product_per_users",
                             "link" => "#",
                             "icon" => "fa-cog",
                         ),
 
                         "category" => array(
-                            "label" => esc_html__("Category", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Category", 'ithemelandco-woo-report'),
                             "id" => "category",
                             "link" => "admin.php?page=wcx_wcreport_plugin_category&parent=product_reports&smenu=category",
                             "icon" => "fa-tags",
@@ -3021,14 +3021,14 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                         ////ADDED IN VER4.0
                         "tags" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Tag(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Tag(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "tags",
                             "link" => "#",
                             "icon" => "fa-tags",
                         ),
 
                         "customer_buy_prod" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Purchased Product by Customer(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Purchased Product by Customer(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "customer_buy_prod",
                             "link" => "#",
                             "icon" => "fa-users",
@@ -3037,7 +3037,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                         //CUSTOM WORK 17427
 
                         "stock_list" => array(
-                            "label" => esc_html__('Product Stock', 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__('Product Stock', 'ithemelandco-woo-report'),
                             "id" => "stock_list",
                             "link" => "admin.php?page=wcx_wcreport_plugin_stock_list&parent=product_reports&smenu=stock_list",
                             "icon" => "fa-cart-arrow-down",
@@ -3046,25 +3046,25 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                         /////ADDED IN VER4.0
                         /// STOCK REPORTS
                         "stock_zero_level" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Zero Level Stock(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Zero Level Stock(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "stock_zero_level",
                             "link" => "#",
                             "icon" => "fa-exclamation-triangle",
                         ),
                         "stock_min_level" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Minimum Level Stock(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Minimum Level Stock(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "stock_min_level",
                             "link" => "#",
                             "icon" => "fa-level-down",
                         ),
                         "stock_max_level" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Most Stocked(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Most Stocked(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "stock_max_level",
                             "link" => "#",
                             "icon" => "fa-level-up",
                         ),
                         "stock_summary_avg" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Summary Stock Planner(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Summary Stock Planner(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "stock_summary_avg",
                             "link" => "#",
                             "icon" => "fa-newspaper-o",
@@ -3073,14 +3073,14 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 ),
 
                 "customer_reports" => array(
-                    "label" => esc_html__('Customer', 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__('Customer', 'ithemelandco-woo-report'),
                     "id" => "customer_reports",
                     "link" => "#",
                     "icon" => "fa-user",
                     "childs" => array(
 
                         "customer" => array(
-                            "label" => esc_html__("Customer", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Customer", 'ithemelandco-woo-report'),
                             "id" => "customer",
                             "link" => "admin.php?page=wcx_wcreport_plugin_customer&parent=customer_reports&smenu=customer",
                             "icon" => "fa-user",
@@ -3088,19 +3088,19 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                         ////ADDED IN VER4.0
                         //OTHER SUMMARY
                         "customer_analysis" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Customer Analysis(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Customer Analysis(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "customer_analysis",
                             "link" => "#",
                             "icon" => "fa-bar-chart",
                         ),
                         "customer_min_max" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Customer Min-Max(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Customer Min-Max(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "customer_min_max",
                             "link" => "#",
                             "icon" => "fa-hand-pointer-o",
                         ),
                         "customer_no_purchased" => array(
-                            "label" => esc_html__("Customer/Non Purchase", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Customer/Non Purchase", 'ithemelandco-woo-report'),
                             "id" => "customer_no_purchased",
                             "link" => "admin.php?page=wcx_wcreport_plugin_customer_no_purchased&parent=customer_reports&smenu=customer_no_purchased",
                             "icon" => "fa-ban",
@@ -3112,59 +3112,59 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 //CUSTOM TAX & FIELD
 
                 "more_reports" => array(
-                    "label" => esc_html__('More Reports', 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__('More Reports', 'ithemelandco-woo-report'),
                     "id" => "more_reports",
                     "link" => "#",
                     "icon" => "fa-files-o",
                     "childs" => array(
 
                         "profit" => __IT_COG__ != '' ? array(
-                            "label" => esc_html__("Profit", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Profit", 'ithemelandco-woo-report'),
                             "id" => "profit",
                             "link" => "admin.php?page=wcx_wcreport_plugin_profit&parent=more_reports&smenu=profit",
                             "icon" => "fa-money",
                         ) : false,
 
                         "billing_country" => array(
-                            "label" => esc_html__("Billing Country", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Billing Country", 'ithemelandco-woo-report'),
                             "id" => "billing_country",
                             "link" => "admin.php?page=wcx_wcreport_plugin_billingcountry&parent=more_reports&smenu=billing_country",
                             "icon" => "fa-globe",
                         ),
                         "billing_state" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Billing State(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Billing State(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "billing_state",
                             "link" => "#",
                             "icon" => "fa-map",
                         ),
                         ////ADDED IN VER4.0
                         "billing_city" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Billing City(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Billing City(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "billing_city",
                             "link" => "#",
                             "icon" => "fa-map-marker",
                         ),
                         "payment_gateway" => array(
-                            "label" => esc_html__("Payment Gateway", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Payment Gateway", 'ithemelandco-woo-report'),
                             "id" => "payment_gateway",
                             "link" => "admin.php?page=wcx_wcreport_plugin_paymentgateway&parent=more_reports&smenu=payment_gateway",
                             "icon" => "fa-credit-card",
                         ),
 
                         "coupon" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Coupon(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Coupon(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "coupon",
                             "link" => "#",
                             "icon" => "fa-hashtag",
                         ),
                         "coupon_discount" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Coupon Discount(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Coupon Discount(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "coupon_discount",
                             "link" => "#",
                             "icon" => "fa-percent",
                         ),
                         "proj_actual_sale" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Project VS Actual Sale(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Project VS Actual Sale(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "proj_actual_sale",
                             "link" => "#",
                             "icon" => "fa-calendar-check-o",
@@ -3174,19 +3174,19 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 ),
 
                 "tax_reports" => array(
-                    "label" => esc_html__('Tax', 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__('Tax', 'ithemelandco-woo-report'),
                     "id" => "tax_reports",
                     "link" => "#",
                     "icon" => "fa-percent",
                     "childs" => array(
                         "tax_report" => array(
-                            "label" => esc_html__("Tax Report", 'it_report_wcreport_textdomain'),
+                            "label" => esc_html__("Tax Report", 'ithemelandco-woo-report'),
                             "id" => "tax_report",
                             "link" => "admin.php?page=wcx_wcreport_plugin_taxreport&parent=tax_reports&smenu=tax_report",
                             "icon" => "fa-pie-chart",
                         ),
                         "tax_reports" => array(
-                            "label" => '<span style="color:#d97c7c">' . esc_html__("Tax Reports(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                            "label" => '<span style="color:#d97c7c">' . esc_html__("Tax Reports(Pro)", 'ithemelandco-woo-report') . '</span>',
                             "id" => "tax_reports",
                             "link" => "#",
                             "icon" => "fa-pie-chart",
@@ -3200,7 +3200,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 //VARIATION STOCK
 
                 "setting" => array(
-                    "label" => esc_html__('Settings', 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__('Settings', 'ithemelandco-woo-report'),
                     "id" => "setting",
                     "link" => "admin.php?page=wcx_wcreport_plugin_setting_report&parent=setting&smenu=setting",
                     "icon" => "fa-cogs",
@@ -3212,7 +3212,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('53', __CUSTOMWORK_ID__)) {
 
                 $extra_menu = array(
-                    "label" => '<span style="color:#d97c7c">' . esc_html__("All Orders Billing/Shipping(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                    "label" => '<span style="color:#d97c7c">' . esc_html__("All Orders Billing/Shipping(Pro)", 'ithemelandco-woo-report') . '</span>',
                     "id" => "all_orders_full_shipping",
                     "link" => "#",
                     "icon" => "fa-area-chart",
@@ -3229,7 +3229,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('16', __CUSTOMWORK_ID__)) {
 
                 $extra_menu = array(
-                    "label" => '<span style="color:#d97c7c">' . esc_html__("All Orders Billing|Shipping Tax(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                    "label" => '<span style="color:#d97c7c">' . esc_html__("All Orders Billing|Shipping Tax(Pro)", 'ithemelandco-woo-report') . '</span>',
                     "id" => "all_orders_full_shipping_tax",
                     "link" => "#",
                     "icon" => "fa-area-chart",
@@ -3246,7 +3246,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('522', __CUSTOMWORK_ID__)) {
 
                 $extra_menu = array(
-                    "label" => '<span style="color:#d97c7c">' . esc_html__("Combined Orders(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                    "label" => '<span style="color:#d97c7c">' . esc_html__("Combined Orders(Pro)", 'ithemelandco-woo-report') . '</span>',
                     "id" => "details_combined",
                     "link" => "#",
                     "icon" => "fa-area-chart",
@@ -3263,7 +3263,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('12679', __CUSTOMWORK_ID__)) {
 
                 $extra_menu = array(
-                    "label" => esc_html__("Total Sales per Clinic", 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__("Total Sales per Clinic", 'ithemelandco-woo-report'),
                     "id" => "clinic",
                     "link" => "admin.php?page=wcx_wcreport_plugin_clinic&parent=all_order_reports&smenu=clinic",
                     "icon" => "fa-area-chart",
@@ -3280,7 +3280,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('15092', __CUSTOMWORK_ID__)) {
 
                 $extra_menu = array(
-                    "label" => '<span style="color:#d97c7c">' . esc_html__("Order / Shipping(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                    "label" => '<span style="color:#d97c7c">' . esc_html__("Order / Shipping(Pro)", 'ithemelandco-woo-report') . '</span>',
                     "id" => "order_per_custom_shipping",
                     "link" => "#",
                     "icon" => "fa-users",
@@ -3297,7 +3297,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('17427', __CUSTOMWORK_ID__)) {
 
                 $extra_menu = array(
-                    "label" => '<span style="color:#d97c7c">' . esc_html__("Purchased Category by Customer(Pro)", 'it_report_wcreport_textdomain') . '</span>',
+                    "label" => '<span style="color:#d97c7c">' . esc_html__("Purchased Category by Customer(Pro)", 'ithemelandco-woo-report') . '</span>',
                     "id" => "customer_category",
                     "link" => "#",
                     "icon" => "fa-users",
@@ -3314,7 +3314,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if (is_array(__CUSTOMWORK_ID__) && in_array('966', __CUSTOMWORK_ID__)) {
 
                 $extra_menu = array(
-                    "label" => esc_html__("All Products", 'it_report_wcreport_textdomain'),
+                    "label" => esc_html__("All Products", 'ithemelandco-woo-report'),
                     "id" => "all_products",
                     "link" => "admin.php?page=wcx_wcreport_plugin_all_products&parent=product_reports&smenu=all_products",
                     "icon" => "fa-cog",
@@ -3501,7 +3501,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                     $parent_fav
                 ) . '" data-parent-id="fav_menu"><a href="javascript:void(0);" class=""><i class="fa fa-star"></i><span>' . esc_html__(
                     'Favorite Menus',
-                    'it_report_wcreport_textdomain'
+                    'ithemelandco-woo-report'
                 ) . '</span>
 				<span class="awr-mainmenu-list-toggle"><i class="fa ' . $fav_active_icon . '"></i></span>
 				</a>
@@ -3510,11 +3510,11 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 					<div class="awr-item ' . $fav_active . '"  data-id="fav">
 			            <span>
 			                <i class="fa fa-star"></i>
-                      <div class="awr-sub-title">' . esc_html__('Favorite Menus', 'it_report_wcreport_textdomain') . '</div>
+                      <div class="awr-sub-title">' . esc_html__('Favorite Menus', 'ithemelandco-woo-report') . '</div>
 			            </span>';
                 $fav_menu_html_mini_submenu .= '
 			            <div class="awr-mini-submenu" id="menu_fav">
-			            	<div class="awr-sub-title">' . esc_html__('Favorite Menus', 'it_report_wcreport_textdomain') . '</div>
+			            	<div class="awr-sub-title">' . esc_html__('Favorite Menus', 'ithemelandco-woo-report') . '</div>
 			            	<div class="awr-sub-links-cnt">' . $fav_menu_html_mini . '</div>
 							</div>';
                 $menu_html_mini_fav .= '
@@ -3888,7 +3888,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_daily_report == 1) :
                 $start_date = $today_date;
                 $end_date = $today_date;
-                $title = esc_html__("Today", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Today", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -3904,7 +3904,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 $yesterday_date = gmdate("Y-m-d", strtotime("-1 day", $timestamp));
                 $start_date = $yesterday_date;
                 $end_date = $yesterday_date;
-                $title = esc_html__("Yesterday", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Yesterday", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -3919,7 +3919,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_weekly_report == 1) :
                 $end_date = $this_week_end_date;
                 $start_date = $this_week_start_date;
-                $title = esc_html__("Current Week", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Current Week", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -3934,7 +3934,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_last_week_report == 1) :
                 $end_date = $last_week_end_date;
                 $start_date = $last_week_start_date;
-                $title = esc_html__("Last Week", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Last Week", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -3949,7 +3949,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_monthly_report == 1) :
                 $end_date = gmdate('Y-m-d', $timestamp);
                 $start_date = gmdate('Y-m-01', strtotime('this month', $timestamp));
-                $title = esc_html__("Current Month", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Current Month", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -3964,7 +3964,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_last_month_report == 1) :
                 $end_date = gmdate('Y-m-t', strtotime('last month', $timestamp));
                 $start_date = gmdate('Y-m-01', strtotime('last month', $timestamp));
-                $title = esc_html__("Last Month", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Last Month", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -3979,7 +3979,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_this_year_report == 1) :
                 $end_date = gmdate('Y-m-d', strtotime('this year', $timestamp));
                 $start_date = gmdate('Y-01-01', strtotime('this year', $timestamp));
-                $title = esc_html__("Current Year", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Current Year", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -3994,7 +3994,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_last_year_report == 1) :
                 $end_date = gmdate('Y-12-31', strtotime('last year', $timestamp));
                 $start_date = gmdate('Y-01-01', strtotime('last year', $timestamp));
-                $title = esc_html__("Last Year", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Last Year", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -4009,7 +4009,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             if ($email_till_today_report == 1) :
                 $end_date = gmdate('Y-m-d', $timestamp);
                 $start_date = $this->it_order_first_date();
-                $title = esc_html__("Till Date", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Till Date", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_general_email_data(
                     $start_date,
@@ -4034,7 +4034,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                 $end_date = gmdate('Y-m-d', $timestamp);
                 $start_date = $this->it_order_first_date();
-                $title = esc_html__("Till Date", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Till Date", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_special_email_date(
                     $start_date,
@@ -4051,7 +4051,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                 $end_date = gmdate('Y-m-t', strtotime('last month', $timestamp));
                 $start_date = gmdate('Y-m-01', strtotime('last month', $timestamp));
-                $title = esc_html__("Purchased Product by Customer - Last Month", 'it_report_wcreport_textdomain');
+                $title = esc_html__("Purchased Product by Customer - Last Month", 'ithemelandco-woo-report');
                 $email_data .= "<br>";
                 $email_data .= $this->it_fetch_special_email_date_purchase_buy_customer(
                     $start_date,
@@ -4127,7 +4127,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                         $siteurl = get_option('siteurl');
                         $email_data = $email_data . "<div style=\" padding-bottom:3px; width:520px; margin:auto; text-align:left;\"><strong>" . esc_html__(
                             "Created Date/Time:",
-                            'it_report_wcreport_textdomain'
+                            'ithemelandco-woo-report'
                         ) . " " . "</strong> {$reporte_created}</div>";
 
                         $message = $email_data;
@@ -4404,7 +4404,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                 $author = '';
                 if ($user->ID == 0) {
-                    $author = esc_html__('Guest', 'it_report_wcreport_textdomain');
+                    $author = esc_html__('Guest', 'ithemelandco-woo-report');
                 } else {
                     $author = get_user_meta($user->ID, 'billing_first_name', true) . ' ' . get_user_meta(
                         $user->ID,
@@ -4450,15 +4450,15 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
         $args = array(
 
-            'label' => esc_html__('Custom SKU', 'woocommerce'),
+            'label' => esc_html__('Custom SKU', 'ithemelandco-woo-report'),
 
-            'placeholder' => esc_html__('Enter custom SKU here', 'woocommerce'),
+            'placeholder' => esc_html__('Enter custom SKU here', 'ithemelandco-woo-report'),
 
             'id' => 'jk_sku',
 
             'desc_tip' => true,
 
-            'description' => esc_html__('This SKU is for internal use only.', 'woocommerce'),
+            'description' => esc_html__('This SKU is for internal use only.', 'ithemelandco-woo-report'),
 
         );
 
@@ -4499,7 +4499,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
                 'class' => 'short',
 
-                'label' => esc_html__('Custom Field', 'woocommerce'),
+                'label' => esc_html__('Custom Field', 'ithemelandco-woo-report'),
 
                 'value' => get_post_meta($variation->ID, 'custom_field', true),
 

@@ -107,7 +107,7 @@
 					}
 
 					if($show_column=="on")
-						$custom_tax_cols[]=array('lable'=>esc_html(sanitize_text_field($label),'it_report_wcreport_textdomain'),'status'=>'show');
+						$custom_tax_cols[]=array('lable'=>esc_html(sanitize_text_field($label),'ithemelandco-woo-report'),'status'=>'show');
 
 					
 					$visible_custom_taxonomy[]=$tax;
@@ -394,7 +394,7 @@
 			}
 		}
 
-		$value=array(array('lable'=>esc_html__('Total','it_report_wcreport_textdomain'),'status'=>'currency'));
+		$value=array(array('lable'=>esc_html__('Total','ithemelandco-woo-report'),'status'=>'currency'));
 		array_splice($this->table_cols, $array_index, 0, $value );
 		$this->data_state=$data_state;
 
@@ -537,14 +537,14 @@
 
 				<div class="col-md-6">
 					<div>
-						<?php esc_html_e('From Date','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('From Date','ithemelandco-woo-report');?>
 					</div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
 					<input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick" value="<?php echo esc_html($it_from_date);?>"/>
 				</div>
 				<div class="col-md-6">
 					<div class="awr-form-title">
-						<?php esc_html_e('To Date','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('To Date','ithemelandco-woo-report');?>
 					</div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
 					<input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"  value="<?php echo esc_html($it_to_date);?>"/>
@@ -573,7 +573,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Category','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Category','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-tags"></i></span>
 					<?php
@@ -618,7 +618,7 @@
                         	if($this->get_form_element_permission('it_category_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -701,7 +701,7 @@
                                 if($this->get_form_element_permission('it_brand_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
                                 {
                                     ?>
-                                    <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                                    <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                                     <?php
                                 }
                                 ?>
@@ -737,7 +737,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Status','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Status','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-check"></i></span>
 					<?php
@@ -773,7 +773,7 @@
                         	if($this->get_form_element_permission('it_orders_status') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -809,7 +809,7 @@
 
 					<div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Product','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Product','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-cog"></i></span>
 					<?php
@@ -838,7 +838,7 @@
                             if($this->get_form_element_permission('it_product_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
                             {
                         ?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             }
                         ?>
@@ -874,7 +874,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Country','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Country','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-globe"></i></span>
 					<?php
@@ -903,7 +903,7 @@
                         	if($this->get_form_element_permission('it_countries_code') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -939,7 +939,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                 	<div class="awr-form-title">
-						<?php esc_html_e('State','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('State','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-map"></i></span>
 					<?php
@@ -969,7 +969,7 @@
                         	if($this->get_form_element_permission('it_states_code') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1015,8 +1015,8 @@
 
                 	<input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                     <div class="fetch_form_loading search-form-loading"></div>
-                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
             </div>
 
         </form>

@@ -25,10 +25,10 @@ if(!class_exists('it_report_wcreport_customer_role_addon_class')){
 		}
 
 		function add_page_titles($page_titles){
-			$page_titles['customer_role_total_sale']=__( "Total Sales",'it_report_wcreport_textdomain');
-			$page_titles['customer_role_registered']=__( "New User Sign-Up",'it_report_wcreport_textdomain');
-			$page_titles['customer_role_top_products']=__( "Top 20 Products",'it_report_wcreport_textdomain');
-			$page_titles['customer_role_bottom_products']=__( "Lowly 20 Products",'it_report_wcreport_textdomain');
+			$page_titles['customer_role_total_sale']=__( "Total Sales",'ithemelandco-woo-report');
+			$page_titles['customer_role_registered']=__( "New User Sign-Up",'ithemelandco-woo-report');
+			$page_titles['customer_role_top_products']=__( "Top 20 Products",'ithemelandco-woo-report');
+			$page_titles['customer_role_bottom_products']=__( "Lowly 20 Products",'ithemelandco-woo-report');
 			return $page_titles;
 		}
 
@@ -37,13 +37,13 @@ if(!class_exists('it_report_wcreport_customer_role_addon_class')){
 			global $it_rpt_main_class;
 			$role_capability=$it_rpt_main_class->get_capability();
 			//CUSTOM TAX & FIELDS
-			add_submenu_page('itwrl_submenu', __('Total Sales','it_report_wcreport_textdomain'), __('Total Sales','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_total_sale',   array($this,'wcx_plugin_menu_customer_role_total_sale' ) );
+			add_submenu_page('itwrl_submenu', __('Total Sales','ithemelandco-woo-report'), __('Total Sales','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_customer_role_total_sale',   array($this,'wcx_plugin_menu_customer_role_total_sale' ) );
 
-			add_submenu_page('itwrl_submenu', __('New User Sign-Up','it_report_wcreport_textdomain'), __('New User Sign-Up','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_registered',   array($this,'wcx_plugin_menu_customer_role_registered' ) );
+			add_submenu_page('itwrl_submenu', __('New User Sign-Up','ithemelandco-woo-report'), __('New User Sign-Up','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_customer_role_registered',   array($this,'wcx_plugin_menu_customer_role_registered' ) );
 
-			add_submenu_page('itwrl_submenu', __('Top 20 Products','it_report_wcreport_textdomain'), __('Top 20 Products','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_top_products',   array($this,'wcx_plugin_menu_customer_role_top_products' ) );
+			add_submenu_page('itwrl_submenu', __('Top 20 Products','ithemelandco-woo-report'), __('Top 20 Products','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_customer_role_top_products',   array($this,'wcx_plugin_menu_customer_role_top_products' ) );
 
-			add_submenu_page('itwrl_submenu', __('Bottom 20 Products','it_report_wcreport_textdomain'), __('Top 20 Products','it_report_wcreport_textdomain'), $role_capability, 'wcx_wcreport_plugin_customer_role_bottom_products',   array($this,'wcx_plugin_menu_customer_role_bottom_products' ) );
+			add_submenu_page('itwrl_submenu', __('Bottom 20 Products','ithemelandco-woo-report'), __('Top 20 Products','ithemelandco-woo-report'), $role_capability, 'wcx_wcreport_plugin_customer_role_bottom_products',   array($this,'wcx_plugin_menu_customer_role_bottom_products' ) );
 
 		}
 
@@ -75,31 +75,31 @@ if(!class_exists('it_report_wcreport_customer_role_addon_class')){
 		//CHANGE FETCH MENU VISIBLE MENUS
 		function add_fetch_page_customer_role( $visible_menu ) {
 			$group_role_menu=array(
-				"label" => __('Customer Role/Group','it_report_wcreport_textdomain'),
+				"label" => __('Customer Role/Group','ithemelandco-woo-report'),
 				"id" => "customer_role_group",
 				"link" => "#",
 				"icon" => "fa-user-circle",
 				"childs" => array(
 					"customer_role_total_sale" => array(
-						"label" => __("Total Sales" ,'it_report_wcreport_textdomain'),
+						"label" => __("Total Sales" ,'ithemelandco-woo-report'),
 						"id" => "customer_role_total_sale",
 						"link" => "admin.php?page=wcx_wcreport_plugin_customer_role_total_sale&parent=customer_role_group&smenu=customer_role_total_sale",
 						"icon" => "fa-usd",
 					),
 					"customer_role_registered" => array(
-						"label" => '<span style="color:#d97c7c">'.__("New User Sign-Up(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+						"label" => '<span style="color:#d97c7c">'.__("New User Sign-Up(Pro)" ,'ithemelandco-woo-report').'</span>',
 						"id" => "customer_role_registered",
 						"link" => "#",
 						"icon" => "fa-user-plus",
 					),
 					"customer_role_top_products" => array(
-						"label" => __("Top 20 Products" ,'it_report_wcreport_textdomain'),
+						"label" => __("Top 20 Products" ,'ithemelandco-woo-report'),
 						"id" => "customer_role_top_products",
 						"link" => "admin.php?page=wcx_wcreport_plugin_customer_role_top_products&parent=customer_role_group&smenu=customer_role_top_products",
 						"icon" => "fa-level-up",
 					),
 					"customer_role_bottom_products" => array(
-						"label" => '<span style="color:#d97c7c">'.__("Lowly 20 Products(Pro)" ,'it_report_wcreport_textdomain').'</span>',
+						"label" => '<span style="color:#d97c7c">'.__("Lowly 20 Products(Pro)" ,'ithemelandco-woo-report').'</span>',
 						"id" => "customer_role_bottom_products",
 						"link" => "#",
 						"icon" => "fa-level-down",

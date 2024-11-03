@@ -230,105 +230,105 @@
 		$current_total_sales_apd	= $this->it_get_dashboard_avarages($projected_order_amount_cm,$this_month_date);
 
 
-		//echo '<div class="clearboth"></div><div class="awr-box-title awr-box-title-nomargin">'.esc_html__('Total Summary','it_report_wcreport_textdomain').'</div><div class="clearboth"></div>';
+		//echo '<div class="clearboth"></div><div class="awr-box-title awr-box-title-nomargin">'.esc_html__('Total Summary','ithemelandco-woo-report').'</div><div class="clearboth"></div>';
 
 		$type='simple';
 		$total_summary ='';
 
-		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'red-1', 'fa-usd', esc_html__('Total Sales','it_report_wcreport_textdomain'), $total_sales, 'price', $total_orders, 'number');
+		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'red-1', 'fa-usd', esc_html__('Total Sales','ithemelandco-woo-report'), $total_sales, 'price', $total_orders, 'number');
 
-		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-1', 'fa-reply-all', esc_html__('Total Refund','it_report_wcreport_textdomain'), $total_refund_amount, 'price', $total_refund_count, 'number');
+		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-1', 'fa-reply-all', esc_html__('Total Refund','ithemelandco-woo-report'), $total_refund_amount, 'price', $total_refund_count, 'number');
 
-		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-percent', esc_html__('Total Tax','it_report_wcreport_textdomain'), $total_tax_amount, 'price', $total_tax_count, 'precent');
+		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-percent', esc_html__('Total Tax','ithemelandco-woo-report'), $total_tax_amount, 'price', $total_tax_count, 'precent');
 
-		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'brown-1', 'fa-ticket', esc_html__('Total Coupons','it_report_wcreport_textdomain'), $total_coupon_amount, 'price', $total_coupon_count, 'number');
+		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'brown-1', 'fa-ticket', esc_html__('Total Coupons','ithemelandco-woo-report'), $total_coupon_amount, 'price', $total_coupon_count, 'number');
 
-		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'red-2', 'fa-user-plus', esc_html__('Total Registered','it_report_wcreport_textdomain'), "#".$total_customer, 'other', '', 'number');
+		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'red-2', 'fa-user-plus', esc_html__('Total Registered','ithemelandco-woo-report'), "#".$total_customer, 'other', '', 'number');
 
-		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-1', 'fa-user-o', esc_html__('Total Guest Customers','it_report_wcreport_textdomain'), "#".$total_guest_customer, 'other', '', 'number');
+		$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-1', 'fa-user-o', esc_html__('Total Guest Customers','ithemelandco-woo-report'), "#".$total_guest_customer, 'other', '', 'number');
 
 		////ADDE IN VER4.0
 		/// COST OF GOOD
 		if(__IT_COG__!='') {
-		    $total_summary .= $this->it_get_dashboard_boxes_generator($type, 'orange-2', 'fa-money', esc_html__('Cost of Good','it_report_wcreport_textdomain'), $total_cog, 'price', '', 'number');
+		    $total_summary .= $this->it_get_dashboard_boxes_generator($type, 'orange-2', 'fa-money', esc_html__('Cost of Good','ithemelandco-woo-report'), $total_cog, 'price', '', 'number');
 
-			$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'brown-2', 'fa-diamond', esc_html__('Total Profit','it_report_wcreport_textdomain'), ($total_sales-$total_cog), 'price', '', 'number');
+			$total_summary .= $this->it_get_dashboard_boxes_generator($type, 'brown-2', 'fa-diamond', esc_html__('Total Profit','ithemelandco-woo-report'), ($total_sales-$total_cog), 'price', '', 'number');
 		}
 
 
 
-		//echo '<div class="clearboth"></div><div class="awr-box-title">'.esc_html__('Other Summary','it_report_wcreport_textdomain').'</div><div class="clearboth"></div>';
+		//echo '<div class="clearboth"></div><div class="awr-box-title">'.esc_html__('Other Summary','ithemelandco-woo-report').'</div><div class="clearboth"></div>';
 
 		$other_summary='';
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'orange-2', 'fa-area-chart', esc_html__('Cur. Yr Proj. Sales','it_report_wcreport_textdomain').'('.$it_cur_projected_sales_year.')', $total_projected_amount, 'price', $projected_percentage, 'precent');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'orange-2', 'fa-area-chart', esc_html__('Cur. Yr Proj. Sales','ithemelandco-woo-report').'('.$it_cur_projected_sales_year.')', $total_projected_amount, 'price', $projected_percentage, 'precent');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'piechart', esc_html__('Current Year Sales','it_report_wcreport_textdomain').'('.$it_cur_projected_sales_year.')', $projected_order_amount, 'price', $projected_order_count, 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'piechart', esc_html__('Current Year Sales','ithemelandco-woo-report').'('.$it_cur_projected_sales_year.')', $projected_order_amount, 'price', $projected_order_count, 'number');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-1', 'fa-line-chart', esc_html__('Average Sales Per Order','it_report_wcreport_textdomain'), $total_sales_avg, 'price', $total_orders, 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-1', 'fa-line-chart', esc_html__('Average Sales Per Order','ithemelandco-woo-report'), $total_sales_avg, 'price', $total_orders, 'number');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'pink-2', 'filter', esc_html__('Average Sales Per Day','it_report_wcreport_textdomain'), $total_sales_avg_per_day, 'price', $total_orders, 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'pink-2', 'filter', esc_html__('Average Sales Per Day','ithemelandco-woo-report'), $total_sales_avg_per_day, 'price', $total_orders, 'number');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'pink-2', 'like', esc_html__('Current Month Sales','it_report_wcreport_textdomain').'('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')', $projected_order_amount_cm, 'price', $projected_percentage_cm, 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'pink-2', 'like', esc_html__('Current Month Sales','ithemelandco-woo-report').'('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')', $projected_order_amount_cm, 'price', $projected_percentage_cm, 'number');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-bar-chart', esc_html__('Cur. Month Proj. Sales','it_report_wcreport_textdomain').'('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')', $total_projected_amount_cm, 'price', $projected_order_count_cm, 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-bar-chart', esc_html__('Cur. Month Proj. Sales','ithemelandco-woo-report').'('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')', $total_projected_amount_cm, 'price', $projected_order_count_cm, 'number');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-pie-chart', '('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')'. esc_html__('Average Sales/Day','it_report_wcreport_textdomain'), $current_total_sales_apd, 'price', '', 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-pie-chart', '('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')'. esc_html__('Average Sales/Day','ithemelandco-woo-report'), $current_total_sales_apd, 'price', '', 'number');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'brown-2', 'basket', '('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')'. esc_html__('Forecasted Sales','it_report_wcreport_textdomain'), $sales_forcasted, 'price', '', 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'brown-2', 'basket', '('.$projected_sales_month_shrt.' '.$it_cur_projected_sales_year.')'. esc_html__('Forecasted Sales','ithemelandco-woo-report'), $sales_forcasted, 'price', '', 'number');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'orange-1', 'fa-percent', esc_html__('Order Tax','it_report_wcreport_textdomain'), $total_ord_tax_amount, 'price', $total_ord_tax_count, 'precent');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'orange-1', 'fa-percent', esc_html__('Order Tax','ithemelandco-woo-report'), $total_ord_tax_amount, 'price', $total_ord_tax_count, 'precent');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-2', 'fa-truck', esc_html__('Order Shipping Tax','it_report_wcreport_textdomain'), $total_ordshp_tax_amount, 'price', $total_ordshp_tax_count, 'precent');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-2', 'fa-truck', esc_html__('Order Shipping Tax','ithemelandco-woo-report'), $total_ordshp_tax_amount, 'price', $total_ordshp_tax_count, 'precent');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'red-2', 'filter', esc_html__('Order Shipping Total','it_report_wcreport_textdomain'), $total_orders_shipping, 'price', $total_orders, 'number');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'red-2', 'filter', esc_html__('Order Shipping Total','ithemelandco-woo-report'), $total_orders_shipping, 'price', $total_orders, 'number');
 
 		$amount='';
 		$count='';
-		if ( $last_order_date) $amount= gmdate($short_date_format,$last_order_time); 	  else $amount=esc_html__( '0', 'it_report_wcreport_textdomain');
+		if ( $last_order_date) $amount= gmdate($short_date_format,$last_order_time); 	  else $amount=esc_html__( '0', 'ithemelandco-woo-report');
 
-	   if ( $last_order_time_diff) $count= $last_order_time_diff; else $count=esc_html__( '0', 'it_report_wcreport_textdomain');
+	   if ( $last_order_time_diff) $count= $last_order_time_diff; else $count=esc_html__( '0', 'ithemelandco-woo-report');
 
-		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-2', 'fa-calendar', esc_html__('Last Order Date','it_report_wcreport_textdomain'), $amount, 'other', $count, 'other');
+		$other_summary .= $this->it_get_dashboard_boxes_generator($type, 'green-2', 'fa-calendar', esc_html__('Last Order Date','ithemelandco-woo-report'), $amount, 'other', $count, 'other');
 
 
-		//echo '<div class="clearboth"></div><div class="awr-box-title">'.esc_html__('Todays Summary','it_report_wcreport_textdomain').'</div><div class="clearboth"></div>';
+		//echo '<div class="clearboth"></div><div class="awr-box-title">'.esc_html__('Todays Summary','ithemelandco-woo-report').'</div><div class="clearboth"></div>';
 		$today_summary='';
 		$type='progress';
 
 		$progress_html= $this->it_get_dashboard_progress_contents($total_today_sales,$total_yesterday_sales);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'red-1', 'fa-usd', esc_html__('Todays Total Sales','it_report_wcreport_textdomain'), $total_today_sales, 'price', $total_today_order, 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'red-1', 'fa-usd', esc_html__('Todays Total Sales','ithemelandco-woo-report'), $total_today_sales, 'price', $total_today_order, 'number',$progress_html);
 
 		$progress_html= $this->it_get_dashboard_progress_contents($total_today_avg,$total_yesterday_avg);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'orange-1', 'chart', esc_html__('Todays Average Sales','it_report_wcreport_textdomain'), $total_today_avg, 'price','', 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'orange-1', 'chart', esc_html__('Todays Average Sales','ithemelandco-woo-report'), $total_today_avg, 'price','', 'number',$progress_html);
 
 
 		$progress_html= $this->it_get_dashboard_progress_contents($todays_refund_amount,$yesterday_refund_amount);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'pink-1', 'fa-reply-all', esc_html__('Todays Total Refund','it_report_wcreport_textdomain'), $todays_refund_amount, 'price', $todays_refund_count, 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'pink-1', 'fa-reply-all', esc_html__('Todays Total Refund','ithemelandco-woo-report'), $todays_refund_amount, 'price', $todays_refund_count, 'number',$progress_html);
 
 
 		$progress_html= $this->it_get_dashboard_progress_contents($today_coupon_amount,$yesterday_coupon_amount);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'brown-1', 'fa-ticket', esc_html__('Todays Total Coupons','it_report_wcreport_textdomain'), $today_coupon_amount, 'price', $today_coupon_count, 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'brown-1', 'fa-ticket', esc_html__('Todays Total Coupons','ithemelandco-woo-report'), $today_coupon_amount, 'price', $today_coupon_count, 'number',$progress_html);
 
 		$progress_html= $this->it_get_dashboard_progress_contents($today_tax_amount,$ytday_tax_amount);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-percent', esc_html__('Todays Order Tax','it_report_wcreport_textdomain'), $today_ord_tax_amount, 'price', $today_ord_tax_count, 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'blue-2', 'fa-percent', esc_html__('Todays Order Tax','ithemelandco-woo-report'), $today_ord_tax_amount, 'price', $today_ord_tax_count, 'number',$progress_html);
 
 		$progress_html= $this->it_get_dashboard_progress_contents($today_tax_amount,$ytday_ordshp_tax_amount);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'red-2', 'fa-truck', esc_html__('Todays Shipping Tax','it_report_wcreport_textdomain'), $today_ordshp_tax_amount, 'price', $today_ordshp_tax_count, 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'red-2', 'fa-truck', esc_html__('Todays Shipping Tax','ithemelandco-woo-report'), $today_ordshp_tax_amount, 'price', $today_ordshp_tax_count, 'number',$progress_html);
 
 		$progress_html= $this->it_get_dashboard_progress_contents($today_tax_amount,$ytday_total_tax_amount);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'green-2', 'category', esc_html__('Todays Total Tax','it_report_wcreport_textdomain'), $today_tax_amount, 'price', $today_tax_count, 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'green-2', 'category', esc_html__('Todays Total Tax','ithemelandco-woo-report'), $today_tax_amount, 'price', $today_tax_count, 'number',$progress_html);
 
 		$progress_html= $this->it_get_dashboard_progress_contents($today_reg_customer,$yesterday_reg_customer);
 
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'pink-2', 'fa-user-plus', esc_html__('Todays Registered Customers','it_report_wcreport_textdomain'), "#".$today_reg_customer, 'other', '', 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'pink-2', 'fa-user-plus', esc_html__('Todays Registered Customers','ithemelandco-woo-report'), "#".$today_reg_customer, 'other', '', 'number',$progress_html);
 
 
 		$progress_html= $this->it_get_dashboard_progress_contents($today_guest_customer,$yesterday_guest_customer);
-		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'orange-2', 'fa-user-o', esc_html__('Todays Guest Customers','it_report_wcreport_textdomain'),  "#".$today_guest_customer, 'other', '', 'number',$progress_html);
+		$today_summary.= $this->it_get_dashboard_boxes_generator($type, 'orange-2', 'fa-user-o', esc_html__('Todays Guest Customers','ithemelandco-woo-report'),  "#".$today_guest_customer, 'other', '', 'number',$progress_html);
 
 
-		//echo '<div class="clearboth"></div><div class="awr-box-title">'.esc_html__('Other Summary','it_report_wcreport_textdomain').'</div><div class="clearboth"></div>';
+		//echo '<div class="clearboth"></div><div class="awr-box-title">'.esc_html__('Other Summary','ithemelandco-woo-report').'</div><div class="clearboth"></div>';
 
 	if($this->get_dashboard_capability('summary_boxes')){
 
@@ -339,17 +339,17 @@
 
 					if($this->get_dashboard_capability('total_summary')){
 						$htmls.='
-					<li><a href="#section-bar-1" > <span>'.esc_html__('Total Summary','it_report_wcreport_textdomain').'</span></a></li>';
+					<li><a href="#section-bar-1" > <span>'.esc_html__('Total Summary','ithemelandco-woo-report').'</span></a></li>';
 					}
 
 					if($this->get_dashboard_capability('other_summary_box')){
 						$htmls.='
-					<li><a href="#section-bar-2" > <span>'.esc_html__('Other summary','it_report_wcreport_textdomain').'</span></a></li>';
+					<li><a href="#section-bar-2" > <span>'.esc_html__('Other summary','ithemelandco-woo-report').'</span></a></li>';
 					}
 
 					if($this->get_dashboard_capability('today_summary')){
 						$htmls.='
-					<li><a href="#section-bar-3" > <span>'.esc_html__('Today summary','it_report_wcreport_textdomain').'</span></a></li>';
+					<li><a href="#section-bar-3" > <span>'.esc_html__('Today summary','ithemelandco-woo-report').'</span></a></li>';
 					}
 					$htmls.='
 				</ul>
@@ -408,7 +408,7 @@
 
 			<div class="page-toolbar">
 
-				<button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
+				<button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
 				<div id="dashboard-report-range" class="pull-right tooltips  btn-fit-height grey-salt" data-placement="top" data-original-title="Change dashboard date range">
 					<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
 						<i class="fa fa-calendar"></i>&nbsp;

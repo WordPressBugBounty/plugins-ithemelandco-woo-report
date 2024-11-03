@@ -822,7 +822,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('From Date','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('From Date','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_from_date" id="pwr_from_date" type="text" readonly='true' class="datepick"/>
@@ -830,7 +830,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-                        <?php esc_html_e('To Date','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('To Date','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                     <input name="it_to_date" id="pwr_to_date" type="text" readonly='true' class="datepick"/>
@@ -847,7 +847,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Category','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Category','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-tags"></i></span>
 					<?php
@@ -887,7 +887,7 @@
                         	if($this->get_form_element_permission('it_category_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -922,7 +922,7 @@
 
                     <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                         <div class="awr-form-title">
-                            <?php esc_html_e('Tag','it_report_wcreport_textdomain');?>
+                            <?php esc_html_e('Tag','ithemelandco-woo-report');?>
                         </div>
                         <span class="awr-form-icon"><i class="fa fa-tags"></i></span>
                         <?php
@@ -963,7 +963,7 @@
                             if($this->get_form_element_permission('it_tag_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
                             {
                                 ?>
-                                <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                                <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                                 <?php
                             }
                             ?>
@@ -1040,7 +1040,7 @@
                                 if($this->get_form_element_permission('it_brand_id') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
                                 {
                                     ?>
-                                    <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                                    <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                                     <?php
                                 }
                                 ?>
@@ -1072,7 +1072,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-			            <?php esc_html_e('Product','it_report_wcreport_textdomain');?>
+			            <?php esc_html_e('Product','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-cog"></i></span>
 
@@ -1084,7 +1084,7 @@
 
                 <div class="col-md-6">
                     <div class="awr-form-title">
-			            <?php esc_html_e('Customer','it_report_wcreport_textdomain');?>
+			            <?php esc_html_e('Customer','ithemelandco-woo-report');?>
                     </div>
                     <span class="awr-form-icon"><i class="fa fa-cog"></i></span>
 
@@ -1095,7 +1095,7 @@
 
                 <div class="col-md-6" >
                     <div class="awr-form-title">
-                        <?php esc_html_e('Postcode(zip)','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Postcode(zip)','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-map-marker"></i></span>
                     <input name="it_bill_post_code" type="text" class="postcode"/>
@@ -1112,7 +1112,7 @@
 
                 <div class="col-md-6"  style=" <?php echo esc_attr($col_style); ?>">
                     <div class="awr-form-title">
-                        <?php esc_html_e('Status','it_report_wcreport_textdomain');?>
+                        <?php esc_html_e('Status','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-map"></i></span>
 					<?php
@@ -1146,7 +1146,7 @@
                         	if($this->get_form_element_permission('it_orders_status') && ((!is_array($permission_value)) || (is_array($permission_value) && in_array('all',$permission_value))))
 							{
 						?>
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
 							}
 						?>
@@ -1176,7 +1176,7 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Variations','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Variations','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-bolt"></i></span>
 					<?php
@@ -1192,7 +1192,7 @@
                     ?>
 
                     <select name="it_variations[]" multiple="multiple" size="5"  data-size="5" class="chosen-select-search variation_elements">
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             echo wp_kses(
     $option,
@@ -1222,7 +1222,7 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Show ','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Show ','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-eye"></i></span>
 					<?php
@@ -1237,9 +1237,9 @@
                         //print_r($json_products);
                     ?>
                     <select id="it_adr_show_variations" name="it_show_adr_variaton">
-                        <option value="variable" selected><?php esc_html_e('Variation Products ','it_report_wcreport_textdomain');?></option>
-                        <option value="simple" ><?php esc_html_e('Simple Products ','it_report_wcreport_textdomain');?></option>
-                        <option value="-1"><?php esc_html_e('All Products ','it_report_wcreport_textdomain');?></option>
+                        <option value="variable" selected><?php esc_html_e('Variation Products ','ithemelandco-woo-report');?></option>
+                        <option value="simple" ><?php esc_html_e('Simple Products ','ithemelandco-woo-report');?></option>
+                        <option value="-1"><?php esc_html_e('All Products ','ithemelandco-woo-report');?></option>
                     </select>
 
                     <script type="text/javascript">
@@ -1327,12 +1327,12 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Style','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Style','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-paint-brush"></i></span>
                     <select name="it_variation_cols[]" id="it_variation_cols" class="it_variation_cols variation_elements" disabled>
-                        <option value="1" selected="selected"><?php esc_html_e('Columner','it_report_wcreport_textdomain');?></option>
-                        <option value="0"><?php esc_html_e('Comma Separated','it_report_wcreport_textdomain');?></option>
+                        <option value="1" selected="selected"><?php esc_html_e('Columner','ithemelandco-woo-report');?></option>
+                        <option value="0"><?php esc_html_e('Comma Separated','ithemelandco-woo-report');?></option>
                     </select>
                 </div>
 
@@ -1343,7 +1343,7 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Product SKU','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Product SKU','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-cog"></i></span>
 					<?php
@@ -1354,7 +1354,7 @@
                     ?>
 
                     <select name="it_sku_products[]" multiple="multiple" size="5"  data-size="5" class="chosen-select-search">
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             echo wp_kses(
     $option,
@@ -1383,7 +1383,7 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Variation SKU','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Variation SKU','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-bolt"></i></span>
 					<?php
@@ -1393,7 +1393,7 @@
                         }
                     ?>
                     <select name="it_sku_variations[]" class="variation_elements chosen-select-search" multiple="multiple" size="5"  data-size="5">
-                        <option value="-1"><?php esc_html_e('Select All','it_report_wcreport_textdomain');?></option>
+                        <option value="-1"><?php esc_html_e('Select All','ithemelandco-woo-report');?></option>
                         <?php
                             echo wp_kses(
     $option,
@@ -1424,7 +1424,7 @@
 		            ?>
                     <div class="col-md-6">
                         <div class="awr-form-title">
-				            <?php esc_html_e('Product Custom SKU','it_report_wcreport_textdomain');?>
+				            <?php esc_html_e('Product Custom SKU','ithemelandco-woo-report');?>
                         </div>
                         <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                         <input name="it_product_custom_sku" type="text" />
@@ -1439,7 +1439,7 @@
 		            ?>
                     <div class="col-md-6">
                         <div class="awr-form-title">
-				            <?php esc_html_e('Variation Custom SKU','it_report_wcreport_textdomain');?>
+				            <?php esc_html_e('Variation Custom SKU','ithemelandco-woo-report');?>
                         </div>
                         <span class="awr-form-icon"><i class="fa fa-calendar"></i></span>
                         <input name="it_variation_custom_sku" type="text" />
@@ -1451,7 +1451,7 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Order By','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Order By','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-sort-alpha-asc"></i></span>
                     <div class="row">
@@ -1460,8 +1460,8 @@
 						</div>
 						<div class="col-md-7 ">
 							<select name="order_by" id="order_by" class="order_by">
-								<option value="ASC"><?php esc_html_e('Ascending','it_report_wcreport_textdomain');?></option>
-								<option value="DESC" selected="selected"><?php esc_html_e('Descending','it_report_wcreport_textdomain');?></option>
+								<option value="ASC"><?php esc_html_e('Ascending','ithemelandco-woo-report');?></option>
+								<option value="DESC" selected="selected"><?php esc_html_e('Descending','ithemelandco-woo-report');?></option>
 							</select>
 						</div>
 					</div>
@@ -1469,12 +1469,12 @@
 
                 <div class="col-md-6">
                 	<div class="awr-form-title">
-						<?php esc_html_e('Group By','it_report_wcreport_textdomain');?>
+						<?php esc_html_e('Group By','ithemelandco-woo-report');?>
                     </div>
 					<span class="awr-form-icon"><i class="fa fa-suitcase"></i></span>
                     <select name="it_groupby" id="variation_group_by" class="group_by variation_elements" disabled>
-                        <option value="variation_id"><?php esc_html_e('Variation ID','it_report_wcreport_textdomain');?></option>
-                        <option value="order_item_id"><?php esc_html_e('Order Item ID','it_report_wcreport_textdomain');?></option>
+                        <option value="variation_id"><?php esc_html_e('Variation ID','ithemelandco-woo-report');?></option>
+                        <option value="order_item_id"><?php esc_html_e('Order Item ID','ithemelandco-woo-report');?></option>
                     </select>
                 </div>
 
@@ -1484,9 +1484,9 @@
 
 					<div class="col-md-6">
 						<div class="awr-form-title">
-							<?php esc_html_e('SHOW JUST INCLUDE C.O.G & PROFIT','it_report_wcreport_textdomain');?>
+							<?php esc_html_e('SHOW JUST INCLUDE C.O.G & PROFIT','ithemelandco-woo-report');?>
                             <br />
-                            <span class="description"><?php esc_html_e('Include just products with current Profit(Cost of good) plugin(Selected in Setting -> Add-on Settings -> Cost of Good).','it_report_wcreport_textdomain');?></span>
+                            <span class="description"><?php esc_html_e('Include just products with current Profit(Cost of good) plugin(Selected in Setting -> Add-on Settings -> Cost of Good).','ithemelandco-woo-report');?></span>
 						</div>
 
 						<input name="it_show_cog" type="checkbox" value="yes"/>
@@ -1514,8 +1514,8 @@
 
                 	<input type="hidden" name="table_names" value="<?php echo esc_html($table_name);?>"/>
                     <div class="fetch_form_loading search-form-loading"></div>
-                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','it_report_wcreport_textdomain'); ?></span></button>
-					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','it_report_wcreport_textdomain'); ?></span></button>
+                    <button type="submit" value="Search" class="button-primary"><i class="fa fa-search"></i> <span><?php echo esc_html__('Search','ithemelandco-woo-report'); ?></span></button>
+					<button type="button" value="Reset" class="button-secondary form_reset_btn"><i class="fa fa-reply"></i><span><?php echo esc_html__('Reset Form','ithemelandco-woo-report'); ?></span></button>
             </div>
 
         </form>
