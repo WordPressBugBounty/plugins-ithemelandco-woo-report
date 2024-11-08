@@ -15,14 +15,14 @@ class ITWRL_Top_Banners
 
     private function __construct()
     {
-        if (get_option('it_halloween_banner_dismissed', 'no') == 'no' && empty(apply_filters('it_halloween_banner', []))) {
-            add_filter('it_halloween_banner', function ($plugins) {
-                $plugins['itwrl'] = 'Reports Lite';
-                return $plugins;
-            });
-            add_action('admin_notices', [$this, 'add_halloween_banner']);
-            add_action('admin_post_itwrl_halloween_banner_dismiss', [$this, 'halloween_banner_dismiss']);
-        }
+        // if (get_option('it_halloween_banner_dismissed', 'no') == 'no' && empty(apply_filters('it_halloween_banner', []))) {
+        //     add_filter('it_halloween_banner', function ($plugins) {
+        //         $plugins['itwrl'] = 'Reports Lite';
+        //         return $plugins;
+        //     });
+        //     add_action('admin_notices', [$this, 'add_halloween_banner']);
+        //     add_action('admin_post_itwrl_halloween_banner_dismiss', [$this, 'halloween_banner_dismiss']);
+        // }
     }
 
     public function add_halloween_banner()
@@ -73,7 +73,7 @@ class ITWRL_Top_Banners
         $output .= '<form action="' . esc_url(admin_url('admin-post.php')) . '" method="post"><input type="hidden" name="action" value="itwrl_halloween_banner_dismiss"><button class="itwrl-dismiss-banner" type="submit"><i class="dashicons dashicons-dismiss"></i></button></form>';
         $output .= '</a>';
         $output .= '</div></div>';
-
+        
         echo sprintf('%s', $output);
     }
 

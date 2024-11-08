@@ -3,7 +3,7 @@
 Plugin Name: iThemelandCo Woo Report Lite
 Plugin URI: http://ithemelandco.com/plugins/woocommerce-report/
 Description: WooCommerce Advance Reporting plugin is a comprehensive and the most complete reporting system.
-Version: 1.5.2
+Version: 1.5.3
 Author: iThemelandCo
 Author URI: http://ithemelandco.com/
 Text Domain: it_report_wcreport_textdomain
@@ -21,7 +21,7 @@ if (!empty($a)) {
 
 
 if (!class_exists('it_report_wcreport_class')) {
-    define('ITWR_VERSION', '1.5.2');
+    define('ITWR_VERSION', '1.5.3');
     define('ITWR_NAME','ithemelandco-woo-report');
     define('ITWR_LABEL', 'iThemelandCo Woo Report Lite');
     define('ITWRL_IMAGES_URL', trailingslashit(trailingslashit(plugin_dir_url(__FILE__)) . 'assets/images'));
