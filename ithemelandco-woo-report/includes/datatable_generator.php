@@ -3261,6 +3261,7 @@
 					'title'      => array(),
 					'multiple'      => array(),
 					'data-parent-id'      => array(),
+					'section'      => array(),
 					
 				);
 				$allowedposttags['form']     = $allowed_atts;
@@ -3305,6 +3306,8 @@
 				$allowedposttags['td']        = $allowed_atts;
 				$allowedposttags['th']        = $allowed_atts;
 				$allowedposttags['nav']        = $allowed_atts;
+				$allowedposttags['section']        = $allowed_atts;
+				$allowedposttags['bdi']        = $allowed_atts;
 
 				return $allowedposttags;
 			}

@@ -617,195 +617,7 @@ $arr=$map_date;
 
 <?php
 $disbale_map=get_option(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'disable_map',"off");
-if($this->get_dashboard_capability('map') && $disbale_map=='off'){
-	?>
-    <script type="text/javascript">
 
-        var data = <?php echo (wp_json_encode($arr)=='' ? "''":wp_json_encode($arr)) ; ?>;
-
-        jQuery( document ).ready(function( $ ) {
-
-            var myarray =[];
-            var myJSON = new Object();
-			<?php
-			//die(print_r($state));
-			foreach((array)$state as $state_name){
-			if($state_name=='' || is_numeric($state_name))	continue;
-			?>
-
-            var geocoder = new google.maps.Geocoder();
-            var address = "<?php echo esc_html($state_name);?>";
-
-            geocoder.geocode( { 'address': address}, function(results, status) {
-
-                if (status == google.maps.GeocoderStatus.OK) {
-                    var latitude = results[0].geometry.location.lat();
-                    var longitude = results[0].geometry.location.lng();
-
-
-                    var item = {
-                        "latitude": latitude,
-                        "longitude": longitude,
-                        "text": {
-                            "position": "left",
-                            "content": "",
-                        }
-                    };
-
-                    myJSON.<?php echo esc_attr(strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '_', $state_name))));?>=item;
-                }
-
-            });
-
-			<?php
-			}
-			?>
-
-            setTimeout(function(){
-
-                // Default plots params
-                var plots = myJSON;
-
-
-                $(".knob").knob({
-                    release : function (value) {
-                        $(".container5").trigger('update', [data[value], {}, {}, {animDuration : 300}]);
-                    }
-                });
-
-                // Mapael initialisation
-                $world = $(".container5");
-                $world.mapael({
-                    map : {
-                        name : "world_countries",
-                        defaultArea: {
-                            attrs : {
-                                fill: "#eee",
-                                stroke : "#aaa",
-                                "stroke-width" : 0.3
-                            }
-                        },
-                        defaultPlot: {
-                            text : {
-                                attrs: {
-                                    fill:"#333"
-                                },
-                                attrsHover: {
-                                    fill:"#fff",
-                                    "font-weight":"bold"
-                                }
-                            }
-                        }
-                        , zoom : {
-                            enabled : true
-                            //,mousewheel :false
-                            , step : 0.25
-                            , maxLevel : 20
-                        }
-                    },
-                    legend : {
-						<?php
-						global  $woocommerce;
-
-						if($first_limit_country){
-						?>
-                        area : {
-                            display : true,
-                            title :"<?php esc_html_e('Country Orders Amount','ithemelandco-woo-report');?>",
-                            marginBottom : 7,
-                            slices : [
-                                {
-                                    max :<?php echo esc_html($first_limit_country); ?>,
-                                    attrs : {
-                                        fill : "#6ECBD4"
-                                    },
-                                    label :'<?php esc_html_e('Less than','ithemelandco-woo-report');?> <?php echo  esc_html($first_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
-                                },
-                                {
-                                    min :<?php echo esc_html($first_limit_country); ?>,
-                                    max :<?php echo esc_html($two_limit_country); ?>,
-                                    attrs : {
-                                        fill : "#3EC7D4"
-                                    },
-                                    label :'> <?php echo esc_html($first_limit_country).' '.esc_attr(get_woocommerce_currency()); ?> <?php esc_html_e('and','ithemelandco-woo-report');?> < <?php echo esc_html($two_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
-                                },
-                                {
-                                    min :<?php echo esc_html($two_limit_country); ?>,
-                                    attrs : {
-                                        fill : "#01565E"
-                                    },
-                                    label :'<?php esc_html_e('More than','ithemelandco-woo-report');?> <?php echo esc_html($two_limit_country).' '.esc_attr(get_woocommerce_currency()); ?>'
-                                }
-                            ]
-                        },
-						<?php
-						}
-						if($first_limit_state){
-						?>
-                        plot :{
-                            display : true,
-                            title: "<?php esc_html_e('State Orders Amount','ithemelandco-woo-report');?>",
-                            marginBottom : 6,
-                            slices : [
-                                {
-                                    type :"circle",
-                                    max :<?php echo esc_html($first_limit_state); ?>,
-                                    attrs : {
-                                        fill : "#FD4851",
-                                        "stroke-width" : 1
-                                    },
-                                    attrsHover :{
-                                        transform : "s1.5",
-                                        "stroke-width" : 1
-                                    },
-                                    label :"<?php esc_html_e('Less than','ithemelandco-woo-report');?> <?php echo esc_html($first_limit_state).' '.esc_attr(get_woocommerce_currency());?>",
-                                    size : 10
-                                },
-                                {
-                                    type :"circle",
-                                    min :<?php echo esc_html($first_limit_state); ?>,
-                                    max :<?php echo esc_html($two_limit_state); ?>,
-                                    attrs : {
-                                        fill : "#FD4851",
-                                        "stroke-width" : 1
-                                    },
-                                    attrsHover :{
-                                        transform : "s1.5",
-                                        "stroke-width" : 1
-                                    },
-                                    label :"> <?php echo esc_html($first_limit_state).' '.esc_attr(get_woocommerce_currency()).' '; ?> <?php esc_html_e('and','ithemelandco-woo-report');?> < <?php echo esc_html($two_limit_state).' '.esc_attr(get_woocommerce_currency()); ?>",
-                                    size : 20
-                                },
-                                {
-                                    type :"circle",
-                                    min :<?php echo esc_html($two_limit_state); ?>,
-                                    attrs : {
-                                        fill : "#FD4851",
-                                        "stroke-width" : 1
-                                    },
-                                    attrsHover :{
-                                        transform : "s1.5",
-                                        "stroke-width" : 1
-                                    },
-                                    label :"<?php esc_html_e('More than','ithemelandco-woo-report');?> <?php echo ' '.esc_html($two_limit_state).' '.esc_attr(get_woocommerce_currency()); ?>",
-                                    size : 30
-                                }
-                            ]
-                        }
-						<?php
-						}
-						?>
-                    },
-                    plots : $.extend(true, {}, data[<?php echo esc_html($first_date);?>]['plots'], plots),
-                    areas: data[<?php echo esc_html($first_date);?>]['areas']
-                });
-
-            },2000);
-
-        });
-    </script>
-	<?php
-}
 ?>
 
 <script>
@@ -827,15 +639,16 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
             toggle=!toggle;
         });
 
-
+		
         [].slice.call( document.querySelectorAll( ".tabsA" ) ).forEach( function( el ) {
             new CBPFWTabs( el );
         });
 
-        [].slice.call( document.querySelectorAll( ".tabsB" ) ).forEach( function( el ) {
+		[].slice.call( document.querySelectorAll( ".tabsB" ) ).forEach( function( el ) {
             new CBPFWTabs( el );
         });
 
+		
 
     });
 </script>

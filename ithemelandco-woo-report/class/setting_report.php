@@ -2112,10 +2112,11 @@ $html .= ' <div class="awr-setting-submit">
 		}
 
 		jQuery(document).ready(function(){
+        setTimeout(function(){
 			[].slice.call( document.querySelectorAll( ".tabsA" ) ).forEach( function( el ) {
 				new CBPFWTabs( el );
 			});
-
+},1000);
 
 			////////////SHOW/HIDE CUSTOM FIELD SELECTION/////////////
 

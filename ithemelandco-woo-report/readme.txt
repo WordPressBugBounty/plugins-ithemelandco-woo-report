@@ -3,8 +3,8 @@ Contributors: ithemelandco
 Donate link: http://ithemelandco.com/
 Tags: 	woocommerce report, woocommerce sale reporting, sale report, stock report, tax report
 Requires at least: 5.3
-Tested up to: 6.6.2
-Stable tag: 1.5.3
+Tested up to: 6.7
+Stable tag: 1.5.4
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -197,6 +197,12 @@ Please leave your message in our <a href="https://ithemelandco.com/support-cente
 3. WooCommerce ProductSales Reprot
 
 == Changelog ==
+
+= 1.5.4 =
+* Fixed Summary Report on Dashboard
+* Fixed Switch chart on Dashboard
+* Fixed Setting tabs
+* Fixed Some Issues
 
 = 1.5.3 =
 * Fixed Some Issues
