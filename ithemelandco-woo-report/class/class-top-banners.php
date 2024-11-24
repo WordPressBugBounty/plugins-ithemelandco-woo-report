@@ -15,19 +15,22 @@ class ITWRL_Top_Banners
 
     private function __construct()
     {
-        // if (get_option('it_halloween_banner_dismissed', 'no') == 'no' && empty(apply_filters('it_halloween_banner', []))) {
-        //     add_filter('it_halloween_banner', function ($plugins) {
-        //         $plugins['itwrl'] = 'Reports Lite';
-        //         return $plugins;
-        //     });
-        //     add_action('admin_notices', [$this, 'add_halloween_banner']);
-        //     add_action('admin_post_itwrl_halloween_banner_dismiss', [$this, 'halloween_banner_dismiss']);
-        // }
+        $expire_date = strtotime('2024-12-05 23:59:59');
+        $current_time = time();
+
+        if ($expire_date > $current_time && get_option('it_black_friday_banner_dismissed', 'no') == 'no' && empty(apply_filters('it_black_friday_banner', []))) {
+            add_filter('it_black_friday_banner', function ($plugins) {
+                $plugins['itwrl'] = 'Woo report free';
+                return $plugins;
+            });
+            add_action('admin_notices', [$this, 'add_black_friday_banner']);
+            add_action('admin_post_itwrl_black_friday_banner_dismiss', [$this, 'black_friday_banner_dismiss']);
+        }
     }
 
-    public function add_halloween_banner()
+    public function add_black_friday_banner()
     {
-        $url = 'https://ithemelandco.com/halloween2024/?utm_source=plugin&utm_medium=banner&utm_campaign=hal2024';
+        $url = 'https://ithemelandco.com/bfcm2024/?utm_source=plugin&utm_medium=banner&utm_campaign=BF2024';
         $output = '<style>
         .itwrl-dismiss-banner{
             position: absolute;
@@ -65,21 +68,19 @@ class ITWRL_Top_Banners
             -webkit-border-radius: 7px;
         }
         </style>';
-        $output .= '<div class="notice" style="background-color:#190b23; border: 0; padding: 0;"><div style="width: 100%; height: 90px; display: inline-block; text-align: left;">';
+        $output .= '<div class="notice" style="display: inline-block; border: 0; padding: 0; background-color: transparent; box-shadow: none;"><div style="width: 100%; height: auto; display: inline-block; text-align: left; background-color: transparent;">';
         $output .= '<a style="width: 100%; float: left; position: relative;" href="' . esc_url($url) . '" target="_blank">';
-        $output .= '<img style="float: left; margin: 15px 0 0 10px;" src="' . ITWRL_IMAGES_URL . 'banner-left.png" height="60px">';
-        $output .= '<img style="float: right;" src="' . ITWRL_IMAGES_URL . 'banner-right.png" width="auto" height="90px">';
-        $output .= '<button type="button" class="itwrl-middle-button">GRAB NOW - TILL 5 NOV</button>';
-        $output .= '<form action="' . esc_url(admin_url('admin-post.php')) . '" method="post"><input type="hidden" name="action" value="itwrl_halloween_banner_dismiss"><button class="itwrl-dismiss-banner" type="submit"><i class="dashicons dashicons-dismiss"></i></button></form>';
+        $output .= '<img style="float: left; width: 100%" src="' . ITWRL_IMAGES_URL . 'black_friday.png" height="auto">';
+        $output .= '<form action="' . esc_url(admin_url('admin-post.php')) . '" method="post"><input type="hidden" name="action" value="itwrl_black_friday_banner_dismiss"><button class="itwrl-dismiss-banner" type="submit"><i class="dashicons dashicons-dismiss"></i></button></form>';
         $output .= '</a>';
         $output .= '</div></div>';
-        
+
         echo sprintf('%s', $output);
     }
 
-    public function halloween_banner_dismiss()
+    public function black_friday_banner_dismiss()
     {
-        update_option('it_halloween_banner_dismissed', 'yes');
+        update_option('it_black_friday_banner_dismissed', 'yes');
         return wp_safe_redirect(wp_get_referer());
     }
 }

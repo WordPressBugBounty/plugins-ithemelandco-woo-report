@@ -3,7 +3,7 @@
 Plugin Name: iThemelandCo Woo Report Lite
 Plugin URI: http://ithemelandco.com/plugins/woocommerce-report/
 Description: WooCommerce Advance Reporting plugin is a comprehensive and the most complete reporting system.
-Version: 1.5.4
+Version: 1.5.5
 Author: iThemelandCo
 Author URI: http://ithemelandco.com/
 Text Domain: it_report_wcreport_textdomain
@@ -21,7 +21,7 @@ if (!empty($a)) {
 
 
 if (!class_exists('it_report_wcreport_class')) {
-    define('ITWR_VERSION', '1.5.4');
+    define('ITWR_VERSION', '1.5.5');
     define('ITWR_NAME','ithemelandco-woo-report');
     define('ITWR_LABEL', 'iThemelandCo Woo Report Lite');
     define('ITWRL_IMAGES_URL', trailingslashit(trailingslashit(plugin_dir_url(__FILE__)) . 'assets/images'));
@@ -47,11 +47,6 @@ if (!class_exists('it_report_wcreport_class')) {
     //define ('__IT_COG__','_IT_COST_GOOD_FIELD');
 
     include 'includes/datatable_generator.php';
-    load_plugin_textdomain(
-        'ithemelandco-woo-report',
-        false,
-        dirname(plugin_basename(__FILE__)) . '/languages/'
-    );
 
     //new it_report_wcreport_crosstab_addon_class;
 
@@ -131,7 +126,7 @@ if (!class_exists('it_report_wcreport_class')) {
             add_action('admin_init', array($this, 'it_standalone_report'));
 
             add_action('admin_head', array($this, 'it_report_backend_enqueue'));
-            add_action('plugins_loaded', array($this, 'loadTextDomain'));
+            add_action('init', array($this, 'loadTextDomain'));
             add_action('admin_menu', array($this, 'it_report_setup_menus'));
 
             ITWRL_Top_Banners::register();
