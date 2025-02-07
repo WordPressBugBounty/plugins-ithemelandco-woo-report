@@ -98,7 +98,6 @@ Usually, for a better understanding and faster analysis of sales based on differ
 </p>
 
 Check pro version: <a href="https://ithemelandco.com/plugins/woocommerce-report?utm_source=wp.org&utm_medium=web_links&utm_campaign=user-lite-buy'">Pro Version</a>
-Don’t miss our <a href="https://ithemelandco.com/bfcm2024/?utm_source=wp.org&utm_medium=banner&utm_campaign=hal2024"><strong>&#127881; Blak Friday & Cyber Monday Big Sale &#x1F389;</strong></a> happening right now! (TILL 5 DEC)
 
 
 <h3>Other Plugins</h3>
