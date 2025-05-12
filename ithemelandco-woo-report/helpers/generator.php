@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_Generator
+class ITWRL_Generator
 {
     public static function license_hash($license_data)
     {

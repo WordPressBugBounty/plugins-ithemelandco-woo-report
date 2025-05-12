@@ -1,0 +1,132 @@
+/* Loading Animation */
+
+.ithemeland-pa-t-b-10 {
+    padding: 10px 0px;
+}
+
+.ithemeland-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.ithemeland-loading.ithemeland-allow-continue:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    animation: ithemeland-spin 0.8s linear infinite;
+    vertical-align: middle;
+}
+
+.ithemeland-loading.ithemeland-skip:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid #3e3e3e;
+    border-top-color: transparent;
+    animation: ithemeland-spin 0.8s linear infinite;
+    vertical-align: middle;
+}
+
+@keyframes ithemeland-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* onboarding Box Styles */
+
+.onboarding-section {
+    margin-top: 40px
+}
+
+.ithemeland-onboarding-head {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #e8e8e8;
+    padding: 1.7rem 2rem;
+    height: 80px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ithemeland-onboarding-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ithemeland-onboarding-box {
+    padding-top: 20px;
+}
+
+.ithemeland-onboarding-box h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.ithemeland-onboarding-box p {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 500;
+}
+
+label[for="ithemeland_usage_tracking_checkbox"],
+label[for="ithemeland_opt_in"] {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ithemeland-onboarding-buttons {
+    margin: 2rem 0;
+    display: block;
+    text-align: center;
+}
+
+.ithemeland-allow-continue {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+
+.ithemeland-allow-continue:hover {
+    background: #006799;
+}
+
+.ithemeland-skip {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: #0073aa;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 14px 70px;
+    border-radius: 5px;
+}
+
+.ithemeland-skip:hover {
+    background-color: #e8e8e8;
+}
+
+.ithemeland-skip:hover {
+    text-decoration: underline;
+}

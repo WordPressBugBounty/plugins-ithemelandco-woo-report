@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_Path_Helper
+class ITWRL_Path_Helper
 {
     public static function isLocalhost()
     {

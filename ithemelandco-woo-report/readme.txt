@@ -3,8 +3,8 @@ Contributors: ithemelandco
 Donate link: http://ithemelandco.com/
 Tags: 	woocommerce report, woocommerce sale reporting, sale report, stock report, tax report
 Requires at least: 5.3
-Tested up to: 6.7
-Stable tag: 1.5.5
+Tested up to: 6.8
+Stable tag: 2.0.0
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -198,6 +198,14 @@ Please leave your message in our <a href="https://ithemelandco.com/support-cente
 3. WooCommerce ProductSales Reprot
 
 == Changelog ==
+
+= 2.0.0 =
+* Changes to the core plugin
+* Implementing important security changes
+* Tested up to: WP 6.8.x
+* Tested up to: Woo 9.8.X
+* Fixed Some Issues
+
 
 = 1.5.5 =
 * Fixed WP 6.7

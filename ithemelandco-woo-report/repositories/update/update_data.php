@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_Update_Data
+class ITWRL_Update_Data
 {
     private $option_name;
 

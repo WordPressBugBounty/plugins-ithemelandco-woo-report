@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_Singleton_Update_Data
+class ITWRL_Singleton_Update_Data
 {
     private static $instance;
     private $plugin_data;
@@ -16,7 +16,7 @@ class ITWR_Singleton_Update_Data
 
     private function __construct()
     {
-        $update_alert_repository = new ITWR_Update_Data();
+        $update_alert_repository = new ITWRL_Update_Data();
         $this->plugin_data = $update_alert_repository->get();
     }
 

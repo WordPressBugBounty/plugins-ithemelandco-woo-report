@@ -1,10 +1,10 @@
 <?php
 
-class ITWR_Update_Helper
+class ITWRL_Update_Helper
 {
     public static function has_force_update($plugin_key, $current_version)
     {
-        $plugins_update_data = ITWR_Singleton_Update_Data::get_instance();
+        $plugins_update_data = ITWRL_Singleton_Update_Data::get_instance();
         $plugin_update_data = $plugins_update_data->get($plugin_key);
         return (isset($plugin_update_data['force_update_from']) && version_compare($current_version, $plugin_update_data['force_update_from'], '<='));
     }

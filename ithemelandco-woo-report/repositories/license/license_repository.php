@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_License_Repository
+class ITWRL_License_Repository
 {
     private $option_name;
 

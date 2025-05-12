@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_Update_Alert
+class ITWRL_Update_Alert
 {
     private static $instance;
 
@@ -19,11 +19,11 @@ class ITWR_Update_Alert
             return false;
         }
 
-        $this->license_service = ITWR_License_Service::get_instance();
-        $update_data_repository = ITWR_Singleton_Update_Data::get_instance();
+        $this->license_service = ITWRL_License_Service::get_instance();
+        $update_data_repository = ITWRL_Singleton_Update_Data::get_instance();
         $update_data = $update_data_repository->get();
         if (!empty($update_data) && isset($update_data['key'])) {
-            if (ITWR_Update_Helper::has_available_update(ITWR_VERSION, $update_data)) {
+            if (ITWRL_Update_Helper::has_available_update(ITWRL_VERSION, $update_data)) {
                 $filter_name = ($this->license_check()) ? "itwr_update_alert_items" : "itwr_license_alert_items";
                 add_filter($filter_name, function ($items) use ($update_data) {
                     $items[] = $update_data;
@@ -40,7 +40,7 @@ class ITWR_Update_Alert
     {
         $license_is_valid = $this->license_service->license_is_valid();
         if ($license_is_valid) {
-            $license_repository = new ITWR_License_Repository();
+            $license_repository = new ITWRL_License_Repository();
             $license_repository->matched_license();
         }
 

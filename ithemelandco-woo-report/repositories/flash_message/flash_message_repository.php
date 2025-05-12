@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_Flush_Message
+class ITWRL_Flush_Message
 {
     private $flush_message_option_name;
 

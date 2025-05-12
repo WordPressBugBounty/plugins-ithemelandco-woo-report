@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_Industry_Helper
+class ITWRL_Industry_Helper
 {
     public static function get_industries()
     {

@@ -1,6 +1,6 @@
 <?php
 
-class ITWR_WP_Register_Update
+class ITWRL_WP_Register_Update
 {
     private static $instance;
 
@@ -34,7 +34,7 @@ class ITWR_WP_Register_Update
                 $remote_version = $this->get_plugin_update_data('version', $update_data);
                 if ($remote_version) {
                     $plugin_basename = 'ithemelandco-woo-report' . '/' . 'ithemelandco-woo-report' . '.php';
-                    if (version_compare(ITWR_VERSION, $remote_version->new_version, '<')) {
+                    if (version_compare(ITWRL_VERSION, $remote_version->new_version, '<')) {
                         $obj = new \stdClass();
                         $obj->id = $remote_version->slug;
                         $obj->slug = $remote_version->slug;
@@ -57,7 +57,7 @@ class ITWR_WP_Register_Update
 
     private function license_validation()
     {
-        $license_service = ITWR_License_Service::get_instance();
+        $license_service = ITWRL_License_Service::get_instance();
         return $license_service->license_validation();
     }
 
@@ -78,13 +78,13 @@ class ITWR_WP_Register_Update
 
     private function get_plugin_update_data($action = null, $update_data = [])
     {
-        $license_repository = new ITWR_License_Repository();
+        $license_repository = new ITWRL_License_Repository();
         $license_data = $license_repository->get();
         if (empty($license_data) || !isset($license_data['license_key']) || !isset($license_data['product_id']) || !isset($license_data['email']) || !isset($license_data['domain'])) {
             return false;
         }
 
-        $hash = ITWR_Generator::license_hash($license_data);
+        $hash = ITWRL_Generator::license_hash($license_data);
         $data = new stdClass();
         $data->slug = 'iThemelandCo-Woo-Report-Lite';
         $data->name = 'iThemelandCo-Woo-Report-Lite';
@@ -108,10 +108,10 @@ class ITWR_WP_Register_Update
     private function get_update_data()
     {
         // insert data to db from remote
-        ITWR_Update_Service::init();
+        ITWRL_Update_Service::init();
 
         // get update data
-        $update_data_repository = ITWR_Singleton_Update_Data::get_instance();
+        $update_data_repository = ITWRL_Singleton_Update_Data::get_instance();
         $this->update_data = $update_data_repository->get();
         return $this->update_data;
     }
