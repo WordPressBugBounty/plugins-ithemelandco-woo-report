@@ -193,9 +193,10 @@ Please leave your message in our <a href="https://ithemelandco.com/support-cente
 
 == Screenshots ==
 
-1. Dashborad Light
-2. Dashborad Dark
-3. WooCommerce ProductSales Reprot
+1. Compare Lite & Premium
+2. Dashborad Light
+3. Dashborad Dark
+4. WooCommerce ProductSales Reprot
 
 == Changelog ==
 
