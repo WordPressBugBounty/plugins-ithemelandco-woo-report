@@ -641,95 +641,120 @@ jQuery(document).ready(function ($) {
     function switch_display_dashboard(data, type, table_name, theme_type) {
 
         var tableInfo = [];
+        var tableLabel = [];
+        var chartjs;
+        
         $("#awr-grid-chart-" + table_name + " tr").each(function () {
 
             var $td = $(this).find('td');
+            
+            var tv=0; var tl='';
 
             if (table_name == 'top_5_customer') {
                 if ($td.eq(2).text() == '')
                     return;
-
-                tableInfo.push({
-                    label: ($td.eq(0).text() == '' ? "No Label" : $td.eq(0).text()),
-                    value: $td.eq(2).text(),
-                });
+                // tableInfo.push({
+                //     label: ($td.eq(0).text() == '' ? "No Label" : $td.eq(0).text()),
+                //     value: $td.eq(2).text(),
+                // });
+                 tv = $td.eq(2).text();
+                tableInfo.push(tv);
+                
+                tl = $td.eq(0).text() === '' ? "No Label" : $td.eq(0).text();
+                tableLabel.push(tl);
             }
             else {
 
                 if ($td.eq(1).text() == '')
                     return;
 
-                tableInfo.push({
-                    label: ($td.eq(0).text() == '' ? "No Label" : $td.eq(0).text()),
-                    value: $td.eq(1).text(),
-                });
+                // tableInfo.push({
+                //     label: ($td.eq(0).text() == '' ? "No Label" : $td.eq(0).text()),
+                //     value: $td.eq(1).text(),
+                // });
+                
+                tv = $td.eq(1).text();
+                tableInfo.push(tv);
+                
+                tl = $td.eq(0).text() == '' ? "No Label" : $td.eq(0).text();
+                tableLabel.push(tl);
             }
         });
 
         var target = type + "-" + table_name;
+        var targetcanvas = target + "-canvas";
+        
+        
+        $("#"+target).find("canvas").remove();
+        $("#"+target).append("<canvas id="+targetcanvas+"></canvas>");
+         
         //$("#"+target).addClass($("#awr-grid-chart-"+table_name).height());
         $("#" + target).addClass("awr-chart-show");
 
+        
+
+// console.log(tableLabel);
+// console.log(tableInfo);
+
+// tableLabel= ['A','B','C'];
+// tableInfo = [1,2,4];
+
+// console.log(tableLabel);
+// console.log(tableInfo);
+
         if (type == "awr-pie-chart") {
 
-            $("#" + target).html(loading_content);
+            $("#" + targetcanvas).html(loading_content);
 
-            var chart = AmCharts.makeChart(target, {
-                "type": "pie",
-                "theme": theme_type,
-                "dataProvider": tableInfo,
-                "valueField": "value",
-                "titleField": "label",
-                "balloon": {
-                    "fixedPosition": true
-                }
+           
+            var chartjs = new Chart(targetcanvas, {
+                type: 'pie',
+                data: {
+                labels: tableLabel,
+                datasets: [{
+                    label: '# of Votes',
+                    data: tableInfo,
+                    borderWidth: 1
+                }]
+                },
+                  options: {
+                    responsive: true,
+                    plugins: {
+                      legend: {
+                        position: 'top',
+                      },
+                      
+                    }
+                  },
             });
+            
 
             $("#awr-pie-chart-" + table_name).show();
             $("#awr-bar-chart-" + table_name).hide();
             $("#awr-grid-chart-" + table_name).hide();
 
         } else if (type == "awr-bar-chart") {
-            $("#" + target).html(loading_content);
+            $("#" + targetcanvas).html(loading_content);
 
-            var chart = AmCharts.makeChart(target,
-                {
-                    "type": "serial",
-                    "theme": theme_type,
-                    "dataProvider": tableInfo,
-                    "valueField": "value",
-                    "titleField": "label",
-                    "balloon": {
-                        "fixedPosition": true
-                    },
-                    "valueAxes": [{
-                        "gridColor": "#FFFFFF",
-                        "gridAlpha": 0.2,
-                        "dashLength": 0
-                    }],
-                    "gridAboveGraphs": true,
-                    "startDuration": 1,
-                    "graphs": [{
-                        "balloonText": "[[label]]: <b>[[value]]</b>",
-                        "fillAlphas": 0.8,
-                        "lineAlpha": 0.2,
-                        "type": "column",
-                        "valueField": "value"
-                    }],
-                    "chartCursor": {
-                        "categoryBalloonEnabled": false,
-                        "cursorAlpha": 0,
-                        "zoomable": false
-                    },
-                    "categoryField": "label",
-                    "categoryAxis": {
-                        "gridPosition": "start",
-                        "gridAlpha": 0,
-                        "tickPosition": "start",
-                        "tickLength": 20,
-                        "labelRotation": 45
-                    },
-                });
+         
+            var chartjs = new Chart(targetcanvas, {
+                type: 'bar',
+                data: {
+                labels: tableLabel,
+                datasets: [{
+                    data: tableInfo,
+                    borderWidth: 1
+                }]
+                },
+                options: {
+                scales: {
+                    y: {
+                    beginAtZero: true
+                    }
+                }
+                }
+            });
+
 
             $("#awr-pie-chart-" + table_name).hide();
             $("#awr-bar-chart-" + table_name).show();
@@ -740,8 +765,9 @@ jQuery(document).ready(function ($) {
             $("#awr-pie-chart-" + table_name).hide();
             $("#awr-bar-chart-" + table_name).hide();
             $("#awr-grid-chart-" + table_name).show();
-
+            
         }
+        // chartjs.destroy();
     }
 
     function datatable_init_dashboard() {
@@ -838,6 +864,9 @@ jQuery(document).ready(function ($) {
 
         function chart_init(theme_type) {
 
+            var tableInfo = [];
+            var tableLabel = [];
+
             $.ajax({
                 type: "POST",
                 url: params.ajaxurl,
@@ -860,194 +889,116 @@ jQuery(document).ready(function ($) {
                     $("#" + content_id).html("");
 
 
+                    //3D Month
+                    $("#pwr_chartdiv_multiple").append("This chart is available on Pro Version");
 
-                    var chart = AmCharts.makeChart("pwr_chartdiv_multiple", {
-                        "theme": theme_type,
-                        "type": "serial",
-                        "marginLeft": 60,
-                        "dataProvider": f1,
-                        "valueAxes": [{
-                            "title": ""
-                        }],
-                        "graphs": [{
-                            "balloonText": "Income in [[category]]:[[value]]",
-                            "fillAlphas": 1,
-                            "lineAlpha": 0.2,
-                            "title": "Income",
-                            "type": "column",
-                            "valueField": "value"
-                        }],
-                        "depth3D": 20,
-                        "angle": 30,
-                        "rotate": true,
-                        "categoryField": "date",
-                        "categoryAxis": {
-                            "gridPosition": "start",
-                            "fillAlpha": 0.05,
-                            "position": "left"
+
+                    
+                    //MONTH CHART f4
+                    $("#pwr_chartdiv_month").append("<canvas id='pwr_chartdiv_month_canvas'></canvas>");
+
+                    // console.log(f4);
+                    
+                    $.each(f4, function( index, value ) {
+                        $.each( value, function( key, val ) {
+                          if(key == 'value') tableInfo.push(val);
+                          if(key == 'date') tableLabel.push(val);
+                        });
+                      //alert( index + ": " + value );
+                    });
+                    // console.log(tableInfo);
+                    // console.log(tableLabel);
+                    
+                    // $.each( f4, function( key, value ) {
+                    //   alert( key + ": " + value );
+                    // });
+
+                    var chartjs = new Chart("pwr_chartdiv_month_canvas", {
+                        type: 'bar',
+                        data: {
+                        labels: tableLabel,
+                        datasets: [{
+                            data: tableInfo,
+                            borderWidth: 1
+                        }]
                         },
-                        "export": {
-                            "enabled": true
+                        options: {
+                        scales: {
+                            y: {
+                            beginAtZero: true
+                            }
+                        }
                         }
                     });
+                    
+                    // var chart = AmCharts.makeChart("pwr_chartdiv_month", {
+                    //     "type": "serial",
+                    //     "theme": theme_type,
+                    //     "autoMargins": false,
+                    //     "marginLeft": 50,
+                    //     "marginRight": 8,
+                    //     "marginLeft": 60,
+                    //     "marginTop": 10,
+                    //     "marginBottom": 26,
+                    //     "balloon": {
+                    //         "adjustBorderColor": false,
+                    //         "horizontalPadding": 10,
+                    //         "verticalPadding": 8,
+                    //         "color": "#ffffff"
+                    //     },
 
-                    //MONTH CHART
-                    var chart = AmCharts.makeChart("pwr_chartdiv_month", {
-                        "type": "serial",
-                        "theme": theme_type,
-                        "autoMargins": false,
-                        "marginLeft": 50,
-                        "marginRight": 8,
-                        "marginLeft": 60,
-                        "marginTop": 10,
-                        "marginBottom": 26,
-                        "balloon": {
-                            "adjustBorderColor": false,
-                            "horizontalPadding": 10,
-                            "verticalPadding": 8,
-                            "color": "#ffffff"
-                        },
-
-                        "dataProvider": f4,
-                        "valueAxes": [{
-                            "axisAlpha": 1,
-                            "position": "left",
-                            "tickLength": 0,
-                            "labelFunction": formatLabel
-                        }],
-                        "startDuration": 1,
-                        "graphs": [{
-                            "alphaField": "alpha",
-                            "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>" + params.woo_currency + "[[value]]</span> [[additional]]</span>",
-                            "fillAlphas": 1,
-                            "title": "date",
-                            "type": "column",
-                            "valueField": "value",
-                            "dashLengthField": "dashLengthColumn"
-                        }, {
-                            "id": "graph2",
-                            "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>" + params.woo_currency + "[[value]]</span> [[additional]]</span>",
-                            "bullet": "round",
-                            "lineThickness": 3,
-                            "bulletSize": 7,
-                            "bulletBorderAlpha": 1,
-                            "bulletColor": "#FFFFFF",
-                            "useLineColorForBulletBorder": true,
-                            "bulletBorderThickness": 3,
-                            "fillAlphas": 0,
-                            "lineAlpha": 1,
-                            "title": "Total Sale ",
-                            "valueField": "value"
-                        }],
-                        "categoryField": "date",
-                        "categoryAxis": {
-                            "gridPosition": "start",
-                            "axisAlpha": 0,
-                            "tickLength": 0,
-                            //"labelRotation": 45
-                        },
-                        "export": {
-                            "enabled": true
-                        }
-                    });
+                    //     "dataProvider": f4,
+                    //     "valueAxes": [{
+                    //         "axisAlpha": 1,
+                    //         "position": "left",
+                    //         "tickLength": 0,
+                    //         "labelFunction": formatLabel
+                    //     }],
+                    //     "startDuration": 1,
+                    //     "graphs": [{
+                    //         "alphaField": "alpha",
+                    //         "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>" + params.woo_currency + "[[value]]</span> [[additional]]</span>",
+                    //         "fillAlphas": 1,
+                    //         "title": "date",
+                    //         "type": "column",
+                    //         "valueField": "value",
+                    //         "dashLengthField": "dashLengthColumn"
+                    //     }, {
+                    //         "id": "graph2",
+                    //         "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>" + params.woo_currency + "[[value]]</span> [[additional]]</span>",
+                    //         "bullet": "round",
+                    //         "lineThickness": 3,
+                    //         "bulletSize": 7,
+                    //         "bulletBorderAlpha": 1,
+                    //         "bulletColor": "#FFFFFF",
+                    //         "useLineColorForBulletBorder": true,
+                    //         "bulletBorderThickness": 3,
+                    //         "fillAlphas": 0,
+                    //         "lineAlpha": 1,
+                    //         "title": "Total Sale ",
+                    //         "valueField": "value"
+                    //     }],
+                    //     "categoryField": "date",
+                    //     "categoryAxis": {
+                    //         "gridPosition": "start",
+                    //         "axisAlpha": 0,
+                    //         "tickLength": 0,
+                    //         //"labelRotation": 45
+                    //     },
+                    //     "export": {
+                    //         "enabled": true
+                    //     }
+                    // });
 
                     //chart.valueAxes.labelFunction = formatLabel;
 
                     //DAYS CHART
-                    var chart = AmCharts.makeChart("pwr_chartdiv_day", {
-                        "type": "serial",
-                        "theme": theme_type,
-                        "marginRight": 40,
-                        "marginLeft": 60,
-                        "autoMarginOffset": 20,
-                        "dataDateFormat": "YYYY-MM-DD",
-                        "valueAxes": [{
-                            "id": "v1",
-                            "axisAlpha": 0,
-                            "position": "left",
-                            "ignoreAxisWidth": true,
-                            "labelFunction": formatLabel
-                        }],
-                        "balloon": {
-                            "borderThickness": 1,
-                            "shadowAlpha": 0
-                        },
-                        "graphs": [{
-                            "id": "g1",
-                            "balloon": {
-                                "drop": true,
-                                "adjustBorderColor": false,
-                                "color": "#ffffff"
-                            },
-                            "bullet": "round",
-                            "bulletBorderAlpha": 1,
-                            "bulletColor": "#FFFFFF",
-                            "bulletSize": 5,
-                            "hideBulletsCount": 50,
-                            "lineThickness": 2,
-                            "title": "red line",
-                            "useLineColorForBulletBorder": true,
-                            "valueField": "value",
-                            "balloonText": "<span style='font-size:18px;'>" + params.woo_currency + "[[value]]</span>"
-                        }],
-                        "chartScrollbar": {
-                            "graph": "g1",
-                            "oppositeAxis": false,
-                            "offset": 30,
-                            "scrollbarHeight": 80,
-                            "backgroundAlpha": 0,
-                            "selectedBackgroundAlpha": 0.1,
-                            "selectedBackgroundColor": "#888888",
-                            "graphFillAlpha": 0,
-                            "graphLineAlpha": 0.5,
-                            "selectedGraphFillAlpha": 0,
-                            "selectedGraphLineAlpha": 1,
-                            "autoGridCount": true,
-                            "color": "#AAAAAA"
-                        },
-                        "chartCursor": {
-                            "pan": true,
-                            "valueLineEnabled": true,
-                            "valueLineBalloonEnabled": true,
-                            "cursorAlpha": 1,
-                            "cursorColor": "#258cbb",
-                            "limitToGraph": "g1",
-                            "valueLineAlpha": 0.2
-                        },
-                        "valueScrollbar": {
-                            "oppositeAxis": false,
-                            "offset": 50,
-                            "scrollbarHeight": 10
-                        },
-                        "categoryField": "date",
-                        "categoryAxis": {
-                            "parseDates": true,
-                            "dashLength": 1,
-                            "minorGridEnabled": true
-                        },
-                        "export": {
-                            "enabled": true
-                        },
-
-                        "dataProvider": f2,
-                    });
+                    $("#pwr_chartdiv_day").append("This chart is available on Pro Version");
 
 
-                    //PIE CHART - TOP PRODUCTS
-                    var chart = AmCharts.makeChart("pwr_chartdiv_pie", {
-                        "type": "pie",
-                        "theme": theme_type,
-                        "dataProvider": f5,
-                        "valueField": "value",
-                        "titleField": "label",
-                        "balloon": {
-                            "fixedPosition": true
-                        },
-                        "export": {
-                            "enabled": true
-                        }
-                    });
-
+                    //PIE CHART - TOP PRODUCTS f5
+                    $("#pwr_chartdiv_pie").append("This chart is available on Pro Version");
+                    
 
 
                 }
@@ -1115,110 +1066,11 @@ jQuery(document).ready(function ($) {
     ////////////////////////////
     function it_intelligence_chart() {
 
-        var chart = AmCharts.makeChart("it_int_sale_chartdiv", {
-            "type": "serial",
-            "theme": "light",
-            "valueAxes": [{
-                "stackType": "regular",
-                "gridAlpha": 0.07,
-                "position": "left",
-                "labelFunction": formatLabel,
-            }],
-            "graphs": [{
-                "id": "g1",
-                "fillAlphas": 0.4,
-                "valueField": "value",
-                "balloonText": "<div style='margin:5px; font-size:19px;'>" + params.woo_currency + "<b>[[value]]</b></div>"
-            }],
-            "chartScrollbar": {
-                "graph": "g1",
-                "scrollbarHeight": 20,
-                "backgroundAlpha": 0,
-                "selectedBackgroundAlpha": 0.1,
-                "selectedBackgroundColor": "#888888",
-                "graphFillAlpha": 0,
-                "graphLineAlpha": 0.5,
-                "selectedGraphFillAlpha": 0,
-                "selectedGraphLineAlpha": 1,
-                "autoGridCount": true,
-                "color": "#AAAAAA"
-            },
-            "chartCursor": {
-                "categoryBalloonDateFormat": "JJ:NN, DD MMMM",
-                "cursorPosition": "mouse"
-            },
-            "categoryField": "date",
-            "categoryAxis": {
-                "minPeriod": "mm",
-                "parseDates": true
-            },
-            // "export": {
-            //     "enabled": true,
-            //     "dateFormat": "MM/DD/YYYY"
-            // },
-            "dataProvider": chart_int_data
-        });
+       return;
     }
 
     function it_intelligence_single_product_chart() {
-        var chart = AmCharts.makeChart("it_int_single_product_chartdiv", {
-            "type": "serial",
-            "addClassNames": true,
-            "theme": "light",
-            "autoMargins": false,
-            "marginLeft": 8,
-            "marginRight": 8,
-            "marginTop": 10,
-            "marginBottom": 26,
-            "balloon": {
-                "adjustBorderColor": false,
-                "horizontalPadding": 10,
-                "verticalPadding": 8,
-                "color": "#ffffff"
-            },
-
-            "dataProvider": it_int_single_product_value,
-            "valueAxes": [{
-                "axisAlpha": 0,
-                "position": "left",
-                "labelsEnabled": false
-            }],
-            "startDuration": 1,
-            "graphs": [{
-                "alphaField": "alpha",
-                "balloonText": "<span style='font-size:12px;'>" + params.woo_currency + "[[value]] in [[category]]</span>",
-                "fillAlphas": 1,
-                "title": "Sale",
-                "type": "column",
-                "valueField": "income",
-                "dashLengthField": "dashLengthColumn"
-            }, {
-                "id": "graph2",
-                "balloonText": "<span style='font-size:12px;'>[[value]] Sale(s) in [[category]]</span>",
-                "bullet": "round",
-                "lineThickness": 3,
-                "bulletSize": 7,
-                "bulletBorderAlpha": 1,
-                "bulletColor": "#FFFFFF",
-                "useLineColorForBulletBorder": true,
-                "bulletBorderThickness": 3,
-                "fillAlphas": 0,
-                "lineAlpha": 1,
-                "title": "",
-                "valueField": "expenses",
-                "dashLengthField": "dashLengthLine"
-            }],
-            "categoryField": "year",
-            "categoryAxis": {
-                "gridPosition": "start",
-                "axisAlpha": 0,
-                "tickLength": 0,
-                "labelsEnabled": false
-            },
-            // "export": {
-            //     "enabled": true
-            // }
-        });
+        return;
     }
 
     var currecnt_product_clicked = '';
@@ -1288,39 +1140,7 @@ jQuery(document).ready(function ($) {
     }
 
     function it_intelligence_top_product_chart() {
-        var int_top_products_chart = AmCharts.makeChart("int_top_products_chart_args", {
-            "type": "serial",
-            "theme": "light",
-            "marginRight": 30,
-            "legend": {
-                "equalWidths": false,
-                "periodValueText": "total: [[value.sum]]",
-                "position": "top",
-                "valueAlign": "left",
-                "valueWidth": 100
-            },
-            "dataProvider": int_top_products_chart_args_data,
-            "valueAxes": [{
-                "stackType": "regular",
-                "gridAlpha": 0.07,
-                "position": "left",
-                "labelFunction": formatLabel,
-            }],
-            "graphs": int_top_products_chart_args_graph,
-            "plotAreaBorderAlpha": 0,
-            "marginTop": 10,
-            "marginLeft": 0,
-            "marginBottom": 0,
-            "chartScrollbar": {},
-            "chartCursor": {
-                "cursorAlpha": 0
-            },
-            "categoryField": "date",
-
-            // "export": {
-            // 	"enabled": true
-            // }
-        });
+        return;
     }
 
     var currecnt_customer_clicked = '';
@@ -1392,67 +1212,7 @@ jQuery(document).ready(function ($) {
 
     function it_intelligence_customer_chart() {
 
-        var chart = AmCharts.makeChart("it_int_customer_chartdiv", {
-            "type": "serial",
-            "theme": "light",
-            "dataProvider": chart_customer_int_data,
-            "startDuration": 1,
-            "graphs": [{
-                "fillAlphas": 0.8,
-                "fillColorsField": "color_p",
-                "lineAlpha": 0.2,
-                "type": "column",
-                "valueField": "revenue",
-                "title": "Revenue",
-                //"labelText": "[[value]]",
-                "clustered": false,
-                "labelFunction": function (item) {
-                    return params.woo_currency + item.values.value;
-                },
-                "balloonFunction": function (item) {
-                    return item.category + ": " + params.woo_currency + item.values.value;
-                }
-            }, {
-                "fillAlphas": 0.8,
-                "lineAlpha": 0.2,
-                "fillColorsField": "color_n",
-                "type": "column",
-                "valueField": "refund",
-                "title": "Refunded",
-                //"labelText": "[[value]]",
-                "clustered": false,
-                "labelFunction": function (item) {
-                    return params.woo_currency + item.values.value;
-                },
-                "balloonFunction": function (item) {
-                    return item.category + ": - " + params.woo_currency + ((item.values.value) * (-1));
-                }
-            }],
-            "categoryField": "date",
-            "categoryAxis": {
-                "gridPosition": "start",
-                "gridAlpha": 0.2,
-                "axisAlpha": 0,
-                "labelsEnabled": false,
-            },
-            "valueAxes": [{
-                "axisAlpha": 0,
-                "position": "left",
-                "labelsEnabled": false
-            }],
-            "balloon": {
-                "fixedPosition": true
-            },
-            "chartCursor": {
-                "valueBalloonsEnabled": true,
-                "cursorAlpha": 0.05,
-                "fullWidth": false
-            },
-
-            // "export": {
-            //     "enabled": true
-            // }
-        });
+       return;
     }
 
     ////ADDED IN VER4.0
@@ -1582,323 +1342,11 @@ jQuery(document).ready(function ($) {
             it_product_chart();
         });
 
-        function it_product_chart() {
-
-            AmCharts.addInitHandler(function (chart) {
-                if (chart.legend === undefined || chart.legend.truncateLabels === undefined)
-                    return;
-
-                // init fields
-                var titleField = chart.titleField;
-                var legendTitleField = chart.titleField + "Legend";
-
-                // iterate through the data and create truncated label properties
-                for (var i = 0; i < chart.dataProvider.length; i++) {
-                    var label = chart.dataProvider[i][chart.titleField];
-                    if (label.length > chart.legend.truncateLabels)
-                        label = label.substr(0, chart.legend.truncateLabels - 1) + '...'
-                    chart.dataProvider[i][legendTitleField] = label;
-                }
-
-                // replace chart.titleField to show our own truncated field
-                chart.titleField = legendTitleField;
-
-                // make the balloonText use full title instead
-                chart.balloonText = chart.balloonText.replace(/\[\[title\]\]/, "[[" + titleField + "]]");
-
-            }, ["pie"]);
-
-            var pdata = {
-                action: "it_rpt_fetch_product_chart",
-                postdata: $(".search_form_report").serialize() + '&type=pie',
-                nonce: params.nonce,
-            }
-
-
-            $("#it_product_chart").html(loading_content);
-
-            $.ajax({
-                type: "POST",
-                url: params.ajaxurl,
-                data: pdata,
-                dataType: "json",
-                success: function (resp) {
-
-                    $("#it_product_chart").html("");
-
-                    var chart = AmCharts.makeChart("it_product_chart", {
-                        "type": "pie",
-                        "startDuration": 0,
-                        "theme": "light",
-                        "addClassNames": true,
-                        "legend": {
-                            "position": "right",
-                            "marginRight": 100,
-                            "autoMargins": false,
-                            "truncateLabels": 15
-                        },
-                        "innerRadius": "30%",
-                        "defs": {
-                            "filter": [{
-                                "id": "shadow",
-                                "width": "200%",
-                                "height": "200%",
-                                "feOffset": {
-                                    "result": "offOut",
-                                    "in": "SourceAlpha",
-                                    "dx": 0,
-                                    "dy": 0
-                                },
-                                "feGaussianBlur": {
-                                    "result": "blurOut",
-                                    "in": "offOut",
-                                    "stdDeviation": 5
-                                },
-                                "feBlend": {
-                                    "in": "SourceGraphic",
-                                    "in2": "blurOut",
-                                    "mode": "normal"
-                                }
-                            }]
-                        },
-                        "dataProvider": resp,
-                        "valueField": "value",
-                        "titleField": "label",
-                        "export": {
-                            "enabled": true
-                        }
-                    });
-                }
-            });
-        }
-        it_product_chart();
     }
 
-    $(".it_product_chart_click").on("click", function () {
-
-        var row_id = $(this).data("product-id");
-        var row_title = $(this).data("product-title");
-
-        var pdata = {
-            action: "it_rpt_fetch_product_chart",
-            postdata: $(".search_form_report").serialize() + '&row_id=' + row_id + '&type=line',
-            nonce: params.nonce,
-        }
-
-        $("#it_product_chart").html(loading_content);
-        $("#it_product_chart_title").find("h3").html(row_title + " Chart");
-
-        $.ajax({
-            type: "POST",
-            url: params.ajaxurl,
-            data: pdata,
-            dataType: "json",
-            success: function (resp) {
-                //console.log(resp);
-
-                $("#it_product_chart").html("");
-                var chart = AmCharts.makeChart("it_product_chart", {
-                    "type": "serial",
-                    "theme": "light",
-                    "categoryField": "date",
-                    "rotate": true,
-                    "startDuration": 1,
-                    "categoryAxis": {
-                        "gridPosition": "start",
-                        "position": "left"
-                    },
-                    "trendLines": [],
-                    "graphs": [
-                        {
-                            "balloonText": "Open:[[value]]",
-                            "fillAlphas": 0.8,
-                            "id": "AmGraph-1",
-                            "lineAlpha": 0.2,
-                            "title": "Open",
-                            "type": "column",
-                            "valueField": "open"
-                        },
-                        {
-                            "balloonText": "Abandoned:[[value]]",
-                            "fillAlphas": 0.8,
-                            "id": "AmGraph-2",
-                            "lineAlpha": 0.2,
-                            "title": "Abandoned",
-                            "type": "column",
-                            "valueField": "abandoned"
-                        },
-                        {
-                            "balloonText": "Convert:[[value]]",
-                            "fillAlphas": 0.8,
-                            "id": "AmGraph-2",
-                            "lineAlpha": 0.2,
-                            "title": "Convert",
-                            "type": "column",
-                            "valueField": "convert"
-                        }
-                    ],
-                    "guides": [],
-                    "valueAxes": [
-                        {
-                            "id": "ValueAxis-1",
-                            "position": "top",
-                            "axisAlpha": 0
-                        }
-                    ],
-                    "allLabels": [],
-                    "balloon": {},
-                    "titles": [],
-                    "dataProvider": resp,
-                    "export": {
-                        "enabled": true
-                    }
-
-                });
-            }
-        });
-
-    });
+    
     function click_td() {
-        $(".products_datatable").find("tr").on("click", function () {
-            var row_id = $(this).find("td").eq(0).attr("data-order-id");
-
-            var pdata = {
-                action: "it_rpt_fetch_chart",
-                postdata: 'row_id=' + row_id,
-                nonce: params.nonce,
-            }
-
-            //$("#chartdiv").html('<i class="fa fa-spinner fa-pulse fa-3x"></i>');
-            //$("#chartdiv").html('<img src="'+params.address+'/assets/images/fa-loading-34.gif"></i>');
-            $("#chartdiv").html(loading_content);
-
-            $.ajax({
-                type: "POST",
-                url: params.ajaxurl,
-                data: pdata,
-                dataType: "json",
-                success: function (resp) {
-                    //confirm(resp);
-
-                    $("#chartdiv").html("");
-                    var chart = AmCharts.makeChart("chartdiv", {
-                        type: "stock",
-                        //"theme": "none",
-                        "theme": "chalk",
-
-                        dataSets: [{
-                            title: "first data set",
-                            fieldMappings: [{
-                                fromField: "value",
-                                toField: "value"
-                            }],
-                            dataProvider: resp,
-                            categoryField: "date"
-                        },
-
-                        {
-                            title: "second data set",
-                            fieldMappings: [{
-                                fromField: "value",
-                                toField: "value"
-                            }],
-                            dataProvider: chartData2,
-                            categoryField: "date"
-                        },
-
-                        {
-                            title: "third data set",
-                            fieldMappings: [{
-                                fromField: "value",
-                                toField: "value"
-                            }],
-                            dataProvider: chartData3,
-                            categoryField: "date"
-                        },
-
-                        {
-                            title: "fourth data set",
-                            fieldMappings: [{
-                                fromField: "value",
-                                toField: "value"
-                            }],
-                            dataProvider: chartData4,
-                            categoryField: "date"
-                        }
-                        ],
-
-                        panels: [{
-
-                            showCategoryAxis: false,
-                            title: "Value",
-                            percentHeight: 70,
-
-                            stockGraphs: [{
-                                id: "g1",
-
-                                valueField: "value",
-                                comparable: true,
-                                compareField: "value",
-                                balloonText: "[[title]]:<b>[[value]]</b>",
-                                compareGraphBalloonText: "[[title]]:<b>[[value]]</b>"
-                            }],
-
-                            stockLegend: {
-                                periodValueTextComparing: "[[percents.value.close]]%",
-                                periodValueTextRegular: "[[value.close]]"
-                            }
-                        },
-
-
-                        ],
-
-                        chartScrollbarSettings: {
-                            graph: "g1"
-                        },
-
-                        chartCursorSettings: {
-                            valueBalloonsEnabled: true,
-                            fullWidth: true,
-                            cursorAlpha: 0.1,
-                            valueLineBalloonEnabled: true,
-                            valueLineEnabled: true,
-                            valueLineAlpha: 0.5
-                        },
-
-                        periodSelector: {
-                            position: "left",
-                            periods: [{
-                                period: "MM",
-                                selected: true,
-                                count: 1,
-                                label: "1 month"
-                            }, {
-                                period: "YYYY",
-                                count: 1,
-                                label: "1 year"
-                            }, {
-                                period: "YTD",
-                                label: "YTD"
-                            }, {
-                                period: "MAX",
-                                label: "MAX"
-                            }]
-                        },
-
-                        dataSetSelector: {
-                            position: "left"
-                        },
-
-                        "export": {
-                            //"enabled": true,
-                            //"position": "bottom-left"
-                        }
-
-                    });
-                }
-            });
-
-        });
+        return;
     }
     //click_td();
 

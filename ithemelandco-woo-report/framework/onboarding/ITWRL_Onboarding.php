@@ -23,7 +23,7 @@ class ITWRL_Onboarding
         // Verify nonce
         if (!isset($_POST['_wpnonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_wpnonce'])), 'ithemeland_onboarding_action')) {
             wp_send_json_error([
-                'message' => esc_html__('Security verification failed', 'advanced-product-table-for-woocommerce')
+                'message' => esc_html__('Security verification failed', 'ithemelandco-woo-report')
             ], 403);
             exit;
         }
@@ -31,13 +31,13 @@ class ITWRL_Onboarding
         // Check activation type
         if (!isset($_POST['activation_type'])) {
             wp_send_json_error([
-                'message' => esc_html__('Invalid request', 'advanced-product-table-for-woocommerce')
+                'message' => esc_html__('Invalid request', 'ithemelandco-woo-report')
             ], 400);
             exit;
         }
 
         $activation_type = sanitize_text_field(wp_unslash($_POST['activation_type']));
-        $message = esc_html__('Error! Please try again.', 'advanced-product-table-for-woocommerce');
+        $message = esc_html__('Error! Please try again.', 'ithemelandco-woo-report');
 
         if ($activation_type === 'skip') {
             self::update_opt_in('no');
@@ -45,7 +45,7 @@ class ITWRL_Onboarding
             self::onboarding_complete('skipped');
             wp_send_json_success([
                 'redirect' => ITWRL_DASHBOARD_PAGE,
-                'message' => esc_html__('Activation skipped', 'advanced-product-table-for-woocommerce')
+                'message' => esc_html__('Activation skipped', 'ithemelandco-woo-report')
             ]);
             exit;
         }
@@ -71,9 +71,9 @@ class ITWRL_Onboarding
                 if (is_array($info)) {
                     if (!empty($info['success']) && $info['success'] === true) {
                         update_option('ithemeland_activation_email', $admin_email);
-                        $message = esc_html__('Plugin activated successfully!', 'advanced-product-table-for-woocommerce');
+                        $message = esc_html__('Plugin activated successfully!', 'ithemelandco-woo-report');
                     } else {
-                        $message = $info['message'] ?? esc_html__('Activation failed', 'advanced-product-table-for-woocommerce');
+                        $message = $info['message'] ?? esc_html__('Activation failed', 'ithemelandco-woo-report');
                         wp_send_json_error(['message' => $message], 400);
                         exit;
                     }

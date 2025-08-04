@@ -84,40 +84,9 @@
 
 	if(isset($_GET['parent']) && ($_GET['parent']=='dashboard' || $_GET['parent']=='intelligence_reports' || $_GET['parent']=='abandoned_carts') ) {
 		//amChart
-		wp_register_style( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amcharts-export', __IT_REPORT_WCREPORT_CSS_URL__ . 'back-end/amchart/export.css', true );
-		wp_enqueue_style( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amcharts-export' );
-
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amcharts', 'https://www.amcharts.com/lib/3/amcharts.js', true );
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amcharts' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'serial', 'https://www.amcharts.com/lib/3/serial.js', true );
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'serial' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'none_theme', 'https://www.amcharts.com/lib/3/themes/none.js', true );
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'none_theme' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'dark_theme', 'https://www.amcharts.com/lib/3/themes/dark.js', true ); //dark.js , light.js, chalk.js , patterns.js
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'dark_theme' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'light_theme', 'https://www.amcharts.com/lib/3/themes/light.js', true ); //dark.js , light.js, chalk.js ,
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'light_theme' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'patterns_theme', 'https://www.amcharts.com/lib/3/themes/patterns.js', true ); //dark.js , light.js, chalk.js ,
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'patterns_theme' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amstock', 'https://www.amcharts.com/lib/3/amstock.js', true );
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amstock' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'ampie', 'https://www.amcharts.com/lib/3/pie.js', true );
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'ampie' );
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amchart-export', 'https://www.amcharts.com/lib/3/plugins/export/export.js', true );
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amchart-export' );
-
-
-		wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amchart-export-s', 'https://www.amcharts.com/lib/3/exporting/amexport_combined.js', true );
-		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'amchart-export-s' );
+				wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'chartjs', __IT_REPORT_WCREPORT_JS_URL__ . 'back-end/chartjs/chart.js', true );
+		wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . 'chartjs' );
+		
 	}
 	if(isset($_GET['parent']) && $_GET['parent']=='dashboard' )
 	{
@@ -145,11 +114,6 @@
 		//
 		// wp_register_script(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'js-usa_states', __IT_REPORT_WCREPORT_JS_URL__. '/back-end/map/usa_states.js', true);
 		// wp_enqueue_script(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'js-usa_states');
-
-
-		wp_enqueue_script(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'js-googlemap', 'https://maps.google.com/maps/api/js?sensor=false', true);
-
-
 
 
 		wp_register_style(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'bootstrap-min', __IT_REPORT_WCREPORT_JS_URL__. '/back-end/dashboard/bootstrap/css/bootstrap.min.css', true);
@@ -231,9 +195,9 @@
 	wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'chosen_js1', __IT_REPORT_WCREPORT_JS_URL__.'/back-end/chosen/chosen.jquery.min.js' , false, '1.0.0' );
 	wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'chosen_js1' );
 
-	wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'chosen_select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.js' , false, '1.0.0' );
+	wp_register_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'chosen_select2', __IT_REPORT_WCREPORT_JS_URL__.'/back-end/select2/select2.js' , false, '1.0.0' );
 	wp_enqueue_script( __IT_REPORT_WCREPORT_FIELDS_PERFIX__.'chosen_select2' );
-	wp_register_style(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'css-chosen_select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css', true);
+	wp_register_style(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'css-chosen_select2', __IT_REPORT_WCREPORT_CSS_URL__.'/back-end/select2/select2.css', true);
 	wp_enqueue_style(__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'css-chosen_select2');
 
 	// PLUGIN MAIN

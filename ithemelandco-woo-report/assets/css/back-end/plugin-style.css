@@ -1151,10 +1151,7 @@ a.dt-button:focus:not(.disabled){
 .awr-right-cell{text-align:right!important; }
 
 #chartdiv {
-    /*chalk theme*/
-    /*background: #282828 url('http://www.amcharts.com/lib/3/patterns/chalk/bg.jpg');
-    color: #fff;	*/
-
+   
     /*Dark theme*/
     background: #3f3f4f;
     color:#ffffff;
@@ -1164,9 +1161,7 @@ a.dt-button:focus:not(.disabled){
     font-size	: 11px;
 }
 #it_product_chart,#it_abandon_product_chart {
-    /*chalk theme*/
-    /*background: #282828 url('http://www.amcharts.com/lib/3/patterns/chalk/bg.jpg');
-    color: #fff;	*/
+    
 
     /*Dark theme*/
     background: #fff;

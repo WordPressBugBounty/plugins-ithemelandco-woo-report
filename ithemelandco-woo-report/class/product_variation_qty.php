@@ -1,4 +1,5 @@
 <?php
+    if ( ! defined( 'ABSPATH' ) ) exit;
 	global $it_rpt_main_class;
 
     if (!$it_rpt_main_class->dashboard($it_rpt_main_class->it_plugin_status)){

@@ -27,9 +27,9 @@
 		// Do the saving
 
 		// Check nonce before processing any data
-		if (!isset($_POST['it_report_nonce_field']) || !wp_verify_nonce($_POST['it_report_nonce_field'], 'it_report_nonce_action')) {
+		if (!isset($_POST['it_report_nonce_field']) || !wp_verify_nonce(sanitize_text_field( wp_unslash ($_POST['it_report_nonce_field'])), 'it_report_nonce_action')) {
 			// Exit if nonce is invalid or missing
-			wp_die(__('Nonce verification failed', 'ithemelandco-woo-report'));
+			wp_die( esc_html__( 'Nonce verification failed', 'ithemelandco-woo-report' ) );
 		}
 
         $email=isset($_POST[__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_email']) ? $_POST[__IT_REPORT_WCREPORT_FIELDS_PERFIX__.'activate_email']:"";

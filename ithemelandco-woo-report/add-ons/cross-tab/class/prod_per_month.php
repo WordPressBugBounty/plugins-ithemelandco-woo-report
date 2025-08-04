@@ -1,10 +1,12 @@
 <?php
+    if ( ! defined( 'ABSPATH' ) ) exit;
     global $it_rpt_main_class;
 
     if (!$it_rpt_main_class->dashboard($it_rpt_main_class->it_plugin_status)){
         header("location:".admin_url()."admin.php?page=wcx_wcreport_plugin_active_report&parent=active_plugin");
     }else {
-        $smenu    = $_REQUEST['smenu'];
+        
+        $smenu = isset($_REQUEST['smenu']) ? sanitize_text_field($_REQUEST['smenu']) : '';
         $fav_icon = ' fa-star-o ';
         if ( $it_rpt_main_class->fetch_our_menu_fav( $smenu ) ) {
             $fav_icon = ' fa-star ';

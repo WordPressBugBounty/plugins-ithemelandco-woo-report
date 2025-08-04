@@ -1,10 +1,10 @@
-WooCommerce Report
+Advanced Report for WooCommerce
 Contributors: ithemelandco
 Donate link: http://ithemelandco.com/
 Tags: 	woocommerce report, woocommerce sale reporting, sale report, stock report, tax report
 Requires at least: 5.3
 Tested up to: 6.8
-Stable tag: 2.0.0
+Stable tag: 2.0.2
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -193,12 +193,17 @@ Please leave your message in our <a href="https://ithemelandco.com/support-cente
 
 == Screenshots ==
 
-1. Compare Lite & Premium
-2. Dashborad Light
-3. Dashborad Dark
-4. WooCommerce ProductSales Reprot
+1. Dashborad Light
+2. Dashborad Dark
+3. WooCommerce ProductSales Reprot
 
 == Changelog ==
+
+= 2.0.2 =
+* Fixed Important Security issues
+
+= 2.0.1 =
+* Fixed Some Issues
 
 = 2.0.0 =
 * Changes to the core plugin
@@ -206,7 +211,6 @@ Please leave your message in our <a href="https://ithemelandco.com/support-cente
 * Tested up to: WP 6.8.x
 * Tested up to: Woo 9.8.X
 * Fixed Some Issues
-
 
 = 1.5.5 =
 * Fixed WP 6.7
@@ -318,3 +322,11 @@ Please leave your message in our <a href="https://ithemelandco.com/support-cente
 
 = 1.0 =
 * Hello World!
+
+
+== External services ==
+
+This plugin connects to a license server to activate the plugin and check for updates.
+It sends the site admin’s email address and license key to iThemelandCo when the license is activated or when checking for updates. The server responds with activation status, update availability, or error messages.
+This service is required to verify valid licenses and deliver updates.
+This service is provided by "iThemelandCo". http://ithemelandco.com/

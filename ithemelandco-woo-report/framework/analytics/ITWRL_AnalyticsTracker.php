@@ -47,13 +47,13 @@ class ITWRL_AnalyticsTracker
 
         add_settings_field(
             'itwrl_usage_track',
-            esc_html__('Enable Usage Tracking', 'advanced-product-table-for-woocommerce'),
+            esc_html__('Enable Usage Tracking', 'ithemelandco-woo-report'),
             [$this, 'usage_tracking_checkbox'],
             'general',
             'default',
             array(
                 'label_for' => 'itwrl_usage_track_general',
-                'description' => esc_html__('Allow anonymous usage data tracking to help improve our plugin.', 'advanced-product-table-for-woocommerce')
+                'description' => esc_html__('Allow anonymous usage data tracking to help improve our plugin.', 'ithemelandco-woo-report')
             )
         );
     }

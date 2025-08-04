@@ -14,6 +14,9 @@
  *
  * @since 2.1.0
  */
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 define('DOING_AJAX', true);
 if (!defined('WP_ADMIN')) {
 	define('WP_ADMIN', true);

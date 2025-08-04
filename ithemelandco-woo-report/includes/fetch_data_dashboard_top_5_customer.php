@@ -15,7 +15,11 @@ if($file_used=="sql_table")
 	if(isset($_POST['it_from_date']))
 	{
 		//parse_str($_REQUEST, $my_array_of_vars);
-		$this->search_form_fields=$_POST;
+		foreach ( $_POST as $field ) {
+			if ( isset($_POST[$field]) ) {
+				$this->search_form_fields[$field] = sanitize_text_field($_POST[$field]);
+			}
+		}
 
 		$it_from_date		  = $this->it_get_woo_requests('it_from_date',NULL,true);
 		$it_to_date			= $this->it_get_woo_requests('it_to_date',NULL,true);

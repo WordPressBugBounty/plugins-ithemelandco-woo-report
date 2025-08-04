@@ -75,7 +75,12 @@ class ITWRL_Top_Banners
         $output .= '</a>';
         $output .= '</div></div>';
 
-        echo sprintf('%s', $output);
+        echo wp_kses(
+    $output,
+    $it_rpt_main_class->allowedposttags()
+);
+
+
     }
 
     public function black_friday_banner_dismiss()

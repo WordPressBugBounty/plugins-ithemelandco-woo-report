@@ -15,7 +15,7 @@
 
 		$nonce = $_REQUEST['nonce'];
 
-		if(!wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) )
+		if(!wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) )
 		{
 			$arr = array(
 				'success'=>'no-nonce',
@@ -68,7 +68,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if(!wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) )
+		if(!wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) )
 		{
 			$arr = array(
 			  'success'=>'no-nonce',
@@ -111,7 +111,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()
@@ -138,7 +138,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()
@@ -172,7 +172,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()
@@ -201,7 +201,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()
@@ -230,7 +230,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()
@@ -269,7 +269,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()
@@ -537,7 +537,7 @@
 
 		$nonce = $_POST['nonce'];
 
-		if(!wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) )
+		if(!wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) )
 		{
 			$arr = array(
 			  'success'=>'no-nonce',
@@ -607,7 +607,7 @@
 
 		$type = $_POST['type'];
 
-		if(!wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) )
+		if(!wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) )
 		{
 			$arr = array(
 			  'success'=>'no-nonce',
@@ -831,7 +831,7 @@
 
 		$type = $_POST['type'];
 
-		if(!wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) )
+		if(!wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) )
 		{
 			$arr = array(
 				'success'=>'no-nonce',
@@ -1234,7 +1234,7 @@ it_posts.ID=meta.post_id $it_order_status_join where meta.meta_key='it_cartitems
 		$nonce = $_POST['nonce'];
 
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()
@@ -1326,10 +1326,12 @@ it_posts.ID=meta.post_id $it_order_status_join where meta.meta_key='it_cartitems
 		parse_str( $_POST['postdata'], $my_array_of_vars );
 
 		$nonce = $_POST['nonce'];
+		
+
 
 		$type = $_POST['type'];
 
-		if ( ! wp_verify_nonce( $nonce, 'it_livesearch_nonce' ) ) {
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash ($nonce)), 'it_livesearch_nonce' ) ) {
 			$arr = array(
 				'success'  => 'no-nonce',
 				'products' => array()

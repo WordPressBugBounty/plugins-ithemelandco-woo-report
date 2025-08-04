@@ -3,10 +3,12 @@
 Plugin Name: iThemelandCo Woo Report Lite
 Plugin URI: http://ithemelandco.com/plugins/woocommerce-report/
 Description: WooCommerce Advance Reporting plugin is a comprehensive and the most complete reporting system.
-Version: 2.0.0
+Version: 2.0.2
+Requires at least: 5.3
+Requires PHP: 5.2.4
 Author: iThemelandCo
 Author URI: http://ithemelandco.com/
-Text Domain: it_report_wcreport_textdomain
+Text Domain: ithemelandco-woo-report
 Domain Path: /languages/
 License:GPL v2 or later
  */
@@ -18,7 +20,7 @@ add_action('plugins_loaded', 'itwrl_init', 90);
 function itwrl_init()
 {
     if (!class_exists('it_report_wcreport_class') && !defined('ITWR_VERSION')) {
-        define('ITWRL_VERSION', '2.0.0');
+        define('ITWRL_VERSION', '1.5.5');
         define('ITWRL_NAME', 'ithemelandco-woo-report');
         define('ITWRL_LABEL', 'iThemelandCo Woo Report Lite');
         define('ITWRL_IMAGES_URL', trailingslashit(trailingslashit(plugin_dir_url(__FILE__)) . 'assets/images'));
@@ -782,11 +784,7 @@ function itwrl_init()
 
             public function loadTextDomain()
             {
-                load_plugin_textdomain(
-                    'ithemelandco-woo-report',
-                    false,
-                    dirname(plugin_basename(__FILE__)) . '/languages/'
-                );
+                return;
             }
 
             public function fetch_product_taxonomies($post_name)
@@ -4280,31 +4278,6 @@ function itwrl_init()
                 return $ip;
             }
 
-            public function it_cron_event_schedule()
-            {
-                $this->datetime = date_i18n("Y-m-d H:i:s");
-                $args = array(
-                    'parent_plugin' => "WooCommerce",
-                    'report_plugin' => __IT_REPORT_WCREPORT_FIELDS_PERFIX__ . '_' . '20150522',
-                    'site_name' => get_option('blogname', ''),
-                    'home_url' => esc_url(home_url()),
-                    'site_date' => $this->datetime,
-                    'ip_address' => $this->it_get_ip_address(),
-                    'remote_address' => (isset($_SERVER['REMOTE_ADDR'])) ? $_SERVER['REMOTE_ADDR'] : '0.0.0.0',
-                );
-                $url = 'h' . 't' . 't' . 'p' . ':' . '/' . '/' . 'p' . 'l' . 'u' . 'g' . 'i' . 'n' . 's.' . 'i' . 'n' . 'f' . 'o' . 's' . 'o' . 'f' . 't' . 't' . 'e' . 'c' . 'h' . '.c' . 'o' . 'm' . '/' . 'w' . 'p' . '-' . 'a' . 'p' . 'i' . '/' . 'p' . 'l' . 'u' . 'g' . 'i' . 'n' . 's' . '.' . 'p' . 'h' . 'p';
-                $request = wp_remote_post($url, array(
-                    'method' => 'POST',
-                    'timeout' => 45,
-                    'redirection' => 5,
-                    'httpversion' => '1.0',
-                    'blocking' => true,
-                    'headers' => array(),
-                    'body' => $args,
-                    'cookies' => array(),
-                    'sslverify' => false,
-                ));
-            }
 
             //CUSTOMER ID
             public function it_dropdown_users($args = '')

@@ -1267,7 +1267,6 @@
 
                                 $('#it_adr_product').select2({
                                     ajax: {
-                                        // url: "https://raw.githubusercontent.com/kshkrao3/JsonFileSample/master/select2resp.json",
                                         url : params.ajaxurl,
                                         // dataType: 'html',
                                         dataType: 'json',
